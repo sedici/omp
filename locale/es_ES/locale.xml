@@ -244,11 +244,11 @@
 	<message key="catalog.manage">Gestión de catálogo</message>
 	<message key="catalog.manage.homepage">Página de inicio</message>
 	<message key="catalog.manage.newReleases">Novedades</message>
-	<message key="catalog.manage.category">Categorías</message>
-	<message key="catalog.manage.series">Series</message>
+	<message key="catalog.manage.category">Áreas temáticas</message>
+	<message key="catalog.manage.series">Unidades Academicas</message>
 	<message key="catalog.manage.managementIntroduction">Bienvenido a la Gestión de Catálogo. Desde esta página puedes publicar nuevas entradas de catálogo; revisar y configurar el listado de Libros Destacados, el listado de Novedades y los libros por Categoría y Serie.</message>
-	<message key="catalog.selectSeries">Seleccionar serie</message>
-	<message key="catalog.selectCategory">Seleccionar categoría</message>
+	<message key="catalog.selectSeries">Seleccionar Unidad Academica</message>
+	<message key="catalog.selectCategory">Seleccionar Áreas temáticas</message>
 	<message key="catalog.manage.entryDescription">Para mostrar un libro en el catálogo, seleccione la pestaña "Monografía" y rellene la información necesaria. La información para cada uno de los formatos del libro puede incluirse en el registro de catálogo seleccionando la pestaña el formato. La especificación de metadatos está basada en "ONIX para Libros",  un estándar internacional utilizado por la industria del libro para comunicación de información sobre los libros.</message>
 	<message key="catalog.manage.spotlightDescription">Tres destacados (por ejemplo, como Libro Destacado) pueden aparecer en la página de inicio, con título, imagen, y texto.</message>
 	<message key="catalog.manage.homepageDescription">La imagen de portada de los libros seleccionados aparece en la parte superior de la página de inicio como un conjunto desplazable. Haz clic en la estrella de 'Destacado' para añadir un libro al carrusel; haz clic en el punto de exclamación para destacar un libro como novedad; arrastra y suelta para ordenar.</message>
@@ -256,8 +256,8 @@
 	<message key="catalog.manage.seriesDescription">Haz clic en "destacar"; después haz  clic en la estrella para seleccionar un libro destacado para esta serie; arrastra y suelta para ordenar. Las series se identifican con un título de editor(es) y títulos de serie, dentro de una categoría o de manera independiente.</message>
 	<message key="catalog.manage.placeIntoCarousel">Carrusel</message>
 	<message key="catalog.manage.newRelease">Lanzamiento</message>
-	<message key="catalog.manage.manageSeries">Gestionar series</message>
-	<message key="catalog.manage.manageCategories">Gestionar categorías</message>
+	<message key="catalog.manage.manageSeries">Gestionar Unidades Academicas</message>
+	<message key="catalog.manage.manageCategories">Gestionar Áreas temáticas</message>
 	<message key="catalog.manage.noMonographs">No existen monografías asignadas.</message>
 
 	<!-- Catalog -->
