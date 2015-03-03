@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+/**
+ * bothSidebarsUNLP.css
+ *
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared elements for pages including both a left-hand sidebar and a
+ * right-hand sidebar.
+ *
+ * $Id$
+ */
+
+/**
+ * Common HTML elements
+ */
+
+#container {
+	width: 950px;
+}
+
+#main {
+	position: relative;
+	float: left;
+	width: 56%;
+	margin-left: 0;
+	margin-right: 0 !important;
+	display: inline;
+	overflow: hidden;
+}
+#body {
+	width: 100%;
+}

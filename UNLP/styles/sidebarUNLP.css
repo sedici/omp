@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+/**
+ * sidebarUNLP.css
+ *
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared elements for pages including sidebar(s).
+ *
+ * $Id$
+ */
+
+/**
+ * Sidebar
+ */
+ #sidebar div.block {
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px 0px 6px 0px;
+	text-align: center!important;
+}
+#sidebar table {
+	width: 95%;
+	padding: 0px;
+	margin: 0px auto;
+}
+#sidebar div.block span.blockTitle {
+	background: url(../../templates/images/side_h2.png) no-repeat;
+	width: 184px;
+	height: 20px;
+	display: block;
+	padding: 5px;
+	color: #fff;
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 5px 0px;
+}
+#sidebar div.block span.blockSubtitle {
+	display: block;
+	padding: 3px 8px;
+	margin: 3px 7px;
+	font-weight: bold;
+	border-top: 1px solid #bececc;
+	border-bottom: 1px solid #bececc;
+}
+#sidebar input.textField, #sidebar select.selectMenu, #sidebar input.button {
+	font-size: 10px;
+}

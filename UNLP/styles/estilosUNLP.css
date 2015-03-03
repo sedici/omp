@@ -1,0 +1,225 @@
+@CHARSET "UTF-8";
+/**
+ * estilosUNLP.css
+ *
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ */
+/*****************************************************************************************/
+
+body {
+    background-image: url(../images/fondo_completo.png);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+.pkp_structure_page {
+    background-image: url(../images/fondo_body_abstracto.png);
+    margin: 0;
+    background-position: 0 0;
+}
+
+.pkp_structure_foot {
+    background-color: #6dc6c1;
+    height: 100px;
+    font-family: arial;
+    font-size: 12px;
+    
+}
+
+
+.pkp_structure_foot .col1 {
+    width: 93px;
+    float: left;
+    margin-left: 10px;
+}
+.pkp_structure_foot .col2 {
+    width: 50%;
+    float: left;
+    background-image: url(../images/marcador.png);
+    background-repeat: no-repeat;
+    background-position: 20px 0px;
+}
+.pkp_structure_foot .col3 {
+    width: 48%;
+    float: left;
+    background-image: url(../images/marcador.png);
+    background-repeat: no-repeat;
+    background-position: 20px 0px;
+}
+.pkp_structure_foot .col2y3 {
+    float: left;
+    width: 90%;
+    padding-left: 20px;
+}
+.pkp_structure_foot .col2y3 .col2 ul {
+    padding-left: 40px;
+    list-style-type:none;
+}
+.pkp_structure_foot .col2y3 .col2 li {
+    padding: 0px 0px 0px 9px;
+    color: white;
+}
+.pkp_structure_foot .col2y3 .col3 li {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.pkp_structure_head {
+    background-color: #a2c6dc;
+    background-image: url(../images/fondo_completo.png);
+    background-repeat: no-repeat;
+    height: 234px;
+}
+
+.pkp_structure_head .escudounlp {
+    float: right;
+    height: 71px;
+    width: 57px;
+    clear: right;
+    position: relative;
+    top: 45px;
+    right: 10px;
+}
+.pkp_structure_head .parabanda {
+    width: 282px;
+    height: 141px;
+    float: left;
+    position: relative;
+    top: 30px;
+}
+.pkp_structure_head .menu li {
+    list-style-type: none;
+    display: inline;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px 10px 2px;
+}
+
+.pkp_structure_head .menu li a {
+    text-decoration: none;
+    padding:5px 10px 5px 10px;
+    color: #000;
+}
+
+.pkp_structure_head .menu {
+    width: 500px;
+    float: right;
+    position: relative;
+    top: 30px;
+}
+.pkp_structure_head .contenedor_derecho {
+    width: 50%;
+    height: 200px;
+    float: right;
+}
+
+.pkp_structure_head .contenedor_derecho .menu a:hover {
+    color: white;
+    background-color: #6dc6c1;
+}
+/************************************Estilo Lucas*****************************************/
+
+#header {
+    background-image: url(../images/fondo_completo.png);
+    background-repeat: no-repeat;
+    height: 234px;
+}
+#header #escudounlp {
+    float: right;
+    background-image: url(..images/escudo_unlp.png);
+    height: 71px;
+    width: 57px;
+    clear: right;
+    position: relative;
+    top: 45px;
+    right: 10px;
+}
+#header #parabanda {
+    width: 282px;
+    height: 141px;
+    float: left;
+    position: relative;
+    top: 30px;
+}
+#header #menu li {
+    list-style-type: none;
+    display: inline;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px 10px 2px;
+}
+#footer {
+    background-color: #6dc6c1;
+    padding: 10px;
+    height: 100px;
+    font-family: arial;
+    font-size: 12px;
+}
+#header #menu li a {
+    text-decoration: none;
+    padding:5px 10px 5px 10px;
+    color: #000;
+}
+#content {
+    background-image: url(../images/fondo_body_abstracto.png);
+    height: 500px;
+}
+#header #menu {
+    width: 500px;
+    float: right;
+    position: relative;
+    top: 30px;
+}
+#header #contenedor_derecho {
+    width: 50%;
+    height: 200px;
+    float: right;
+}
+body {
+    background-image: url(../images/fondo_completo.png);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+#header #contenedor_derecho #menu a:hover {
+    color: white;
+    background-color: #6dc6c1;
+}
+#footer #col1 {
+    width: 93px;
+    float: left;
+}
+#footer #col2 {
+    width: 50%;
+    float: left;
+    background-image: url(..images/marcador.png);
+    background-repeat: no-repeat;
+    background-position: 20px 0px;
+}
+#footer #col3 {
+    width: 48%;
+    float: left;
+    background-image: url(..images/marcador.png);
+    background-repeat: no-repeat;
+    background-position: 20px 0px;
+}
+#footer #col2y3 {
+    float: left;
+    width: 90%;
+    padding-left: 20px;
+}
+#footer #col2y3 #col2 ul {
+    padding-left: 40px;
+    list-style-type:none;
+}
+#footer #col2y3 #col2 li {
+    padding: 0px 0px 0px 9px;
+    color: white;
+}
+#footer #col2y3 #col3 li {
+    list-style-type: none;
+    padding-left: 10px;
+}

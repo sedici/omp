@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+/**
+ * leftSidebarUNLP.css
+ *
+ *
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared elements for pages including a left-hand sidebar.
+ *
+ */
+
+/**
+ * Common HTML elements
+ */
+ 
+#headerTitle {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+#leftSidebar {
+	float: left;
+	width: 194px;
+	margin: 0px;
+	padding: 0px 10px 0px 0px;
+	font-size: 10px;
+	border-right: 1px solid #f5f9f3;
+	clear: left;
+}
+#main {
+	width: 553px;
+	float: right;
+	padding: 0px;
+}
+#headerTitle {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
