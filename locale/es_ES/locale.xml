@@ -240,6 +240,18 @@
 	<message key="grid.category.nameRequired">Introducir el nombre de una categoría.</message>
 	<message key="grid.category.categoryDetails">Detalles de categoría</message>
 
+	<message key="grid.columns.locale">Idioma</message>
+	<message key="manager.language.ui">Vista</message>
+	<message key="manager.language.submissions">Submissions</message>
+	<message key="manager.language.forms">Formulario</message>
+
+
+        
+        <message key="admin.languages.installLocale">Instalar Idioma</message>    
+        <message key="admin.languages.availableLocales">Idiomas Disponibles</message>   
+        <message key="admin.languages.downloadLocales">Descargar Idiomas</message>   
+            
+
 	<!-- Catalog Management -->
 	<message key="catalog.manage">Gestión de catálogo</message>
 	<message key="catalog.manage.homepage">Página de inicio</message>
@@ -279,6 +291,10 @@
 	<message key="common.searchCatalog">Buscar aquí</message>
 	<message key="common.moreInfo">Más información</message>
 	<message key="common.plusMore">+ Más</message>
+        <message key="common.plugins">Plugins</message>
+        <message key="common.navigation">Navegacion</message>
+        <message key="common.name">Nombre</message>
+        
 	
 	<message key="common.listbuilder.completeForm">Rellena el formulario completamente</message>
 	<message key="common.listbuilder.selectValidOption">Selecciona una opción válida de la lista</message>
@@ -292,7 +308,7 @@
 	<message key="common.omp">OMP</message>
 	<message key="common.homePageHeader.altText">Cabecera de inicio</message>
 	<!-- Navigation -->
-	<message key="navigation.catalog">Catálogo</message>
+	<message key="navigation.catalog">Libros</message>
 	<message key="navigation.competingInterestPolicy">Política de conflicto de intereses</message>
 	<message key="navigation.catalog.manage">Administrar</message>
 	<message key="navigation.catalog.administration.short">Administración</message>
@@ -307,10 +323,38 @@
 	<message key="navigation.published">Publicado</message>
 	<message key="navigation.wizard">Asistente</message>
 	<message key="navigation.linksAndMedia">Enlaces y  redes sociales</message>
-
+        <message key="navigation.admin">Administración</message>
+        <message key="navigation.management">Administración</message>
+	<message key="navigation.settings">Configuracion</message>
+	<message key="navigation.tools">Herramientas</message>
+        <message key="navigation.access">Usuarios y Roles</message>
+        <message key="navigation.tools.statistics">Estadisticas</message>
+        <message key="navigation.tools.importexport">Importar/Exportar</message>
+        
+        
+        
+        
 	<!-- Common Press Terms -->
 	<message key="press.presses">Editoriales</message>
 	<message key="press.path">Ruta</message>
+        <message key="context.context">Editorial</message>
+	<message key="context.select">Seleccionar una Editorial</message>
+
+        
+        <message key="manager.website">Sitio</message>
+	<message key="manager.website.title">Titulo</message>
+	<message key="manager.website.appearance">Apariencia</message>
+	<message key="manager.website.information">Informacion</message>
+	
+        
+        <message key="manager.workflow">WorkFlow</message>
+        <message key="manager.distribution">Distributcion</message>
+	
+       <message key="manager.plugins.install">Instalar Plugins</message>
+	
+        
+        
+        
 	<!-- User -->
 	<message key="user.noRoles.submitMonograph">Presentar una propuesta</message>
 	<message key="user.noRoles.submitMonographRegClosed">Presentar una monografía: El registro del autor se encuentra actualmente deshabilitado</message>
@@ -348,6 +392,11 @@
 	<message key="user.register.reviewerInterests">Identificar los intereses de la revisión (áreas sustantivas y métodos de investigación):</message>
 	<message key="user.register.form.userGroupRequired">Debes seleccionar al menos un rol.</message>
 
+
+        <message key="user.hello">Hola</message>
+        <message key="user.logOut">Salir</message>
+        
+
 	<!-- Site index -->
 	<message key="site.pressView">Ver página web de la editorial</message>
 
@@ -384,7 +433,9 @@
 	<!-- Help -->
 	<message key="help.searchReturnResults">Volver a Búsqueda de resultados</message>
 	<message key="help.goToEditPage">Abrir una nueva página para editar esta información</message>
-
+        <message key="help.toggleInlineHelpOn">Ayuda</message>
+        
+        
 	<!-- Installer -->
 	<message key="installer.ompInstallation">Instalación OMP</message>
 	<message key="installer.ompUpgrade">Actualización OMP</message>
