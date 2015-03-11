@@ -22,6 +22,28 @@ body {
     background-position: 0 0;
 }
 
+
+.pkp_structure_sidebar_left .temario .areas li {
+	list-style-type: none;
+	font-family: arial;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+	line-height: 1.5;
+}
+.pkp_structure_sidebar_left .temario {
+	font-family: arial;
+	margin: 10px 5px 0px 10px;
+	width: 20%;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #dedede;
+	float: left;
+}
+.pkp_structure_sidebar_left .temario .areas {
+	margin: 0;
+}
+
+
 .pkp_structure_foot {
     background-color: #6dc6c1;
     height: 100px;
@@ -106,10 +128,15 @@ body {
 }
 
 .pkp_structure_head .menu {
-    width: 500px;
+    width: 623px;
     float: right;
     position: relative;
     top: 30px;
+}
+
+.sf-menu{
+ 
+    float: right;
 }
 .pkp_structure_head .contenedor_derecho {
     width: 50%;
@@ -121,6 +148,28 @@ body {
     color: white;
     background-color: #6dc6c1;
 }
+
+.pkp_structure_head_siteNav {
+    color: #000000;
+    position: absolute;
+    border: none; 
+    
+}
+.pkp_structure_head_siteNav a {
+    color: #000000;
+}
+
+.pkp_helpers_align_left {
+    float: left;
+    position: absolute;
+    left: 393px;
+}
+.pkp_helpers_flatlist {
+    margin: 19px;
+    padding: 0;
+}
+
+
 /************************************Estilo Lucas*****************************************/
 
 #header {
@@ -222,4 +271,48 @@ body {
 #footer #col2y3 #col3 li {
     list-style-type: none;
     padding-left: 10px;
+}
+
+
+
+
+
+
+/*****************************************/
+
+
+#content #medio {
+	float: left;
+	width: 50%;
+	margin: 10px 0px 0px 0px;
+}
+#content #medio .listadoitems .items li {
+	display: block;
+	width: 600px;
+	height: 140px;
+	list-style-type: none;
+	margin: 10px 0px 0px 0px;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	padding: 20px 0px 10px 0px;
+}
+#content #medio .listadoitems .items {
+	margin: 0px;
+}
+#content #medio .listadoitems .items .portada {
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding: 2px;
+}
+#content #medio .listadoitems .items .contenido {
+	width: 79%;
+	float: left;
+	height: 100px;
+}
+#content #medio .listadoitems .items .contenido h1 {
+	color: black;
+}
+#content #medio .listadoitems .items .contenido p {
+	font-size: 12px;
 }
