@@ -33,6 +33,8 @@
 	<message key="submission.proofs">Correcciones</message>
 	<message key="submission.download">Descargar</message>
 	<message key="submission.sharing">Compartir</message>
+        <message key="submission.submission">Submission</message>
+        
 	<message key="manuscript.submission">Propuesta de manuscrito</message>
 	<message key="submission.round"><![CDATA[Round&nbsp;{$round}]]></message>
 	<message key="submissions.queuedReview">En revisión</message>
@@ -53,8 +55,8 @@
 	<message key="submission.submit.upload.description">Subir archivos asociados con la propuesta, incluyendo el manuscrito, documento de proyecto, carta de presentación, material gráfico etc. Para obras colectivas, así como para las monografías, sube los manuscritos como un único fichero, si es factible.</message>
 	<message key="submission.submit.cancelSubmission">Puedes completar esta propuesta más tarde seleccionando Propuestas Activas desde la página de inicio del autor.</message>
 	<message key="submission.submit.copyrightNoticeAgree">Estoy de acuerdo con los términos de la declaración de derechos de autor.</message>
-	<message key="submission.submit.selectSeries">Seleccionar serie, colección, ...</message>
-	<message key="submission.submit.seriesPosition">Lugar que ocupa dentro de esta serie, colección, ... (por ejemplo, Libro 2, o Volumen 2)</message>
+	<message key="submission.submit.selectSeries">Seleccionar Unidad Academica, colección, ...</message>
+	<message key="submission.submit.seriesPosition">Lugar que ocupa dentro de esta unidad academica, colección, ... (por ejemplo, Libro 2, o Volumen 2)</message>
 	<message key="submission.submit.form.localeRequired">Selecciona una lengua para la propuesta.</message>
 	<message key="submission.submit.submissionChecklist">Lista de comprobación de la propuesta</message>
 	<message key="submission.submit.submissionChecklistDescription">Tienen que completarse y marcarse las siguientes exigencias para la propuesta a esta editorial antes de continuar (se pueden añadir a continuación comentarios al editor) .</message>
@@ -77,13 +79,16 @@
 	<message key="submission.submit.whatNext.description">Tu propuesta se ha notificado a la editorial, y has recibido un email de confirmación por tus registros. Una vez se haya examinado la propuesta nos pondremos en contacto contigo.</message>
 	<message key="submission.submit.checklistErrors">Lee y marca los items en la lista de comprobación de la propuesta. Quedan {$itemsRemaining} ítems sin comprobar.</message>
 	<message key="submission.submit.placement">Disposición de la propuesta</message>
-	<message key="submission.submit.placement.seriesDescription">Si el libro también debiera ser considerado para una serie, colección, ...</message>
-	<message key="submission.submit.placement.seriesPositionDescription">Los libros de series, colecciones, ..., generalmente se organizan en orden inverso al que se publican, para dar una idea del desarrollo de las mismas, y para mantener el libro más actual en primer lugar.</message>
+	<message key="submission.submit.placement.seriesDescription">Si el libro también debiera ser considerado para una unidad academica, colección, ...</message>
+	<message key="submission.submit.placement.seriesPositionDescription">Los libros de unidad academica, colecciones, ..., generalmente se organizan en orden inverso al que se publican, para dar una idea del desarrollo de las mismas, y para mantener el libro más actual en primer lugar.</message>
 	<message key="submission.submit.placement.categories">Categorías</message>
 	<message key="submission.submit.placement.categoriesDescription">Selecciona una o más categorías de la editorial a las que este trabajo se debería corresponder.</message>
 	<message key="submission.submit.userGroup">Realizar propuesta como...</message>
 	<message key="submission.submit.userGroupDescription">Si estás realizando la obra conjunta, deberás elegir el rol Editor de obra conjunta.</message>
 	<message key="submission.submit.titleAndSummary">Título y Resumen</message>
+
+
+
 
 	<!-- File upload wizard -->
 	<message key="submission.upload.selectBookElement">Selecciona un elemento del libro</message>

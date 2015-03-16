@@ -349,8 +349,7 @@
         
         <message key="manager.workflow">WorkFlow</message>
         <message key="manager.distribution">Distributcion</message>
-	
-       <message key="manager.plugins.install">Instalar Plugins</message>
+        <message key="manager.plugins.install">Instalar Plugins</message>
 	
         
         
