@@ -37,22 +37,23 @@ class IndexHandler extends Handler {
 	 * @param $request Request
 	 */
 	function index($args, $request) {
-            	
-                $targetPress = $this->getTargetContext($request);
+		$targetPress = $this->getTargetContext($request);
 		$press = $request->getPress();
 		$user = $request->getUser();
+
 		if ($user && !$targetPress && Validation::isSiteAdmin()) {
-                    // If the user is a site admin and no press exists,
+			// If the user is a site admin and no press exists,
 			// send them to press administration to create one.
 			return $request->redirect(null, 'admin', 'contexts');
 		}
+
 		// Public access.
 		$this->setupTemplate($request);
 		$templateMgr = TemplateManager::getManager($request);
 
 		if ($press) {
-                    // Display the current press home.
-                    	$this->_displayPressIndexPage($press, $templateMgr);
+			// Display the current press home.
+			$this->_displayPressIndexPage($press, $templateMgr);
 		} elseif ($targetPress) {
 			// We're not on a press homepage, but there's one
 			// available; redirect there.
@@ -87,13 +88,11 @@ class IndexHandler extends Handler {
 			$templateMgr->assign('publishedMonographs', $newReleases);
 		}
 
-                
-                // Assign header and content for home page.
+		// Assign header and content for home page.
 		$templateMgr->assign('additionalHomeContent', $press->getLocalizedSetting('additionalHomeContent'));
 		$templateMgr->assign('homepageImage', $press->getLocalizedSetting('homepageImage'));
 		$templateMgr->assign('pageTitleTranslated', $press->getLocalizedSetting('name'));
 
-               
 		// Display creative commons logo/licence if enabled.
 		$templateMgr->assign('displayCreativeCommons', $press->getSetting('includeCreativeCommons'));
 
@@ -117,8 +116,6 @@ class IndexHandler extends Handler {
 		$displayFeaturedBooks = $press->getSetting('displayFeaturedBooks');
 		$templateMgr->assign('displayFeaturedBooks', $displayFeaturedBooks);
 
-                
-                 
 		// Display In Spotlight
 		if ($press->getSetting('displayInSpotlight')) {
 			// Include random spotlight items for the press home page.
@@ -138,7 +135,7 @@ class IndexHandler extends Handler {
 
 		$templateMgr->assign_by_ref('socialMediaBlocks', $blocks);
 
-		$templateMgr->display('unlp/index.tpl');
+		$templateMgr->display('index/press.tpl');
 	}
 }
 
