@@ -5,7 +5,7 @@
  */
 
 /**
- * @file pages/index/index.php
+ * @file pages/unlp/index.php
  *
  * Copyright (c) 2014 Simon Fraser University Library
  * Copyright (c) 2003-2014 John Willinsky
@@ -19,8 +19,8 @@
 
 switch ($op) {
 	case 'index':
-		define('HANDLER_CLASS', 'IndexHandler');
-		import('pages.index.IndexHandler');
+            	define('HANDLER_CLASS', 'UnlpHandler');
+		import('pages.unlp.UnlpHandler');
 		break;
 }
 
