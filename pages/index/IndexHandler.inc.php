@@ -138,6 +138,23 @@ class IndexHandler extends Handler {
 
 		$templateMgr->assign_by_ref('socialMediaBlocks', $blocks);
 
+                
+             //   $press = $request->getPress();
+
+		// Provide a list of series to browse
+		$seriesDao = DAORegistry::getDAO('SeriesDAO');
+		$series = $seriesDao->getByPressId($press->getId());
+		$templateMgr->assign('browseSeries', $series);
+
+		// Provide a list of categories to browse
+		$categoryDao = DAORegistry::getDAO('CategoryDAO');
+		$categories = $categoryDao->getByPressId($press->getId());
+		$templateMgr->assign('browseCategories', $categories);
+        /*
+		$templateMgr->assign('browseBlockSelectedCategory', $request->getUserVar('path'));
+		$templateMgr->assign('browseBlockSelectedSeries', $request->getUserVar('path'));
+		
+               */ 
 		$templateMgr->display('unlp/index.tpl');
 	}
 }
