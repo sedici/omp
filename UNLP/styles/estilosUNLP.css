@@ -20,6 +20,7 @@ body {
     background-image: url(../images/fondo_body_abstracto.png);
     margin: 0;
     background-position: 0 0;
+    
 }
 
 
@@ -88,6 +89,11 @@ body {
 .pkp_structure_foot .col2y3 .col3 li {
     list-style-type: none;
     padding-left: 10px;
+}
+
+.pkp_structure_body .pkp_structure_content {
+    height: 500px;
+    background-position: center top;
 }
 
 .pkp_structure_head {
@@ -168,151 +174,200 @@ body {
     margin: 19px;
     padding: 0;
 }
-
-
-/************************************Estilo Lucas*****************************************/
-
-#header {
-    background-image: url(../images/fondo_completo.png);
-    background-repeat: no-repeat;
-    height: 234px;
+.col_principal {
+	width: 60%;
+	float: left;
 }
-#header #escudounlp {
-    float: right;
-    background-image: url(..images/escudo_unlp.png);
-    height: 71px;
-    width: 57px;
-    clear: right;
-    position: relative;
-    top: 45px;
-    right: 10px;
+.col_secundaria {
+	width: 40%;
+	float: left;
 }
-#header #parabanda {
-    width: 282px;
-    height: 141px;
-    float: left;
-    position: relative;
-    top: 30px;
-}
-#header #menu li {
-    list-style-type: none;
-    display: inline;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    padding: 10px 5px 10px 2px;
-}
-#footer {
-    background-color: #6dc6c1;
-    padding: 10px;
-    height: 100px;
-    font-family: arial;
-    font-size: 12px;
-}
-#header #menu li a {
-    text-decoration: none;
-    padding:5px 10px 5px 10px;
-    color: #000;
-}
-#content {
-    background-image: url(../images/fondo_body_abstracto.png);
-    height: 500px;
-}
-#header #menu {
-    width: 500px;
-    float: right;
-    position: relative;
-    top: 30px;
-}
-#header #contenedor_derecho {
-    width: 50%;
-    height: 200px;
-    float: right;
-}
-body {
-    background-image: url(../images/fondo_completo.png);
-    background-repeat: no-repeat;
-    margin: 0;
-}
-#header #contenedor_derecho #menu a:hover {
-    color: white;
-    background-color: #6dc6c1;
-}
-#footer #col1 {
-    width: 93px;
-    float: left;
-}
-#footer #col2 {
-    width: 50%;
-    float: left;
-    background-image: url(..images/marcador.png);
-    background-repeat: no-repeat;
-    background-position: 20px 0px;
-}
-#footer #col3 {
-    width: 48%;
-    float: left;
-    background-image: url(..images/marcador.png);
-    background-repeat: no-repeat;
-    background-position: 20px 0px;
-}
-#footer #col2y3 {
-    float: left;
-    width: 90%;
-    padding-left: 20px;
-}
-#footer #col2y3 #col2 ul {
-    padding-left: 40px;
-    list-style-type:none;
-}
-#footer #col2y3 #col2 li {
-    padding: 0px 0px 0px 9px;
-    color: white;
-}
-#footer #col2y3 #col3 li {
-    list-style-type: none;
-    padding-left: 10px;
-}
-
-
-
-
-
-
-/*****************************************/
-
-
-#content #medio {
+.col_principal .exploracion .explo_unidades {
 	float: left;
 	width: 50%;
-	margin: 10px 0px 0px 0px;
 }
-#content #medio .listadoitems .items li {
-	display: block;
-	width: 600px;
-	height: 140px;
-	list-style-type: none;
-	margin: 10px 0px 0px 0px;
-	border-top: 1px solid #dedede;
-	border-bottom: 1px solid #dedede;
-	padding: 20px 0px 10px 0px;
+.col_principal .exploracion .links_relacionados {
+	float: left;
+	width: 50%;
 }
-#content #medio .listadoitems .items {
-	margin: 0px;
+.col_principal .destacado .portada {
+	width: 100px;
+	float: left;
 }
-#content #medio .listadoitems .items .portada {
-	width: 20%;
+.col_principal .exploracion {
+	clear: both;
+	margin-left: 50px;
+}
+.col_principal .destacado .detalle .titulo_destacado {
+	background-color: #98D3D1;
+	padding: 5px;
+	float: left;
+	clear: right;
+}
+.col_principal .destacado .detalle .detalles_del_item {
+	float: left;
+	padding-left: 0px;
+}
+.col_principal .destacado .detalle .detalles_del_item h2 {
+	background-color: #98D3D1;
+	font-size: 12px;
+	padding: 3px 0px 3px 10px;
+	color: white;
+	text-transform: uppercase;
+}
+.col_principal .destacado .detalle .detalles_del_item h1 {
+	font-size: 36px;
+	color: #12909F;
+}
+.col_principal .destacado .detalle .detalles_del_item ul {
+	color: #6D6D6D;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+
+.rotulo {
+	background-image: url(../images/forma_h1.png);
+	height: 30px;
+	color: #6DC6C1;
+	font-weight: bold;
+	padding: 10px 0px 0px 45px;
+	font-size: 16px;
+	background-repeat: no-repeat;
+}
+.exploracion .explo_unidades ul {
+	line-height: 1.7;
+	font-size: 13px;
+}
+.col_secundaria .busqueda {
+	background-image: url(../images/fondo_busqueda.png);
+	width: 364px;
+	height: 180px;
+	top: 210px;
+	padding: 20px 0px 0px 0px;
+	background-repeat: no-repeat;
+}
+.col_secundaria .busqueda .titulo {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #3c5a68;
+	margin: 0px 20px 0px 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+.col_secundaria .busqueda .barra_ .barrita {
+	background-color: white;
+	height: 34px;
+	width: 200px;
+	float: left;
+}
+.col_secundaria .busqueda .barra_ .lupita {
+	width: 24px;
+	height: 24px;
+	background-color: orange;
+	float: left;
+	padding: 10px 0px 0px 10px;
+}
+.col_secundaria .busqueda .barra_ {
+	margin: 10px 0px 0px 20px;
+}
+.col_secundaria .areas_tematicas .icon {
+	width: 70px;
 	float: left;
 	text-align: center;
-	padding: 2px;
-}
-#content #medio .listadoitems .items .contenido {
-	width: 79%;
-	float: left;
-	height: 100px;
-}
-#content #medio .listadoitems .items .contenido h1 {
-	color: black;
-}
-#content #medio .listadoitems .items .contenido p {
+	margin: 3px;
 	font-size: 12px;
 }
+.texto_icon {
+	text-align: center;
+}
+.col_secundaria .areas_tematicas {
+	width: 350px;
+}
+.linea {
+	height: 100px;
+	display: block;
+}
+.col_principal .destacado {
+	margin-left: 50px;
+}
+#footer #col2y3 #col3 .cc p {
+	float: left;
+	margin: 0px 0px 0px 5px;
+	width: 300px;
+}
+#footer #col2y3 #col3 .redes {
+	width: 300px;
+	height: 60px;
+}
+#footer #col2y3 #col3 .cc {
+	width: 100%;
+	display: block;
+}
+#footer #col2y3 #col4 ul {
+list-style-type:none;
+}
+.col_principal .destacado h1 {
+	color: #6dc6c1;
+	font-size: 20px;
+}
+.col_principal .resena {
+}
+.col_principal .resena, .col_principal .contenidos {
+	clear: both;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.col_principal .resena h1, .col_principal .contenidos h1, .col_secundaria .relacionados h1 {
+	color: white;
+	font-size: 14px;
+	margin: 0;
+	background-color: #98d3d1;
+	padding: 3px 3px 3px 8px;
+	max-width: 300px;
+	width: 200px;
+}
+.col_principal .resena p {
+	margin: 0px 0px 10px 0px;
+	padding: 10px 10px 0px 0px;
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: justify;
+	width: 90%;
+}
+.col_secundaria .relacionados ul {
+	font-size: 13px;
+	margin-top: 5px;
+}
+.col_secundaria .relacionados .links_relacionados {
+	width: 300px;
+}
+.col_principal .contenidos ul {
+	font-size: 14px;
+	line-height: 1.5;
+}
+.col_secundaria .relacionados {
+	margin-bottom: 10px;
+}
+.col_secundaria .relacionados .links_relacionados .img_detail {
+	padding: 4px;
+}
+#footer #col2y3 #col4 .ubicacion {
+	float: left;
+	margin-left: 10px;
+}
+#footer #col2y3 #col4 .ubicacion p {
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+.col_principal .destacado .detalle .detalles_del_item .estrellas {
+	background-image: url(../images/estrellas.png);
+	width: 86px;
+	height: 20px;
+	background-position: 0px 195px;
+}
+/************************************Estilo Lucas*****************************************/
+
