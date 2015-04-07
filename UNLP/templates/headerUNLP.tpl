@@ -27,7 +27,7 @@
 </div>
     
     <div class="parabanda">
-	<img src="/UNLP/images/marca_libros.png" width="292" height="145" /></div>
+        <a href=""><img src="/UNLP/images/marca_libros.png" width="292" height="145" /></a></div>
 
 	<div class="contenedor_derecho">
 		<div class="menu">
@@ -79,7 +79,7 @@
 	
 	
 		</div>
-                <div class="escudounlp"><img src="/UNLP/images/escudo_unlp.png" /></div>
+                                <div class="escudounlp"><a href='http://www.unlp.edu.ar/' target="_blank"><img src="/UNLP/images/escudo_unlp.png" /></a></div>
 	
 	</div>
                                
