@@ -52,27 +52,32 @@ body {
     font-size: 12px;
     
 }
-
-
 .pkp_structure_foot .col1 {
     width: 93px;
     float: left;
-    margin-left: 10px;
 }
 .pkp_structure_foot .col2 {
-    width: 50%;
+    width: 23%;
     float: left;
     background-image: url(../images/marcador.png);
     background-repeat: no-repeat;
     background-position: 20px 0px;
 }
 .pkp_structure_foot .col3 {
-    width: 48%;
+    width: 43%;
     float: left;
-    background-image: url(../images/marcador.png);
     background-repeat: no-repeat;
     background-position: 20px 0px;
 }
+
+.pkp_structure_foot .col4 {
+	width: 30%;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: 20px 0px;
+	height: 100px;
+}
+
 .pkp_structure_foot .col2y3 {
     float: left;
     width: 90%;
@@ -94,6 +99,32 @@ body {
 .pkp_structure_body .pkp_structure_content {
     height: 500px;
     background-position: center top;
+}
+
+.pkp_structure_foot .col2y3 .col3 .cc p {
+	float: left;
+	margin: 0px 0px 0px 5px;
+	width: 300px;
+}
+.pkp_structure_foot .col2y3 .col3 .redes {
+	width: 300px;
+	height: 60px;
+}
+.pkp_structure_foot .col2y3 .col3 .cc {
+	width: 100%;
+	display: block;
+}
+.pkp_structure_foot .col2y3 .col4 ul {
+list-style-type:none;
+}
+
+.pkp_structure_foot .col2y3 .col4 .ubicacion {
+	float: left;
+	margin-left: 10px;
+}
+.pkp_structure_foot .col2y3 .col4 .ubicacion p {
+	color: #FFFFFF;
+	margin-top: 5px;
 }
 
 .pkp_structure_head {
