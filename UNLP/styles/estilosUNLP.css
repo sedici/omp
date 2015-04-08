@@ -99,6 +99,7 @@ body {
 .pkp_structure_body .pkp_structure_content {
     height: 500px;
     background-position: center top;
+    width : 100%;
 }
 
 .pkp_structure_foot .col2y3 .col3 .cc p {
