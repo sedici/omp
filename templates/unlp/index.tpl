@@ -22,140 +22,29 @@
     *}
     <div id="wrap" class="carrusel-portada gris rondedbox">  
         <ul id="mycarousel" class="jcarousel-skin-tango">
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/411"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=411" 
-                                                                                                alt="Ser humano" data-caption="#publishedMonograph-411-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/411"> Ser humano</a>
+           {foreach from=$publishedMonographs item=publishedMonograph}ddd
+            {assign var="submissionId" value=$publishedMonograph->getId()}
+              <li>
+               <div class="destacado">
+                    <div class="portada"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=362" 
+                    <div class="detalle">
+                     <div class="detalles_del_item">
+                            <h2>Título destaqueited</h2>
+                            <h1> Desastres Naturales</h1>
+                            <ul><li><strong>Autor</strong> Alejandra Natalia Araya Espinoza,<br />
+                                    Ariadna Tal&iacute;a Biotti Silva, Juan Guillermo Prado Ocaranza</li>
+                                <li><strong>Lugar de publicaci&oacute;</strong>n Chile</li>
+                                <li><strong>Editorial</strong> Universidad de Chile, Archivo Central Andr&eacute;s Bello </li>
+                                <li><strong>ISBN</strong> 9789561908246</li></ul>
+
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/398"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=398" 
-                                                                                                alt="Caracterización de biomasa leñosa con fines energéticos disponible en Chile" data-caption="#publishedMonograph-398-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/398"> Caracterización de biomasa leñosa con fines energéticos disponible en Chile</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/390"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=390" 
-                                                                                                alt="Sistema Interamericano de Derechos Humanos" data-caption="#publishedMonograph-390-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/390"> Sistema Interamericano de Derechos Humanos</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/386"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=386" 
-                                                                                                alt="Iniciativa latinoamericana para el avance de los derechos humanos de las mujeres" data-caption="#publishedMonograph-386-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/386"> Iniciativa latinoamericana para el avance de los derechos humanos de las mujeres</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/363"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=363" 
-                                                                                                alt="Control biológico de enfermedades de las plantas en Chile" data-caption="#publishedMonograph-363-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/363"> Control biológico de enfermedades de las plantas en Chile</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/362"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=362" 
-                                                                                                alt="Experiencias de prácticas pedagógicas en alfabetización inicial" data-caption="#publishedMonograph-362-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/362"> Experiencias de prácticas pedagógicas en alfabetización inicial</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/357"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=357" 
-                                                                                                alt="Insectos y ácaros de importancia agrícola y cuarentenaria en Chile" data-caption="#publishedMonograph-357-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/357"> Insectos y ácaros de importancia agrícola y cuarentenaria en Chile</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/351"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=351" 
-                                                                                                alt="Oriente medio" data-caption="#publishedMonograph-351-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/351"> Oriente medio</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/350"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=350" 
-                                                                                                alt="Publicaciones en el campo de la epistemología de las ciencias sociales" data-caption="#publishedMonograph-350-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/350"> Publicaciones en el campo de la epistemología de las ciencias sociales</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/337"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=337" 
-                                                                                                alt="Biblioteca del Instituto Nacional y de la Universidad de Chile" data-caption="#publishedMonograph-337-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/337">La Biblioteca del Instituto Nacional y de la Universidad de Chile</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/306"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=306" 
-                                                                                                alt="Derecho internacional de la Antártida" data-caption="#publishedMonograph-306-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/306"> Derecho internacional de la Antártida</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/289"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=289" 
-                                                                                                alt="Corea, perspectivas desde América Latina" data-caption="#publishedMonograph-289-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/289"> Corea, perspectivas desde América Latina</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/282"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=282" 
-                                                                                                alt="América Latina en el mundo" data-caption="#publishedMonograph-282-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/282"> América Latina en el mundo</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/254"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=254" 
-                                                                                                alt="Etica e innovación tecnológica" data-caption="#publishedMonograph-254-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/254"> Etica e innovación tecnológica</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/245"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=245" 
-                                                                                                alt="Bioética en América Latina" data-caption="#publishedMonograph-245-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/245"> Bioética en América Latina</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/236"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=236" 
-                                                                                                alt="Estadística descriptiva, probablilidad e inferencia" data-caption="#publishedMonograph-236-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/236"> Estadística descriptiva, probablilidad e inferencia</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/203"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=203" 
-                                                                                                alt="Constructividad y arquitectura" data-caption="#publishedMonograph-203-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/203"> Constructividad y arquitectura</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/5"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=5" 
-                                                                                              alt="Bicentenario de Hispanoamérica" data-caption="#publishedMonograph-5-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/5"> Bicentenario de Hispanoamérica</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/3"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=3" 
-                                                                                              alt="Materia y memoria: tesoros patrimoniales de la Universidad de Chile" data-caption="#publishedMonograph-3-caption" /></a>
-                    <a href="http://www.libros.uchile.cl/index.php/sisib/catalog/book/3"> Materia y memoria: tesoros patrimoniales de la Universidad de Chile</a>
-                </div>
-            </li>
-            <br>
+              </li>
+           
+        {/foreach}
+          
+           
         </ul>
 
     </div>
@@ -176,8 +65,6 @@
                                 <li><strong>ISBN</strong> 9789561908246</li></ul>
 
                         </div>
-
-
                     </div>
                 </div>
             {/if}
@@ -187,8 +74,8 @@
                 <div class="rotulo">Unidades </div>
                 <ul>
                     {iterate from=browseSeries item=browseSeriesItem}
-                    <li>{$browseSeriesItem->getLocalizedTitle()|escape}</li>
-                        {/iterate}
+                        <li>{$browseSeriesItem->getLocalizedTitle()|escape}</li>
+                    {/iterate}
 
                 </ul>
             </div>
@@ -217,7 +104,11 @@
 
         <div class="areas_tematicas">
             <div class="rotulo">Explore nuestras colecciones </div>
-
+             
+            
+             {iterate from=browseCategories item=browseCategory}
+             <li><a href='{$browseCategory->getPath()|escape}">'>{$browseCategory->getLocalizedTitle()|escape}</a></li>
+             {/iterate}           
             <div class="linea">
                 <div class="icon"><img src="/UNLP/images/icono_area.png" />
                     <div class="texto_icon">Ciencias Agropecuarias</div>
