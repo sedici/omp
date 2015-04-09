@@ -22,6 +22,10 @@ switch ($op) {
             	define('HANDLER_CLASS', 'IndexHandler');
 		import('pages.index.IndexHandler');
 		break;
+         case 'unidades':
+            	define('HANDLER_CLASS', 'UnlpHandler');
+		import('pages.unlp.UnlpHandler');
+		break;      
 }
 
 ?>
