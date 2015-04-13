@@ -22,7 +22,7 @@
     *}
     <div id="wrap" class="carrusel-portada gris rondedbox">  
         <ul id="mycarousel" class="jcarousel-skin-tango">
-           {foreach from=$publishedMonographs item=publishedMonograph}ddd
+           {foreach from=$publishedMonographs item=publishedMonograph}
             {assign var="submissionId" value=$publishedMonograph->getId()}
               <li>
                <div class="destacado">

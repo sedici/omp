@@ -16,8 +16,34 @@
 {/if}
 
 <div class="catalogContainer">
+<div class="temario">
+<h1>Áreas temáticas</h1>
+<ul class="areas">
+{iterate from=browseCategories item=browseCategory}
+             <li><a href='{$browseCategory->getPath()|escape}'>{$browseCategory->getLocalizedTitle()|escape}</a></li>
+{/iterate}  
+</ul>
 
-{if $category}
+</div>
+<div id="medio">
+<h1>Todos los t&iacute;tulos </h1>
+<div class="orden"></div>
+<div class="listadoitems">
+<ul class="items">
+<li>
+<div class="portada"><img src="portada.png" /></div><div class="contenido">
+<h1>Titulo de la obra espectacular que usted quiere ver</h1>
+<p> Descripción de la obra espectacular que usted desea ver.
+MIra si no. Mirá</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+    
+    
+    {if $category}
 	{assign var="image" value=$category->getImage()}
 	{if $category->getLocalizedDescription() || $image}
 		<div class="pkp_catalog_categoryDescription">
