@@ -19,7 +19,7 @@ import('classes.handler.Handler');
 // import UI base classes
 import('lib.pkp.classes.linkAction.LinkAction');
 import('lib.pkp.classes.core.JSONMessage');
-
+import ('classes.unlp.CategoryUNLPDAO');
 class CatalogHandler extends Handler {
 	/**
 	 * Constructor
@@ -119,7 +119,12 @@ class CatalogHandler extends Handler {
 			$templateMgr->assign('newReleasesMonographs', $newReleases);
 			// Display
 		}
-		$templateMgr->display('catalog/category.tpl');
+		//$templateMgr->display('catalog/category.tpl');
+                $categoryUNLPDao = DAORegistry::getDAO('CategoryUNLPDAO');
+		//$categories = $categoryUNLPDao->getAllParent($press->getId());
+		//$templateMgr->assign('browseCategories', $categories);
+                $templateMgr->display('unlp/category.tpl');
+                
 	}
 
 	/**
