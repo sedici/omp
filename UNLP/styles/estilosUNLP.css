@@ -387,19 +387,74 @@ list-style-type:none;
 .col_secundaria .relacionados .links_relacionados .img_detail {
 	padding: 4px;
 }
-#footer #col2y3 #col4 .ubicacion {
-	float: left;
-	margin-left: 10px;
-}
-#footer #col2y3 #col4 .ubicacion p {
-	color: #FFFFFF;
-	margin-top: 5px;
-}
+
 .col_principal .destacado .detalle .detalles_del_item .estrellas {
 	background-image: url(../images/estrellas.png);
 	width: 86px;
 	height: 20px;
 	background-position: 0px 195px;
+}
+
+
+.temario .areas li {
+	list-style-type: none;
+	font-family: arial;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+	line-height: 1.5;
+}
+.temario h1, .medio h1 {
+	color: #6dc6c1;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+}
+.temario {
+	font-family: arial;
+	margin: 10px 5px 0px 10px;
+	width: 20%;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #dedede;
+	float: left;
+}
+.temario .areas {
+	margin: 0;
+}
+.medio {
+	float: left;
+	width: 50%;
+	margin: 10px 0px 0px 0px;
+}
+.medio .listadoitems .items li {
+	display: block;
+	width: 600px;
+	height: 140px;
+	list-style-type: none;
+	margin: 10px 0px 0px 0px;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	padding: 20px 0px 10px 0px;
+}
+.medio .listadoitems .items {
+	margin: 0px;
+}
+.medio .listadoitems .items .portada {
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding: 2px;
+}
+.medio .listadoitems .items .contenido {
+	width: 79%;
+	float: left;
+	height: 100px;
+}
+.medio .listadoitems .items .contenido h1 {
+	color: black;
+}
+.medio .listadoitems .items .contenido p {
+	font-size: 12px;
 }
 /************************************Estilo Lucas*****************************************/
 
