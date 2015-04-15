@@ -574,4 +574,143 @@ Tu servidor soporta actualmente mbstring: <strong>{$supportsMBString}</strong>]]
 	<!-- Debug messages -->
 	<message key="debug.notes.currencyListLoad">Lista de divisas cargada "{$filename}" desde XML</message>
 	<message key="debug.notes.helpMappingLoad">XML actualizado ayuda al fichero de mapeo {$filename} en la búsqueda de {$id}.</message>
+
+ <!-- Nuevas traducciones-->
+
+<message key="NAVIGATION.MANAGEMENT">Administracion</message>
+<message key="common.tasks">Tareas</message>
+<message key="DASHBOARD.TASK">Libros</message>
+<message key="submission.title">Título de libro</message>
+<message key="DASHBOARD.SUBMISSION">Submission</message>
+<message key="submission.mySubmissions">Nuestra submission de Autor</message>
+<message key="common.queue.long.submissionsUnassigned">Submissions no asignados</message>
+<message key="common.queue.long.myAssigned">Submission asignadas</message>
+<message key="NAVIGATION.MANAGEMENT">Administracion</message>
+<message key="NAVIGATION.SETTINGS">Ajustes</message>
+<message key="CONTEXT.CONTEXT">Editorial</message>
+<message key="MANAGER.WEBSITE">Página Web</message>
+<message key="MANAGER.WORKFLOW">Area de Trabajo</message>
+<message key="MANAGER.DISTRIBUTION">Distribución</message>
+<message key="NAVIGATION.ACCESS">Usuarios y Roles</message>
+<message key="NAVIGATION.TOOLS">Herramientas</message>
+<message key="NAVIGATION.TOOLS.IMPORTEXPORT">Importar-Exportar</message>
+<message key="NAVIGATION.TOOLS.STATISTICS">Estadísticas</message>
+<message key="common.takeMeThere">Llevarme allí</message>
+<message key="MANAGER.AFFILIATIONANDSUPPORT">Sponsor</message>
+<message key="manager.setup.sponsors">Organización de los Sponsors</message>
+<message key="manager.setup.contextName">Nombre de la Editorial</message>
+<message key="manager.masthead.title">Integrantes de la Editorial</message>
+<message key="manager.setup.authorGuidelines">Directrices de Autores</message>
+<message key="grid.action.addSponsor">Adherir sponsor</message>
+<message key="grid.action.addContributor">Adherir contribuyente</message>
+<message key="grid.action.order">Orden</message>
+<message key="grid.action.addSeries">Agregar Serie</message>
+<message key="manager.website.title">Ajustes Título Web</message>
+<message key="manager.website.appearance">Forma de aparición de la Web</message>
+<message key="manager.setup.appearanceDescription">Descripción</message>
+<message key="manager.setup.homepageContent">Contenido</message>
+<message key="manager.setup.newReleases">Nuevos lanzamientos</message>
+<message key="manager.setup.displayNewReleases">Aparición de nuevos lanzamientos en página central</message>
+<message key="manager.setup.featuredBooks">Libro destacado</message>
+<message key="manager.setup.displayFeaturedBooks">Libro destacado en la página central</message>
+<message key="manager.setup.inSpotlight">Remarcar</message>
+<message key="manager.setup.displayInSpotlight">Remarcar libro en página central</message>
+<message key="manager.setup.pageHeader">Cabecera de pagina central</message>
+<message key="manager.setup.contextName">Nombre de Editorial</message>
+<message key="manager.setup.logo">Logo</message>
+<message key="manager.setup.pageFooter">Cabecera Alternativa</message>
+<message key="manager.setup.layout">Disposición de la Editorial</message>
+<message key="manager.setup.useStyleSheet">Hoja de Estilo de la Editorial</message>
+<message key="manager.setup.layout.theme">Tema</message>
+<message key="manager.setup.layout.blockManagement">Administración Barra Lateral</message>
+<message key="manager.website.information">Administrar Datos Website</message>
+<message key="grid.columns.locale">Local</message>
+<message key="manager.language.ui">UI</message>
+<message key="manager.language.submissions">Submission</message>
+<message key="manager.language.forms">Forma</message>
+<message key="admin.languages.installLocale">Instalar lenguaje Local</message>
+<message key="common.plugins">Plugins</message>
+<message key="grid.plugin.allCategories">Publicar Archivos</message>
+<message key="plugins.categories.viewableFiles">Agregar metadatos</message>
+<message key="plugins.categories.metadata">Hacer público los Identificadores</message>
+<message key="plugins.categories.publds">Bloques</message>
+<message key="common.plugins">Plugins</message>
+<message key="plugins.categories.viewableFiles">Archivos Plugins Publicados</message>
+<message key="plugins.categories.metadata">Plugins Metadatos</message>
+<message key="plugins.categories.pubIds">Plugin identificados en público</message>
+<message key="manager.plugins.install">Instalar Nuevo Plugin</message>
+<message key="common.name">Nombre</message>
+<message key="grid.action.addAnnouncementType">Agregar Anuncio</message>
+<message key="common.navigation">Navegación</message>
+<message key="grid.content.navigation.footer">Pie de página</message>
+<message key="grid.content.navigation.footer.addCategory">Agregar pie de página</message>
+<message key="grid.content.navigation.socialMedia">Medio Social</message>
+<message key="grid.content.navigation.socialMedia.addSocialLink">Adherir Link Social</message>
+<message key="grid.content.navigation.socialMedia.platform">Agregar Serie</message>
+<message key="grid.action.addSeries">Plataforma</message>
+<message key="grid.content.navigation.socialMedia.inCatalog">Usado en Catálogo</message>
+<message key="grid.content.navigation.footer">Pie de Página</message>
+<message key="grid.content.navigation.footer.addCategory">Adherir categoría</message>
+<message key="grid.content.navigation.footer.noneExist">No hay por el momento pie de página</message>
+<message key="manager.workflow.title">Ajustes de Workflow</message>
+<message key="manager.publication.emails">Emails</message>
+<message key="manager.setup.emailHeader">Cabecera de Email</message>
+<message key="grid.preparedEmails.title">Plantillas de emails preparados</message>
+<message key="manager.emails.addEmail">Adherir plantilla de emails</message>
+<message key="user.role.assistant">Asistente de la Editorial</message>
+<message key="user.role.assistant">Asistente de la Editorial</message>
+<message key="user.role.author">Autor</message>
+<message key="common.itemsPerPage">Items por página</message>
+<message key="manager.publication.productionStage">Producción</message>
+<message key="manager.publication.library">Biblioteca de la Editorial</message>
+<message key="grid.action.addFile">Adherir Archivo</message>
+<message key="settings.libraryFiles.category.contracts">Contratos</message>
+<message key="settings.libraryFiles.category.marketing">Marketing</message>
+<message key="settings.libraryFiles.category.permissions">Permisos</message>
+<message key="settings.libraryFiles.category.reports">Reportes</message>
+<message key="settings.libraryFiles.category.other">Categorías</message>
+<message key="manager.publication.reviewStage">Revisiones</message>
+<message key="manager.setup.reviewOptions">Opciones de Revisión</message>
+<message key="review.ensuringBlindReview">Asegurar una revisión ciega</message>
+<message key="manager.setup.competingInterests">Intereses competitivos</message>
+<message key="manager.setup.internalReviewGuidelines">Directrices de Revisión Interna </message>
+<message key="manager.publication.submissionStage">Submission</message>
+<message key="grid.action.order">Orden</message>
+<message key="grid.genres.title">Géneros</message>
+<message key="grid.action.order">Orden</message>
+<message key="manager.distribution.title">Ajustes de Distribución</message>
+<message key="manager.distribution.indexing">Indexar</message>
+<message key="manager.paymentMethod">Pagos</message>
+<message key="manager.setup.registerForIndexing">Registrar Editorial para indexar</message>
+<message key="manager.setup.registerForIndexingDescription">Para tener los contenidos de la Editorial indexada dentro de un sistema de distribucion global de busqueda de datos, registre (https://pkp.sfu.ca/registration/) su Editorial URL con el cosechador OMP (http://pkp.sfu.ca/ohs/). Esta herramienta colecta los metadatos de cada itema indexado en la editorial, permitiendo buscar las colecciones encontrados entre los sitios de busqueda que suscriban a Open Archives Initiative Protocol for Metadata Harvesting (http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction).
+
+Note que si su sitio administrador ya se registro en este sitio con el cosechador  PKP, su editorial será indexada automáticamente y no tendrá que registrarse en la editorial.
+
+Haga click aqui (https://pkp.sfu.ca/registration/) y acceda http://163.10.34.211/index.php/unlp/index bajo Site URL, y http://163.10.34.211/index.php/unlp/oai bajo Base URL for OAI Archive.</message>
+<message key="manager.paymentMethod.method">Método de pago</message>
+<message key="manager.paymentMethod.currency">Moneda</message>
+<message key="manager.paymentMethod.description">Elija las formas de pago</message>
+<message key="manager.paymentMethod.currency.description">Los pagos hechos directamente por esta página serán nominados en la siguiente moneda</message>
+<message key="manager.paymentMethod.none">Ningún método de pago</message>
+<message key="plugins.paymethod.paypal.displayName">Pago Paypal</message>
+<message key="plugins.paymethod.manual.displayName">Pago Manual</message>
+<message key="plugins.paymethod.manual.settings">Ajustes de Manual de Pago</message>
+<message key="plugins.paymethod.manual.settings.instructions">Instrucciones</message>
+<message key="plugins.paymethod.manual.settings.manualInstructions">Instructor de pagos para usuarios que seleccionan pago manual</message>
+<message key="navigation.access">Usuarios y Roles</message>
+<message key="Manager.siteAccessOptions.siteAccessOptions">Opciones de Acceso al Sitio</message>
+<message key="grid.user.allRoles">Todos los Roles</message>
+<message key="user.noRoles.selectUsersWithoutRoles">Incluir usuarios con ningun rol en la editorial</message>
+<message key="grid.user.currentUsers">Usuarios actuales</message>
+<message key="manager.statistics.reports.generateReport">Generar Reporte</message>
+<message key="NAVIGATION.ARCHIVES">Archivos</message>
+<message key="common.queue.long.submissionsArchived">Submission Archivados</message>
+<message key="submission.authors">Autor</message>
+<message key="submission.title">Título</message>
+
+
+	
+	
+
+
 </locale>
