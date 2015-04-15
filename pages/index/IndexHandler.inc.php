@@ -148,7 +148,7 @@ class IndexHandler extends Handler {
 		$templateMgr->assign('browseSeries', $series);
 
 		$categoryDao = DAORegistry::getDAO('CategoryDAO');
-		$categories = $categoryDao->getByPressId($press->getId());
+		$categories = $categoryDao->getByParentId(0,$press->getId());
 		$templateMgr->assign('browseCategories', $categories);
           	$templateMgr->display('unlp/index.tpl');
                 
