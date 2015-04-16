@@ -11,6 +11,56 @@
 {strip}
     {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
+<style>
+div.ic_myCarousel {
+	margin: 20px auto 0 auto;
+	clear:right;
+}
+.ic_myCarousel .ic_button {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 4px 0 2px;
+	width: 40px;
+	border: 1px solid #eee;
+	background: #ddd;
+}
+.ic_thumbnails {
+	display: inline-block;
+	font: bold 14px Arial, sans-serif;
+}
+div.ic_myCarousel2 .infiniteCarousel {
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 8px #333;
+}
+
+
+/* keep this after the ic_button code for proper border coloring */		
+.ic_myCarousel .ic_active  {
+	background: #fff;
+	border: 1px solid #faa;
+}
+.ic_caption {
+	opacity: .6;
+	background: #fff;
+	font-size: 12px;
+	font-family: arial;
+	padding: 4px 8px;
+	width: auto;
+}
+
+div p {
+    color: #333333;
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 18px;
+    text-shadow: 0 1px 1px #C9C9C9;
+}
+.options {
+	font-size: 16px;
+}
+</style>
+
 
 <div class="col_principal">
 
@@ -20,15 +70,13 @@
     {*  {url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
     {load_url_in_div id="carousel" url=$carouselUrl}
     *}
-    <div id="wrap" class="carrusel-portada gris rondedbox">  
-        <ul id="mycarousel" class="jcarousel-skin-tango">
-           {foreach from=$publishedMonographs item=publishedMonograph}
-            {assign var="submissionId" value=$publishedMonograph->getId()}
-              <li>
-               <div class="destacado">
-                    <div class="portada"><img width="100" height="129" src="http://www.libros.uchile.cl/index.php/sisib/$$$call$$$/submission/cover/cover?monographId=362" 
+    
+    <ul id="carousel">
+	<li><div class="destacado">
+                    <div class="portada"><img src="/UNLP/images/portada_libro.png" /></div>
                     <div class="detalle">
-                     <div class="detalles_del_item">
+
+                        <div class="detalles_del_item">
                             <h2>Título destaqueited</h2>
                             <h1> Desastres Naturales</h1>
                             <ul><li><strong>Autor</strong> Alejandra Natalia Araya Espinoza,<br />
@@ -39,16 +87,62 @@
 
                         </div>
                     </div>
-                </div>
-              </li>
-           
-        {/foreach}
+                </div></li>
+	<li><div class="destacado">
+                    <div class="portada"><img src="/UNLP/images/portada_libro.png" /></div>
+                    <div class="detalle">
+
+                        <div class="detalles_del_item">
+                            <h2>Título destaqueited</h2>
+                            <h1> Desastres Naturales</h1>
+                            <ul><li><strong>Autor</strong> Alejandra Natalia Araya Espinoza,<br />
+                                    Ariadna Tal&iacute;a Biotti Silva, Juan Guillermo Prado Ocaranza</li>
+                                <li><strong>Lugar de publicaci&oacute;</strong>n Chile</li>
+                                <li><strong>Editorial</strong> Universidad de Chile, Archivo Central Andr&eacute;s Bello </li>
+                                <li><strong>ISBN</strong> 9789561908246</li></ul>
+
+                        </div>
+                    </div>
+                </div></li>
+	<li><div class="destacado">
+                    <div class="portada"><img src="/UNLP/images/portada_libro.png" /></div>
+                    <div class="detalle">
+
+                        <div class="detalles_del_item">
+                            <h2>Título destaqueited</h2>
+                            <h1> Desastres Naturales</h1>
+                            <ul><li><strong>Autor</strong> Alejandra Natalia Araya Espinoza,<br />
+                                    Ariadna Tal&iacute;a Biotti Silva, Juan Guillermo Prado Ocaranza</li>
+                                <li><strong>Lugar de publicaci&oacute;</strong>n Chile</li>
+                                <li><strong>Editorial</strong> Universidad de Chile, Archivo Central Andr&eacute;s Bello </li>
+                                <li><strong>ISBN</strong> 9789561908246</li></ul>
+
+                        </div>
+                    </div>
+                </div></li>
+	<li><div class="destacado">
+                    <div class="portada"><img src="/UNLP/images/portada_libro.png" /></div>
+                    <div class="detalle">
+
+                        <div class="detalles_del_item">
+                            <h2>Título destaqueited</h2>
+                            <h1> Desastres Naturales</h1>
+                            <ul><li><strong>Autor</strong> Alejandra Natalia Araya Espinoza,<br />
+                                    Ariadna Tal&iacute;a Biotti Silva, Juan Guillermo Prado Ocaranza</li>
+                                <li><strong>Lugar de publicaci&oacute;</strong>n Chile</li>
+                                <li><strong>Editorial</strong> Universidad de Chile, Archivo Central Andr&eacute;s Bello </li>
+                                <li><strong>ISBN</strong> 9789561908246</li></ul>
+
+                        </div>
+                    </div>
+                </div></li>
+    </ul>
+    
+    
+         
           
            
-        </ul>
-
-    </div>
-        {foreach from=$publishedMonographs item=publishedMonograph}ddd
+        {foreach from=$publishedMonographs item=publishedMonograph}
             {assign var="submissionId" value=$publishedMonograph->getId()}
             {if isset($featuredMonographIds[$submissionId])}
                 <div class="destacado">
@@ -74,7 +168,8 @@
                 <div class="rotulo">Unidades </div>
                 <ul>
                     {iterate from=browseSeries item=browseSeriesItem}
-                        <li>{$browseSeriesItem->getLocalizedTitle()|escape}</li>
+                     <li><a href='catalog/series/{$browseSeriesItem->getPath()|escape}'>{$browseSeriesItem->getLocalizedTitle()|escape}</a></li>    
+                 
                     {/iterate}
 
                 </ul>
@@ -104,61 +199,52 @@
 
         <div class="areas_tematicas">
             <div class="rotulo">Explore nuestras colecciones </div>
-             
-            
-             {iterate from=browseCategories item=browseCategory}
-             <li><a href='{$browseCategory->getPath()|escape}">'>{$browseCategory->getLocalizedTitle()|escape}</a></li>
-             {/iterate}           
-            <div class="linea">
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Ciencias Agropecuarias</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Arte</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Informática</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />Peronismo</div>
-            </div>
-
-            <div class="linea">
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Ciencias Agropecuarias</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Arte</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Informática</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />Peronismo</div>
-            </div>
-
-            <div class="linea">
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Ciencias</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Arquitectura</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />
-                    <div class="texto_icon">Biología</div>
-                </div>
-                <div class="icon"><img src="/UNLP/images/icono_area.png" />Sumbudrule</div>
-            </div>
-
-        </div>
-
-
+                
+            {$categoriaByLine = 4} 
+            {$div = true} 
+            {iterate from=browseCategories item=browseCategory}
+                
+                {if $div} 
+                     <div class="linea">
+                    {$div = false} 
+                {/if} 
+                    <div class="icon"><img src="/UNLP/images/icono_area.png" />
+                       <div class="texto_icon">
+                          <a href='{$browseCategory->getPath()|escape}'>{$browseCategory->getLocalizedTitle()|escape}</a>
+                       </div>
+                     </div>
+                 {if $categoriaByLine = 0} 
+                     {$categoriaByLine = 4}
+                     </div> 
+                    {$div = true} 
+                 {/if}
+                {$categoriaByLine = $categoriaByLine-1}  
+              {/iterate}
+         </div>
     </div>
-
-
 {literal}
 <script>
-    jQuery(document).ready(function() {
-            $('#mycarousel').jcarousel();
-    });
+$(function(){
+	$('#carousel').infiniteCarousel({
+		imagePath: '/UNLP/images/',
+		transitionSpeed:300,
+		displayTime: 6000,
+		internalThumbnails: false,
+		thumbnailType: 'numbers',
+		customClass: 'myCarousel',
+		progressRingColorOpacity: '0,0,0,.9',
+		progressRingBackgroundOn: false,
+		easeLeft: 'easeOutExpo',
+		easeRight:'easeOutQuart',
+		inView: 1,
+		advance: 1,
+		autoPilot: false,
+		prevNextInternal: false,
+		autoHideCaptions: true
+	});
+	
+
+});
 </script>
 {/literal}
 {include file="common/footer.tpl"}
