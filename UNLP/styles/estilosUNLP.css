@@ -396,6 +396,20 @@ list-style-type:none;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .temario .areas li {
 	list-style-type: none;
 	font-family: arial;
@@ -403,6 +417,9 @@ list-style-type:none;
 	margin: 0px;
 	padding: 0px 0px 0px 10px;
 	line-height: 1.5;
+	background-image: url(flechanegra.png);
+	background-repeat: no-repeat;
+	background-position: 8 5;
 }
 .temario h1, .medio h1 {
 	color: #6dc6c1;
@@ -432,11 +449,9 @@ list-style-type:none;
 	height: 140px;
 	list-style-type: none;
 	margin: 10px 0px 0px 0px;
-	border-top: 1px solid #dedede;
-	border-bottom: 1px solid #dedede;
+	border-bottom: 1px solid #6dc6c1;
 	padding: 20px 0px 10px 0px;
-}
-.medio .listadoitems .items {
+}.listadoitems .items {
 	margin: 0px;
 }
 .medio .listadoitems .items .portada {
@@ -456,5 +471,51 @@ list-style-type:none;
 .medio .listadoitems .items .contenido p {
 	font-size: 12px;
 }
+
+
+.temario .areas ul li ul li {
+background-color:red;
+}
+.temario .areas li ul li {
+	background-image: url(flechaverde.png);
+	background-position: 0 7;
+	margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************************************Estilo Lucas*****************************************/
 
