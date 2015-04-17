@@ -8,8 +8,6 @@
 * Display a public-facing monograph in the catalog.
 *}
 
-
-
 <li>
     <div class="portada">
         <a href="{url page="catalog" op="book" path=$publishedMonograph->getId()}">

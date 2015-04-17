@@ -18,11 +18,11 @@
 
 <h1>Todos los t&iacute;tulos </h1>
 <div class="orden"></div>
-<div class="listadoitems" id="monographListContainer">
+<div class="listadoitems">
     {if $publishedMonographs|@count}
         <ul class="items">
             {foreach from=$publishedMonographs item=publishedMonograph}
-                {include file="catalog/monograph.tpl" publishedMonograph=$publishedMonograph}
+                {include file="unlp/monograph.tpl" publishedMonograph=$publishedMonograph}
             {/foreach}
         </ul>
     {/if}
