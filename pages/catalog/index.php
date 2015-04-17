@@ -19,7 +19,8 @@
 switch ($op) {
 	case 'index':
 	case 'category':
-	case 'fullSize':
+        case 'unidades':
+        case 'fullSize':
 	case 'newReleases':
 	case 'series':
 	case 'thumbnail':
