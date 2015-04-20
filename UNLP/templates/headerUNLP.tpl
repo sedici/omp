@@ -27,7 +27,10 @@
 </div>
     
     <div class="parabanda">
-        <a href=""><img src="/UNLP/images/marca_libros.png" width="292" height="145" /></a></div>
+        
+        <a href="{url router=$smarty.const.ROUTE_PAGE context="index"  op="index"}">
+		
+        <img src="/UNLP/images/marca_libros.png" width="292" height="145" /></a></div>
 
 	<div class="contenedor_derecho">
 		<div class="menu">

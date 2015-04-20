@@ -270,6 +270,16 @@ list-style-type:none;
 .exploracion .explo_unidades ul {
 	line-height: 1.7;
 	font-size: 13px;
+        
+}
+.exploracion .explo_unidades ul li  {
+	list-style-type: circle;
+	
+}
+
+.exploracion .explo_unidades ul li a {
+	text-decoration: none;
+	
 }
 .col_secundaria .busqueda {
 	background-image: url(../images/fondo_busqueda.png);
@@ -417,7 +427,7 @@ list-style-type:none;
 	margin: 0px;
 	padding: 0px 0px 0px 10px;
 	line-height: 1.5;
-	background-image: url(flechanegra.png);
+	background-image: url(../images/flechanegra.png);
 	background-repeat: no-repeat;
 	background-position: 8 5;
 }
@@ -443,7 +453,7 @@ list-style-type:none;
 	width: 50%;
 	margin: 10px 0px 0px 0px;
 }
-.medio .listadoitems .items li {
+.listadoitems .items li {
 	display: block;
 	width: 600px;
 	height: 140px;
@@ -451,24 +461,25 @@ list-style-type:none;
 	margin: 10px 0px 0px 0px;
 	border-bottom: 1px solid #6dc6c1;
 	padding: 20px 0px 10px 0px;
-}.listadoitems .items {
+}
+.listadoitems .items {
 	margin: 0px;
 }
-.medio .listadoitems .items .portada {
+.listadoitems .items .portada {
 	width: 20%;
 	float: left;
 	text-align: center;
 	padding: 2px;
 }
-.medio .listadoitems .items .contenido {
+.listadoitems .items .contenido {
 	width: 79%;
 	float: left;
 	height: 100px;
 }
-.medio .listadoitems .items .contenido h1 {
+.listadoitems .items .contenido h1 {
 	color: black;
 }
-.medio .listadoitems .items .contenido p {
+.listadoitems .items .contenido p {
 	font-size: 12px;
 }
 
