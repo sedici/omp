@@ -120,7 +120,12 @@ class CatalogHandler extends Handler {
 			$newReleases = $newReleaseDao->getMonographsByAssoc(ASSOC_TYPE_CATEGORY, $category->getId());
 			$templateMgr->assign('newReleasesMonographs', $newReleases);
 			// Display
-		}
+                }else{
+                    // Fetch the monographs to display
+			$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+			$publishedMonographs =& $publishedMonographDao->getByPressId( $press->getId());
+			$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+                }
 		//$templateMgr->display('catalog/category.tpl');
                 /*
                  * Lines nuevas
@@ -178,37 +183,42 @@ class CatalogHandler extends Handler {
 	 * @return string
 	 */
 	function unidades($args, $request) {
-	    $templateMgr = TemplateManager::getManager($request);
+                $templateMgr = TemplateManager::getManager($request);
 		$press = $request->getPress();
 		$this->setupTemplate($request);
 
 		// Get the series
 		$seriesDao = DAORegistry::getDAO('SeriesDAO');
 		$seriesPath = array_shift($args);
-		$series = $seriesDao->getByPath($seriesPath, $press->getId());
-echo "antes";
-                $templateMgr->assign('series', $series);
-	echo "cc";
-                $additionalArgs = array('type' => 'unidades', 'path' => $series->getPath());
-		$templateMgr->assign('additionalArgs', $additionalArgs);
-echo "ccssssc";
-die;
-		// Fetch the monographs to display
-		$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
-		$publishedMonographs = $publishedMonographDao->getBySeriesId($series->getId(), $press->getId());
-		$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+                if (!empty($seriesPath)){
+                    $series = $seriesDao->getByPath($seriesPath, $press->getId());
+                    $templateMgr->assign('series', $series);
+                    $additionalArgs = array('type' => 'unidades', 'path' => $series->getPath());
+                    $templateMgr->assign('additionalArgs', $additionalArgs);
+                    // Fetch the monographs to display
+                    $publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+                    $publishedMonographs = $publishedMonographDao->getBySeriesId($series->getId(), $press->getId());
+                    $templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
 
-		// Expose the featured monograph IDs and associated params
-		$featureDao = DAORegistry::getDAO('FeatureDAO');
-		$featuredMonographIds = $featureDao->getSequencesByAssoc(ASSOC_TYPE_SERIES, $series->getId());
-		$templateMgr->assign('featuredMonographIds', $featuredMonographIds);
+                    $newReleaseDao = DAORegistry::getDAO('NewReleaseDAO');
+                    $newReleases = $newReleaseDao->getMonographsByAssoc(ASSOC_TYPE_SERIES, $series->getId());
+                    $templateMgr->assign('newReleasesMonographs', $newReleases);
+                    
+                    
+                    // Expose the featured monograph IDs and associated params
+                    $featureDao = DAORegistry::getDAO('FeatureDAO');
+                    $featuredMonographIds = $featureDao->getSequencesByAssoc(ASSOC_TYPE_SERIES, $series->getId());
+                    $templateMgr->assign('featuredMonographIds', $featuredMonographIds);
 
-		// Provide a list of new releases to browse
-		$newReleaseDao = DAORegistry::getDAO('NewReleaseDAO');
-		$newReleases = $newReleaseDao->getMonographsByAssoc(ASSOC_TYPE_SERIES, $series->getId());
-		$templateMgr->assign('newReleasesMonographs', $newReleases);
-
-		// Display
+                }else{
+                    $publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+                    $publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
+                    $templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+                }
+                
+                $series = $seriesDao->getByPressId($press->getId());
+		$templateMgr->assign('browseSeries', $series);
+                // Display
 		$templateMgr->display('unlp/unidades.tpl');
 	}
 

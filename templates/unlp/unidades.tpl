@@ -10,11 +10,26 @@
 {strip}
 {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
-sddsds
-<h2 class="pkp_helpers_text_center"><em>{$series->getLocalizedFullTitle()}</em></h2>
 
+    
 <div class="catalogContainer">
+    <div class="temario">
+        <h1>Unidades Academicas</h1>
+        <ul class="areas">
+             {iterate from=browseSeries item=browseSeriesItem}
+                  <li>
+                      <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}">
+                        {$browseSeriesItem->getLocalizedTitle()|escape}
+                      </a>
+                  </li>    
+                {/iterate}
+        </ul>
 
+    </div>
+       <div class="medio">
+            {* Include the full monograph list *}
+            {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
+        </div>
 {if $series}
 	{assign var="image" value=$series->getImage()}
 	{if $series->getLocalizedDescription() || $image}
@@ -27,23 +42,8 @@ sddsds
 			{$series->getLocalizedDescription()|strip_unsafe_html}
 		</div>
 	{/if}
-
-	{* Include the carousel view of featured content *}
-	{if $featuredMonographIds|@count}
-		{include file="catalog/carousel.tpl" publishedMonographs=$publishedMonographs featuredMonographIds=$featuredMonographIds}
-	{/if}
-
-	{* Include the highlighted feature *}
-	{include file="catalog/feature.tpl" publishedMonographs=$publishedMonographs featuredMonographIds=$featuredMonographIds}
-
-	{* Include the new release monograph list *}
-	{if !empty($newReleasesMonographs)}
-		{include file="catalog/monographs.tpl" publishedMonographs=$newReleasesMonographs monographListTitleKey="navigation.newReleases"}
-	{/if}
-
-	{* Include the full monograph list *}
-	{include file="catalog/monographs.tpl" publishedMonographs=$publishedMonographs}
 {/if}
+
 </div><!-- catalogContainer -->
 
 {include file="common/footer.tpl"}

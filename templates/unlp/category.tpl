@@ -20,17 +20,17 @@
         <h1>Áreas temáticas</h1>
         <ul class="areas">
             {iterate from=browseCategories item=browseCategory}
-            <li><a href='category/{$browseCategory->getPath()|escape}'>{$browseCategory->getLocalizedTitle()|escape}</a></li>
+            <li>
+                 <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
+                {$browseCategory->getLocalizedTitle()|escape}</a></li>
                 {/iterate}  
         </ul>
 
     </div>
-    {if $category}     
         <div class="medio">
             {* Include the full monograph list *}
             {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
         </div>
-{/if}
 </div><!-- catalogContainer -->
 
 {include file="common/footer.tpl"}
