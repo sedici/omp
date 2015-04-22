@@ -279,6 +279,7 @@ list-style-type:none;
 
 .exploracion .explo_unidades ul li a {
 	text-decoration: none;
+        color: #333;
 	
 }
 .col_secundaria .busqueda {
@@ -405,21 +406,6 @@ list-style-type:none;
 	background-position: 0px 195px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .temario .areas li {
 	list-style-type: none;
 	font-family: arial;
@@ -430,6 +416,7 @@ list-style-type:none;
 	background-image: url(../images/flechanegra.png);
 	background-repeat: no-repeat;
 	background-position: 8 5;
+        
 }
 .temario h1, .medio h1 {
 	color: #6dc6c1;
@@ -486,6 +473,11 @@ list-style-type:none;
 
 .temario .areas ul li ul li {
 background-color:red;
+}
+
+.temario .areas  li a{
+    color: #333;
+     text-decoration: none;
 }
 .temario .areas li ul li {
 	background-image: url(flechaverde.png);
