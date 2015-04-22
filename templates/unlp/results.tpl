@@ -13,6 +13,6 @@
 {/strip}
 
 {* Include the full monograph list *}
-{include file="catalog/monographs.tpl" publishedMonographs=$publishedMonographs}
+{include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
 
 {include file="common/footer.tpl"}
