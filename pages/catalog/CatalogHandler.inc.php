@@ -252,7 +252,7 @@ class CatalogHandler extends Handler {
 		$templateMgr->assign('publishedMonographs', $publishedMonographs);
 
 		// Display
-		$templateMgr->display('catalog/results.tpl');
+		$templateMgr->display('unlp/results.tpl');
 	}
 
 	/**
