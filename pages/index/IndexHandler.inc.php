@@ -81,7 +81,7 @@ class IndexHandler extends Handler {
 	function _displayPressIndexPage($press, &$templateMgr) {
 
 		// Display New Releases
-		if ($press->getSetting('displayNewReleases')) {
+                if ($press->getSetting('displayNewReleases')) {
 			$newReleaseDao = DAORegistry::getDAO('NewReleaseDAO');
 			$newReleases = $newReleaseDao->getMonographsByAssoc(ASSOC_TYPE_PRESS, $press->getId());
 			$templateMgr->assign('publishedMonographs', $newReleases);
@@ -115,7 +115,7 @@ class IndexHandler extends Handler {
 
 		// Display Featured Books
 		$displayFeaturedBooks = $press->getSetting('displayFeaturedBooks');
-		$templateMgr->assign('displayFeaturedBooks', $displayFeaturedBooks);
+	        $templateMgr->assign('displayFeaturedBooks', $displayFeaturedBooks);
 
                 
                  
