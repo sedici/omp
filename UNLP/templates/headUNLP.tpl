@@ -1,10 +1,9 @@
-<link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/>
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
-<script type="text/javascript" src="{$baseUrl}/UNLP/js/jquery.jcarousel.pack.js"></script>
-<script type="text/javascript" src="{$baseUrl}/UNLP/js/carousel.js"></script>
 
-<link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/jquery.jcarousel.css" />
-<link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/skin.css" />
+<script type="text/javascript" src="{$baseUrl}/UNLP/js/jquery.bxslider.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/jquery.bxslider.css" />
+<link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
