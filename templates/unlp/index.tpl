@@ -46,7 +46,7 @@
         <div class="titulo">Busque el libro que desea</div>
         <div class="subtitulo"></div>
         <div class="barra_">
-            {include file="header/search.tpl"}
+            {include file="unlp/search.tpl"}
             <!--<div class="barrita"></div>
                 <div class="lupita"></div>
             -->
@@ -70,7 +70,7 @@
                         {$browseCategory->getLocalizedTitle()|escape}</a>
                 </div>
             </div>
-            {if $categoriaByLine = 0} 
+            {if $categoriaByLine = 0}
                 {$categoriaByLine = 4}
             </div> 
             {$div = true} 
