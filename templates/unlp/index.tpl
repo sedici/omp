@@ -11,99 +11,23 @@
 {strip}
     {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
-<style>
-    div.ic_myCarousel {
-        margin: 20px auto 0 auto;
-        clear:right;
-    }
-    .ic_myCarousel .ic_button {
-        float: left;
-        height: 40px;
-        line-height: 40px;
-        margin: 0 4px 0 2px;
-        width: 40px;
-        border: 1px solid #eee;
-        background: #ddd;
-    }
-    .ic_thumbnails {
-        display: inline-block;
-        font: bold 14px Arial, sans-serif;
-    }
-    div.ic_myCarousel2 .infiniteCarousel {
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        box-shadow: 0px 0px 8px #333;
-    }
 
-
-    /* keep this after the ic_button code for proper border coloring */		
-    .ic_myCarousel .ic_active  {
-        background: #fff;
-        border: 1px solid #faa;
-    }
-    .ic_caption {
-        opacity: .6;
-        background: #fff;
-        font-size: 12px;
-        font-family: arial;
-        padding: 4px 8px;
-        width: auto;
-    }
-
-    div p {
-        color: #333333;
-        font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
-        font-size: 18px;
-        text-shadow: 0 1px 1px #C9C9C9;
-    }
-    .options {
-        font-size: 16px;
-    }
-</style>
-
+   
 
 <div class="col_principal">
-    <ul id="carousel">
-       
-     {foreach from=$publishedMonographs item=publishedMonograph}
-        {assign var="submissionId" value=$publishedMonograph->getId()}
-        {if isset($featuredMonographIds[$submissionId])}
-            <li><div class="destacado">
-                <div class="portada"><img src="/UNLP/images/portada_libro.png" /></div>
-                <div class="detalle">
-
-                    <div class="detalles_del_item">
-                        <h2>Título destaqueited</h2>
-                        <h1> Desastres Naturales</h1>
-                        <ul><li><strong>Autor</strong> Alejandra Natalia Araya Espinoza,<br />
-                                Ariadna Tal&iacute;a Biotti Silva, Juan Guillermo Prado Ocaranza</li>
-                            <li><strong>Lugar de publicaci&oacute;</strong>n Chile</li>
-                            <li><strong>Editorial</strong> Universidad de Chile, Archivo Central Andr&eacute;s Bello </li>
-                            <li><strong>ISBN</strong> 9789561908246</li></ul>
-
-                    </div>
-                </div>
-            </div></li>
-        {/if}
-    {/foreach}
-       
- 
-    </ul>
-
-
-
-
-
-    
+   {* Include the carousel view of featured content *}
+{url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
+{load_url_in_div id="carousel" url=$carouselUrl}
+   
     <div class="exploracion">
         <div class="explo_unidades">
             <div class="rotulo">Unidades </div>
             <ul>
                 {iterate from=browseSeries item=browseSeriesItem}
-                  <li>
-                      <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
-                      {$browseSeriesItem->getLocalizedTitle()|escape}</a></li>    
-                {/iterate}
+                <li>
+                    <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
+                        {$browseSeriesItem->getLocalizedTitle()|escape}</a></li>    
+                        {/iterate}
             </ul>
         </div>
 
@@ -142,8 +66,8 @@
             {/if} 
             <div class="icon"><img src="/UNLP/images/icono_area.png" />
                 <div class="texto_icon">
-                     <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
-               {$browseCategory->getLocalizedTitle()|escape}</a>
+                    <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
+                        {$browseCategory->getLocalizedTitle()|escape}</a>
                 </div>
             </div>
             {if $categoriaByLine = 0} 
