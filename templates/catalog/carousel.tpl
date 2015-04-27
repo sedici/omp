@@ -19,8 +19,48 @@
 	{rdelim});
 </script>
 
+{literal}
+    <script>
+    $(document).ready(function() {
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            pager: false
+        });
+    });
+</script>
+{/literal} 
+
+
+ <ul class="bxslider">
+        {foreach from=$publishedMonographs item=publishedMonograph}
+            {assign var="submissionId" value=$publishedMonograph->getId()}
+            {if isset($featuredMonographIds[$submissionId])}
+                <li>
+                    <div class="destacado">
+                        <div class="portada">
+                            <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
+                        </div>
+                        <div class="detalle">
+
+                            <div class="detalles_del_item">
+                                <h2>Título Destacado</h2>
+                                <h1> <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}">{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</a></h1>
+                                <ul>
+                                    <li>
+                                        <strong>Autor:</strong> {$publishedMonograph->getAuthorString()|escape}
+                                    </li>
+                                    <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}">{translate key="common.plusMore"}</a></li>
+                                   
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {/if}
+        {/foreach}
+    </ul>
 <!-- Features carousel -->
-<div class="pkp_catalog_carousel_wrapper pkp_helpers_clear pkp_helpers_dotted_underline" id="featuresCarousel">
+<!--<div class="pkp_catalog_carousel_wrapper pkp_helpers_clear pkp_helpers_dotted_underline" id="featuresCarousel">
 	<h2 class="pkp_helpers_text_center"><em>{translate key="catalog.featuredBooks"}</em></h2>
 	<div class="carousel_control" id="nextCarouselItem"></div>
 	<div class="carousel_control" id="previousCarouselItem"></div>
@@ -48,5 +88,5 @@
 		{/foreach}
 	</ul>
 </div>
-
+-->
 {/if}{* $publishedMonographs|@count > 0 *}
