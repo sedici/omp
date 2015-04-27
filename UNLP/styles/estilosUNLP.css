@@ -238,7 +238,8 @@ list-style-type:none;
 }
 .col_principal .destacado .detalle .detalles_del_item {
 	float: left;
-	padding-left: 0px;
+	padding-left: 15px;
+        width: 70%;
 }
 .col_principal .destacado .detalle .detalles_del_item h2 {
 	background-color: #98D3D1;
@@ -486,7 +487,9 @@ background-color:red;
 }
 
 
-
+.bx-wrapper .bx-viewport {
+    height: 350px !important;
+}
 
 
 
