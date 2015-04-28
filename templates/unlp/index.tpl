@@ -12,13 +12,51 @@
     {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
 
-   
+
+<div id="col_principal">
+
+<div id="destacado">
+<h1> Desastres Naturales</h1>
+<div class="portada"><img src="portada_thumb.png" width="100" height="132" /></div>
+<div class="detalle">
+
+<div class="detalles_del_item">
+<ul><li><strong>Autor</strong> Alejandra Natalia Araya Espinoza,<br />
+  Ariadna Tal&iacute;a Biotti Silva, Juan Guillermo Prado Ocaranza</li>
+<li><strong>Lugar de publicaci&oacute;n</strong> Chile</li>
+<li><strong>Editorial</strong> Universidad de Chile, Archivo Central Andr&eacute;s Bello </li>
+<li><strong>ISBN</strong> 9789561908246</li>
+<li style="list-style-type:none;"><div class="estrellas"></div></li>
+</ul>
+
+</div>
+
+
+</div>
+</div>
+
+<div class="resena">
+<h1>Reseña</h1>
+<p>Morbi pharetra tincidunt posuere. Quisque feugiat sed arcu gravida ultricies. Aliquam erat volutpat. Quisque tempor nunc in tellus sodales pulvinar. Vivamus rhoncus lectus id enim convallis ultrices. Ut magna tortor, euismod in tortor ut, tempus molestie est. Etiam porttitor faucibus hendrerit. Sed euismod, erat eget porttitor condimentum, tellus leo lacinia augue, id consectetur tellus metus eu lectus. Fusce efficitur quam metus, id finibus elit mattis eget. Quisque convallis odio quis nulla elementum, eget facilisis nisi sagittis. Phasellus efficitur at dolor non semper. Phasellus nec facilisis nisi.</p>
+</div>
+<div class="contenidos">
+<h1>Tabla de contenidos </h1>
+<ul>
+  <li>T&iacute;tulo</li>
+  <li>Introducción</li>
+<li>Capitulo 1</li>
+<li>Capítulo 2</li>
+<li>Capítulo 3</li>
+</ul>
+</div>
+
+</div>
 
 <div class="col_principal">
-   {* Include the carousel view of featured content *}
-{url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
-{load_url_in_div id="carousel" url=$carouselUrl}
-   
+    {* Include the carousel view of featured content *}
+    {url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
+    {load_url_in_div id="carousel" url=$carouselUrl}
+
     <div class="exploracion">
         <div class="explo_unidades">
             <div class="rotulo">Unidades </div>
@@ -30,7 +68,6 @@
                         {/iterate}
             </ul>
         </div>
-
         <div class="links_relacionados">
             <div class="rotulo">Sitios relacionados</div>
             <a href="http://sedici.unlp.edu.ar/" target="_blank"><img src="/UNLP/images/link_relacionado_01_200.png" width="200" height="70" /></a>
@@ -47,9 +84,6 @@
         <div class="subtitulo"></div>
         <div class="barra_">
             {include file="unlp/search.tpl"}
-            <!--<div class="barrita"></div>
-                <div class="lupita"></div>
-            -->
         </div>
     </div>
 
@@ -79,29 +113,4 @@
         {/iterate}
     </div>
 </div>
-{literal}
-    <script>
-        $(function () {
-            $('#carousel').infiniteCarousel({
-                imagePath: '/UNLP/images/',
-                transitionSpeed: 300,
-                displayTime: 6000,
-                internalThumbnails: false,
-                thumbnailType: 'numbers',
-                customClass: 'myCarousel',
-                progressRingColorOpacity: '0,0,0,.9',
-                progressRingBackgroundOn: false,
-                easeLeft: 'easeOutExpo',
-                easeRight: 'easeOutQuart',
-                inView: 1,
-                advance: 1,
-                autoPilot: false,
-                prevNextInternal: false,
-                autoHideCaptions: true
-            });
-
-
-        });
-    </script>
-{/literal}
 {include file="common/footer.tpl"}
