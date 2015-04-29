@@ -220,14 +220,14 @@
 	<message key="grid.reviewAttachments.availableFiles">Available Files</message>
 
 	<!-- series/categories/series -->
-	<message key="series.series">Series</message>
+	<message key="series.series">Unidad Academica</message>
 	<message key="series.featured">Featured</message>
 	<message key="series.featured.description">This series will appear on the main navigation</message>
 	<message key="series.path">Path</message>
 
-	<message key="grid.category.categories">Categories</message>
-	<message key="grid.category.add">Add Category</message>
-	<message key="grid.category.edit">Edit Category</message>
+	<message key="grid.category.categories">Áreas temáticas</message>
+	<message key="grid.category.add">Add Áreas temáticas</message>
+	<message key="grid.category.edit">Edit Áreas temáticas</message>
 	<message key="grid.category.name">Name</message>
 	<message key="grid.category.path">Path</message>
 	<message key="grid.category.urlWillBe">The category's URL will be {$sampleUrl}</message>
@@ -244,8 +244,8 @@
 	<message key="catalog.manage">Catalog Management</message>
 	<message key="catalog.manage.homepage">Homepage</message>
 	<message key="catalog.manage.newReleases">New Releases</message>
-	<message key="catalog.manage.category">Category</message>
-	<message key="catalog.manage.series">Series</message>
+	<message key="catalog.manage.category">Áreas temáticas</message>
+	<message key="catalog.manage.series">Unidades Academicas</message>
 	<message key="catalog.manage.managementIntroduction">Welcome to Catalog Management. From this page you can publish new catalog entries; review and configure your Featured Books listing; review and configure your New Releases listing; and review and configure your books by Category and Series.</message>
 	<message key="catalog.selectSeries">Select Series</message>
 	<message key="catalog.selectCategory">Select Category</message>
