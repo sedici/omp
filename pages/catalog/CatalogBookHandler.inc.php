@@ -136,7 +136,7 @@ class CatalogBookHandler extends Handler {
 		}
 
 		// Display
-		$templateMgr->display('catalog/book/book.tpl');
+		$templateMgr->display('unlp/book.tpl');
 	}
 
 	/**

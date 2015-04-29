@@ -234,7 +234,9 @@ class CatalogHandler extends Handler {
 		$this->setupTemplate($request);
 
 		$query = $request->getUserVar('query');
-		$templateMgr->assign('searchQuery', $query);
+		$radiobutton = $request->getUserVar('radiobutton');
+		
+                $templateMgr->assign('searchQuery', $query);
 
 		// Fetch the monographs to display
 		import('classes.search.MonographSearch');
