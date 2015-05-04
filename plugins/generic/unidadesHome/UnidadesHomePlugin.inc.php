@@ -14,10 +14,9 @@
  * possible tasks defined by plugins. See the AcronPlugin::parseCrontab
  * hook implementation.
  */
+import('lib.pkp.classes.plugins.GenericPlugin');
 
-import('lib.pkp.plugins.generic.acron.PKPAcronPlugin');
-
-class AcronPlugin extends PKPAcronPlugin {
+class UnidadesHomePlugin extends GenericPlugin {
 
 
 }

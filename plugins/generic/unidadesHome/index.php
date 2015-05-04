@@ -16,8 +16,8 @@
  * @ingroup plugins_generic_acron
  */
 
-require_once('AcronPlugin.inc.php');
+require_once('UnidadesHomePlugin.inc.php');
 
-return new AcronPlugin();
+return new UnidadesHomePlugin();
 
 ?>
