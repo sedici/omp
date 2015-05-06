@@ -73,7 +73,7 @@
 				{$publicMenu}
 			{/if}  
                         {/if}{* $isUserLoggedIn *}
-                               <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">{translate key="navigation.catalog"}</a>
+                                <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">{translate key="navigation.catalog"}</a></li>
                                 <li><a href="{url op="category" page='catalog'}">Areas temáticas</a></li>
                                 <li><a href="{url op="unidades" page='catalog'}">Unidades</a></li>
 				<li><a href="#">Acerca de</a></li>

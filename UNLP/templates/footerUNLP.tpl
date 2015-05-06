@@ -4,9 +4,10 @@
 <div class="col2y3">
     <div class="col2">
         <ul><strong>Mapa del sitio</strong>
-            <li> Home</li>
-            <li> Libros </li>
-            <li> Areas temáticas </li>
+            <li> <a href="{url router=$smarty.const.ROUTE_PAGE context="index"  op="index"}">Inicio</a></li>
+            <li> <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">{translate key="navigation.catalog"}</a> </li>
+            <li><a href="{url op="category" page='catalog'}"> Areas temáticas </a> </li>
+            <li><a href="{url op="unidades" page='catalog'}">Unidades </a></li>
             <li> Acerca de </li>
         </ul>
     </div>
@@ -19,9 +20,7 @@
 <div class="ubicacion"></div>
 <img style="float:left; margin-left:35px;" src="/UNLP/images/ubicacion.png" />
 <div class="ubicacion"><strong>Ubicación</strong>
-<p> 221 e/78 y 78 <br />
-Tel 32235-56546546
-
+<p> 49 y 115 s/n <br />
 </p>
 
 
