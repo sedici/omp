@@ -1,0 +1,31 @@
+================================
+=== OJS StatsAdmin Plugin
+=== Version: $Id$
+=== Author: Ariel Sobrado <asobrado@gmail.com>  
+================================
+
+About
+-----
+
+
+License
+-------
+This plugin is licensed under the GNU General Public License v2. See the file COPYING for the complete terms of this license.
+
+System Requirements
+-------------------
+Same requirements as the OJS 2.3 core.
+
+Installation
+------------
+To install the plugin:
+ - Copy the plugin tar.gz file to your OJS/plugins/generic directory
+ - To unzip the plugin inside the plugins/generic directory:
+    $ tar xvzf statsAdminPlugin-1.0.tar.gz
+ - to install the database schema, you must run the following command (assuming you are placed in your OJS root directory):
+    $ php tools/dbXMLtoSQL.php -schema execute plugins/generic/statsAdmin/install/schema.xml
+ - to install the database archive query.sql.
+    mysql -u<usuario> -p<password> -h<host> database_ojs (change name) < plugins/generic/statsAdmin/install/query.sql
+Contact/Support
+---------------
+Please email the authors for support, bugfixes, or comments.

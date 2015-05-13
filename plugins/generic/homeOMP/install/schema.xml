@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schema SYSTEM "../../../lib/pkp/dtd/xmlSchema.dtd">
+
+<!--
+  * statsAdmin_schema.xml
+  *
+  * Copyright (c) 2014-2021 Ariel Sobrado
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * StatsAdmin plugin schema in XML.
+  *
+  * $Id$
+  -->
+
+<schema version="0.2">
+	<!--
+	 *
+	 * TABLE fied
+	 *
+	 -->
+	<table name="statsAdminPlugins_state">
+		<field name="state_id" type="I8">
+			<KEY/>
+			<AUTOINCREMENT/>
+		</field>
+		<field name="name" type="C2" size="100">
+			<NOTNULL/>
+		</field>
+	</table>
+        
+        <table name="statsAdminPlugins_stats_state">
+		<field name="state_id" type="I8">
+			<NOTNULL/>
+		</field>
+                <field name="stats_id" type="I8">
+			<NOTNULL/>
+		</field>
+		<descr>Fields</descr>
+		<index name="statsFields_stateStat_pkey">
+			<col>stats_id</col>
+			<col>state_id</col>
+			<UNIQUE />
+		</index>
+	</table>
+    
+    
+        <table name="statsAdminPlugins_field">
+		<field name="field_id" type="I8">
+			<KEY/>
+			<AUTOINCREMENT/>
+		</field>
+		<field name="name" type="C2" size="100">
+			<NOTNULL/>
+		</field>
+            <field name="field_value" type="C2" size="100">
+                <NOTNULL/>
+            </field>
+		<field name="type" type="C" size='50'>
+			<NOTNULL/>
+		</field>
+		<field name="defaultValue" type="C2" size="100">
+                    <NULL/>
+		</field>
+                <descr>field</descr>
+	</table>
+        
+        <!--
+	 *
+	 * TABLE fied
+	 *
+	 -->
+	<table name="statsAdminPlugins_stats_fields">
+		<field name="field_id" type="I8">
+			<NOTNULL/>
+		</field>
+                <field name="stats_id" type="I8">
+			<NOTNULL/>
+		</field>
+		<field name="value" type="C2" size="100">
+			<NOTNULL/>
+		</field>
+		<descr>Fields</descr>
+		<index name="statsFields_fieldStat_pkey">
+			<col>stats_id</col>
+			<col>field_id</col>
+			<UNIQUE />
+		</index>
+	</table>
+      
+        
+        <!--/*
+        * 
+        *   Table stats
+        */ -->
+        <table name="statsAdminPlugins_stats">
+		<field name="stats_id" type="I8">
+			<KEY />
+			<AUTOINCREMENT/>
+		</field>
+		<field name="key_value" type="C2" size="50">
+			<NOTNULL/>
+		</field>
+                <field name="name_class" type="C2" size="50">
+                                <NOTNULL/>
+                        </field>
+                <field name="type_chart" type="C2" size="50">
+			<NOTNULL/>
+		</field>
+                
+		<field name="dashboard_order" type="C2" size="50">
+			<NOTNULL/>
+		</field>
+		<field name="enabled" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+                <field name="state_enabled" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="0"/>
+		</field>
+        </table>
+	<!-- 
+        /*
+        *  Table stats_settings
+        *
+        */-->
+        
+        <table name="statsAdminPlugins_stats_settings">
+		<field name="stats_id" type="I8">
+			<NOTNULL/>
+		</field>
+		<field name="setting_name" type="C2" size="255">
+			<NOTNULL/>
+		</field>
+		<field name="setting_value" type="X"/>
+		<field name="setting_type" type="C2" size="6">
+			<NOTNULL/>
+			<descr>(bool|int|float|string|object)</descr>
+		</field>
+                <descr>Stats settings.</descr>
+		<index name="stats_settings_stats_id">
+			<col>stats_id</col>
+		</index>
+		<index name="stats_settings_pkey">
+			<col>stats_id</col>
+			<col>setting_name</col>
+			<UNIQUE />
+		</index>
+	</table>
+
+        <!-- 
+	  *
+	  * TABLE CategoryXJournal
+	  *
+	  -->
+	 <table name="statsAdminPlugins_stats_journal">
+	 <field name="stats_id" type="I8">
+	 	<KEY/>
+	 </field>
+	 <field name="journal_id" type="I8">
+	 	<KEY/>
+	 </field>
+	 <descr>Stats journal</descr>
+	 <index name="stats_stats_id">
+			<col>stats_id</col>
+		</index>
+	 <index name="stats_journal_id">
+			<col>journal_id</col>
+		</index>
+	 
+	 </table>
+
+	 
+</schema>
+
