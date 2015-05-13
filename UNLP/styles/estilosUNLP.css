@@ -96,6 +96,7 @@ body {
     padding-left: 10px;
 }
 
+
 .pkp_structure_body .pkp_structure_content {
     height: 500px;
     background-position: center top;
@@ -110,6 +111,10 @@ body {
 .pkp_structure_foot .col2y3 .col3 .redes {
 	width: 300px;
 	height: 60px;
+        
+}
+.pkp_structure_foot .col2y3 .col3 .redes img {
+	       	display: inline;
 }
 .pkp_structure_foot .col2y3 .col3 .cc {
 	width: 100%;
