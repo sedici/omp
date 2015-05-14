@@ -53,6 +53,8 @@
     <h1>Reseña</h1>
     <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
 </div>
+
+{if (chapters|size > 0)}
 <div class="contenidos">
     <h1>Tabla de contenidos </h1>
     <ul>
@@ -69,6 +71,7 @@
 
     </ul>
 </div>
+ {/if}       
 {include file="catalog/book/googlescholar.tpl"}
 {include file="catalog/book/dublincore.tpl"}
 </div>
