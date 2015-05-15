@@ -15,6 +15,7 @@
 
 
 import('classes.handler.Handler');
+//import('plugins.generic.homeOMP.dao.UnidadesAcademicasDAO');
 
 class IndexHandler extends Handler {
 	/**
@@ -142,10 +143,10 @@ class IndexHandler extends Handler {
                  * Funciones agregadas al IndeHandler
                  * Ver si se agregan aca   
                  **/
-                
-          	$seriesDao = DAORegistry::getDAO('SeriesDAO');
-		$series = $seriesDao->getByPressId($press->getId());
-		$templateMgr->assign('browseSeries', $series);
+                $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
+		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
+		
+                $templateMgr->assign('browseSeries', $series);
 
 		$categoryDao = DAORegistry::getDAO('CategoryDAO');
 		$categories = $categoryDao->getByParentId(0,$press->getId());
