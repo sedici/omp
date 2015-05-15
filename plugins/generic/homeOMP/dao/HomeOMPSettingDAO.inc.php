@@ -12,7 +12,7 @@
  * @brief Abstract class for retrieving and modifying categories.
  */
   
-class StatsSettingDAO extends DAO{
+class HomeOMPSettingDAO extends DAO{
 	
 
 }
