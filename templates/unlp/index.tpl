@@ -52,26 +52,31 @@
     <div class="areas_tematicas">
         <div class="rotulo">Explore nuestras colecciones </div>
 
-        {$categoriaByLine = 4} 
-        {$div = true} 
+        
+        {assign var="categoriaByLine" value="3"}
+        {assign var="div" value=true}
         {iterate from=browseCategories item=browseCategory}
 
-        {if $div} 
+        {if ($div==true)} 
             <div class="linea">
-                {$div = false} 
-            {/if} 
-            <div class="icon"><img src="/UNLP/images/icono_area.png" />
+                 {assign var="div" value=false}
+         {/if} 
+            <div class="icon">
+                <img src="/UNLP/images/icono_area.png" />
                 <div class="texto_icon">
                     <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
-                        {$browseCategory->getLocalizedTitle()|escape}</a>
+                        {$browseCategory->getLocalizedTitle()|escape}
+                        
+                    </a>
                 </div>
             </div>
-            {if $categoriaByLine = 0}
-                {$categoriaByLine = 4}
-            </div> 
-            {$div = true} 
-        {/if}
-        {$categoriaByLine = $categoriaByLine-1}  
+            {if ($categoriaByLine == 0) }
+               {assign var="categoriaByLine" value="4"}
+              </div> 
+              {assign var="div" value=true}
+            {/if}
+            {assign var="categoriaByLine" value=$categoriaByLine-1}
+      
         {/iterate}
     </div>
 </div>
