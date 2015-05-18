@@ -38,6 +38,32 @@
                             {/if}
                     </li>
                     <li>
+                        {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
+			{assign var=currency value=$currentPress->getSetting('currency')}
+			{if !$loggedInUsername}<p>{translate key="catalog.loginRequiredForPayment"}</p>{/if}
+			{if $useCollapsedView}
+				<ul>
+					{foreach from=$publicationFormats item=publicationFormat}
+						{if $publicationFormat->getIsAvailable()}
+							{include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
+						{/if}
+					{/foreach}
+				</ul>
+			{else}
+				{foreach from=$publicationFormats item=publicationFormat}
+					{assign var=publicationFormatId value=$publicationFormat->getId()}
+					{if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
+						<div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
+							{$publicationFormat->getLocalizedName()|escape}
+							<ul>
+								{include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
+							</ul>
+						</div>
+					{/if}
+				{/foreach}
+			{/if}{* useCollapsedView *}
+                    </li>
+                    <li>
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats(true)}
                         {assign var=viablePdfCount value=0}
                         {foreach from=$publicationFormats item=publicationFormat}
