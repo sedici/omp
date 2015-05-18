@@ -2,6 +2,7 @@
 
 <script type="text/javascript" src="{$baseUrl}/UNLP/js/jquery.bxslider.min.js"></script>
 
+<script type="text/javascript" src="{$baseUrl}/UNLP/js/jquery.ui.accordion.js"></script>
 <link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/jquery.bxslider.css" />
 <link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/>
 

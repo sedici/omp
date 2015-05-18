@@ -50,6 +50,11 @@
                                     <li>
                                         <strong>Autor:</strong> {$publishedMonograph->getAuthorString()|escape}
                                     </li>
+                                     <li>
+                                {if $series}
+                                    <div class="seriesLink"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></div>
+                                    {/if}
+                            </li>
                                     <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}">{translate key="common.plusMore"}</a></li>
                                    
                             </div>
