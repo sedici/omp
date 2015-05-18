@@ -216,7 +216,8 @@ class CatalogHandler extends Handler {
                     $templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
                 }
                 
-                $series = $seriesDao->getByPressId($press->getId());
+                $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
+		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
 		$templateMgr->assign('browseSeries', $series);
                 // Display
 		$templateMgr->display('unlp/unidades.tpl');
