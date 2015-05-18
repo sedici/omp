@@ -118,7 +118,7 @@
                         </ul>
                     </div>
                 {/if}
-                <div class="contenidos">
+                <div class="resena">
                     <h1>Informacion de los Autores</h1>
                     <ul>
                         {assign var=authors value=$publishedMonograph->getAuthors()}
