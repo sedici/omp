@@ -13,7 +13,7 @@
 
 {if $category}
     <h2 class="pkp_helpers_text_center"><em>{$category->getLocalizedTitle()}</em></h2>
-        {/if}
+{/if}
 
 <div class="catalogContainer">
     <div class="temario">
@@ -21,16 +21,17 @@
         <ul class="areas">
             {iterate from=browseCategories item=browseCategory}
             <li>
-                 <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
-                {$browseCategory->getLocalizedTitle()|escape}</a></li>
-                {/iterate}  
+                <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
+                    {$browseCategory->getLocalizedTitle()|escape}</a>
+            </li>
+            {/iterate}  
         </ul>
 
     </div>
-        <div class="medio">
-            {* Include the full monograph list *}
-            {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
-        </div>
+    <div class="medio">
+        {* Include the full monograph list *}
+        {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
+    </div>
 </div><!-- catalogContainer -->
 
 {include file="common/footer.tpl"}
