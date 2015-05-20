@@ -54,9 +54,12 @@
 
         
         {assign var="categoriaByLine" value="3"}
+        {assign var="categorias" value="8"}
         {assign var="div" value=true}
         {iterate from=browseCategories item=browseCategory}
-
+         
+        
+        {if ($categorias>0) }
         {if ($div==true)} 
             <div class="linea">
                  {assign var="div" value=false}
@@ -76,7 +79,8 @@
               {assign var="div" value=true}
             {/if}
             {assign var="categoriaByLine" value=$categoriaByLine-1}
-      
+            {assign var="categorias" value=$categorias-1}
+           {/if} 
         {/iterate}
     </div>
 </div>
