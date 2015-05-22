@@ -593,7 +593,7 @@ Tu servidor soporta actualmente mbstring: <strong>{$supportsMBString}</strong>]]
 <message key="MANAGER.DISTRIBUTION">Distribución</message>
 <message key="NAVIGATION.ACCESS">Usuarios y Roles</message>
 <message key="NAVIGATION.TOOLS">Herramientas</message>
-<message key="NAVIGATION.TOOLS.IMPORTEXPORT">Importar-Exportar</message>
+<message key="navigation.tools.importExport">Importar-Exportar</message>
 <message key="NAVIGATION.TOOLS.STATISTICS">Estadísticas</message>
 <message key="common.takeMeThere">Llevarme allí</message>
 <message key="MANAGER.AFFILIATIONANDSUPPORT">Sponsor</message>
