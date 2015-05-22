@@ -579,9 +579,9 @@ Tu servidor soporta actualmente mbstring: <strong>{$supportsMBString}</strong>]]
 
 <message key="NAVIGATION.MANAGEMENT">Administracion</message>
 <message key="common.tasks">Tareas</message>
-<message key="DASHBOARD.TASK">Libros</message>
+<message key="DASHBOARD.TASKS">Libros</message>
 <message key="submission.title">Título de libro</message>
-<message key="DASHBOARD.SUBMISSION">Submission</message>
+<message key="DASHBOARD.SUBMISSIONS">Submission</message>
 <message key="submission.mySubmissions">Nuestra submission de Autor</message>
 <message key="common.queue.long.submissionsUnassigned">Submissions no asignados</message>
 <message key="common.queue.long.myAssigned">Submission asignadas</message>
