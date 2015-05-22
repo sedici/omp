@@ -82,7 +82,8 @@
             {assign var="categorias" value=$categorias-1}
            {/if} 
         {/iterate}
-        <a href="{url op="category" page='catalog'}">Ver Más</a>
+ 
+        <a href="{url op="category" page='catalog'}" style="color:white; float: left; clear: left; background-color: #3db8c1;  padding:3px; text-decoration:none">Ver Más</a>
     </div>
 </div>
 {include file="common/footer.tpl"}
