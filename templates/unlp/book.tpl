@@ -82,7 +82,7 @@
                             {/if}
                         {/foreach}    
                         {* Get the ISBN *}
-                        {if ($viablePublicationFormat->getIdentificationCodes())}
+                        {if ($viablePublicationFormat)}
                         
                         {assign var=identificationCodes value=$viablePublicationFormat->getIdentificationCodes()}
                         {foreach from=$identificationCodes->toArray() item=identificationCode}
