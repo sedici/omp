@@ -86,7 +86,7 @@
                         {foreach from=$identificationCodes->toArray() item=identificationCode}
 
                             {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
-                                    <strong>ISBN:</strong>  {$identificationCode->getValue()|escape}
+                                    <strong>ISBN:</strong> {** {$identificationCode->getValue()|escape}**}
                                 {/if}
                                 {/foreach}
                                 </li>     
