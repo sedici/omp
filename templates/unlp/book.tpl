@@ -82,13 +82,13 @@
                             {/if}
                         {/foreach}    
                         {* Get the ISBN *}
-                        {assign var=identificationCodes value=$viablePublicationFormat->getIdentificationCodes()}
+                       {* {assign var=identificationCodes value=$viablePublicationFormat->getIdentificationCodes()}
                         {foreach from=$identificationCodes->toArray() item=identificationCode}
 
                             {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
                                     <strong>ISBN:</strong> {** {$identificationCode->getValue()|escape}**}
-                                {/if}
-                                {/foreach}
+                             {*   {/if}
+                                {/foreach}*}
                                 </li>     
 
                             </ul>
