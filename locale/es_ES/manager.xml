@@ -148,7 +148,7 @@ Puedes indicarle al usuario las razones por las que has desactivado su cuenta.</
 	<message key="manager.system.reviewForms">Formularios de revisión</message>
 	<message key="manager.system.readingTools">Herramientas de lectura</message>
 	<message key="manager.system.payments">Pagos</message>
-
+<message key="MANAGER.AFFILIATIONANDSUPPORT">Sponsor</message>
 	<!-- Press setup -->
 	<message key="manager.pressManagement">Gestión editorial</message>
 	<message key="manager.setup">Configuración</message>
