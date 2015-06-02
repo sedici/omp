@@ -142,11 +142,11 @@ list-style-type:none;
 
 .pkp_structure_head .escudounlp {
     float: right;
-    height: 71px;
-    width: 57px;
+    height: 66px;
+    width: 141px;
     clear: right;
     position: relative;
-    top: 45px;
+    top: 40px;
     right: 10px;
 }
 .pkp_structure_head .parabanda {
@@ -496,7 +496,10 @@ background-color:red;
     height: 350px !important;
 }
 
-
+#inlinePdfResizer {
+	width: 98%;
+	padding: 1px 0px 1px 1px;
+}
 
 
 

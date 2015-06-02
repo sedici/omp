@@ -82,7 +82,7 @@
 	
 	
 		</div>
-                                <div class="escudounlp"><a href='http://www.unlp.edu.ar/' target="_blank"><img src="/UNLP/images/escudo_unlp.png" /></a></div>
+                                <div class="escudounlp"><a href='http://www.unlp.edu.ar/' target="_blank"><img src="/UNLP/images/escudo_unlp_nuevo.png" /></a></div>
 	
 	</div>
                                
