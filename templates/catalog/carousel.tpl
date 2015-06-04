@@ -44,10 +44,10 @@
                         <!--<img class="pkp_catalog_monograph_thumbnail pkp_helpers_container_center"height="250" width="350" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="thumbnail" submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" />
 
                             </div>-->
-                        <div class="portada">
+                        <!--<div class="portada">
                             
                             
-                            <!--<a href="{url page="catalog" op="book" path=$publishedMonograph->getId()}">
+                            <a href="{url page="catalog" op="book" path=$publishedMonograph->getId()}">
                                 {include file="controllers/monographList/coverImage.tpl" monograph=$publishedMonograph}
                             </a>-->
                         </div>
