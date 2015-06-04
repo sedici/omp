@@ -39,7 +39,7 @@
                 <li>
                     <div class="destacado">
                         <div class="portada">
-                         <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="thumbnail"  height="250" width="350" submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
+                         <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="thumbnail"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" height="250" width="350" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
                         
                             <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="thumbnail" submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
                          <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
