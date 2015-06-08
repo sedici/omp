@@ -61,7 +61,8 @@
                  {assign var="div" value=false}
          {/if} 
             <div class="icon">
-                <img src="/UNLP/images/icono_area.png" />
+                {assign var="category_id" value=$browseCategory->getId()}
+                <img src="/files/presses/1/categories/{$category_id}-category-thumbnail.png" />
                 <div class="texto_icon">
                     <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
                         {$browseCategory->getLocalizedTitle()|escape}
