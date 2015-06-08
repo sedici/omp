@@ -33,7 +33,7 @@ class UnidadesAcademicasDAO extends SeriesDAO{
 			LEFT JOIN series_settings stl ON (s.series_id = stl.series_id AND stl.setting_name = ? AND stl.locale = ?)
 			
                         WHERE press_id = ?
-			ORDER BY seq',
+			ORDER BY series_title',
 			$params,
 			$rangeInfo
 		);
