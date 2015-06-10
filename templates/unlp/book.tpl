@@ -128,7 +128,7 @@
                                 </div>
                                 <div class="external-share"><div id="share_tw"></div></div>
                             </div>
-                            <script type="text/javascript" src="http://sedici.unlp.edu.ar/social/share.js"></script>
+                          
                         </div>
                                 
                 </div>
