@@ -503,9 +503,16 @@ background-color:red;
 
 
 
+/*   Estilo redes sociales*/
 
-
-
+.external-share {
+       display:inline-block;
+       vertical-align:top 
+     } 
+   .share-bar { 
+       float: right; 
+       clear: right;
+    } 
 
 
 
