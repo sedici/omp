@@ -12,8 +12,9 @@
 {/strip}
 
 {if $category}
-    <img src="/files/presses/1/categories/{$category_id}-category.png" />
-    <h2 class="pkp_helpers_text_center"><em>{$category->getLocalizedTitle()}</em></h2>
+    {assign var="category_id" value=$browseCategory->getId()}
+   
+    <h2 class="pkp_helpers_text_center"> <img src="/files/presses/1/categories/{$category_id}-category.png" /><em>{$category->getLocalizedTitle()}</em></h2>
 {/if}
 
 <div class="catalogContainer">
