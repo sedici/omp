@@ -12,7 +12,7 @@
 {/strip}
 
 {if $category}
-    {assign var="category_id" value=$browseCategory->getId()}
+    {assign var="category_id" value=$category->getId()}
    
     <h2 class="pkp_helpers_text_center"> <img src="/files/presses/1/categories/{$category_id}-category.png" /><em>{$category->getLocalizedTitle()}</em></h2>
 {/if}
