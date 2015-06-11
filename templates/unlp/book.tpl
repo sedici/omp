@@ -35,7 +35,7 @@
         url = window.location.href;
 
         $(share_tw).append('<a href="https://twitter.com/share" class="twitter-share-button" data-via="sedici_unlp" data-lang="es"   data-count="none">Twittear</a>');
-        $(share_fb).append('<div class="fb-like" data-href="'+url+'" data-width="25" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>');
+        $(share_fb).append('<div class="fb-like" data-layout="box_count" data-href="'+url+'" data-width="25" data-action="like" data-show-faces="true" data-share="true"></div>');
     });
 </script>    
 {/literal}
