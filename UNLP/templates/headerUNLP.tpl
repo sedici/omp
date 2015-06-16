@@ -77,6 +77,7 @@
                                 <li><a href="{url op="category" page='catalog'}">Areas temáticas</a></li>
                                 <li><a href="{url op="unidades" page='catalog'}">Unidades</a></li>
 				<li><a href="#">Acerca de</a></li>
+                                {$publicMenu}
                                 
 		</ul>
 	

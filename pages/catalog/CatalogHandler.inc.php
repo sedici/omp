@@ -62,6 +62,7 @@ class CatalogHandler extends Handler {
 
 		// Display
 		//$templateMgr->display('catalog/index.tpl');
+                
                 $templateMgr->display('unlp/catalog.tpl');
                 
 	}
@@ -235,15 +236,15 @@ class CatalogHandler extends Handler {
 		$this->setupTemplate($request);
 
 		$query = $request->getUserVar('query');
-		$radiobutton = $request->getUserVar('radiobutton');
-		
-                $templateMgr->assign('searchQuery', $query);
+		$templateMgr->assign('searchQuery', $query);
 
 		// Fetch the monographs to display
 		import('classes.search.MonographSearch');
 		$monographSearch = new MonographSearch();
 		$error = null;
-		$resultsIterator = $monographSearch->retrieveResults($request, $press, array(null => $query), $error);
+                
+                //$keywords=array(null => $query);
+                $resultsIterator = $monographSearch->retrieveResults($request, $press, array(null => $query), $error);
 
 		$publishedMonographs = array();
 		while ($result = $resultsIterator->next()) {
@@ -253,7 +254,7 @@ class CatalogHandler extends Handler {
 			}
 		}
 		$templateMgr->assign('publishedMonographs', $publishedMonographs);
-
+                
 		// Display
 		$templateMgr->display('unlp/results.tpl');
 	}
