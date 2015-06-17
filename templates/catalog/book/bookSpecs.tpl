@@ -49,7 +49,7 @@
 
 		{assign var=categories value=$publishedMonograph->getCategories()}
 		{if !$categories->wasEmpty()}
-			<h3><a href="#">{translate key="catalog.relatedCategories}</a></h3>
+			<h3><a href="#">{translate key="catalog.relatedCategories"}</a></h3>
 			<ul class="relatedCategories">
 				{iterate from=categories item=category}
 					<li><a href="{url op="category" path=$category->getPath()}">{$category->getLocalizedTitle()|strip_unsafe_html}</a></li>

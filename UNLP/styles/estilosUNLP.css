@@ -77,6 +77,7 @@ body {
 	background-position: 20px 0px;
 	height: 100px;
 	margin-top:15px;
+
 }
 
 .pkp_structure_foot .col2y3 {
@@ -635,6 +636,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: 20px 0px;
 	height: 100px;
+=======
+>>>>>>> 5a16aae772280432e9b845b3bcb1f3e31c1731ff
 }
 
 .pkp_structure_foot .col2y3 {
@@ -670,6 +673,9 @@ body {
 .pkp_structure_foot .col2y3 .col3 .redes {
 	width: 300px;
 	height: 60px;
+	margin-top:30px;
+	position: relative;
+	bottom:15px;
         
 }
 .pkp_structure_foot .col2y3 .col3 .redes img {
@@ -705,7 +711,7 @@ list-style-type:none;
     width: 141px;
     clear: right;
     position: relative;
-    top: 40px;
+    top: 58px;
     right: 10px;
 }
 .pkp_structure_head .parabanda {
@@ -730,7 +736,7 @@ list-style-type:none;
 }
 
 .pkp_structure_head .menu {
-    width: 650px;
+    width: 680px;
     float: right;
     position: relative;
     top: 30px;
@@ -811,15 +817,18 @@ list-style-type:none;
 	padding: 3px 0px 3px 10px;
 	color: white;
 	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
 }
 .col_principal .destacado .detalle .detalles_del_item h1 {
 	font-size: 20px;
 	color: #12909F;
+	margin-top:20px;
 }
 .col_principal .destacado .detalle .detalles_del_item ul {
 	color: #6D6D6D;
 	font-size: 14px;
 	line-height: 1.5;
+	margin-top:8px;
 }
 
 
@@ -884,12 +893,18 @@ list-style-type:none;
 	width: 70px;
 	float: left;
 	text-align: center;
-	margin: 3px;
+	margin: 7px;
 	font-size: 12px;
 }
 .texto_icon {
 	text-align: center;
+	margin-top:5px;
 }
+
+.texto_icon a{
+	text-decoration: none;
+}
+
 .col_secundaria .areas_tematicas {
 	width: 350px;
 }
@@ -1030,6 +1045,7 @@ list-style-type:none;
 }
 .listadoitems .items .contenido h1 {
 	color: black;
+	font-size:18px;
 }
 .listadoitems .items .contenido p {
 	font-size: 12px;
@@ -1071,6 +1087,8 @@ background-color:red;
    .share-bar { 
        float: right; 
        clear: right;
+	    position: relative;
+    right: 86px;
     } 
 
 
