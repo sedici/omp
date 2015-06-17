@@ -17,7 +17,7 @@
 {/if}
 <div class="catalogContainer">
     <div class="temario">
-        <h1>Unidades Academicas</h1>
+        <h1>{translate key="series.series"}</h1>
         <ul class="areas">
              {iterate from=browseSeries item=browseSeriesItem}
                   <li>

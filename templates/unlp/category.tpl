@@ -19,7 +19,7 @@
 
 <div class="catalogContainer">
     <div class="temario">
-        <h1>Áreas temáticas</h1>
+        <h1>{translate key="catalog.manage.category"}</h1>
         <ul class="areas">
             {iterate from=browseCategories item=browseCategory}
             <li>

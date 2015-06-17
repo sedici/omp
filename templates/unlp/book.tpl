@@ -61,6 +61,18 @@
                             {/if}
                     </li>
                     <li>
+                        {assign var=categories value=$publishedMonograph->getCategories()}
+                        {if !$categories->wasEmpty()}
+                                <strong>{translate key="catalog.manage.category"}:</strong>
+                                {iterate from=categories item=category}
+                                    <a href="{url op="category" path=$category->getPath()}">{$category->getLocalizedTitle()|strip_unsafe_html}</a>, 
+                                {/iterate}{* categories *}
+                                
+                        {/if}
+                        
+                        
+                    </li>
+                    <li>
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
 			{assign var=currency value=$currentPress->getSetting('currency')}
 			

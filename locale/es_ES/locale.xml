@@ -256,7 +256,7 @@
 	<message key="catalog.manage">Gestión de catálogo</message>
 	<message key="catalog.manage.homepage">Página de inicio</message>
 	<message key="catalog.manage.newReleases">Novedades</message>
-	<message key="catalog.manage.category">Áreas temáticas</message>
+	<message key="catalog.manage.category">Áreas Temáticas</message>
 	<message key="catalog.manage.series">Unidades Academicas</message>
 	<message key="catalog.manage.managementIntroduction">Bienvenido a la Gestión de Catálogo. Desde esta página puedes publicar nuevas entradas de catálogo; revisar y configurar el listado de Libros Destacados, el listado de Novedades y los libros por Categoría y Serie.</message>
 	<message key="catalog.selectSeries">Seleccionar Unidad Academica</message>
