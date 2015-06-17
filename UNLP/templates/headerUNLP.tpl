@@ -1,3 +1,33 @@
+{capture assign="publicMenu"}
+	{if $currentPress}
+		{if $enableAnnouncements}
+			<li><a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">{translate key="announcement.announcements"}</a></li>
+		{/if}
+		<li><a href="#">{translate key="navigation.about"}</a>
+			<ul>
+				{if not empty($contextInfo.contact)}
+					<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">{translate key="about.contact"}</a></li>
+				{/if}
+				{if not empty($contextInfo.description)}
+					<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="description"}">{translate key="about.description"}</a></li>
+				{/if}
+				{if not empty($contextInfo.editorialTeam)}
+					<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">{translate key="about.editorialTeam"}</a></li>
+				{/if}
+				{if not empty($contextInfo.editorialPolicies)}
+					<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialPolicies"}">{translate key="about.policies"}</a></li>
+				{/if}	
+				<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">{translate key="about.submissions"}</a></li>
+				{if not empty($contextInfo.sponsorship)}
+					<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="sponsorship"}">{translate key="about.pressSponsorship"}</a></li>
+				{/if}
+			</ul>
+		</li>
+	{/if}
+{/capture}
+
+
+
 <div class="pkp_structure_head" id="headerContainer">
     <div class="pkp_structure_head_siteNav">
 	<ul class="pkp_helpers_flatlist pkp_helpers_align_left">
@@ -70,14 +100,13 @@
 						</ul>
 					</li>
 				{/if}{* ROLE_ID_MANAGER || ROLE_ID_SUB_EDITOR *}
-				{$publicMenu}
+				
 			{/if}  
                         {/if}{* $isUserLoggedIn *}
                                 <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">{translate key="navigation.catalog"}</a></li>
                                 <li><a href="{url op="category" page='catalog'}">Areas temáticas</a></li>
                                 <li><a href="{url op="unidades" page='catalog'}">Unidades</a></li>
-				<li><a href="#">Acerca de</a></li>
-                                {$publicMenu}
+				{$publicMenu}
                                 
 		</ul>
 	
