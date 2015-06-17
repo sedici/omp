@@ -11,7 +11,10 @@
 {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
 
-    
+  
+{if $series}
+   <h2 class="pkp_helpers_text_center"> <em>{$series->getLocalizedTitle()}</em></h2>
+{/if}
 <div class="catalogContainer">
     <div class="temario">
         <h1>Unidades Academicas</h1>
