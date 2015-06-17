@@ -220,7 +220,7 @@
 	<message key="grid.reviewAttachments.availableFiles">Ficheros disponibles</message>
 
 	<!-- series/categories/series -->
-	<message key="series.series">Serie</message>
+	<message key="series.series">Unidades académicas</message>
 	<message key="series.featured">Presentados</message>
 	<message key="series.featured.description">Esta serie aparecerá en la navegación principal</message>
 	<message key="series.path">Ruta</message>
