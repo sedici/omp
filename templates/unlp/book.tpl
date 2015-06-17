@@ -164,7 +164,7 @@
                               {if $author->getIncludeInBrowse()}
                                 <p>{translate key="catalog.aboutTheAuthor" roleName=$author->getLocalizedUserGroupName()}: <strong>{$author->getFullName()}</strong></p>
                                 {assign var=biography value=$author->getLocalizedBiography()|strip_unsafe_html}
-                                {if $biography != ''}{$biography}{else}{translate key="catalog.noBioInfo"}{/if}
+                                {if $biography != ''}{$biography}{/if}
                                 </li>
                               {/if}
                             {/foreach}
