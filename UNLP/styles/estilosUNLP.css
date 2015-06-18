@@ -141,7 +141,7 @@ list-style-type:none;
     background-image: url(../images/fondo_completo.png);
     background-repeat: no-repeat;
     height: 234px;
-	background-color:none; !important
+    background-color: #FFFFFF;
 }
 
 .pkp_structure_head .escudounlp {
