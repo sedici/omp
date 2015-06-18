@@ -386,12 +386,12 @@ list-style-type:none;
 	margin-left: 50px;
 }
 .col_principal .resena h1, .col_principal .contenidos h1, .col_secundaria .relacionados h1 {
-	color: #98d3d1;
+	color: #46b5af;
 	font-size: 20px;
 	margin: 0;
 	background-color: none;
-		max-width: 300px;
-	width: 200px;
+	max-width: 300px;
+	width: 300px;
 	
 }
 .col_principal .resena p {
@@ -555,4 +555,8 @@ right:20px;
 
 .pkp_structure_search input {
 width:260px;
+}
+
+.resena ul {
+padding:0px;
 }
