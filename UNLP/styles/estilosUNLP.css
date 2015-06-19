@@ -182,7 +182,6 @@ list-style-type:none;
 }
 
 .sf-menu{
- 
     float: right;
 }
 .pkp_structure_head .contenedor_derecho {
@@ -193,7 +192,7 @@ list-style-type:none;
 
 .pkp_structure_head .contenedor_derecho .menu a:hover {
     color: white;
-    background-color: none;
+    background-color: #98d3d1;
 }
 
 .pkp_structure_head_siteNav {
@@ -387,13 +386,13 @@ list-style-type:none;
 }
 .col_principal .resena h1, .col_principal .contenidos h1, .col_secundaria .relacionados h1 {
 	color: #46b5af;
-	font-size: 20px;
+	font-size: 1.5 em;
 	margin: 0;
 	background-color: none;
 	max-width: 300px;
 	width: 300px;
+	}
 	
-}
 .col_principal .resena p {
 	margin: 0px 0px 10px 0px;
 	padding: 10px 10px 0px 0px;
@@ -557,6 +556,19 @@ right:20px;
 width:260px;
 }
 
-.resena ul {
+.resena ul{
 padding:0px;
+}
+
+.resena h1 {
+font-size:1em;
+font-weight:bold;
+}
+
+.resena ul li h1 {
+color:red;
+}
+
+.resena h1 strong{
+color:black;
 }
