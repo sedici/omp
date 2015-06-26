@@ -29,7 +29,7 @@ body {
 	font-family: arial;
 	font-size: 12px;
 	margin: 0px;
-	padding: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 2px;
 	line-height: 1.5;
 }
 .pkp_structure_sidebar_left .temario {
@@ -184,6 +184,7 @@ list-style-type:none;
 .sf-menu{
     float: right;
 }
+
 .pkp_structure_head .contenedor_derecho {
     width: 50%;
     height: 200px;
@@ -199,10 +200,17 @@ list-style-type:none;
     color: #000000;
     position: absolute;
     border: none; 
+	z-index:10;
     
 }
+
 .pkp_structure_head_siteNav a {
-    color: #000000;
+    color: #14263a;
+	text-decoration:none;
+}
+
+.pkp_structure_head_siteNav a:hover {
+	text-decoration:underline;
 }
 
 .pkp_helpers_align_left {
@@ -427,13 +435,13 @@ list-style-type:none;
 }
 
 .temario .areas li {
-	list-style-type: none;
-	font-family: arial;
+	list-style-type:disc;
+		font-family: arial;
 	font-size: 12px;
 	margin: 0px;
 	padding: 0px 0px 0px 10px;
-	line-height: 1.5;
-	background-image: url(../images/flechanegra.png);
+	line-height: 2;
+/*	background-image: url(../images/flechanegra.png);*/
 	background-repeat: no-repeat;
 	background-position: 8 5;
         
@@ -550,6 +558,8 @@ right:20px;
  margin-top: 15px;
     width: 110px;
 	text-decoration:none;
+	z-index:5;
+	line-height:1.5;
 	}
 
 .pkp_structure_search input {
@@ -571,4 +581,32 @@ color:red;
 
 .resena h1 strong{
 color:black;
+}
+
+.sf-menu li:hover {
+    background-color:#98d3d1;
+}
+
+ul.sf-menu li ul li:hover {
+background-color:#98d3d1;
+}
+
+ul.sf-menu li ul li {
+background-color:#98d3d1;
+}
+
+ul.sf-menu {
+z-index:1;
+}
+
+.pkp_helpers_flatlist pkp_helpers_align_right  {
+z-index:1000;
+}
+
+div.contenido h1 a {
+color:black;
+}
+
+div.contenido h1 a:hover {
+color:#12909f;
 }
