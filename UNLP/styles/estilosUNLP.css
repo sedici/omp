@@ -596,7 +596,9 @@ background-color:#98d3d1;
 }
 
 ul.sf-menu {
-z-index:1;
+ position: relative;
+    right: 76px;
+    z-index: 1;
 }
 
 .pkp_helpers_flatlist pkp_helpers_align_right  {
