@@ -151,7 +151,34 @@ class IndexHandler extends Handler {
 		$categoryDao = DAORegistry::getDAO('CategoryDAO');
 		$categories = $categoryDao->getByParentId(0,$press->getId());
 		$templateMgr->assign('browseCategories', $categories);
-          	$templateMgr->display('unlp/index.tpl');
+          	
+                
+                if (!defined('SESSION_DISABLE_INIT')) {
+			if (isset($press)) {
+				$locales = $press->getSupportedLocaleNames();
+
+			} else {
+				$site = $press->getSite();
+				$locales = $site->getSupportedLocaleNames();
+			}
+		} else {
+			$locales =& AppLocale::getAllLocales();
+			if (isset($_SERVER['HTTP_REFERER'])) {
+				$templateMgr->assign('languageToggleNoUser', true);
+				$templateMgr->assign('referrerUrl', $_SERVER['HTTP_REFERER']);
+			} else {
+				unset($locales); // Disable; we're not sure what URL to use
+			}
+		}
+
+		if (isset($locales) && count($locales) > 1) {
+			$templateMgr->assign('enableLanguageToggle', true);
+			$templateMgr->assign('languageToggleLocales', $locales);
+		}
+                
+                
+                
+                $templateMgr->display('unlp/index.tpl');
                 
                 /****************Se agrego la redireccion a unlp/inde.tpl********************/
 	}
