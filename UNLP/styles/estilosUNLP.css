@@ -628,3 +628,14 @@ color:#12909f;
     .publicationFormatDownload .publicationFormatLink { padding-bottom: 15px; }
     .publicationFormatDownload li:hover { background-color:rgba(109, 198, 193, 0.22); }
 }
+
+
+.resumen.truncate {
+    text-overflow: ellipsis;
+    width: 450px;
+    height: 210px;
+    overflow: hidden;
+    padding-top: 5px;
+    font-size: 90%;
+    text-align: justify;
+}
