@@ -72,6 +72,10 @@ class TemplateManager extends PKPTemplateManager {
 				$this->assign('itemsPerPage', $context->getSetting('itemsPerPage'));
 				$this->assign('enableAnnouncements', $context->getSetting('enableAnnouncements'));
 
+                                $locales = $site->getSupportedLocaleNames();
+                                $this->assign('enableLanguageToggle', true);
+                                    $this->assign('languageToggleLocales', $locales);
+                                
 				// Assign stylesheets and footer
 				$contextStyleSheet = $context->getSetting('styleSheet');
 				if ($contextStyleSheet) {
