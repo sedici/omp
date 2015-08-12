@@ -523,6 +523,8 @@ background-color:red;
 #inlinePdfResizer {
 	width: 98%;
 	padding: 1px 0px 1px 1px;
+    min-height: 500px;
+    height: 500px;
 }
 
 
