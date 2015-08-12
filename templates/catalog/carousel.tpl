@@ -50,12 +50,14 @@
                                     <li>
                                         <strong>Autor:</strong> {$publishedMonograph->getAuthorString()|escape}
                                     </li>
-                                    
+
+                                    {if $series}
                                      <li>
-                                        {if $series}
+
                                           <div class="seriesLink"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></div>
-                                        {/if}
                                     </li>
+                                    {/if}
+
                                      <li>
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats(true)}
                         {assign var=viablePdfCount value=0}
@@ -88,7 +90,12 @@
                                 {/if}
                                 {/foreach}
                                     
-                         {/if}           
+                         {/if}
+                                <li>
+                                    <div class='resumen truncate'>
+                                        <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
+                                    </div>
+                                </li>
                                 </li> 
                                     <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}">{translate key="common.plusMore"}</a></li>
                                    
