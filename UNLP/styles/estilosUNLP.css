@@ -652,5 +652,8 @@ color:#12909f;
         text-align: justify;
     }
 }
+.selectBox-dropdown {
+    min-width: 117px;
 
+}
 
