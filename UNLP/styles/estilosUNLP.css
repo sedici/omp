@@ -537,7 +537,8 @@ background-color:red;
        float: right; 
        clear: right;
 	    position: relative;
-    right: 86px;
+        right: 86px;
+       padding: 8px 0px;
     } 
 
 
