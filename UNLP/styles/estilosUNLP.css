@@ -639,3 +639,9 @@ color:#12909f;
     font-size: 90%;
     text-align: justify;
 }
+
+
+.selectBox-dropdown {
+    min-width: 117px;
+
+}
