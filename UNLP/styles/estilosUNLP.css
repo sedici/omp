@@ -613,3 +613,11 @@ color:black;
 div.contenido h1 a:hover {
 color:#12909f;
 }
+
+@media (min-width: 1024px){
+
+    .publicationFormatDownload { width: 450px; }
+    .publicationFormatDownload li { display: block; }
+    .publicationFormatDownload li > div { float: left; width: 50%; }
+
+}
