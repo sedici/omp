@@ -517,8 +517,8 @@ background-color:red;
 
 
 .bx-wrapper .bx-viewport {
-    //height: 350px !important;
-    height: 80% !important;
+    height: 350px !important;
+    //height: 80% !important;
 }
 
 #inlinePdfResizer {
