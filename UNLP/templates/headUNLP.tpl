@@ -1,11 +1,11 @@
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
-
+<meta name=”viewport” content=”width=device-width, initial-scale=1″ />
 <script type="text/javascript" src="{$baseUrl}/UNLP/js/jquery.bxslider.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/jquery.bxslider.css" />
 <link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/>
 
-<link href=”movil.css” rel=”stylesheet” type=”text/css” media=”handheld” />
+<link href=”mobile.css” rel=”stylesheet” type=”text/css” media=”handheld” />
 
 <script>
 /*  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

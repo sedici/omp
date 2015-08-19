@@ -1,0 +1,52 @@
+/* revolucion.mobi */
+
+html, body, ul, ol, li, h1, h2, p, div
+{
+	margin: 0;
+	padding: 0;
+	float: none;
+}
+
+a{ color:#F1F2C0; text-decoration: none; font-size: 1.1em; margin: 0.6em; display: block}
+
+
+body
+{
+	color: #000;
+	background: #332F29;
+	font: Helvetica;
+	font-size: 1em;
+}
+
+#container
+{
+	
+	background: #8FA68E;
+}
+
+#nav
+{
+	
+	background: #CC3910;
+}
+
+
+#content
+{
+
+	background: #F1F2C0;
+	border-top: solid black 0.1em;
+	font-size: 0.9em;
+	padding: 0.8em;
+	margin: 0;
+	float: none;
+
+}
+
+#extras
+{
+	border-top: solid black 0.1em;
+	font-size: 0.9em;
+	padding: 0.8em;
+	background: #CCC59E;
+}
