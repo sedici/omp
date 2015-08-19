@@ -1,21 +1,34 @@
-	<div id="container">
-	<h1>Optimizando con CSS </h1>
-	<div id="nav">
-		<ul>
-			<li><a href="#">Enlace 1</a></li>
-			<li><a href="#">Enlace 2</a></li>
-			<li><a href="#">Enlace 3</a></li>
-		</ul>
-	</div>
-	
-	<div id="content">
-		<h2>Ejemplo de Media Queries - revolucion.mobi </h2>
-		<p> El layout de esta pagina se adapta segun el dispositivo que utilices, puedes usar tu propio smartphone o un emulador como los que tiene la herramienta mobiletoolkit.</p>
-	</div>
-	
-	<div id="extras">
-		<h2> Contenido adicional </h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-	</div>
-	
-</div>	
+ <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      {include file="unlp/mobile/footer.tpl"}
+      
+ </div> <!-- /container -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="{$baseUrl}/UNLP/bootstrap/js/bootstrap.min.js"></script>
