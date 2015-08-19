@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/jquery.bxslider.css" />
 <link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/>
 
+<link href=”movil.css” rel=”stylesheet” type=”text/css” media=”handheld” />
+
 <script>
 /*  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
