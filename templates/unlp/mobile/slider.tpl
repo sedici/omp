@@ -7,6 +7,11 @@
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
+  
+  
+  {url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
+    {load_url_in_div id="carousel" url=$carouselUrl}
+  
   <div class="carousel-inner">
     <div class="item active"> <img src="http://lorempixel.com/1200/400/sports" style="width:100%" alt="First slide">
       <div class="container">
@@ -17,6 +22,8 @@
         </div>
       </div>
     </div>
+      
+      
     <div class="item"> <img src="http://lorempixel.com/1200/400/people" style="width:100%" data-src="" alt="Second    slide">
       <div class="container">
         <div class="carousel-caption">
