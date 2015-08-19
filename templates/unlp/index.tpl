@@ -20,9 +20,9 @@
 
 <div class="col_principal">
     {* Include the carousel view of featured content *}
-    {url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
+{*    {url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
     {load_url_in_div id="carousel" url=$carouselUrl}
-
+*}
     <div class="exploracion">
         <div class="explo_unidades">
             <div class="rotulo">Unidades </div>
