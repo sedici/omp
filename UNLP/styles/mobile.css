@@ -1,4 +1,13 @@
-/* revolucion.mobi */
+@CHARSET "UTF-8";
+/**
+ * mobile.css
+ *
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ */
+/*****************************************************************************************/
 
 html, body, ul, ol, li, h1, h2, p, div
 {
