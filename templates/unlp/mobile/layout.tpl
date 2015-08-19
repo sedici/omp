@@ -9,6 +9,9 @@
       <div class="row">
         {include file="unlp/mobile/slider.tpl"}
       </div>
+      <div class="row">
+        {include file="unlp/mobile/sites.tpl"}
+      </div>
 
       <hr>
 
