@@ -13,6 +13,10 @@
 {/strip}
 
 
+{strip}
+    {include file="unlp/mobile/layout.tpl" suppressPageTitle=true}
+{/strip}
+
 
 <div class="col_principal">
     {* Include the carousel view of featured content *}
