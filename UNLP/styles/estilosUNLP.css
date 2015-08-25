@@ -686,6 +686,7 @@ header nav {
 header nav ul {
 	overflow:hidden;
 	list-style:none;
+	font-size:2em;
 }
  
 header nav ul li {
@@ -741,7 +742,7 @@ section {
 		color:#fff;
 		text-decoration:none;
 		font-weight: bold;
-		font-size:25px;
+		font-size:5em;
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
@@ -752,3 +753,14 @@ section {
 		font-size:40px;
 	}
 }
+
+
+/* Nuevo estilus */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+background-color:#63c6bf;
+}
+
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active  a:focus {
+background-color: #21919f !important ;
+}
+
