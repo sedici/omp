@@ -1,68 +1,44 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header col-xs-3">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-<!--
-<section><p>&nbsp;</p>
-</section>
-  </div>
-  <header>
-<div class="menu_bar">
- <a href="#" class="bt-menu"><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;</a>
-</div>
-
-<nav>
-<ul>
-	<li><a href="#">Libros</a></li>
-	<li><a href="#">Areas Tem&aacute;ticas </a></li>
-	<li><a href="#">Unidades</a></li>
-	<li><a href="#">Acerca</a></li>
-</ul>
+	<form class="navbar-form navbar-right col-xs-9" role="search">
+        <span class="col-xs-10"><div class="form-group">		
+          <input type="text" class="form-control" placeholder="Search">
+        </div></span>
+        <span class="col-xs-2"><button type="submit" class="btn btn-default"><i class="icon-large icon-search"></i></button></span>
+      </form>
+	  
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+   
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
-</header>
--->
 
-
-<div class="col-md-12">
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- El logotipo y el icono que despliega el menú se agrupan
-             para mostrarlos mejor en los dispositivos móviles -->
- <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Desplegar navegación</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-		
-
-        <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-             otro elemento que se pueda ocultar al minimizar la barra -->
-   <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Enlace #1</a></li>
-                <li><a href="#">Enlace #2</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Menú #1 <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Acción #1</a></li>
-                        <li><a href="#">Acción #2</a></li>
-                        <li><a href="#">Acción #3</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Acción #4</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Acción #5</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Buscar">
-            </div>
-                <button type="submit" class="btn btn-default"><i class="icon-large icon-search"></i></button>
-            </form>
-        </div>
-          
-    </nav>
-</div>
