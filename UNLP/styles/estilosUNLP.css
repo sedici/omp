@@ -762,7 +762,7 @@ border:none;
 }
 
 .navbar-collapse {
-width:60%;
+width:100%;
 }
 
 .navbar-default .navbar-nav .active a{
@@ -875,3 +875,15 @@ top:50px;
 padding:9px !important;
 }
 
+#desplegable_unidades ul li  {
+padding: 5px 0px 0px 20px;
+}
+
+
+.navbar-brand {
+color:white !important;
+}
+
+#desplegable_unidades {
+margin:10px 0px 0px 0px;
+}
