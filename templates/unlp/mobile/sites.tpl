@@ -1,3 +1,4 @@
+<div class="col-md-12">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,36 +45,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul id="dropunidades" class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				<li>Facultad de Arquitectura y Urbanismo</li>
-				<li>Facultad de Bellas Artes</li>
-				<li>Facultad de Ciencias Agrarias y Forestales</li>
-				<li>Facultad de Ciencias Astron&oacute;micas y Geof&iacute;sicas</li>
-				<li>Facultad de Ciencias Econ&oacute;micas</li>
-				<li>Facultad de Ciencias Exactas</li>
-				<li>Facultad de Ciencias Jur&iacute;dicas y Sociales</li>
-				<li>Facultad de Ciencias M&eacute;dicas</li>
-				<li>Facultad de Ciencias Naturales y Museo</li>
-				<li>Facultad de Ciencias Veterinarias</li>
-				<li>Facultad de Humanidades y Ciencias de la Educaci&oacute;n</li>
-				<li>Facultad de Inform&aacute;tica</li>
-				<li>Facultad de Ingenier&iacute;a</li>
-				<li>Facultad de Odontolog&iacute;a</li>
-				<li>Facultad de Periodismo y Comunicaci&oacute;n Social</li>
-				<li>Facultad de Psicolog&iacute;a</li>
-				<li>Facultad de Trabajo Social</li>
-  </ul>
 </div>
-
-
-
 
 
 
