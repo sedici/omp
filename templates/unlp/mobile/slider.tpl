@@ -13,7 +13,7 @@
         <div class="carousel-caption">
           <h1>Slide 1</h1>
           <p>Aenean a rutrum nulla. Vestibulum a arcu at nisi tristique pretium.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          <p></p>
         </div>
       </div>
     </div>

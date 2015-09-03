@@ -802,7 +802,8 @@ color:#fff;
 .pkp_structure_head2 {
     /*background-image: url(../images/fondo_mobile.png);
     background-repeat: no-repeat;*/
-    height: 100%;
+    height: 231px;
+/* 	min-height: 168px; */
     background-color:#00233a; 
 }
 
