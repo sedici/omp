@@ -1,4 +1,3 @@
-<div class="col-xs-12">
 <div class="pkp_structure_head2" id="headerContainer">
         <div class="col-xs-7" id="sacapadding">
             <div class="parabanda">
@@ -15,4 +14,4 @@
         
         
     </div>
-	</div>
+

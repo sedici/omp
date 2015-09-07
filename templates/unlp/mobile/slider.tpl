@@ -22,8 +22,7 @@
         <div class="carousel-caption">
           <h1>Slide 2</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae egestas purus. </p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-        </div>
+                </div>
       </div>
     </div>
     <div class="item"> <img src="http://lorempixel.com/1200/400/abstract" style="width:100%" data-src="" alt="Third slide">
@@ -31,8 +30,7 @@
         <div class="carousel-caption">
           <h1>Slide 3</h1>
           <p>Donec sit amet mi imperdiet mauris viverra accumsan ut at libero.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-        </div>
+               </div>
       </div>
     </div>
   </div>
