@@ -258,6 +258,43 @@ class CatalogHandler extends Handler {
 		// Display
 		$templateMgr->display('unlp/results.tpl');
 	}
+        
+        
+        
+        /**
+	 * View the results of a search operation.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 * @return string
+	 */
+	function results_mobile($args, $request) {
+		$templateMgr = TemplateManager::getManager($request);
+		$press = $request->getPress();
+		$this->setupTemplate($request);
+
+		$query = $request->getUserVar('query');
+		$templateMgr->assign('searchQuery', $query);
+
+		// Fetch the monographs to display
+		import('classes.search.MonographSearch');
+		$monographSearch = new MonographSearch();
+		$error = null;
+                
+                //$keywords=array(null => $query);
+                $resultsIterator = $monographSearch->retrieveResults($request, $press, array(null => $query), $error);
+
+		$publishedMonographs = array();
+		while ($result = $resultsIterator->next()) {
+			$publishedMonograph = $result['publishedMonograph'];
+			if ($publishedMonograph) {
+				$publishedMonographs[$publishedMonograph->getId()] = $publishedMonograph;
+			}
+		}
+		$templateMgr->assign('publishedMonographs', $publishedMonographs);
+                
+		// Display
+		$templateMgr->display('unlp/mobile/results.tpl');
+	}
 
 	/**
 	 * Serve the image for a category or series.

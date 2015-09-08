@@ -15,7 +15,7 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <form  id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post" class="navbar-form navbar-right col-xs-9" role="search">
+        <form  id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results_mobile"}" method="post" class="navbar-form navbar-right col-xs-9" role="search">
             <span class="col-xs-10"><div class="form-group">		
                     <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" type="text" class="form-control" placeholder="Search">
                 </div></span>
