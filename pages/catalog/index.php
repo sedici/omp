@@ -28,6 +28,10 @@ switch ($op) {
 		define('HANDLER_CLASS', 'CatalogHandler');
 		import('pages.catalog.CatalogHandler');
 		break;
+        case 'results_mobile':
+		define('HANDLER_CLASS', 'CatalogHandler');
+		import('pages.catalog.CatalogHandler');
+		break;    
 	case 'book':
 	case 'download':
 	case 'view':
