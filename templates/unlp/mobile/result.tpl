@@ -1,33 +1,31 @@
-<div class="row">
-    <div class="col-md-12">
-	<div class="col_principal">
+{**
+ * templates/catalog/results.tpl
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Search results page for the public-facing catalog
+ *}
+{strip}
+{assign var="pageTitle" value="search.searchResults"}
+{include file="common/header.tpl"}
+{/strip}
+
+<div class="col_principal">
 {* Include the full monograph list *}
 {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
 </div>
-
-         {include file="unlp/mobile/menu.tpl"}
+<div class="col_secundaria">
+    <div class="busqueda">
+        <div class="titulo">Busque el libro que desea</div>
+        <div class="subtitulo"></div>
+        <div class="barra_">
+            {include file="unlp/mobile/menu.tpl"}
+            <!--<div class="barrita"></div>
+                <div class="lupita"></div>
+            -->
+        </div>
+    </div>
+</div>
 {include file="common/footer.tpl"}
-
-
- </div>
- </div>
-	
-	
-	
-	
-	
-	
-	
-<!-- 	<div class="portada">
-	
-	<a href="http://163.10.34.211/index.php/unlp/catalog/book/168"></div>
-	<div class="contenido">
-	<h1><a href="http://163.10.34.211/index.php/unlp/catalog/book/168">Arquitectura y organizaci�n de la computadora: Microprocesadores y Programaci�n Assembler</a></h1>
-	<p>Sergio Hern�n Rocabado Moreno, Daniel Arias Figueroa<br>
-	<span class="date">2015-04-27</span>
-	
-	</p>
-	<div class="estrellas"></div>
-	<a href="http://163.10.34.211/index.php/unlp/catalog/book/168">Ver libro </a>
-	</div>
-	 -->
