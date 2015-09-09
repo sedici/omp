@@ -959,3 +959,21 @@ margin-top:5px;
 margin-left:20px;
 font-weight:1.5em;
 }
+
+.mobile_texto {
+text-align:center;
+font-size:1em;
+}
+
+.exploracion_mobile {
+margin-top:5px;
+}
+
+.listadoitems .items .contenido h1 a {
+color:#98d3d1 !important;
+font-weight:bold !important;
+}
+
+.date {
+font-weight:bold;
+}

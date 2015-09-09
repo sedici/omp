@@ -39,14 +39,35 @@
           Explore nuestras colecciones
         </a>
       </h4>
-    </div>
+	      </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+ <div class="row">
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" ></img> <a href="#"><span class="mobile_texto">Arte y Arquitectura</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"></img> <a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias Agropecuarias</span></a></div>
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"></img> <a href="#"><span class="mobile_texto"><span class="mobile_texto">Comunicacion y medios</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"></img> <a href="#"><span class="mobile_texto"><span class="mobile_texto">ingenieria y tecnologia</span></a></div>      
+</div>   
+
+
+<div class="row">
+ <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias Naturales</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias de la salud</span></a></div>
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png" ></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias de la Salud</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Derecho y Ciencias Politicas</span></a></div>
+</div>
+
+
+<div class="row">
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Viaje de negocios</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Arreglo de lamparas</span></a></div>   
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Lavado de pies</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ramon</span></a></div>   
+</div>
+	</div>
     </div>
   </div>
- 
+ </div>
 </div>
 
 
