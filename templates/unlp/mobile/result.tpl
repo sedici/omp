@@ -25,7 +25,24 @@
             <!--<div class="barrita"></div>
                 <div class="lupita"></div>
             -->
-        </div>
+    </div>
     </div>
 </div>
+
+<div class="row">
+    <div class="mobile_layout">
+	<div class="col-md-12">
+	<div class="col_principal">
+	
+{* Include the full monograph list *}.mobile_layout
+{include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
+</div>
+
+         {include file="unlp/mobile/menu.tpl"}
 {include file="common/footer.tpl"}
+
+</div>
+ </div>
+ </div>
+	</div>
+	

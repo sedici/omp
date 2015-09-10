@@ -15,7 +15,7 @@
                     );
     {rdelim});
 </script>
-
+<div class="row">
 <h1><span class="titulo_results">Todos los t&iacute;tulos </span></h1>
 <div class="orden"></div>
 <div class="listadoitems">
@@ -26,4 +26,5 @@
             {/foreach}
         </ul>
     {/if}
+</div>
 </div>
