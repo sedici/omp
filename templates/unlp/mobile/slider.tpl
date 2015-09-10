@@ -17,22 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="item"> <img src="http://lorempixel.com/1200/400/people" style="width:100%" data-src="" alt="Second    slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Slide 2</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae egestas purus. </p>
-                </div>
-      </div>
-    </div>
-    <div class="item"> <img src="http://lorempixel.com/1200/400/abstract" style="width:100%" data-src="" alt="Third slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Slide 3</h1>
-          <p>Donec sit amet mi imperdiet mauris viverra accumsan ut at libero.</p>
-               </div>
-      </div>
-    </div>
+    
   </div>
   <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
   
