@@ -965,6 +965,7 @@ padding:0px 15px;
 .mobile_texto {
 text-align:center;
 font-size:1em;
+margin: 0 auto !important;
 }
 
 .exploracion_mobile {
@@ -972,7 +973,7 @@ margin-top:5px;
 }
 
 .listadoitems .items .contenido h1 a {
-color:#21919f !important;
+color:#6dc6c1 !important;
 font-weight:bold !important; 
 }
 
@@ -995,9 +996,20 @@ display:block;
 }
 
 .verbook {
-
 }
 
 .portada img {
 margin-top:10px;
+}
+
+.mobile_layout  .h1 a {
+color:red !important;
+}
+.mobile_layout  .autor {
+font-size:1.2em;
+color:#21919f !important;
+font-weight:normal;
+}
+
+.mobile_layout  .date {
 }
