@@ -1,4 +1,5 @@
 <div class="col-md-12 johnny">
+<<<<<<< Updated upstream
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
@@ -33,30 +34,100 @@
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
                     <div class="row">
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" ></img> <a href="#"><span class="mobile_texto">Arte y Arquitectura</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"></img> <a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias Agropecuarias</span></a></div>
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"></img> <a href="#"><span class="mobile_texto"><span class="mobile_texto">Comunicacion y medios</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"></img> <a href="#"><span class="mobile_texto"><span class="mobile_texto">ingenieria y tecnologia</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block">Arte y Arquitectura</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Agropecuarias</span></a></div>
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Comunicacion y medios</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">ingenieria y tecnologia</span></a></div>      
                     </div>   
 
 
                     <div class="row">
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias Naturales</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias de la salud</span></a></div>
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png" ></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ciencias de la Salud</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Derecho y Ciencias Politicas</span></a></div>
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Naturales</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la salud</span></a></div>
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png" class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la Salud</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Derecho y Ciencias Politicas</span></a></div>
                     </div>
 
 
                     <div class="row">
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Viaje de negocios</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Arreglo de lamparas</span></a></div>   
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Lavado de pies</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto">Ramon</span></a></div>   
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Viaje de negocios</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Arreglo de lamparas</span></a></div>   
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Lavado de pies</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Ramon</span></a></div>   
                     </div>
                 </div>
             </div>
         </div>
+=======
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Unidades Academicas
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+       <ul>
+    <li><a href="#">Facultad de Arquitectura y Urbanismo</a></li>
+				<li><a href="#">Facultad de Bellas Artes</a></li>
+				<li><a href="#">Facultad de Ciencias Agrarias y Forestales</a></li>
+				<li><a href="#">Facultad de Ciencias Astron&oacute;micas y Geof&iacute;sicas</a></li>
+				<li><a href="#">Facultad de Ciencias Econ&oacute;micas</a></li>
+				<li><a href="#">Facultad de Ciencias Exactas</a></li>
+				<li><a href="#">Facultad de Ciencias Jur&iacute;dicas y Sociales</a></li>
+				<li><a href="#">Facultad de Ciencias M&eacute;dicas</a></li>
+				<li><a href="#">Facultad de Ciencias Naturales y Museo</a></li>
+				<li><a href="#">Facultad de Ciencias Veterinarias</a></li>
+				<li><a href="#">Facultad de Humanidades y Ciencias de la Educaci&oacute;n</a></li>
+				<li><a href="#">Facultad de Inform&aacute;tica</a></li>
+				<li><a href="#">Facu3ltad de Ingenier&iacute;a</a></li>
+				<li><a href="#">Facultad de Odontolog&iacute;a</a></li>
+				<li><a href="#">Facultad de Periodismo y Comunicaci&oacute;n Social</a></li>
+				<li><a href="#">Facultad de Psicolog&iacute;a</a></li>
+				<li><a href="#">Facultad de Trabajo Social</a></li>
+  </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Explore nuestras colecciones
+        </a>
+      </h4>
+	      </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+ <div class="row">
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block">Arte y Arquitectura</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"class="img-responsive center-block"></img> <a href="#"><span class="mobile_texto center-block">Ciencias Agropecuarias</span></a></div>
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive center-block"></img> <a href="#"><span class="mobile_texto center-block">Comunicacion y medios</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive center-block"></img> <a href="#"><span class="mobile_texto center-block">ingenieria y tecnologia</span></a></div>      
+</div>   
+
+
+<div class="row">
+ <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto center-block">Ciencias Naturales</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto center-block">Ciencias de la salud</span></a></div>
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png" class="img-responsive center-block"></img><a href="#"><span class="mobile_texto center-block">Ciencias de la Salud</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto center-block">Derecho y Ciencias Politicas</span></a></div>
+</div>
+
+
+<div class="row">
+<div class="exploracion_mobile col-xs-3"><span class="center-block"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive center-block"></img></span><span class="mobile_texto center-block"><a href="#"><span class="mobile_texto center-block">Viaje de negocios</a></span>
+</div>      
+
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto center-block">Arreglo de lamparas</span></a></div>   
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto center-block">Lavado de pies</span></a></div>      
+<div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto center-block">Ramon</span></a></div>   
+</div>
+	</div>
+>>>>>>> Stashed changes
     </div>
 </div>
 
