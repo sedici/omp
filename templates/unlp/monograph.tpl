@@ -41,9 +41,9 @@
                         {/foreach}    
                         {* Get the ISBN *}
                          
-            <span class="date col-xs-12">{$publishedMonograph->getDatePublished()|date_format:$dateFormatShort}</span>
+            <span class="date col-xs-12">{$publishedMonograph->getDatePublished()|date_format:$dateFormatLong}</span>
 
         <span class="estrellas"></span>
-        <span class="verbook col-xs-12"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">Ver libro</a></span>
+       
     </div>
 </li>

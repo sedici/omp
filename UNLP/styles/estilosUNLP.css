@@ -472,11 +472,11 @@ list-style-type:none;
 }
 .listadoitems ul.items li {
 	display: block;
-	min-height: 140px;
+	/*min-height: 140px;*/
 	list-style-type: none;
 	border-bottom: 1px solid #98d3d1;
-	/* margin: 10px 0px 0px 0px;
-	padding: 20px 0px 10px 0px; */
+	/* margin: 10px 0px 0px 0px;*/
+	padding: 0px 0px 10px 0px; 
 }
 .listadoitems .items {
 	margin: 0px;
@@ -979,6 +979,7 @@ font-weight:bold !important;
 
 .date {
 font-weight:bold;
+margin-top:10px!important;
 }
 
 .cuerpo {
@@ -997,6 +998,8 @@ display:block;
 
 .verbook {
 float:right;
+padding-top:15px;
+font-weight:bold;
 }
 
 .portada img {
@@ -1006,6 +1009,7 @@ margin-top:10px;
 .mobile_layout  .h1 a {
 color:red !important;
 }
+
 .mobile_layout  .autor {
 font-size:1.2em;
 color:#21919f !important;
@@ -1013,4 +1017,6 @@ font-weight:normal;
 }
 
 .mobile_layout  .date {
+color:black;
+font-weight:normal;
 }
