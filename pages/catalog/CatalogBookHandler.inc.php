@@ -139,6 +139,105 @@ class CatalogBookHandler extends Handler {
 		$templateMgr->display('unlp/book.tpl');
 	}
 
+        
+        
+        //
+	// Public handler methods
+	//
+	/**
+	 * Display a published monograph in the public catalog.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 */
+	function book_mobile($args, $request) {
+		$templateMgr = TemplateManager::getManager($request);
+		$this->setupTemplate($request);
+		AppLocale::requireComponents(LOCALE_COMPONENT_APP_SUBMISSION); // submission.synopsis
+
+		$publishedMonograph = $this->getAuthorizedContextObject(ASSOC_TYPE_PUBLISHED_MONOGRAPH);
+		$templateMgr->assign('publishedMonograph', $publishedMonograph);
+
+		// Get Social media blocks enabled for the catalog
+		$socialMediaDao = DAORegistry::getDAO('SocialMediaDAO');
+		$socialMedia = $socialMediaDao->getEnabledForContextByContextId($publishedMonograph->getContextId());
+		$blocks = array();
+		while ($media = $socialMedia->next()) {
+			$media->replaceCodeVars($publishedMonograph);
+			$blocks[] = $media->getCode();
+		}
+
+		$templateMgr->assign_by_ref('blocks', $blocks);
+
+		// add Chapters, if they exist.
+		if ($publishedMonograph->getWorkType() == WORK_TYPE_EDITED_VOLUME) {
+			$chapterDao = DAORegistry::getDAO('ChapterDAO');
+			$chapters = $chapterDao->getChapters($publishedMonograph->getId());
+			$templateMgr->assign_by_ref('chapters', $chapters->toAssociativeArray());
+		}
+		// determine which pubId plugins are enabled.
+		$pubIdPlugins = PluginRegistry::loadCategory('pubIds', true);
+		$enabledPubIdTypes = array();
+		$metaCustomHeaders = '';
+
+		foreach ((array) $pubIdPlugins as $plugin) {
+			if ($plugin->getEnabled()) {
+				$enabledPubIdTypes[] = $plugin->getPubIdType();
+				// check to see if the format has a pubId set.  If not, generate one.
+				$publicationFormats = $publishedMonograph->getPublicationFormats(true);
+				foreach ($publicationFormats as $publicationFormat) {
+					if ($publicationFormat->getStoredPubId($plugin->getPubIdType()) == '') {
+						$plugin->getPubId($publicationFormat);
+					}
+					if ($plugin->getPubIdType() == 'doi') {
+						$pubId = strip_tags($publicationFormat->getStoredPubId('doi'));
+						$metaCustomHeaders .= '<meta name="DC.Identifier.DOI" content="' . $pubId . '"/><meta name="citation_doi" content="'. $pubId . '"/>';
+					}
+				}
+			}
+		}
+		$templateMgr->assign('enabledPubIdTypes', $enabledPubIdTypes);
+		$templateMgr->assign('metaCustomHeaders', $metaCustomHeaders);
+		// e-Commerce
+		import('classes.payment.omp.OMPPaymentManager');
+		$ompPaymentManager = new OMPPaymentManager($request);
+		$submissionFileDao = DAORegistry::getDAO('SubmissionFileDAO');
+		if ($ompPaymentManager->isConfigured()) {
+			$availableFiles = array_filter(
+				$submissionFileDao->getLatestRevisions($publishedMonograph->getId()),
+				create_function('$a', 'return $a->getViewable() && $a->getDirectSalesPrice() !== null && $a->getAssocType() == ASSOC_TYPE_PUBLICATION_FORMAT;')
+			);
+			$availableFilesByPublicationFormat = array();
+			foreach ($availableFiles as $availableFile) {
+				$availableFilesByPublicationFormat[$availableFile->getAssocId()][] = $availableFile;
+			}
+
+			// Determine whether or not to use the collapsed view.
+			$useCollapsedView = true;
+			foreach ($availableFilesByPublicationFormat as $publicationFormatId => $availableFiles) {
+				if (count($availableFiles)>1) {
+					$useCollapsedView = false;
+					break;
+				}
+			}
+
+			// Expose variables to template
+			$templateMgr->assign('availableFiles', $availableFilesByPublicationFormat);
+			$templateMgr->assign('useCollapsedView', $useCollapsedView);
+		}
+
+		if ($seriesId = $publishedMonograph->getSeriesId()) {
+			$seriesDao = DAORegistry::getDAO('SeriesDAO');
+			$series = $seriesDao->getById($seriesId, $publishedMonograph->getContextId());
+			$templateMgr->assign('series', $series);
+		}
+
+		// Display
+		$templateMgr->display('unlp/mobile/book.tpl');
+	}
+        
+        
+        
+        
 	/**
 	 * Use an inline viewer to view a published monograph publication
 	 * format file.

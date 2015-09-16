@@ -8,14 +8,14 @@
 * Display a public-facing monograph in the catalog.
 *}
 <li class="col-xs-12">
-burleeeeeeeeeeeeete
+
     <div class="portada col-xs-4">
         <a href="{url page="catalog" op="book" path=$publishedMonograph->getId()}">
             {include file="controllers/monographList/coverImage.tpl" monograph=$publishedMonograph}
         </a>
     </div>
     <div class="contenido col-xs-8">
-        <span class="col-xs-12"><h1><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">{$publishedMonograph->getLocalizedFullTitle()}</a></h1></span>
+        <span class="col-xs-12"><h1><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book_mobile" path=$publishedMonograph->getId()}">{$publishedMonograph->getLocalizedFullTitle()}</a></h1></span>
       <span class="autor col-xs-12"> {$publishedMonograph->getAuthorString()|escape}</span>
           
 		  {if $series}

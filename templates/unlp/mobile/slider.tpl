@@ -1,4 +1,11 @@
 <div class="col-md-12">
+    
+    
+    {* Include the carousel view of featured content *}
+{*    {url|assign:carouselUrl router=$smarty.const.ROUTE_COMPONENT component="carousel.CarouselHandler" op="fetch" escape=false}
+{load_url_in_div id="carousel" url=$carouselUrl}
+*}
+    
   <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
   <!-- Indicators -->
   
@@ -11,8 +18,8 @@
     <div class="item active"> <img src="http://lorempixel.com/1200/400/sports" style="width:100%" alt="First slide">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Slide 1</h1>
-          <p>Aenean a rutrum nulla. Vestibulum a arcu at nisi tristique pretium.</p>
+          <h1></h1>
+          <p></p>
           <p></p>
         </div>
       </div>
