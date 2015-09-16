@@ -28,7 +28,7 @@
 <!--    </div>
     </div>
 </div> -->
-
+		
 
 
 
@@ -37,7 +37,7 @@
 	<div class="col-md-12">
 	<div class="col_principal">
 {* Include the full monograph list *}
-{include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
+{include file="unlp/mobile/monographs.tpl" publishedMonographs=$publishedMonographs}
 </div>
 
     <!--      {include file="unlp/mobile/menu.tpl"}
