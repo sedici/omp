@@ -8,7 +8,6 @@
 * Display a public-facing monograph in the catalog.
 *}
 <li class="col-xs-12">
-
     <div class="portada col-xs-4">
         <a href="{url page="catalog" op="book" path=$publishedMonograph->getId()}">
             {include file="controllers/monographList/coverImage.tpl" monograph=$publishedMonograph}
@@ -31,7 +30,7 @@
                                     {foreach from=$availableFiles.$publicationFormatId item=availableFile}
                                         {if $availableFile->getDocumentType()==$smarty.const.DOCUMENT_TYPE_PDF}
                                             {assign var=viablePdf value=$availableFile}
-                                            {assign var=viablePublicationFormat value=$publicationFormat}
+                                            {assign var=viablePublicationFormat value=$publicationFormat}a
                                             {assign var=viablePdfCount value=$viablePdfCount+1}
                                         {/if}
                                     {/foreach}

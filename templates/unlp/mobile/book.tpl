@@ -49,22 +49,32 @@
         });
     </script>    
 {/literal}
-<div class="col_principal">
-    <div class="destacado">
-        <h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
-        <div class="portada">
-            {url|assign:bookImageLinkUrl router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId()}
-            <a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}"><img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}"  width='100' height="132"/></a>
 
 
-        </div>
-        <div class="detalle">
 
-            <div class="detalles_del_item">
+<div>
+<div class="row">
+<div class="col-md-12">
+<div class="barra col-md-12"><a href="#">"<span class="col-xs-2 glyphicon glyphicon-chevron-left flechaback"></span></div></a>
+</div>
+</div>
 
-                <ul>
+<div class="row">
+		<div class="destacado imagen_y_titulo col-xs-12">
+				<div class="col-xs-3 imagendetalle">
+				{url|assign:bookImageLinkUrl router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId()}
+				<a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}"><img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}"  width='100' height="132"/></a>
+			</div>
+			<div class="col-xs-9 titulo"><h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></div>
+		
+		</div>		
+	</div>
+	
+<div class="row">
+			<div class="detalle col-md-12">
+				<div class="detalles_del_item_mobile  col-xs-9">
+					<ul>
                     <li><strong>Autor/es:</strong> {$publishedMonograph->getAuthorString()}</li>
-
                     <li>
                         {if $series}
                             <div class="seriesLink"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></div>
@@ -77,10 +87,7 @@
                             {iterate from=categories item=category}
                             <a href="{url op="category" path=$category->getPath()}">{$category->getLocalizedTitle()|strip_unsafe_html}</a>, 
                             {/iterate}{* categories *}
-
                         {/if}
-
-
                     </li>
 
                     <li>
@@ -114,8 +121,15 @@
 
                                         {/if}           
                                         </li>     
-                                        <li>
-                                            {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
+                                        
+										
+                                        </ul>
+                                    </div>
+									
+									<div class="col-xs-3">
+									<a href="#"><div class="glyphdown glyphicon glyphicon-download col-xs-12" style="text-align:center;"></div></a>
+                                           <div class="col-xs-12">
+										   {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                                             {assign var=currency value=$currentPress->getSetting('currency')}
 
                                             {if $useCollapsedView}
@@ -139,27 +153,26 @@
                                                     {/if}
                                                 {/foreach}
                                             {/if}{* useCollapsedView *}
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="metadata simple-item-view-other subtype">
-                                    <div class="share-bar">
-                                        <div class="external-share" style="display:inline-block;vertical-align:top">
-                                            <div id="fb-root"></div><div id="share_fb"></div>
-                                        </div>
-                                        <div class="external-share"><div id="share_tw"></div></div>
-                                    </div>
+											</div>
+                                            </div>
+											
+            </div>
+            
+			<div class="metadata simple-item-view-other subtype">
+                <div class="share-bar">
+                      <div class="external-share" style="display:inline-block;vertical-align:top">
+                      <div id="fb-root"></div><div id="share_fb"></div>
+                      </div>
+                      <div class="external-share"><div id="share_tw"></div></div>                                    </div>
+						</div> 
+</div>
 
-                                </div>
-
-                            </div>
-                            <div class="resena">
+<div class="row">
+                           <div class="resena_mobile col-xs-12">
                                 <h1>Reseña</h1>
                                 <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
                             </div>
-
-                            {if (chapters|size > 0)}
+							{if (chapters|size > 0)}
                                 <div class="contenidos">
                                     <h1>Tabla de contenidos </h1>
                                     <ul>
@@ -176,10 +189,12 @@
 
                                     </ul>
                                 </div>
-                            {/if}
-                            <div class="resena">
-                                <h1>Informacion de los Autores</h1>
-                                <ul>
+							{/if}
+   </div>
+   
+<div class="row">
+							<div class="col-xs-12 informaciondeautores">
+                                                      <ul>
                                     {assign var=authors value=$publishedMonograph->getAuthors()}
                                     {foreach from=$authors item=author}
                                         <li>
@@ -193,28 +208,13 @@
                                 </li>
                             </ul>
                         </div>
+<div>
+
                         {include file="catalog/book/googlescholar.tpl"}
                         {include file="catalog/book/dublincore.tpl"}
                     </div>
-                    <div class="col_secundaria">
-                        <div class="busqueda">
-                            <div class="titulo">Busque el libro que desea</div>
-                            <div class="subtitulo"></div>
-                            <div class="barra_">
-                                {include file="unlp/search.tpl"}
-                                <!--<div class="barrita"></div>
-                                    <div class="lupita"></div>
-                                -->
-                            </div>
-                        </div>
-                        <div class="relacionados">
-                            <h1>Sitios relacionados</h1>
-                            {include file="unlp/linkRelaciones.tpl"}
+				
 
-                        </div>
+                                   <!--</div>--><!-- pkp_catalog_book -->
 
-                    </div>
-
-                    <!--</div>--><!-- pkp_catalog_book -->
-
-                    {include file="common/footer.tpl"}
+                    <!-- {include file="common/footer.tpl"} -->

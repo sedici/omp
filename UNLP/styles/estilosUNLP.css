@@ -665,10 +665,10 @@ color:#12909f;
 
 }
 
-* {
+/** {
 	margin:0;
 	padding:0;
-}
+}*/
  
 body {
 	background:#FFFFFA;
@@ -1022,5 +1022,94 @@ font-weight:normal;
 }
 
 .barra {
-background-color:red;
+background-color:#6dc6c1;
+height:65px;
+color:white;
+padding:5px;
+font-family:arial;
+}
+
+.titulo h1 {
+color:#6dc6c1;
+font-size:2em;
+}
+
+.detalles_del_item {
+color:#5e5e5e;
+font-size:1.2em;
+line-height:1.5;
+}
+
+.resena_mobile h1{
+color:red;
+font-size:16px;
+font-weight:bold;
+color:#6dc6c1;
+}
+
+.resena_mobile p{
+text-align:justify;
+padding:0px 10px;
+line-height:2;
+}
+
+.informaciondeautores h1 {
+font-size:16px;
+color:#21919f;
+text-decoration:underline;
+}
+
+.informaciondeautores  {
+padding-left:40px;
+background-color:#eeeeee;
+line-height:2;
+}
+
+.informaciondeautores  p{
+line-height:2;
+text-align:justify;
+}
+
+.glyphdown {
+font-size:50px;
+}
+
+.publicationFormatLink {
+	text-align:center;
+}
+
+.flechaback {
+	font-size:33px;
+	color:white;
+}
+
+.detalles_del_item_mobile{
+color:#5e5e5e;
+font-size:1em;
+line-height:2;
+}
+
+.detalles_del_item_mobile a{ 
+background-color:#e6e6e6;
+text-decoration:none;
+padding:5px 8px;
+margin:3px;
+color: #8a8a8a;
+}
+
+.detalles_del_item_mobile a:hover{
+text-decoration:none;
+} 
+
+.imagen_y_titulo {
+	margin-top:10px;
+
+}
+
+.imagen_y_titulo h1{
+	margin-top:0px;
+	}
+	
+.imagen_y_titulo img {
+	border:1px solid #21919f;
 }
