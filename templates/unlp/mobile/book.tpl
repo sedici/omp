@@ -55,7 +55,7 @@
 <div>
 <div class="row">
 <div class="col-md-12">
-<div class="barra col-md-12"><a href="#">"<span class="col-xs-2 glyphicon glyphicon-chevron-left flechaback"></span></div></a>
+<div class="barra col-md-12"><a href="#">"<span class="col-xs-2 glyphicon glyphicon-menu-left flechaback"></span></div></a>
 </div>
 </div>
 

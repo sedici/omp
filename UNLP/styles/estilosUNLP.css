@@ -108,6 +108,9 @@ body {
 	float: left;
 	margin: 0px 0px 0px 5px;
 	width: 300px;
+	position:relative;
+	bottom:10px;
+	color:white;
 }
 .pkp_structure_foot .col2y3 .col3 .redes {
 	width: 300px;
@@ -153,14 +156,15 @@ list-style-type:none;
     top: 58px;
     right: 10px;
 }
-/*
+
 .pkp_structure_head .parabanda {
     width: 282px;
     height: 141px;
     float: left;
     position: relative;
     top: 30px;
-}*/
+}
+
 .pkp_structure_head .menu li {
     list-style-type: none;
     display: inline;
@@ -393,21 +397,27 @@ list-style-type:none;
 	margin-bottom: 10px;
 	margin-left: 50px;
 }
-.col_principal .resena h1, .col_principal .contenidos h1, .col_secundaria .relacionados h1 {
+.col_principal .contenidos h1, .col_secundaria .relacionados h1 {
 	color: #46b5af;
-	font-size: 1.5 em;
+	font-size: 18px;
 	margin: 0;
 	background-color: none;
 	max-width: 300px;
 	width: 300px;
         padding: 5px 0px;
+		
 	}
+	
+.col_principal .resena h1 {
+	color:#46b5af;
+}
+}
 	
 .col_principal .resena p {
 	margin: 0px 0px 10px 0px;
 	padding: 10px 10px 0px 0px;
 	font-size: 12px;
-	line-height: 1.5;
+	line-height: 1.5!important;
 	text-align: justify;
 	width: 90%;
 }
@@ -555,14 +565,16 @@ line-height:1.5;
 /************************************Estilo Lucas*****************************************/
 
 .pkp_structure_foot .pkp_structure_subfoot {
-position:absolute;
-bottom:-470px;
+/* position:absolute;
+bottom:-470px; */
 right:20px;
+position:relative;
+bottom:70px;
 }
 
 .pkp_structure_head_siteNav .pkp_helpers_flatlist {
  margin-top: 15px;
-    width: 110px;
+/*    width: 110px;*/
 	text-decoration:none;
 	z-index:5;
 	line-height:1.5;
@@ -974,12 +986,13 @@ margin-top:5px;
 
 .listadoitems .items .contenido h1 a {
 color:#21919f !important;
-font-weight:bold !important; 
+/* font-weight:bold !important;  */
 }
 
 .date {
 font-weight:bold;
 margin-top:10px!important;
+color:#a4a4a4;
 }
 
 .cuerpo {
@@ -1012,13 +1025,14 @@ color:red !important;
 
 .mobile_layout  .autor {
 font-size:1.2em;
-color:#21919f !important;
+/* color:#21919f !important; */
 font-weight:normal;
+color:#a4a4a4;
 }
 
 .mobile_layout  .date {
-color:black;
-font-weight:normal;
+/*color:black;*/
+font-weight:bold;
 }
 
 .barra {
@@ -1045,6 +1059,7 @@ color:red;
 font-size:16px;
 font-weight:bold;
 color:#6dc6c1;
+margin-left: 10px;
 }
 
 .resena_mobile p{
@@ -1054,7 +1069,7 @@ line-height:2;
 }
 
 .informaciondeautores h1 {
-font-size:16px;
+font-size:15px;
 color:#21919f;
 text-decoration:underline;
 }
@@ -1081,6 +1096,7 @@ font-size:50px;
 .flechaback {
 	font-size:33px;
 	color:white;
+	margin-top:8px;
 }
 
 .detalles_del_item_mobile{
@@ -1112,4 +1128,13 @@ text-decoration:none;
 	
 .imagen_y_titulo img {
 	border:1px solid #21919f;
+}
+
+.title_left{
+	display:none;
+}
+.resena ul li h1 {
+	color:red;
+	font-size:14px;
+}
 }
