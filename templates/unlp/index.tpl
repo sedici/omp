@@ -39,7 +39,7 @@
              {include file="unlp/linkRelaciones.tpl"}
         </div>
         </div>
-</div>
+</div> 
 <div class="col_secundaria">
     <div class="busqueda">
         <div class="titulo">Busque el libro que desea</div>
