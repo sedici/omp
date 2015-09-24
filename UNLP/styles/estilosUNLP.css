@@ -1137,4 +1137,13 @@ text-decoration:none;
 	color:red;
 	font-size:14px;
 }
+
+.publicationFormatName {
+	display:none;
 }
+
+p {
+	line-height:1.5!important;	
+	text-align:justify !important;
+}
+
