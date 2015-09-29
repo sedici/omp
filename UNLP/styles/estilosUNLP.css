@@ -775,6 +775,12 @@ header nav ul li {
 
 
 /* Nuevo estilus */
+
+@media (max-width: 600px) {
+    .container{
+       display: none;
+    }
+   
 .navbar-default .navbar-collapse, .navbar-default  {
 background:none;
 border:none;
@@ -1145,5 +1151,10 @@ text-decoration:none;
 p {
 	line-height:1.5!important;	
 	text-align:justify !important;
+}
+
+
+    
+    
 }
 

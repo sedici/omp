@@ -32,6 +32,40 @@
                 </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                
+                
+        {assign var="categoriaByLine" value="4"}
+        {assign var="categorias" value="8"}
+        {assign var="div" value=true}
+        
+        {iterate from=$browseCategories item=$browseCategory}
+
+dsds
+        {if ($categorias>0) }
+            {if ($div==true)} 
+                <div class="linea">
+                    {assign var="div" value=false}
+                {/if} 
+                <div class="icon">
+                    {assign var="category_id" value=$browseCategory->getId()}
+                    <img src="/files/presses/1/categories/{$category_id}-category.png" />
+                    <div class="texto_icon">
+                        <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
+                            {$browseCategory->getLocalizedTitle()|escape}
+
+                        </a>
+                    </div>
+                </div>
+                {if ($categoriaByLine == 0) }
+                    {assign var="categoriaByLine" value="4"}
+                </div> 
+                {assign var="div" value=true}
+            {/if}
+            {assign var="categoriaByLine" value=$categoriaByLine-1}
+            {assign var="categorias" value=$categorias-1}
+        {/if} 
+        {/iterate}
+                
                 <div class="panel-body">
                     <div class="row">
                         <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block">Arte y Arquitectura</span></a></div>      
