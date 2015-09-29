@@ -633,7 +633,7 @@ color:#12909f;
 
 
 @media (min-width: 700px) {
-#menu_resp.navbar-nav > li { display:block; float:none !important;}
+#menu_resp.navbar-nav > li { display:block; float:none !important; font-size:2em!important;}
 }
 
 
@@ -1146,7 +1146,7 @@ text-decoration:none;
 .publicationFormatName {
 	display:none;
 }
-
+ 
 p {
 	line-height:1.5!important;	
 	text-align:justify !important;
@@ -1155,3 +1155,9 @@ p {
 .panel-title {
 	font-size:24px!important;
 }
+
+.nav > li {
+	font-size:2em!important;
+	line-height:2em !important;
+}
+
