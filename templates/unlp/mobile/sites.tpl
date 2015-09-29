@@ -68,7 +68,7 @@ dsds
                 
                 <div class="panel-body">
                     <div class="row">
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block">Arte y Arquitectura</span></a></div>      
+                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Arte y Arquitectura</span></a></div>      
                         <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Agropecuarias</span></a></div>
                         <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Comunicacion y medios</span></a></div>      
                         <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">ingenieria y tecnologia</span></a></div>      

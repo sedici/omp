@@ -923,7 +923,7 @@ margin:10px 0px 0px 0px;
 border-bottom: 1px solid #63c6bf;
 color:#63c6bf;
 margin-left:20px;
-font-size:1em;
+font-size:1.5em;
 font-weight:bold;
 }
 
@@ -982,7 +982,7 @@ padding:0px 15px;
 
 .mobile_texto {
 text-align:center;
-font-size:1em;
+font-size:1.5em;
 margin: 0 auto !important;
 }
 
@@ -1125,7 +1125,6 @@ text-decoration:none;
 
 .imagen_y_titulo {
 	margin-top:10px;
-
 }
 
 .imagen_y_titulo h1{
@@ -1153,8 +1152,6 @@ p {
 	text-align:justify !important;
 }
 
-
-    
-    
+.panel-title {
+	font-size:24px!important;
 }
-
