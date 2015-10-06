@@ -18,7 +18,7 @@
 <div class="row">
     <div class="mobile_layout">
         <div class="col-md-12">
-            <div class="col_principal col-xs-12">
+            <div class="col_principal_mobile col-xs-12">
                 {* Include the full monograph list *}
                 {include file="unlp/mobile/monographs.tpl" publishedMonographs=$publishedMonographs}
             </div>

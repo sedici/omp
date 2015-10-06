@@ -67,28 +67,28 @@ dsds
         {/iterate}
                 
                 <div class="panel-body">
-                    <div class="row">
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Arte y Arquitectura</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Agropecuarias</span></a></div>
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Comunicacion y medios</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">ingenieria y tecnologia</span></a></div>      
-                    </div>   
-
-
-                    <div class="row">
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Naturales</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la salud</span></a></div>
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png" class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la Salud</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Derecho y Ciencias Politicas</span></a></div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Viaje de negocios</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Arreglo de lamparas</span></a></div>   
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Lavado de pies</span></a></div>      
-                        <div class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Ramon</span></a></div>   
-                    </div>
+                
+					<ul>
+                                         
+				    <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Arte y Arquitectura</span></a></li>      
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Agropecuarias</span></a></li> 
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Comunicacion y medios</span></a></li>      
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">ingenieria y tecnologia</span></a></li>       
+                  
+				     <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Naturales</span></a></li>    
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la salud</span></a></li> 
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png" class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la Salud</span></a></li>     
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Derecho y Ciencias Politicas</span></a></li>
+                  
+				      <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Viaje de negocios</span></a></li>       
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Arreglo de lamparas</span></a></li>  
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Lavado de pies</span></a></li>       
+                        <li class="exploracion_mobile col-xs-3"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Ramon</span></a></li>    
+                  
+                   
+					</ul> 
+							
+					
                 </div>
             </div>
         </div>
