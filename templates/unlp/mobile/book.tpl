@@ -74,7 +74,7 @@
 			<div class="detalle col-md-12">
 				<div class="detalles_del_item_mobile  col-xs-9">
 					<ul>
-                    <li><strong>Autor/es:</strong> {$publishedMonograph->getAuthorString()}</li>
+                    <li><strong>Autor/es</strong> {$publishedMonograph->getAuthorString()}</li>
                     <li>
                         {if $series}
                             <div class="seriesLink"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></div>
@@ -115,7 +115,7 @@
                             {foreach from=$identificationCodes->toArray() item=identificationCode}
 
                                 {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
-                                        <strong>ISBN:</strong>  {$identificationCode->getValue()|escape}
+                                        <strong>ISBN</strong>  {$identificationCode->getValue()|escape}
                                     {/if}
                                     {/foreach}
 
@@ -127,7 +127,7 @@
                                     </div>
 									
 									<div class="col-xs-3">
-									<a href="#"><div class="glyphdown glyphicon glyphicon-download col-xs-12" style="text-align:center;"></div></a>
+									<a href="#"><div class="glyphicon glyphicon-eye-open col-xs-12" style="text-align:center;"></div></a>
                                            <div class="col-xs-12">
 										   {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                                             {assign var=currency value=$currentPress->getSetting('currency')}
@@ -157,8 +157,7 @@
                                             </div>
 											
             </div>
-            
-			<div class="metadata simple-item-view-other subtype">
+            <div class="metadata simple-item-view-other subtype">
                 <div class="share-bar">
                       <div class="external-share" style="display:inline-block;vertical-align:top">
                       <div id="fb-root"></div><div id="share_fb"></div>
@@ -167,14 +166,16 @@
 						</div> 
 </div>
 
+<!--reseña-->  
 <div class="row">
+ 
                            <div class="resena_mobile col-xs-12">
                                 <h1>Reseña</h1>
                                 <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
                             </div>
 							{if (chapters|size > 0)}
                                 <div class="contenidos">
-                                    <h1>Tabla de contenidos </h1>
+                                    <h1>Tabla de contenidos</h1>
                                     <ul>
                                         {foreach from=$chapters item=chapter}
                                             <li>			
@@ -192,6 +193,8 @@
 							{/if}
    </div>
    
+
+<!--autores-->  
 <div class="row">
 							<div class="col-xs-12 informaciondeautores">
                                                       <ul>
@@ -208,6 +211,9 @@
                                 </li>
                             </ul>
                         </div>
+						
+			
+			
 <div>
 
                         {include file="catalog/book/googlescholar.tpl"}

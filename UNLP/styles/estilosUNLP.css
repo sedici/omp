@@ -610,7 +610,7 @@ display:block;
 clear:right;
 font-size:0.8em;
 font-weight:normal;
-text-decoration:underline;
+margin-top:10px;
 }
 
 .sf-menu li:hover {
@@ -935,8 +935,7 @@ margin:10px 0px 0px 0px;
 border-bottom: 1px solid #63c6bf;
 color:#63c6bf;
 margin-left:20px;
-font-size:1.5em;
-font-weight:bold;
+font-size:1.2em;
 }
 
 .falopa {
@@ -994,7 +993,7 @@ padding:0px 15px;
 
 .mobile_texto {
 text-align:center;
-font-size:1em;
+font-size:1.2em;
 margin: 0 auto !important;
 }
 
@@ -1080,21 +1079,16 @@ line-height:1.5;
 color:red;
 font-size:16px;
 font-weight:bold;
-color:#6dc6c1;
-margin-left: 10px;
+color:#21919f;
+margin-left: 25px;
 }
 
 .resena_mobile p{
 text-align:justify;
-padding:0px 10px;
-line-height:2;
-font-size:2em;
-}
+padding:0px 25px;
+line-height:3;
+font-size:1.2em;
 
-.informaciondeautores h1 {
-font-size:15px;
-color:#21919f;
-text-decoration:underline;
 }
 
 .informaciondeautores  {
@@ -1104,17 +1098,38 @@ line-height:2;
 font-size:1.5em;
 }
 
+.informaciondeautores h1 {
+font-size:18px;
+color:#21919f;
+font-weight:bold;
+}
+
+.informaciondeautores h1 strong{
+font-weight:regular;
+font-size:16px;
+}
+
 .informaciondeautores  p{
 line-height:2;
 text-align:justify;
 }
 
-.glyphdown {
-font-size:50px;
+.informaciondeautores li p{
+color:#757576;
+font-size:15px;
+line-height:2;
+padding: 0 10px 0 0;
+}
+
+
+.glyphdown, .glyphicon-eye-open {
+font-size:90px;
+color:#21919f;
 }
 
 .publicationFormatLink {
 	text-align:center;
+	color:#21919f;
 }
 
 .flechaback {
@@ -1147,6 +1162,14 @@ font-size:1em;
 text-decoration:none;
 } 
 
+.detalles_del_item_mobile ul li {
+	color:#757576;
+}
+
+.detalles_del_item_mobile ul li strong{
+	color:#6dc6c1;
+}
+
 .imagen_y_titulo {
 	margin-top:10px;
 }
@@ -1166,9 +1189,9 @@ text-decoration:none;
 	color:red;
 	font-size:14px;
 }
-zº
+
 .publicationFormatName {
-	display:none;
+	display:none !important;
 }
 
 p {
@@ -1220,3 +1243,4 @@ p {
 	bottom:0px;
 	}
 
+  
