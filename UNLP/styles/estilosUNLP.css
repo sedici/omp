@@ -17,7 +17,7 @@ body {
 
 
 .pkp_structure_page {
-  
+
     margin: 0;
     background-position: 0 0;
     
@@ -394,12 +394,13 @@ list-style-type:none;
 }
 .col_principal .resena {
 }
-.col_principal .resena, .col_principal .contenidos {
+.col_principal .resena  , .col_principal .contenidos {
 	clear: both;
 	padding-top: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 50px;
+    text-align: justify;
 }
 .col_principal .contenidos h1, .col_secundaria .relacionados h1 {
 	color: #46b5af;
