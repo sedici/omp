@@ -112,10 +112,7 @@
                                 </div>
                                 <div class="metadata simple-item-view-other subtype">
                                     <div class="share-bar">
-                                        <div class="external-share" style="display:inline-block;vertical-align:top">
-                                            <div id="fb-root"></div><div id="share_fb"></div>
-                                        </div>
-                                        <div class="external-share"><div id="share_tw"></div></div>
+
                                     </div>
 
                                 </div>
