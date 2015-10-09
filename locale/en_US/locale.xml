@@ -552,4 +552,5 @@ Your server currently supports mbstring: <strong>{$supportsMBString}</strong>]]>
          
          
          <message key="MANAGER.AFFILIATIONANDSUPPORT">Sponsor</message>
+    <message key="common.searchBooks">Search books</message>
 </locale>

@@ -13,47 +13,14 @@
     {include file="common/header.tpl"}
 {/strip}
 <!--<div class="pkp_catalog_book">-->
-
-{literal}
-    <script>
-        /** twitter share **/
-        !function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + '://platform.twitter.com/widgets.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, 'script', 'twitter-wjs');
-
-        /** facebook share **/
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id))
-                return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1439620293025690";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-
-        $(document).ready(function () {
-            var share_fb = "#share_fb";
-            var share_tw = "#share_tw";
-            url = window.location.href;
-
-            $(share_tw).append('<a href="https://twitter.com/share" class="twitter-share-button" data-via="sedici_unlp" data-lang="es"   data-count="none">Twittear</a>');
-            $(share_fb).append('<div class="fb-like" data-layout="button_count" data-href="' + url + '" data-width="25" data-action="like" data-show-faces="false" data-share="true"></div>');
-        });
-    </script>    
-{/literal}
+{include file="unlp/social.tpl"}
 <div class="col_principal">
     <div class="destacado">
         <div class="portada">
             {url|assign:bookImageLinkUrl router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId()}
-            <a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}"><img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}"  width='100' height="132"/></a>
+            <a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}">
+                <img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}"  width='220' height="auto"/>
+            </a>
 
 
         </div>
@@ -144,23 +111,20 @@
                                 </div>
                                 <div class="metadata simple-item-view-other subtype">
                                     <div class="share-bar">
-                                        <div class="external-share" style="display:inline-block;vertical-align:top">
-                                            <div id="fb-root"></div><div id="share_fb"></div>
-                                        </div>
-                                        <div class="external-share"><div id="share_tw"></div></div>
+
                                     </div>
 
                                 </div>
 
                             </div>
                             <div class="resena">
-                                <h1>Reseña</h1>
+                                <h1>{translate key="submission.synopsis"}</h1>
                                 <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
                             </div>
 
                             {if (chapters|size > 0)}
                                 <div class="contenidos">
-                                    <h1>Tabla de contenidos </h1>
+                                    <h1>{translate key="submission.tableOfContents"}</h1>
                                     <ul>
                                         {foreach from=$chapters item=chapter}
                                             <li>			
@@ -177,7 +141,7 @@
                                 </div>
                             {/if}
                             <div class="resena">
-                                <h1>Informacion de los Autores</h1>
+                                <h1>{translate key="submission.aboutTheAuthors"}</h1>
                                 <ul>
                                     {assign var=authors value=$publishedMonograph->getAuthors()}
                                     {foreach from=$authors item=author}
@@ -197,7 +161,7 @@
                     </div>
                     <div class="col_secundaria">
                         <div class="busqueda">
-                            <div class="titulo">Busque el libro que desea</div>
+                            <div class="titulo">{translate key="common.searchBooks"}</div>
                             <div class="subtitulo"></div>
                             <div class="barra_">
                                 {include file="unlp/search.tpl"}
