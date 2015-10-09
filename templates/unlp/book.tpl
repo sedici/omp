@@ -120,7 +120,7 @@
                             </div>
                             <div class="resena">
                                 <h1>{translate key="submission.synopsis"}</h1>
-                                <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
+                                {$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}
                             </div>
 
                             {if (chapters|size > 0)}
@@ -148,7 +148,7 @@
                                     {foreach from=$authors item=author}
                                         <li>
                                             {if $author->getIncludeInBrowse()}
-                                               <h1>{translate key="catalog.aboutTheAuthor" roleName=$author->getLocalizedUserGroupName()}: <strong>{$author->getFullName()}</strong></h1>
+                                               <h1>{$author->getFullName()}</h1>
                                                 {assign var=biography value=$author->getLocalizedBiography()|strip_unsafe_html}
                                             {if $biography != ''}{$biography}{/if}
                                         </li>
