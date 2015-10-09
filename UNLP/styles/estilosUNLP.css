@@ -263,7 +263,7 @@ list-style-type:none;
 }
 .col_principal .destacado .detalle .detalles_del_item {
 	float: left;
-	padding-left: 15px;
+
         width: 65%;
 }
 .col_principal .destacado .detalle .detalles_del_item h2 {
@@ -284,6 +284,7 @@ list-style-type:none;
 	font-size: 14px;
 	line-height: 1.5;
 	margin-top:8px;
+	padding:0px;
 }
 
 
@@ -389,7 +390,7 @@ list-style-type:none;
 list-style-type:none;
 }
 .col_principal .destacado h1 {
-	color: #6dc6c1;
+	color: #21919f;
 	font-size: 20px;
 }
 .col_principal .resena {
@@ -414,6 +415,7 @@ list-style-type:none;
 	
 .col_principal .resena h1 {
 	color:#46b5af;
+	margin:0px;
 }
 }
 	
@@ -421,9 +423,15 @@ list-style-type:none;
 	margin: 0px 0px 10px 0px;
 	padding: 10px 10px 0px 0px;
 	font-size: 12px;
-	line-height: 1.5!important;
+	line-height: 1.8!important;
 	text-align: justify;
 	width: 90%;
+}
+
+.resena p {
+	text-align:justify;
+	line-height:1.5;	
+	
 }
 .col_secundaria .relacionados ul {
 	font-size: 13px;
@@ -598,7 +606,8 @@ font-weight:bold;
 }
 
 .resena ul li h1 {
-color:red;
+color:red !important;
+
 }
 
 .resena h1 strong{
@@ -609,7 +618,7 @@ li strong {
 display:block;
 clear:right;
 font-size:0.8em;
-font-weight:normal;
+font-weight:bold;
 margin-top:10px;
 }
 
@@ -946,7 +955,6 @@ margin-top:20px;
 padding:0px;
 }
 
-
 #escudo {
 display:block;
 }
@@ -1223,24 +1231,36 @@ p {
 .carousel-caption a h1 {
 	float:right;
 	background-color:none;
-	text-align:right;
-	color:white;
-	font-size:26px;
+	text-align:left;
+	color:#63c6bf;
+	font-size:1.5em;
 	
 }
-
-
 
 .carousel-caption p, .carousel-caption p a {
 	margin:0;
 	float:right;
 	padding:0;
-	color:white;
+	color:black;
 	}
-
-
+	
 .carousel-indicators {
 	bottom:0px;
 	}
 
+.carousel-inner img {
+	float:left;
+}
+
+.carousel-control {
+	background-image:none !important;
+	}
+	
+.imagencarru  {
+	border:1px solid red;
+}
+
+.paneles  {
+	margin-bottom:20px;
+}
   

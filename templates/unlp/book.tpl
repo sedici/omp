@@ -51,7 +51,6 @@
 {/literal}
 <div class="col_principal">
     <div class="destacado">
-        <h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
         <div class="portada">
             {url|assign:bookImageLinkUrl router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId()}
             <a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}"><img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}"  width='100' height="132"/></a>
@@ -59,7 +58,7 @@
 
         </div>
         <div class="detalle">
-
+		<h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
             <div class="detalles_del_item">
 
                 <ul>
