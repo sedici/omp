@@ -119,13 +119,13 @@
 
                             </div>
                             <div class="resena">
-                                <h1>Reseña</h1>
+                                <h1>{translate key="submission.synopsis"}</h1>
                                 <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
                             </div>
 
                             {if (chapters|size > 0)}
                                 <div class="contenidos">
-                                    <h1>Tabla de contenidos </h1>
+                                    <h1>{translate key="submission.tableOfContents"}</h1>
                                     <ul>
                                         {foreach from=$chapters item=chapter}
                                             <li>			
@@ -142,7 +142,7 @@
                                 </div>
                             {/if}
                             <div class="resena">
-                                <h1>Informacion de los Autores</h1>
+                                <h1>{translate key="submission.aboutTheAuthors"}</h1>
                                 <ul>
                                     {assign var=authors value=$publishedMonograph->getAuthors()}
                                     {foreach from=$authors item=author}
@@ -162,7 +162,7 @@
                     </div>
                     <div class="col_secundaria">
                         <div class="busqueda">
-                            <div class="titulo">Busque el libro que desea</div>
+                            <div class="titulo">{translate key="common.searchBooks"}</div>
                             <div class="subtitulo"></div>
                             <div class="barra_">
                                 {include file="unlp/search.tpl"}
