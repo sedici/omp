@@ -16,7 +16,6 @@
 {include file="unlp/social.tpl"}
 <div class="col_principal">
     <div class="destacado">
-        <h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
         <div class="portada">
             {url|assign:bookImageLinkUrl router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId()}
             <a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}">
@@ -26,7 +25,7 @@
 
         </div>
         <div class="detalle">
-
+		<h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
             <div class="detalles_del_item">
 
                 <ul>
