@@ -29,8 +29,10 @@
                 {iterate from=browseSeries item=browseSeriesItem}
                 <li>
                     <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
-                        {$browseSeriesItem->getLocalizedTitle()|escape}</a></li>    
-                        {/iterate}
+                        {$browseSeriesItem->getLocalizedTitle()|escape}
+                    </a>
+                </li>    
+                {/iterate}
             </ul>
         </div>
         <div class="links_relacionados">
@@ -87,5 +89,5 @@
     </div>
 </div>
 {strip}
-    {include file="unlp/mobile/layout.tpl" suppressPageTitle=true browseSeries=$browseSeries browseCategories=$browseCategories }
+    {include file="unlp/mobile/layout.tpl" }
 {/strip}

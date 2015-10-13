@@ -13,11 +13,11 @@
                 <div class="panel-body">
                     <ul>
                         {iterate from=browseSeriesList item=browseSeriesItem}
-                            <li>
-                                <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
-                                    {$browseSeriesItem->getLocalizedTitle()|escape}
-                                </a>
-                            </li>    
+                        <li>
+                            <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
+                                {$browseSeriesItem->getLocalizedTitle()|escape}
+                            </a>
+                        </li>    
                         {/iterate} 
                     </ul>
                 </div>
@@ -32,71 +32,58 @@
                 </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                
-                
-        {assign var="categoriaByLine" value="4"}
-        {assign var="categorias" value="8"}
-        {assign var="div" value=true}
-        
-        {iterate from=$browseCategories item=$browseCategory}
-
-dsds
-        {if ($categorias>0) }
-            {if ($div==true)} 
-                <div class="linea">
-                    {assign var="div" value=false}
-                {/if} 
-                <div class="icon">
-                    {assign var="category_id" value=$browseCategory->getId()}
-                    <img src="/files/presses/1/categories/{$category_id}-category.png" />
-                    <div class="texto_icon">
-                        <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
-                            {$browseCategory->getLocalizedTitle()|escape}
-
-                        </a>
-                    </div>
-                </div>
-                {if ($categoriaByLine == 0) }
-                    {assign var="categoriaByLine" value="4"}
-                </div> 
-                {assign var="div" value=true}
-            {/if}
-            {assign var="categoriaByLine" value=$categoriaByLine-1}
-            {assign var="categorias" value=$categorias-1}
-        {/if} 
-        {/iterate}
-                
                 <div class="panel-body">
-                
-					<ul>
-                                         
-						<span class="row">
-						<li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png" class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Arte y Arquitectura</span></a></li>      
-                        <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Agropecuarias</span></a></li> 
-                  		<li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="center-block"></img> <a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Comunicacion y medios</span></a></li>      
-						</span>
-						
-						<span class="row">
-						<li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">ingenieria y tecnologia</span></a></li>       
-                        <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Naturales</span></a></li>    
-                        <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la salud</span></a></li> 
-                        </span>
-						
-						<span class="row">
-						<li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/10-category.png" class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la Salud</span></a></li>     
-                        <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/13-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Derecho y Ciencias Politicas</span></a></li>
-                        <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Viaje de negocios</span></a></li>       
-						</span>
-						
-						<span class="row">
-						<li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Arreglo de lamparas</span></a></li>  
-                        <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Lavado de pies</span></a></li>       
-                        <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/30-category.png"class="img-responsive center-block"></img><a href="#"><span class="mobile_texto"><span class="mobile_texto center-block">Ramon</span></a></li>    
-                  </span>
-                   
-					</ul> 
-							
-					
+
+                    <ul>      
+
+                        {assign var="categoriaByLine" value="2"}
+                        {assign var="categorias" value="9"}
+                        {assign var="div" value=true}
+
+                        {iterate from=browseCategoriesList item=browseCategoryList}
+                        {if ($categorias>0) }
+                            {if ($div==true)} 
+                                 <span class="row">
+                                    {assign var="div" value=false}
+                                {/if} 
+                                    {assign var="category_id" value=$browseCategoryList->getId()}
+                                    
+                                      <li class="exploracion_mobile col-xs-4">
+                                         <img src="/files/presses/1/categories/{$category_id}-category.png" class="center-block" />
+                                        <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategoryList->getPath()}">
+                                           
+                                            <span class="mobile_texto"> {$browseCategoryList->getLocalizedTitle()|escape}</span>
+                                            </a>
+                                      </li>       
+                                {if ($categoriaByLine == 0) }
+                                    {assign var="categoriaByLine" value="3"}
+                                 </span> 
+                                {assign var="div" value=true}
+                            {/if}
+                            {assign var="categoriaByLine" value=$categoriaByLine-1}
+                            {assign var="categorias" value=$categorias-1}
+                        {/if} 
+                        {/iterate}
+
+
+
+
+                        <!--		
+                                        <span class="row">
+                                        <li class="exploracion_mobile col-xs-4">
+                        <img src="http://163.10.34.211/files/presses/1/categories/16-category.png"class="center-block"></img>
+                            <a href="#"><span class="mobile_texto center-block">
+                            <span class="mobile_texto">ingenieria y tecnologia</span>
+                            </a>
+                        </li>       
+                <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/1-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias Naturales</span></a></li>    
+                <li class="exploracion_mobile col-xs-4"><img src="http://163.10.34.211/files/presses/1/categories/7-category.png"class="center-block"></img><a href="#"><span class="mobile_texto center-block"><span class="mobile_texto">Ciencias de la salud</span></a></li> 
+                </span>-->
+
+
+                    </ul> 
+
+
                 </div>
             </div>
         </div>
