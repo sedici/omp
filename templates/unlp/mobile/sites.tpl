@@ -12,7 +12,7 @@
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                     <ul>
-                        {iterate from=$browseSeries item=browseSeriesItem}
+                        {iterate from=browseSeriesList item=browseSeriesItem}
                             <li>
                                 <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
                                     {$browseSeriesItem->getLocalizedTitle()|escape}

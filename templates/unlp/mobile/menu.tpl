@@ -1,6 +1,6 @@
 <script type="text/javascript">
-        $(function () {ldelim}
-                $('#topSearchFormField').jLabel();
+    $(function () {ldelim}
+            $('#topSearchFormField').jLabel();
     {rdelim});
 </script>
 
@@ -27,20 +27,30 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{url router=$smarty.const.ROUTE_PAGE page="index"}">{translate key="navigation.home"} <span class="sr-only"></span></a></li>
                 <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">{translate key="navigation.catalog"}</a></li>
-
-
-                <!--<li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>-->
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Unidades  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {iterate from=browseSeriesMenu item=browseSeriesItem_menu}
+                        <li>
+                            <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem_menu->getPath()}"> 
+                                {$browseSeriesItem_menu->getLocalizedTitle()|escape}
+                            </a>
+                        </li>    
+                        {/iterate}
+                    </ul>
+                </li>
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Areas Temáticas  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {iterate from=browseCategoriesMenu item=browseCategoriesItem_menu}
+                        <li>
+                            <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseCategoriesItem_menu->getPath()}"> 
+                                {$browseCategoriesItem_menu->getLocalizedTitle()|escape}
+                            </a>
+                        </li>    
+                        {/iterate}
+                    </ul>
+                </li>
             </ul>
 
             </li>
