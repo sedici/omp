@@ -32,8 +32,6 @@ function main(){
 
 <link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="{$baseUrl}/UNLP/styles/bootstrap/css/bootstrap.css" >
-<link rel="stylesheet" href="{$baseUrl}/UNLP/styles/bootstrap/css/bootstrap.icon-large.css" >
 
 <link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/>
 
