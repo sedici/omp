@@ -1,4 +1,5 @@
 {include file="unlp/mobile/headMobile.tpl"}
+
 <div class="container">
 
     {literal}
@@ -41,12 +42,8 @@
     <div class="row">
         {include file="unlp/mobile/menu.tpl"}
     </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="barra col-md-12"><a href="#">"<span class="col-xs-2 glyphicon glyphicon-menu-left flechaback"></span></div></a>
-        </div>
-    </div>
+   
+   
 
     <div class="row">
         <div class="destacado imagen_y_titulo col-xs-12">
@@ -153,57 +150,54 @@
                                         </div>
                                         <div class="external-share"><div id="share_tw"></div></div>                                    </div>
                                 </div> 
-    </div>
+                            </div>
 
                             <!--reseña-->  
-                            <div class="row">
-
-                                <div class="resena_mobile col-xs-12">
-                                    <h1>Reseña</h1>
-                                    <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
-                                </div>
-                                {if (chapters|size > 0)}
-                                    <div class="contenidos">
-                                        <h1>Tabla de contenidos</h1>
-                                        <ul>
-                                            {foreach from=$chapters item=chapter}
-                                                <li>			
-                                                    <p>
-                                                        <strong>{$chapter->getLocalizedTitle()}</strong>
-                                                        {if $chapter->getLocalizedSubtitle() != '' }<br />{$chapter->getLocalizedSubtitle()}{/if}
-                                                        {assign var=chapterAuthors value=$chapter->getAuthorNamesAsString()}
-                                                    <div class="authorName">{$chapterAuthors}</div>
-                                                    </p>
-                                                </li>
-                                            {/foreach}
-
-                                        </ul>
-                                    </div>
-                                {/if}
-                            </div>
+        <div class="row">
+            <div class="resena_mobile col-xs-12">
+                <h1>Reseña</h1>
+                <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
+            </div>
+            {if (chapters|size > 0)}
+                <div class="contenidos">
+                    <h1>Tabla de contenidos</h1>
+                        <ul>
+                            {foreach from=$chapters item=chapter}
+                                <li>			
+                                    <p><strong>{$chapter->getLocalizedTitle()}</strong>
+                                        {if $chapter->getLocalizedSubtitle() != '' }<br/>{$chapter->getLocalizedSubtitle()}{/if}
+                                        {assign var=chapterAuthors value=$chapter->getAuthorNamesAsString()}
+                                        <div class="authorName">{$chapterAuthors}</div>
+                                    </p>
+                                </li>
+                            {/foreach}
+                        </ul>
+                </div>
+            {/if}
+        </div>
 
 
                             <!--autores-->  
-                            <div class="row">
-                                <div class="col-xs-12 informaciondeautores">
-                                    <ul>
-                                        {assign var=authors value=$publishedMonograph->getAuthors()}
-                                        {foreach from=$authors item=author}
-                                            <li>
-                                                {if $author->getIncludeInBrowse()}
-                                                    <h1>{translate key="catalog.aboutTheAuthor" roleName=$author->getLocalizedUserGroupName()}: <strong>{$author->getFullName()}</strong></h1>
-                                                    {assign var=biography value=$author->getLocalizedBiography()|strip_unsafe_html}
-                                                {if $biography != ''}{$biography}{/if}
-                                            </li>
-                                        {/if}
-                                    {/foreach}
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            {include file="unlp/mobile/footer.tpl"}
-                        </div>
+        <div class="row">
+            <div class="col-xs-12 informaciondeautores">
+                <ul>
+                    {assign var=authors value=$publishedMonograph->getAuthors()}
+                        {foreach from=$authors item=author}
+                            <li>
+                                {if $author->getIncludeInBrowse()}
+                                <h1>{translate key="catalog.aboutTheAuthor" roleName=$author->getLocalizedUserGroupName()}: <strong>{$author->getFullName()}</strong></h1>
+                                {assign var=biography value=$author->getLocalizedBiography()|strip_unsafe_html}
+                                {if $biography != ''}{$biography}{/if}
+                                {/if}
+                            </li>
+                        {/foreach}
+                </ul>
+            </div>
+        </div>
 
-                    </div> <!-- /container -->
-
+    <div class="row">
+        {include file="unlp/mobile/footer.tpl"}
+    </div>
+</div> <!-- /container -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script type="text/javascript" src="{$baseUrl}/UNLP/styles/bootstrap/js/bootstrap.js"></script>
