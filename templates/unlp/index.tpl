@@ -88,6 +88,3 @@
         <a href="{url op="category" page='catalog'}" style="color:white; float: left; clear: left; background-color: #3db8c1;  padding:3px; text-decoration:none">Ver Más</a>
     </div>
 </div>
-{strip}
-    {include file="unlp/mobile/layout.tpl" }
-{/strip}

@@ -16,12 +16,15 @@
  *
  */
 
-
 switch ($op) {
 	case 'index':
             	define('HANDLER_CLASS', 'IndexHandler');
 		import('pages.index.IndexHandler');
 		break;
+         case 'index_mobile':
+            	define('HANDLER_CLASS', 'IndexMobileHandler');
+		import('pages.index.IndexMobileHandler');
+		break;   
          case 'unidades':
             	define('HANDLER_CLASS', 'UnlpHandler');
 		import('pages.unlp.UnlpHandler');
