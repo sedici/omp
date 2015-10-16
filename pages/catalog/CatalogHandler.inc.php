@@ -266,6 +266,39 @@ class CatalogHandler extends Handler {
          * 
          * 
          **************************************************************************************************/
+       
+        
+        
+        
+        
+        
+        //
+	// Public handler methods
+	//
+	/**
+	 * Show the catalog home.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 */
+	function index_mobile($args, $request) {
+		$templateMgr = TemplateManager::getManager($request);
+		$this->setupTemplate($request);
+		$press = $request->getPress();
+
+		// Fetch the monographs to display
+		$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+		$publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
+		$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+
+		// Display
+		//$templateMgr->display('catalog/index.tpl');
+                
+                $templateMgr->display('unlp/mobile/catalog.tpl');
+                
+	}
+        
+        
+        
         /**
 	 * View the content of a category.
 	 * @param $args array

@@ -1,32 +1,31 @@
-{**
- * templates/catalog/index.tpl
- *
- * Copyright (c) 2014 Simon Fraser University Library
- * Copyright (c) 2003-2014 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * Entry page for the public-facing catalog
- *}
-{strip}
-{assign var="pageTitle" value="navigation.catalog"}
-{include file="common/header.tpl" suppressPageTitle=true}
-{/strip}
+{include file="unlp/mobile/headMobile.tpl"}
+<div class="container">
 
-<div class="col_principal">
-{* Include the full monograph list *}
-{include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
-</div>
-<div class="col_secundaria">
-    <div class="busqueda">
-        <div class="titulo">Busque el libro que desea</div>
-        <div class="subtitulo"></div>
-        <div class="barra_">
-            {include file="unlp/search.tpl"}
-            <!--<div class="barrita"></div>
-                <div class="lupita"></div>
-            -->
+
+    <!-- Row Header -->
+    <div class="row">
+        {include file="unlp/mobile/header.tpl" }
+    </div>
+    <div class="row">
+        {include file="unlp/mobile/menu.tpl"}
+    </div>
+    <div class="row">
+        <div class="mobile_layout">
+            <div class="col-md-12">
+                <div class="col_principal_mobile col-xs-12">
+                    {* Include the full monograph list *}
+                    {include file="unlp/mobile/monographs.tpl" publishedMonographs=$publishedMonographs}
+                </div>
+            </div>
         </div>
     </div>
 
-</div>
-{include file="common/footer.tpl"}
+    <div class="row">
+        {include file="unlp/mobile/footer.tpl"}
+    </div>
+
+</div> <!-- /container -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script type="text/javascript" src="{$baseUrl}/UNLP/styles/bootstrap/js/bootstrap.js"></script>
+
+

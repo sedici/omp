@@ -30,7 +30,8 @@ switch ($op) {
 		break;
         case 'results_mobile':
         case 'unidades_mobile':
-        case 'category_mobile':    
+        case 'category_mobile':
+        case 'index_mobile':    
 		define('HANDLER_CLASS', 'CatalogHandler');
 		import('pages.catalog.CatalogHandler');
 		break;    
