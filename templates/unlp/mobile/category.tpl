@@ -28,9 +28,8 @@
             </div>
         </div>
     </div>
-    <div class="row">
+     <div class="row">
         {include file="unlp/mobile/footer.tpl"}
     </div>
 </div><!-- catalogContainer -->
 
-{include file="common/footer.tpl"}
