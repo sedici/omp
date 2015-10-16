@@ -1,7 +1,7 @@
 <div class="headermobile" id="headerContainer">
     <div class="col-xs-7" id="sacapadding">
         <div class="parabanda">
-            <a href="{url router=$smarty.const.ROUTE_PAGE context="index"  op="index_mobile"}">
+            <a href="{url router=$smarty.const.ROUTE_PAGE context="unlp"  op="index"}">
 
                 <img src="http://163.10.34.211/UNLP/images/marca_responisve.png" id="jv" class="img-responsive" alt="Imagen responsive"> </a>
         </div>
