@@ -45,7 +45,7 @@ RewriteRule ^index.php/unlp/catalog/results$ index.php/unlp/catalog/results_mobi
 RewriteRule ^index.php/unlp/catalog/book/(.*)$ index.php/unlp/catalog/book_mobile/$1 [L]
 RewriteRule ^index.php/unlp/catalog/unidades/(.*)$ index.php/unlp/catalog/unidades_mobile/$1 [L]
 RewriteRule ^index.php/unlp/catalog/category/(.*)$ index.php/unlp/catalog/category_mobile/$1 [L]
-
+RewriteRule ^index.php/unlp/catalog$ index.php/unlp/catalog/index_mobile/$1 [L]
 
 
 
