@@ -13,7 +13,6 @@
     </div>
     <div class="col3">
         <div class="redes">
-            <strong style="float:left;">Redes</strong>
             <img src="/UNLP/images/social_1.png" />
             <img src="/UNLP/images/social_2.png"/>
             <img src="/UNLP/images/social_3.png" />
