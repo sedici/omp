@@ -47,7 +47,7 @@ body {
 
 .pkp_structure_foot {
     background-color: #6dc6c1;
-    height: 200px;
+    height: 100px;
     font-family: arial;
     font-size: 12px;
     
@@ -99,7 +99,7 @@ body {
 
 
 .pkp_structure_body .pkp_structure_content {
-    height: 500px;
+    /*height: 500px;*/
     background-position: center top;
     width : 100%;
 }
@@ -114,6 +114,7 @@ body {
 	margin: 0px 0px 0px 5px;
 	width: 300px;
 	position:relative;
+	padding-top:15px;
 	top:10px;
 	color:white;
 }
