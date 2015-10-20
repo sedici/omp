@@ -668,15 +668,7 @@ color:#12909f;
     .publicationFormatDownload li > div { float: left; width: 50%; } */
 
 
-    .resumen.truncate {
-        text-overflow: ellipsis;
-        width: 435px;
-        height: 110px;
-        overflow: hidden;
-        padding-top: 5px;
-        font-size: 90%;
-        text-align: justify;
-    }
+   
 
 	.publicationFormatDownload { width: 250px; }
     .publicationFormatDownload li { display: block; padding-left: 10px; }
@@ -687,7 +679,7 @@ color:#12909f;
 
     .resumen.truncate {
         text-overflow: ellipsis;
-        width: 250px;
+        width: 435px;
         height: 110px;
         overflow: hidden;
         padding-top: 5px;
