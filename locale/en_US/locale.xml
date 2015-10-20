@@ -220,14 +220,14 @@
 	<message key="grid.reviewAttachments.availableFiles">Available Files</message>
 
 	<!-- series/categories/series -->
-	<message key="series.series">Series</message>
+	<message key="series.series">Unidad Academica</message>
 	<message key="series.featured">Featured</message>
 	<message key="series.featured.description">This series will appear on the main navigation</message>
 	<message key="series.path">Path</message>
 
-	<message key="grid.category.categories">Categories</message>
-	<message key="grid.category.add">Add Category</message>
-	<message key="grid.category.edit">Edit Category</message>
+	<message key="grid.category.categories">Áreas temáticas</message>
+	<message key="grid.category.add">Add Áreas temáticas</message>
+	<message key="grid.category.edit">Edit Áreas temáticas</message>
 	<message key="grid.category.name">Name</message>
 	<message key="grid.category.path">Path</message>
 	<message key="grid.category.urlWillBe">The category's URL will be {$sampleUrl}</message>
@@ -244,8 +244,8 @@
 	<message key="catalog.manage">Catalog Management</message>
 	<message key="catalog.manage.homepage">Homepage</message>
 	<message key="catalog.manage.newReleases">New Releases</message>
-	<message key="catalog.manage.category">Category</message>
-	<message key="catalog.manage.series">Series</message>
+	<message key="catalog.manage.category">Áreas temáticas</message>
+	<message key="catalog.manage.series">Unidades Academicas</message>
 	<message key="catalog.manage.managementIntroduction">Welcome to Catalog Management. From this page you can publish new catalog entries; review and configure your Featured Books listing; review and configure your New Releases listing; and review and configure your books by Category and Series.</message>
 	<message key="catalog.selectSeries">Select Series</message>
 	<message key="catalog.selectCategory">Select Category</message>
@@ -405,7 +405,7 @@
 
 <h4>Upgrade</h4>
 
-<p>If you are upgrading an existing installation of OMP 0.x, <a href="{$upgradeUrl}">click here</a> to proceed.</p>]]></message>
+<p>If you are upgrading an existing installation of OMP, <a href="{$upgradeUrl}">click here</a> to proceed.</p>]]></message>
 	<message key="installer.preInstallationInstructionsTitle">Pre-Installation Steps</message>
 	<message key="installer.preInstallationInstructions"><![CDATA[<p>1. The following files and directories (and their contents) must be made writable:</p>
 <ul>
@@ -547,8 +547,13 @@ Your server currently supports mbstring: <strong>{$supportsMBString}</strong>]]>
 	<!-- General plugin information -->
 	<message key="plugins.categories.viewableFiles">Published File Plugins</message>
 	<message key="plugins.categories.viewableFiles.description">Published File Plugins add support for displaying different document types inline, e.g. using PDF embedding.</message>
-	<message key="submission.pdf.download">Download this PDF file</message>
 
 	<message key="user.profile.form.showOtherContexts">Show Other Presses</message>
 	<message key="user.profile.form.hideOtherContexts">Hide Other Presses</message>
+	 <message key="submission.pdf.download">Download this PDF file</message>
+         
+         
+         <message key="MANAGER.AFFILIATIONANDSUPPORT">Sponsor</message>
+    <message key="common.searchBooks">Search books</message>
+>>>>>>> responsive
 </locale>

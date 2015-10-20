@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin_settings SYSTEM "../../../lib/pkp/dtd/pluginSettings.dtd">
+
+<!--
+  * settings.xml
+  *
+  * Copyright (c) Sobrado Ariel
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Default  statsAdmin plugin settings.
+  *
+  * $Id$
+  -->
+
+<plugin_settings>
+	<setting type="bool">
+		<name>enabled</name>
+		<value>false</value>
+	</setting>
+	<setting type="bool">
+		<name>adminEnabled</name>
+		<value>true</value>
+	</setting>
+</plugin_settings>

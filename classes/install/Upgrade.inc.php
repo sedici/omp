@@ -52,6 +52,7 @@ class Upgrade extends Installer {
 		$submissionDao = DAORegistry::getDAO('MonographDAO');
 		$submissionFileDao = DAORegistry::getDAO('SubmissionFileDAO');
 		DAORegistry::getDAO('GenreDAO'); // Load constants
+		$genreDao = DAORegistry::getDAO('GenreDAO');
 		$siteDao = DAORegistry::getDAO('SiteDAO'); /* @var $siteDao SiteDAO */
 		$site = $siteDao->getSite();
 		$adminEmail = $site->getLocalizedContactEmail();
@@ -225,6 +226,7 @@ class Upgrade extends Installer {
 		return true;
 	}
 
+
 	/**
 	 * Convert email templates to HTML.
 	 * @return boolean True indicates success.
@@ -291,6 +293,7 @@ class Upgrade extends Installer {
 
 		return true;
 	}
+
 }
 
 ?>

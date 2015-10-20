@@ -36,8 +36,13 @@ class SeriesTest extends WebTestCase {
 		$this->type('css=[id^=path-]', 'lis');
 
 		// Add Series Editor (David Buskins)
+<<<<<<< HEAD
 		$this->waitForElementPresent('css=[id^=component-listbuilder-settings-subeditorslistbuilder-addItem-button-]');
 		$this->clickAt('css=[id^=component-listbuilder-settings-subeditorslistbuilder-addItem-button-]', '10,10');
+=======
+		$this->waitForElementPresent('css=[id^=component-listbuilder-settings-serieseditorslistbuilder-addItem-button-]');
+		$this->clickAt('css=[id^=component-listbuilder-settings-serieseditorslistbuilder-addItem-button-]', '10,10');
+>>>>>>> responsive
 
 		$this->waitForElementPresent('//select[@name=\'newRowId[name]\']//option[text()=\'David Buskins\']');
 		$this->select('name=newRowId[name]', 'label=David Buskins');
@@ -56,8 +61,13 @@ class SeriesTest extends WebTestCase {
 		$this->type('css=[id^=path-]', 'pe');
 
 		// Add a Series Editor (Minoti Inoue)
+<<<<<<< HEAD
 		$this->waitForElementPresent('css=[id^=component-listbuilder-settings-subeditorslistbuilder-addItem-button-]');
 		$this->clickAt('css=[id^=component-listbuilder-settings-subeditorslistbuilder-addItem-button-]', '10,10');
+=======
+		$this->waitForElementPresent('css=[id^=component-listbuilder-settings-serieseditorslistbuilder-addItem-button-]');
+		$this->clickAt('css=[id^=component-listbuilder-settings-serieseditorslistbuilder-addItem-button-]', '10,10');
+>>>>>>> responsive
 		$this->waitForElementPresent('//select[@name=\'newRowId[name]\']//option[text()=\'Stephanie Berardo\']');
 		$this->select('name=newRowId[name]', 'label=Stephanie Berardo');
 		$this->click('//form[@id=\'seriesForm\']//span[text()=\'Save\']/..');

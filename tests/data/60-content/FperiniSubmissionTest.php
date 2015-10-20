@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class FperiniSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -97,7 +101,10 @@ class FperiniSubmissionTest extends ContentBaseTestCase {
 		$this->logOut();
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 		$this->logOut();
 	}
 }

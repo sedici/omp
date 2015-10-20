@@ -52,6 +52,7 @@ lib/pkp/tests							\
 .git								\
 .openshift							\
 lib/pkp/.git							\
+
 lib/pkp/lib/components/*.js					\
 lib/pkp/lib/components/*.css					\
 lib/pkp/lib/vendor/components					\
@@ -75,6 +76,7 @@ lib/pkp/lib/vendor/robloach					\
 lib/pkp/lib/vendor/smarty/smarty/demo				\
 lib/pkp/lib/vendor/symfony					\
 lib/pkp/lib/phpunit-selenium					\
+lib/pkp/tools/travis						\
 lib/pkp/lib/swordappv2/.git					\
 lib/pkp/lib/swordappv2/test"
 

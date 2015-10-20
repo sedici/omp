@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class JlockehartSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -34,6 +38,7 @@ class JlockehartSubmissionTest extends ContentBaseTestCase {
 			'type' => 'monograph',
 			'title' => $title,
 			'abstract' => 'Dreamwork is a poetic exploration of the then and there, here and now, of landscapes and inscapes over time. It is part of a poetry series on dream and its relation to actuality. The poems explore past, present, and future in different places from Canada through New Jersey, New York and New England to England and Europe, part of the speaker’s journey. A typology of home and displacement, of natural beauty and industrial scars unfolds in the movement of the book.',
+<<<<<<< HEAD
 			'chapters' => array(
 				array(
 					'title' => 'Introduction',
@@ -44,15 +49,22 @@ class JlockehartSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('Jonathan Locke Hart'),
 				),
 			),
+=======
+>>>>>>> responsive
 		));
 		$this->logOut();
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
 		$this->assignReviewer('amccrae', 'Aisla McCrae');
 		$this->sendToReview('External', 'Internal');
 		$this->waitForElementPresent('//a[contains(text(), \'External Review\')]/div[contains(text(), \'Initiated\')]');
+=======
+		$this->assignReviewer('amccrae', 'Aisla McCrae');
+		$this->sendToReview('External', 'Internal');
+>>>>>>> responsive
 		$this->assignReviewer('agallego', 'Adela Gallego');
 		$this->assignReviewer('gfavio', 'Gonzalo Favio');
 		$this->waitJQuery();
@@ -63,7 +75,10 @@ class JlockehartSubmissionTest extends ContentBaseTestCase {
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->recordEditorialDecision('Accept Submission');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Editorial\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 		$this->logOut();
 	}
 }

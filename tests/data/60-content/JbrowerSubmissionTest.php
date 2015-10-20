@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class JbrowerSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -38,6 +42,7 @@ class JbrowerSubmissionTest extends ContentBaseTestCase {
 				'Environmental Studies',
 				'Political & International Studies',
 			),
+<<<<<<< HEAD
 			'chapters' => array(
 				array(
 					'title' => 'Introduction',
@@ -76,6 +81,8 @@ class JbrowerSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('Jennifer Brower'),
 				),
 			),
+=======
+>>>>>>> responsive
 		));
 
 		$this->logOut();

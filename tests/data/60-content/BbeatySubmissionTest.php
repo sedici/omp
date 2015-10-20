@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class BbeatySubmissionTest extends ContentBaseTestCase {
 	/**
@@ -88,6 +92,7 @@ class BbeatySubmissionTest extends ContentBaseTestCase {
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
 		$this->assignReviewer('amccrae', 'Aisla McCrae');
 		$this->sendToReview('External', 'Internal');
@@ -100,6 +105,16 @@ class BbeatySubmissionTest extends ContentBaseTestCase {
 		$this->assignParticipant('Copyeditor', 'Maria Fritz');
 		$this->recordEditorialDecision('Send To Production');
 		$this->waitForElementPresent('//a[contains(text(), \'Production\')]/div[contains(text(), \'Initiated\')]');
+=======
+		$this->assignReviewer('amccrae', 'Aisla McCrae');
+		$this->sendToReview('External', 'Internal');
+		$this->assignReviewer('alzacharia', 'Al Zacharia');
+		$this->waitJQuery();
+		$this->recordEditorialDecision('Accept Submission');
+		$this->waitJQuery();
+		$this->assignParticipant('Copyeditor', 'Maria Fritz');
+		$this->recordEditorialDecision('Send To Production');
+>>>>>>> responsive
 		$this->assignParticipant('Layout Editor', 'Graham Cox');
 		$this->waitJQuery();
 

@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class MforanSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -34,6 +38,7 @@ class MforanSubmissionTest extends ContentBaseTestCase {
 			'type' => 'monograph',
 			'title' => $title,
 			'abstract' => 'A groundbreaking study of urban sprawl in Calgary after the Second World War. The interactions of land developers and the local government influenced how the pattern grew: developers met market demands and optimized profits by building houses as efficiently as possible, while the City had to consider wider planning constraints and infrastructure costs. Foran examines the complexity of their interactions from a historical perspective, why each party acted as it did, and where each can be criticized.',
+<<<<<<< HEAD
 			'chapters' => array(
 				array(
 					'title' => 'Setting the Stage',
@@ -48,12 +53,17 @@ class MforanSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('Max Foran'),
 				),
 			),
+=======
+>>>>>>> responsive
 		));
 		$this->logOut();
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('External');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'External Review\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 
 		$this->logOut();
 	}

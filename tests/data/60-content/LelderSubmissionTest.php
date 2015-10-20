@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class LelderSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -96,7 +100,11 @@ class LelderSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('Frank Tulus', 'Raymond Hyma'),
 				),
 				array(
+<<<<<<< HEAD
 					'title' => 'Catalyzing Access via Telecommunications Policy',
+=======
+					'title' => 'Catalyzing Access via Telecommunications Policy ',
+>>>>>>> responsive
 					'contributors' => array('John Valk', 'Khaled Fourati'),
 				),
 				array(
@@ -109,7 +117,10 @@ class LelderSubmissionTest extends ContentBaseTestCase {
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 		$this->assignReviewer('jjanssen', 'Julie Janssen');
 		$this->assignReviewer('phudson', 'Paul Hudson');
 		$this->assignReviewer('amccrae', 'Aisla McCrae');

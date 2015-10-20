@@ -147,15 +147,16 @@ class ChapterForm extends Form {
 			array($this, 'insertFilesEntry'),
 			array($this, 'updateFilesEntry')
 		);
+		ListbuilderHandler::unpack(null, $this->getData('authors'));
 
 		return true;
 	}
 
 	/**
 	 * Persist a new author entry insert.
-	 * @param $request Request
+	 * @param $request PKPRequest ALWAYS NULL IN THIS INSTANCE
 	 * @param $newRowId mixed New entry with data to persist
-	 * @return boolean
+	 * @return boolean True iff successful
 	 */
 	function insertAuthorsEntry($request, $newRowId) {
 		$monograph = $this->getMonograph();
@@ -171,7 +172,18 @@ class ChapterForm extends Form {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * @copydoc ListbuilderHandler::updateEntry()
+=======
+	 * FIXME: duplicated function from Listbuilder base class.
+	 * The updateEntry callback was not getting called because
+	 * the this on Listbuilder unpack function was set to this
+	 * form.
+	 * @param $request PKPRequest ALWAYS NULL IN THIS INSTANCE
+	 * @param $rowId string Row ID
+	 * @param $newRowId array Array
+	 * @return boolean True iff successful
+>>>>>>> responsive
 	 */
 	function updateAuthorsEntry($request, $rowId, $newRowId) {
 		if (!$this->deleteAuthorsEntry($request, $rowId)) return false;
@@ -180,9 +192,9 @@ class ChapterForm extends Form {
 
 	/**
 	 * Delete an author entry.
-	 * @param $request Request
+	 * @param $request PKPRequest ALWAYS NULL IN THIS INSTANCE
 	 * @param $rowId mixed ID of row to modify
-	 * @return boolean
+	 * @return boolean True iff successful
 	 */
 	function deleteAuthorsEntry($request, $rowId) {
 		$chapter = $this->getChapter();

@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class CallanSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -40,6 +44,7 @@ class CallanSubmissionTest extends ContentBaseTestCase {
 				'Communication & Cultural Studies',
 				'Political & International Studies',
 			),
+<<<<<<< HEAD
 			'chapters' => array(
 				array(
 					'title' => 'Prologue',
@@ -66,11 +71,14 @@ class CallanSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('Chantal Allan'),
 				),
 			),
+=======
+>>>>>>> responsive
 		));
 		$this->logOut();
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
 		$this->assignReviewer('phudson', 'Paul Hudson');
 		$this->sendToReview('External', 'Internal');
@@ -82,6 +90,16 @@ class CallanSubmissionTest extends ContentBaseTestCase {
 		$this->assignParticipant('Copyeditor', 'Sarah Vogt');
 		$this->recordEditorialDecision('Send To Production');
 		$this->waitForElementPresent('//a[contains(text(), \'Production\')]/div[contains(text(), \'Initiated\')]');
+=======
+		$this->assignReviewer('phudson', 'Paul Hudson');
+		$this->sendToReview('External', 'Internal');
+		$this->assignReviewer('gfavio', 'Gonzalo Favio');
+		$this->waitJQuery();
+		$this->recordEditorialDecision('Accept Submission');
+		$this->waitJQuery();
+		$this->assignParticipant('Copyeditor', 'Sarah Vogt');
+		$this->recordEditorialDecision('Send To Production');
+>>>>>>> responsive
 		$this->assignParticipant('Layout Editor', 'Stephen Hellier');
 		$this->assignParticipant('Proofreader', 'Catherine Turner');
 		$this->waitJQuery();
@@ -91,6 +109,10 @@ class CallanSubmissionTest extends ContentBaseTestCase {
 		$this->waitForElementPresent('css=[id=confirm]');
 		$this->click('css=[id=confirm]');
 		$this->click('css=[id^=submitFormButton-]');
+<<<<<<< HEAD
+=======
+		$this->waitJQuery();
+>>>>>>> responsive
 
 		$this->logOut();
 	}

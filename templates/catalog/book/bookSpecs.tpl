@@ -17,7 +17,9 @@
 
 <div class="bookSpecs">
 	{assign var=coverImage value=$publishedMonograph->getCoverImage()}
-	<a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}"><img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}" /></a>
+	<a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}">
+        <img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}"
+             src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}" /></a>
 	<div id="bookAccordion">
 		<h3><a href="#">{translate key="catalog.publicationInfo"}</a></h3>
 		<div class="publicationInfo">
@@ -49,7 +51,7 @@
 
 		{assign var=categories value=$publishedMonograph->getCategories()}
 		{if !$categories->wasEmpty()}
-			<h3><a href="#">{translate key="catalog.relatedCategories}</a></h3>
+			<h3><a href="#">{translate key="catalog.relatedCategories"}</a></h3>
 			<ul class="relatedCategories">
 				{iterate from=categories item=category}
 					<li><a href="{url op="category" path=$category->getPath()}">{$category->getLocalizedTitle()|strip_unsafe_html}</a></li>

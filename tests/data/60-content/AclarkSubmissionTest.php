@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class AclarkSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -34,6 +38,7 @@ class AclarkSubmissionTest extends ContentBaseTestCase {
 			'type' => 'monograph',
 			'title' => $title,
 			'abstract' => 'The ABCs of Human Survival examines the effect of militant nationalism and the lawlessness of powerful states on the well-being of individuals and local communities―and the essential role of global citizenship within that dynamic. Based on the analysis of world events, Dr. Arthur Clark presents militant nationalism as a pathological pattern of thinking that threatens our security, while emphasizing effective democracy and international law as indispensable frameworks for human protection.',
+<<<<<<< HEAD
 			'chapters' => array(
 				array(
 					'title' => 'Choosing the Future',
@@ -48,6 +53,8 @@ class AclarkSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('Arthur Clark'),
 				),
 			),
+=======
+>>>>>>> responsive
 		));
 		$this->logOut();
 
@@ -55,7 +62,10 @@ class AclarkSubmissionTest extends ContentBaseTestCase {
 		$this->sendToReview('External');
 		$this->assignReviewer('gfavio', 'Gonzalo Favio');
 		$this->recordEditorialDecision('Accept Submission');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Editorial\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 		$this->waitJQuery();
 		$this->assignParticipant('Copyeditor', 'Sarah Vogt');
 

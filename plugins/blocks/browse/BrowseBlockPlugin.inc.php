@@ -110,6 +110,7 @@ class BrowseBlockPlugin extends BlockPlugin {
 	function getContents($templateMgr, $request = null) {
 		$press = $request->getPress();
 
+
 		$browseNewReleases = $this->getSetting($press->getId(), 'browseNewReleases');
 		$templateMgr->assign('browseNewReleases', $browseNewReleases);
 
@@ -128,6 +129,7 @@ class BrowseBlockPlugin extends BlockPlugin {
 			$categories = $categoryDao->getByPressId($press->getId());
 			$templateMgr->assign('browseCategories', $categories);
 		}
+
 
 		// If we're currently viewing a series or catalog, detect it
 		// so that we can highlight the current selection in the

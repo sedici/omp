@@ -65,10 +65,14 @@ class TemplateManager extends PKPTemplateManager {
 				$this->assign('itemsPerPage', $context->getSetting('itemsPerPage'));
 				$this->assign('enableAnnouncements', $context->getSetting('enableAnnouncements'));
 
+                                $locales = $site->getSupportedLocaleNames();
+                                $this->assign('enableLanguageToggle', true);
+                                    $this->assign('languageToggleLocales', $locales);
+                                
 				// Assign stylesheets and footer
 				$contextStyleSheet = $context->getSetting('styleSheet');
 				if ($contextStyleSheet) {
-					$this->addStyleSheet($request->getBaseUrl() . '/' . $publicFileManager->getContextFilesPath(ASSOC_TYPE_PRESS, $context->getId()) . '/' . $contextStyleSheet['uploadName'], STYLE_SEQUENCE_LAST);
+					$this->addStyleSheet($this->request->getBaseUrl() . '/' . $publicFileManager->getContextFilesPath(ASSOC_TYPE_PRESS, $context->getId()) . '/' . $contextStyleSheet['uploadName'], STYLE_SEQUENCE_LAST);
 				}
 
 				// Include footer links if they have been defined.

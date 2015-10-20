@@ -1,0 +1,14 @@
+/**
+ * fontSmall.css
+ *
+ * Copyright (c) 2003-2008 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet for small fonts.
+ *
+ * $Id: fontSmall.css,v 1.1 2008/06/19 21:58:28 michael Exp $
+ */
+
+body {
+	font-size: 11px;
+}

@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class AlkarrasSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -42,6 +46,7 @@ class AlkarrasSubmissionTest extends ContentBaseTestCase {
 				'History',
 				'Sociology',
 			),
+<<<<<<< HEAD
 			'chapters' => array(
 				array(
 					'title' => 'Introduction',
@@ -64,11 +69,14 @@ class AlkarrasSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('A.L. Karras'),
 				),
 			),
+=======
+>>>>>>> responsive
 		));
 		$this->logOut();
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
 		$this->assignReviewer('jjanssen', 'Julie Janssen');
 		$this->sendToReview('External', 'Internal');
@@ -80,6 +88,16 @@ class AlkarrasSubmissionTest extends ContentBaseTestCase {
 		$this->assignParticipant('Copyeditor', 'Sarah Vogt');
 		$this->recordEditorialDecision('Send To Production');
 		$this->waitForElementPresent('//a[contains(text(), \'Production\')]/div[contains(text(), \'Initiated\')]');
+=======
+		$this->assignReviewer('jjanssen', 'Julie Janssen');
+		$this->sendToReview('External', 'Internal');
+		$this->assignReviewer('agallego', 'Adela Gallego');
+		$this->waitJQuery();
+		$this->recordEditorialDecision('Accept Submission');
+		$this->waitJQuery();
+		$this->assignParticipant('Copyeditor', 'Sarah Vogt');
+		$this->recordEditorialDecision('Send To Production');
+>>>>>>> responsive
 		$this->assignParticipant('Layout Editor', 'Stephen Hellier');
 		$this->assignParticipant('Proofreader', 'Catherine Turner');
 		$this->waitJQuery();

@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class BbarnetsonSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -37,6 +41,7 @@ class BbarnetsonSubmissionTest extends ContentBaseTestCase {
 				'Business & Economics',
 				'Political & International Studies',
 			),
+<<<<<<< HEAD
 			'chapters' => array(
 				array(
 					'title' => 'Introduction',
@@ -59,6 +64,8 @@ class BbarnetsonSubmissionTest extends ContentBaseTestCase {
 					'contributors' => array('Bob Barnetson'),
 				),
 			),
+=======
+>>>>>>> responsive
 		));
 
 		$this->logOut();

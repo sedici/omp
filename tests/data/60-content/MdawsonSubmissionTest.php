@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class MdawsonSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -79,6 +83,7 @@ class MdawsonSubmissionTest extends ContentBaseTestCase {
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
 		$this->assignReviewer('jjanssen', 'Julie Janssen');
 		$this->sendToReview('External', 'Internal');
@@ -90,6 +95,16 @@ class MdawsonSubmissionTest extends ContentBaseTestCase {
 		$this->assignParticipant('Copyeditor', 'Maria Fritz');
 		$this->recordEditorialDecision('Send To Production');
 		$this->waitForElementPresent('//a[contains(text(), \'Production\')]/div[contains(text(), \'Initiated\')]');
+=======
+		$this->assignReviewer('jjanssen', 'Julie Janssen');
+		$this->sendToReview('External', 'Internal');
+		$this->assignReviewer('alzacharia', 'Al Zacharia');
+		$this->waitJQuery();
+		$this->recordEditorialDecision('Accept Submission');
+		$this->waitJQuery();
+		$this->assignParticipant('Copyeditor', 'Maria Fritz');
+		$this->recordEditorialDecision('Send To Production');
+>>>>>>> responsive
 		$this->assignParticipant('Layout Editor', 'Graham Cox');
 		$this->assignParticipant('Proofreader', 'Sabine Kumar');
 		$this->waitJQuery();
@@ -99,6 +114,10 @@ class MdawsonSubmissionTest extends ContentBaseTestCase {
 		$this->waitForElementPresent('css=[id=confirm]');
 		$this->click('css=[id=confirm]');
 		$this->click('css=[id^=submitFormButton-]');
+<<<<<<< HEAD
+=======
+		$this->waitJQuery();
+>>>>>>> responsive
 
 		$this->logOut();
 	}

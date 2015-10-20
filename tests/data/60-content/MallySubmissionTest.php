@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class MallySubmissionTest extends ContentBaseTestCase {
 	/**
@@ -85,12 +89,18 @@ class MallySubmissionTest extends ContentBaseTestCase {
 
 		// Internal review
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 		$this->assignReviewer('phudson', 'Paul Hudson');
 
 		// External review
 		$this->sendToReview('External', 'Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'External Review\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 		$this->assignReviewer('agallego', 'Adela Gallego');
 		$this->assignReviewer('alzacharia', 'Al Zacharia');
 		$this->assignReviewer('gfavio', 'Gonzalo Favio');
@@ -104,7 +114,11 @@ class MallySubmissionTest extends ContentBaseTestCase {
 		// Accept submission
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->recordEditorialDecision('Accept Submission');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Editorial\')]/div[contains(text(), \'Initiated\')]');
+=======
+
+>>>>>>> responsive
 		$this->logOut();
 	}
 }

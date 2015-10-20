@@ -18,6 +18,7 @@
 import('lib.pkp.tests.WebTestCase');
 
 class FunctionalTestingEnvironmentTest extends WebTestCase {
+<<<<<<< HEAD
 	/**
 	 * @see WebTestCase::getAffectedTables()
 	 */
@@ -30,5 +31,11 @@ class FunctionalTestingEnvironmentTest extends WebTestCase {
 	 */
 	function testTestingEnvironment() {
 		$this->logIn('admin', 'admin');
+=======
+
+	function testTestingEnvironment() {
+		$this->logIn('admin', 'admin');
+		$this->logOut();
+>>>>>>> responsive
 	}
 }

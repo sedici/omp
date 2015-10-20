@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class DkennepohlSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -99,10 +103,16 @@ class DkennepohlSubmissionTest extends ContentBaseTestCase {
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('External');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'External Review\')]/div[contains(text(), \'Initiated\')]');
 		$this->assignReviewer('agallego', 'Adela Gallego');
 		$this->recordEditorialDecision('Accept Submission');
 		$this->waitForElementPresent('//a[contains(text(), \'Editorial\')]/div[contains(text(), \'Initiated\')]');
+=======
+		$this->assignReviewer('agallego', 'Adela Gallego');
+		$this->recordEditorialDecision('Accept Submission');
+		$this->waitJQuery();
+>>>>>>> responsive
 		$this->assignParticipant('Copyeditor', 'Maria Fritz');
 		$this->logOut();
 	}

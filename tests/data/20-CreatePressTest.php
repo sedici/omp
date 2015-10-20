@@ -42,7 +42,11 @@ class CreatePressTest extends WebTestCase {
 		$this->typeTinyMCE('description-en_US', 'Public Knowledge Press is a publisher dedicated to the subject of public access to science.');
 		$this->typeTinyMCE('description-fr_CA', 'Le Press de Public Knowledge est une presse sur le thème de l\'accès du public à la science.');
 		$this->type('css=[id^=path-]', 'publicknowledge');
+<<<<<<< HEAD
 		$this->click('css=[id^=submitFormButton-]');
+=======
+		$this->clickAndWait('css=[id^=submitFormButton-]');
+>>>>>>> responsive
 		$this->waitForElementPresent('css=h2:contains(\'Settings Wizard\')');
 		$this->waitJQuery();
 	}

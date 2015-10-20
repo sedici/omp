@@ -19,7 +19,8 @@
 switch ($op) {
 	case 'index':
 	case 'category':
-	case 'fullSize':
+        case 'unidades':
+        case 'fullSize':
 	case 'newReleases':
 	case 'series':
 	case 'thumbnail':
@@ -27,7 +28,15 @@ switch ($op) {
 		define('HANDLER_CLASS', 'CatalogHandler');
 		import('pages.catalog.CatalogHandler');
 		break;
+        case 'results_mobile':
+        case 'unidades_mobile':
+        case 'category_mobile':
+        case 'index_mobile':    
+		define('HANDLER_CLASS', 'CatalogHandler');
+		import('pages.catalog.CatalogHandler');
+		break;    
 	case 'book':
+        case 'book_mobile':    
 	case 'download':
 	case 'view':
 		define('HANDLER_CLASS', 'CatalogBookHandler');

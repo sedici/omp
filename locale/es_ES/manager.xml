@@ -24,7 +24,7 @@
 	<message key="manager.series.form.reviewFormId">Por favor, asegúrate de que has elegido un formulario de revisión válido.</message>
 	<message key="manager.series.submissionIndexing">No se incluirá en la indización de la editorial.</message>
 	<message key="manager.series.editorRestriction">Solo los coordinadores y coordinadores de colección pueden presentar elementos.</message>
-	<message key="manager.series.confirmDelete">¿Estás seguro de que deseas eliminar esta serie de forma permanente?</message>
+	<message key="manager.series.confirmDelete">¿Estás seguro de que deseas eliminar esta unidad academica de forma permanente?</message>
 	<message key="manager.series.indexed">Indizado</message>
 	<message key="manager.series.open">Propuestas abiertas</message>
 	<message key="manager.series.readingTools">Herramientas de lectura</message>
@@ -107,7 +107,7 @@ Puedes indicarle al usuario las razones por las que has desactivado su cuenta.</
 	<message key="manager.system.reviewForms">Formularios de revisión</message>
 	<message key="manager.system.readingTools">Herramientas de lectura</message>
 	<message key="manager.system.payments">Pagos</message>
-
+<message key="MANAGER.AFFILIATIONANDSUPPORT">Sponsor</message>
 	<!-- Press setup -->
 	<message key="manager.pressManagement">Gestión editorial</message>
 	<message key="manager.setup">Configuración</message>
@@ -179,6 +179,13 @@ Puedes indicarle al usuario las razones por las que has desactivado su cuenta.</
 	<message key="manager.setup.enablePressInstructions">Habilitar que esta editorial aparezca públicamente en el sitio</message>
 	<message key="manager.setup.enablePublicMonographId">Los identificadores personalizados se usarán para identificar los elementos publicados.</message>
 	<message key="manager.setup.enablePublicGalleyId">Los identificadores personalizados se usarán para identificar galeradas (p.ej. ficheros HTML o PDF) para elementos publicados.</message>
+<<<<<<< HEAD
+=======
+	<message key="manager.setup.enableUserRegistration">Los usuarios pueden registrarse ellos mismos en la editorial en una o más de las siguientes funciones:</message>
+	<message key="manager.setup.enableUserRegistration.author">Autores (pueden presentar material a la editorial)</message>
+	<message key="manager.setup.enableUserRegistration.reader">Lectores (recibirán notificaciones y se considerarán equivalentes a los suscriptores)</message>
+	<message key="manager.setup.enableUserRegistration.reviewer">Revisores (pueden revisar propuestas)</message>
+>>>>>>> responsive
 	<message key="manager.setup.focusAndScope">Orientación y ámbito de actividad de la editorial</message>
 	<message key="manager.setup.focusAndScope.description">Introduce una declaración a continuación. Ésta aparecerá en Acerca de la editorial, que informa a los autores, lectores y bibliotecarios de la variedad de monografías y otros elementos que publicará la editorial.</message>
 	<message key="manager.setup.focusScope">Orientación y ámbito de actividad</message>
@@ -352,8 +359,8 @@ Puedes indicarle al usuario las razones por las que has desactivado su cuenta.</
 	<message key="manager.setup.issnDescription"><![CDATA[The ISSN (International Standard Serial Number) is an eight-digit number which identifies periodical publications as such, including electronic serials. It is managed by a world wide network of National Centres coordinated by an International Centre based in Paris, backed by Unesco and the French Government. A number can be obtained from the <a href="http://www.issn.org" target="_blank">ISSN web site</a>.  This can be done at any point in operating the press.]]></message>
 	<message key="manager.setup.cataloguingMetadata">Cataloguing Metadata</message>
 	<message key="manager.setup.currentFormats">Current Formats</message>
-	<message key="manager.setup.category">Category</message>
-	<message key="manager.setup.categoriesAndSeries">Categories and Series</message>
+	<message key="manager.setup.category">Areas Temáticas</message>
+	<message key="manager.setup.categoriesAndSeries">Areas Temáticas and Unidades Academicas</message>
 	<message key="manager.setup.categories.description">You may create a list of categories to help organize your publications. Categories are groupings of books according to subject matter, for example Economics; Literature; Poetry; and so on. Categories may be nested within "parent" categories: for example, an Economics parent category may include individual Microeconomics and Macroeconomics categories. Visitors will be able to search and browse the press by category.</message>
 	<message key="manager.setup.series.description">You may create any number of series to help organize your publications. A series represents a special set of books devoted to a theme or topics that someone has proposed, usually a faculty member or two, and then oversees. Visitors will be able to search and browse the press by series.</message>
 	<message key="manager.setup.reviewForms">Review Forms</message>

@@ -5,7 +5,12 @@
 ./lib/pkp/tests/phpunit-env1.xml
 ./lib/pkp/tests/phpunit-env2.xml
 ./lib/pkp/tests/classes/xslt
+<<<<<<< HEAD
 ./lib/pkp/lib
 ./plugins/importexport/users/sample.xml
 ./plugins/importexport/native/sample.xml
 ./lib/pkp/js/lib/plupload
+=======
+./plugins/importexport/users/sample.xml
+./plugins/importexport/native/sample.xml
+>>>>>>> responsive

@@ -1,0 +1,3395 @@
+commit 7c9bd0bd994c1c9895bc2d4e3cb171c4d04acc29
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 16:27:59 2014 -0800
+
+    Final commits
+
+commit 4a00653e88ad892ea412709bb0efec76759d0685
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 16:20:19 2014 -0800
+
+    Custom block manager hash update
+
+commit bfdf4e3ddfb95a021f785a284dac237c04e11c90
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 13:41:25 2014 -0800
+
+    Remove old version number
+
+commit d1bd99fd84ecc9a6c898cba6cc82dd88d5b024f7
+Merge: 7dadd81 a8908c4
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 12:19:15 2014 -0800
+
+    Merge pull request #95 from mtub/omp-stable-1_1-de
+    
+    pkp/pkp-lib#251 minor fixes to de_DE locale
+
+commit 7dadd81661cf11a1371e0389bfe2e24d92bf599b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 12:18:44 2014 -0800
+
+    Update submodule hash for de_DE
+
+commit a8908c41dfbe06906b60aa6acb90c16dc08494c6
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 21:14:03 2014 +0100
+
+    marked de_DE locale as complete
+
+commit 3f25f2e771d91215c58ad2c3e04a3e952a518a08
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 21:13:19 2014 +0100
+
+    fixed indentation
+
+commit b2bab4650fb96297c4147e8e176f02ce1f8a813e
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 08:05:33 2014 -0800
+
+    *9055* Submodule update
+
+commit 7d35244c05e00f1b96270bbb0f3488ec20db2415
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 08:00:46 2014 -0800
+
+    *9055* Fix more function definition consistency problems (GridRow::initialize)
+
+commit ee56565395dbd0a1312e58f7ff2bc3a3509b9682
+Merge: faf4c3d 2416980
+Author: jmacgreg <jmacgreg@gmail.com>
+Date:   Thu Dec 18 11:55:21 2014 -0400
+
+    Merge pull request #93 from mtub/omp-stable-1_1-de_DE
+    
+    introducing de_DE locale to OMP
+
+commit 241698077c0fa917cd6b739e3b4c2aff54d6d381
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 13:36:37 2014 +0100
+
+    reverting a change, pending further discussion
+
+commit b6be64c6c6575aff8c906f60a5ba1b05f10828ae
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 13:31:27 2014 +0100
+
+    removed duplicate key in en_US locale
+
+commit 3e16bebb5f34b71c5ec2d31eb8a9d1ea02423722
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 13:31:06 2014 +0100
+
+    whitespace in emailTemplates, de_DE locale
+
+commit a28bf63bec52ce4df77e45bbdf0043dcb139e862
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 13:30:48 2014 +0100
+
+    edited German locale: manager.xml
+
+commit ef3c350f9f157569f6296286e2d29d73dd3e2801
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 08:14:53 2014 +0100
+
+    additional changes to de_DE locale and taking account of feedback from Heidelberg
+
+commit 7f77d6d63d593cc2a8fb5489a85558ece8309c0b
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Tue Dec 16 18:45:34 2014 +0100
+
+    replaced contact information with link to wiki
+
+commit b5b4be8362219bd7e31f53200151e33e78f9b8af
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Sat Dec 6 19:26:39 2014 +0100
+
+    restored empty email template file
+
+commit df791d6b2f3cd7fc200718fad97a3f0973a58a61
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Sat Dec 6 19:23:08 2014 +0100
+
+    restored lines deleted by mistake
+
+commit 9fdcfa43b388650c92635a2a567040fdc7d4defe
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Sat Dec 6 19:17:30 2014 +0100
+
+    some more changes to de_DE locale
+
+commit 43e04a97d4679fb217f750bb6dc00a68ec7fdf7a
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Sat Dec 6 18:54:03 2014 +0100
+
+    additional changes to de_DE locale
+
+commit 70c79734fd2ab7d97bc49e212684e3626f385d6a
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Fri Dec 5 20:09:49 2014 +0100
+
+    whitespace errors in de_DE locale
+
+commit 65a22b05cfc4aab3750c614b549371943807ace5
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Fri Dec 5 20:06:37 2014 +0100
+
+    removed hardcoded reference to Heidelberg
+
+commit e0510a45ac1788e474e216a863174b0a1a516fb0
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Fri Dec 5 20:02:43 2014 +0100
+
+    additional changes to de_DE locale
+
+commit 98f3cdb5c08e9330bc21c07ca39c13118ddeca55
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Sun Nov 23 14:15:40 2014 +0100
+
+    added de_DE to list of locales
+
+commit 2ed4cfa250d2596cb6ea8a0fc685a429a3e51a2a
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Fri Oct 31 15:39:59 2014 +0100
+
+    editing de_DE localization
+
+commit 2b8a6fee6bfbf113ad5f638f60bd1a6047af9dae
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Fri Oct 31 15:35:53 2014 +0100
+
+    editing de_DE localization
+
+commit 83092000e98994266012a822f5d7bdf693c36c94
+Author: withanage <dulip.withanage@gmail.com>
+Date:   Fri Oct 31 13:15:28 2014 +0100
+
+    Translations - Heidelberg University
+
+commit faf4c3ddc5867d3d8744745f6a07d4553a33902b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 16 09:20:06 2014 -0800
+
+    *8663* Submodule update
+
+commit e56d97f29c4bb2ef2ffc018c8c3aabc6fd6b7209
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Dec 10 22:16:10 2014 -0200
+
+    *9034* Submodule changes
+
+commit da8816f51db96e1e4ad4597efa03905586f921ec
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 9 15:31:26 2014 -0800
+
+    Submodule (update Selenium Server)
+
+commit 9d22cbb70c82661e6ab4ac3f935561b68b4a00a9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 9 10:40:28 2014 -0800
+
+    Disable CDN usage in Travis testing
+
+commit 5f209dc6f6318a9c5698e44be04dff113109116b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 9 09:21:55 2014 -0800
+
+    *9034* Submodule update
+
+commit 236be17adb0899f6431f427f5db89d269d9f17dc
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Dec 9 03:53:40 2014 -0200
+
+    *8969* Submodule changes
+
+commit eb788cc2e5a4c8b8a7bb078ed2d0e7bc89c218b8
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Dec 4 11:24:58 2014 -0200
+
+    *8969* Implementing application specifics in production test, adding generic actions methods, add layout complete notification test
+
+commit c0889be639b29a0f39d040494acbf195fa96c0e8
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Dec 9 03:39:46 2014 -0200
+
+    *9043* Submodule changes
+
+commit 50218c152014b9bd23cf2390bee7387a2d4d4e44
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 23:30:01 2014 -0200
+
+    *9043* Submodule changes
+
+commit 451f409ca693b9c0a51744d311dd495e2af557e7
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 19:44:20 2014 -0200
+
+    *9043* Submodule changes
+
+commit 7fd784d427bbac5ada184149e17731060eb1037b
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 18:08:57 2014 -0200
+
+    *9043* Submodule changes
+
+commit 24cdd62a278b832257938cdd72ebe0a205d1ed1d
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 17:54:51 2014 -0200
+
+    *9043* Submodule changes
+
+commit d35d7ec6cc4197b38667f00b5db6f4afe6ab5d2b
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 16:15:27 2014 -0200
+
+    Submodule changes track
+
+commit d3d084bede6d0c70c02b5ffd3c580f8879982f90
+Merge: 721f492 0c9ffae
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Sun Dec 7 20:49:49 2014 -0200
+
+    Merge pull request #83 from asmecher/9024-fix
+    
+    *9024* Permit series editors to access assigned submissions without requiring series assignment
+
+commit 721f492fc8b29ed90690e3914057a6a8c417e840
+Merge: eccffb0 4e42421
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Dec 5 08:15:03 2014 -0800
+
+    Merge pull request #87 from bozana/8883-considerUpdate
+    
+    *8883* Update press homepage settings during upgrade
+
+commit 4e42421ac0dbc65d6a6050faf730123d4109d4f9
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Fri Dec 5 16:33:47 2014 +0100
+
+    *8883* consider update
+
+commit eccffb0f036527d2ea8de5342dbbc1603546fdcb
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Dec 4 11:22:27 2014 -0400
+
+    *8445* correct sales rights object insertions
+
+commit 8559b7226030f1a5c69c342fe29995e1063bf00f
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Dec 4 11:08:25 2014 -0400
+
+    *9041* remove pub-id prefix from public ids
+
+commit 33502654007131d05665192a47e75671946d4a7b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Dec 3 16:44:04 2014 -0800
+
+    Scrutinizer complaints
+
+commit 5da7fe8606ccd11988e550a016696fd3d6b82746
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Dec 3 16:30:01 2014 -0800
+
+    *8940* Fix sorting of categories
+
+commit 0c9ffae9aad11089df5599e81a01a9600f9bead5
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 28 12:58:25 2014 -0800
+
+    *9024* Submodule update ##asmecher/9024-fix##
+
+commit 325e5c2da67310ffc61d64094988ef0bdd81a781
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 28 12:58:15 2014 -0800
+
+    *9024* Series editors should be able to access assigned submissions without specific assignment to the series. (Either is sufficient.)
+
+commit ae8c9ce272e557da66691abf66b8bd3e99ebb722
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 14:04:29 2014 -0200
+
+    *8969* Submodule changes track
+
+commit b3166444b9ab2970f0a0341cf5bbcadb7bcac0db
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 13:10:36 2014 -0200
+
+    *8969* Submodule changes track
+
+commit 24edf933d08c08502fc3c9a9ff2bc87c32ae0d5e
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 11:40:33 2014 -0200
+
+    *8969* Introduced payment setup test to check notification
+
+commit 4aff0db4e24888874020717662f28ba7defb1dfb
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 24 15:45:38 2014 -0200
+
+    *9013* Created review test in application
+
+commit 029fdfc2d234e858ad731832eb0fcd95af0f0f44
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 24 15:37:34 2014 -0200
+
+    *8969* Fix functional testing test
+
+commit 2c969d1ff1120fbf06e9c81fb3472a72944cf425
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 21 00:37:17 2014 -0200
+
+    *8969* Add option for users to turn off all revisions in email notifications
+
+commit 823bd39f9b4b5654326556918c090f6d628665a5
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 19:08:08 2014 -0200
+
+    *8969* Introduced production test to check notifications
+
+commit cf42cc6d4221801d39982ff66e2d2fb67dac8b32
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Nov 19 20:59:44 2014 -0200
+
+    *8969* Moving notification info to manager delegate
+
+commit ac0a7fec03dbf8d86811e041d9267b91bf3123b9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 24 16:35:12 2014 -0800
+
+    *9026* Submodule update
+
+commit 48f2a1c820d9087936cd51c0cf8a01958b385f23
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 20 09:31:25 2014 -0800
+
+    Static pages submodule hash update
+
+commit 39bfbba91fc4871daf28b6e894a2e3550d011dbf
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 12:15:10 2014 -0200
+
+    *9013* Submodule changes
+
+commit cd99b6ad67927d0a139b8445e7f1f5cb37d26032
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 12:14:14 2014 -0200
+
+    *9013* Respect time out value
+
+commit 0ba9c2df7e42863754b5f54d59299c15cbb88ef2
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 11:08:50 2014 -0200
+
+    *9009* Update email logger submodule hash
+
+commit 7be435cdbbacf02752aa4279c5584d3e529b6a02
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 02:27:29 2014 -0200
+
+    *9021* Submodule changes track
+
+commit d18633559ce76a0b7af5cf86a4b0f32e7dc73c92
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 02:00:04 2014 -0200
+
+    *9021* Call script to setup firefox profile
+
+commit d101186711ab7683fc65a6f7b83d32e8dfca51e6
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 01:07:34 2014 -0200
+
+    *9009* Email logger submodule changes
+
+commit a86a33a0625a0144d34aec98df2787b4d456572b
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 00:51:04 2014 -0200
+
+    *9009* Added email logger as submodule
+
+commit b312a3a5d65ba5f2cb153db16d255fc440ca61bf
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 00:33:04 2014 -0200
+
+    Fix submodule hash
+
+commit fa7adabf251c7eb67d0f9b39b872b8215fa742db
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 19 17:19:44 2014 -0800
+
+    Update static pages submodule hash
+
+commit 9704c692884cc30f8a164a4685fb8ce1952a7af3
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 19 17:13:43 2014 -0800
+
+    Update static pages submodule hash
+
+commit 5adf852fe74925c14e35043e57533c25f8ae4edf
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 18 10:31:42 2014 -0800
+
+    typo
+
+commit c0be977f37bd8790fde69292ec1f2e2d7eff692f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 18 10:20:56 2014 -0800
+
+    Merge pull request #80 from asmecher/plugin-tests
+    *9015* Move plugin tests into plugin directory
+
+commit 5c5693d9ddbfc9765f7ae3f0280068341cbdeb6a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 15:53:44 2014 -0800
+
+    *8910* JS linting fix (submodule update)
+
+commit 247f4e2ea8e55abd25de483c7a361605b1de3e29
+Merge: d639ad4 16f8106
+Author: Michael Thessel <der.thes@gmail.com>
+Date:   Fri Nov 14 13:34:23 2014 -1000
+
+    Merge pull request #78 from MichaelThessel/omp-stable-1_1
+    
+    *8910* Submodule update ##MichaelThessel/omp-stable-1_1##
+
+commit 16f810691b7c971f752a2229af6bde65d8bc952a
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Fri Nov 14 13:31:10 2014 -1000
+
+    *8910* Submodule update ##MichaelThessel/omp-stable-1_1##
+
+commit d639ad4bc39c907f201449ba7417661fdcd225f5
+Merge: dbbbbcd 728ab8d
+Author: Michael Thessel <der.thes@gmail.com>
+Date:   Fri Nov 14 12:44:09 2014 -1000
+
+    Merge pull request #75 from MichaelThessel/8336_sidebar_fixes
+    
+    8336 sidebar fixes
+
+commit 728ab8ddd95a3538f2162fe4ea9e3930f2fa5230
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Fri Nov 14 12:43:25 2014 -1000
+
+    *8336* Submodule update ##MichaelThessel/8336_sidebar_fixes##
+
+commit f4e6b4eafdd8cbe6c7c4a9aeab0f12335159c3a0
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Thu Nov 13 10:37:18 2014 -1000
+
+    *8336* Fixed stage participants cutoff issue
+
+commit dbbbbcde055d952515a24c3a73629940073f65c1
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 14 20:24:45 2014 -0200
+
+    Submodule change
+
+commit c985db921884aaed883f246e1470987ee9b25e52
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 11:41:29 2014 -0800
+
+    *8998* Fix full DB load into memory on reviewer search
+
+commit f49be13d7fc629efeb553564674ddd6ba9d42e87
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 10:01:36 2014 -0800
+
+    *8868* Submodule update
+
+commit 478cb04c69aea124a3cceec94d270397eb7ca354
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 14 15:54:21 2014 -0200
+
+    *8996* Submodule changes track
+
+commit a8c93fb81d496eff9eed3f07d14d21646e385f5d
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 14 15:38:51 2014 -0200
+
+    Submodule changes track
+
+commit d9544e292a89cdd147e12a6668d278975d5009bc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 09:20:57 2014 -0800
+
+    Submodule update
+
+commit 12ec1281f42cc7c0e4c258ef7bbec6f82996a081
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 21:29:47 2014 -0800
+
+    Update submodule hash for translator plugin
+
+commit c27debf4bfdd73857971cc13365e7066aabd97d7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 21:29:20 2014 -0800
+
+    Use consistent function descriptors (references)
+
+commit 8f433110a51ad67f06f69f5b9a6bd7ec7a574d83
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 17:34:50 2014 -0800
+
+    *8987* Submodule update
+
+commit 9586d63e3ef0d627c991483ad867c097daa24ee4
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 12 15:59:13 2014 -0800
+
+    *8995* Submodule update
+
+commit 85819368dd6ea64e57f22e9cc5da0f0e793c1c04
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 12 15:58:53 2014 -0800
+
+    *8995* Publish submissions per data spec
+
+commit 4371b5fa90e5d1987738eb3944af17b8ae786ea5
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 11 16:10:09 2014 -0200
+
+    *9005* Submodule changes track
+
+commit b2980db8d7813f9f163653c1c33ac40cc9a112d3
+Merge: 33d2f43 d44ad83
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 11 09:21:32 2014 -0800
+
+    Merge pull request #74 from asmecher/8995-fix
+    
+    *8995* Additional tests from data spec
+
+commit d44ad83fa11e717c9be5385ec7933f737482a2a0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 11 09:19:18 2014 -0800
+
+    *8995* Submodule update ##asmecher/8995-fix##
+
+commit b5aa8a4e47c390a6aeac7d14be0d25fc6f38836c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 10 16:41:23 2014 -0800
+
+    *8995* Additional tests
+
+commit 33d2f4318aca0e9d5a717d7b86ecb5de3f2de3f9
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 11 14:09:49 2014 -0200
+
+    *8996* Submodule changes track
+
+commit 925f162173ad5e397c933a9038c0f5bbcd0db1b9
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 18:55:26 2014 -0200
+
+    *8996* Added default scheduled tasks new settings
+
+commit 932e3014fdb173d4f3655709828b24f1eff1b03d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 10 11:59:48 2014 -0800
+
+    *9002* Submodule update
+
+commit 1a125026419670f64eebd2e571d888fc104b2f06
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 10 10:33:05 2014 -0800
+
+    *9002* Submodule update
+
+commit f47cdddd1bd3c83808b9e572e47f91cb4dfc48c4
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 16:54:51 2014 -0200
+
+    *8891* Submodule changes track
+
+commit eb4ea744a5c9f2e224b2c6a7c085f3feee1d912f
+Merge: bc7f907 853873c
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 16:53:33 2014 -0200
+
+    Merge pull request #72 from beghelli/8891-fix
+    
+    *8891* fix
+
+commit 853873c7eea82890f53ec5a78a4d82edce7d93b3
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 01:05:12 2014 -0200
+
+    *8891* Moved notification settings form into a tab inside profile page
+
+commit bc7f907b64dd6c72ba0fcbb7a975bca91114d8ed
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 16:03:47 2014 -0800
+
+    *8888* Submodule update
+
+commit 93a043fb6bfb309e0f28f6520b699d860ad5b4f7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:52:08 2014 -0800
+
+    Submodule update
+
+commit 5b6dd9f28d44c7ae30568060f0092df5ed6d9ff1
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:15:13 2014 -0800
+
+    Submodule update
+
+commit 446d13e51cbfcde8dfb0a4b64eb627b5d5e0f8d8
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:09:21 2014 -0800
+
+    Submodule update
+
+commit a1772f70af1d751bc04439e4ffab6ce90dc01f49
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:08:55 2014 -0800
+
+    Submodule commit
+
+commit 79b35cd3dc9a76d95a464f94086e109ba7e77fee
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 11:50:42 2014 -0800
+
+    Submodule update
+
+commit d4070b3421fb277be13321f3d630387762da9b2e
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 09:47:49 2014 -0800
+
+    Submodule update
+
+commit 1086aded0978c59d9aa0832dc6cbb692f4b67393
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Nov 5 15:09:14 2014 -0200
+
+    *8891* Moved profile form into a tab
+
+commit 8c95a75cdf5af437a417c0dc10e6acb9af17c1cc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 08:17:39 2014 -0800
+
+    *8995* Match review tests to data spec
+
+commit f23747dea8bb08933d80191582148d63f743ae5c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 08:15:40 2014 -0800
+
+    Correct error log warnings
+
+commit bb1cb833a11e3571587e345127f48b1dc91cd616
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 4 17:18:18 2014 -0800
+
+    Submodule update
+
+commit 22ae5dbf4f4a162ce4050716832849571f303180
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 4 10:25:25 2014 -0800
+
+    *8995* Fix chapter author select bug for test data
+
+commit f62e1dbb3a82350a1511dfdf0c4ff693a8548f5d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 4 12:17:12 2014 -0800
+
+    *8995* Fixed listbuilder multiple author entry
+
+commit b12730ccf5eacf8b51d8c6964e9ef59d20fbedd7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 4 08:30:30 2014 -0800
+
+    Submodule update
+
+commit 641283b679624bdd4513ad74367c94e1e7d74323
+Merge: 63d1b87 919e9a5
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 4 08:30:09 2014 -0800
+
+    Merge pull request #70 from asmecher/8995-fix
+    
+    *8995* Implement test data spec in OMP for 1.1.1
+
+commit 919e9a518821f081e1da18b7f30f822abd43117c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 16:47:09 2014 -0800
+
+    *8995* Added Aclark submission
+
+commit d26256c53bed3f1598a7edabe34657bebd75e6b1
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 16:39:00 2014 -0800
+
+    *8995* Added Jloclehart submission
+
+commit 3e619123fb512026b383413725cf8273c13fbf4a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 16:34:03 2014 -0800
+
+    *8995* Added Mpower submission
+
+commit 98e768041e0d25294f9ee21d37aad037e11c90f1
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 16:24:30 2014 -0800
+
+    *8995* Added Afinkel submission
+
+commit 47aa52bc4c7020ab30d6cdb40d54c712db9c220e
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 16:10:55 2014 -0800
+
+    *8995* Added Mforan submission
+
+commit 75d148c242078d8bfdba847f19dcb42f40128f17
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 15:59:10 2014 -0800
+
+    *8995* Added Mally submission
+
+commit 4f2d682c5b1578b83a5f131cc701b8bf4ca103f0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 15:35:39 2014 -0800
+
+    *8995* Added Lelder submission
+
+commit 7823dadbf8a300803cabb164b1a699f5c9a5986b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 12:29:36 2014 -0800
+
+    *8995* Add Msmith submission
+
+commit ec9357b189600ff91e2839cdc4ed83f1ca6535cd
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 17:22:57 2014 -0700
+
+    *8995* Added Fperini submission
+
+commit edd919024a0d02fa157b159f1b1bf0103a5fbdc0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 16:57:45 2014 -0700
+
+    *8995* Added Bbarnetson submission
+
+commit 7472734119bd0dae3b70a8141a966b9c715bd5d6
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 16:50:36 2014 -0700
+
+    *8995* Added Dbernnard submission
+
+commit a979d1b845a664b1a5ab698c3036985421666a09
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 15:21:07 2014 -0700
+
+    *8995* Added Jbrowser test
+
+commit c8f6ceb402df732b3fbe00548d20a6e299dc2acc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 16:28:33 2014 -0700
+
+    *8995* Configure series per test data spec
+
+commit 2455fc8b86ef834187bb46f085981f7c8949d437
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 16:28:13 2014 -0700
+
+    *8995* Make submission steps more flexible; introduce EV support
+
+commit 372ac63db7a75ccdce271318ea3fe5ae9b420836
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 3 13:34:27 2014 -0800
+
+    Missing locale key
+
+commit 63d1b8734d195d7d87f05138f5d381d8e6921eac
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Oct 31 15:49:55 2014 -0200
+
+    Submodule changes track
+
+commit 1a7918bb5c0f8fc0b411818d6ad58566cf1d726b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 13:23:05 2014 -0700
+
+    *8868* Submodule update
+
+commit 417916f25b62c55c7dad82361afc611a52b0bde6
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 12:35:09 2014 -0700
+
+    Submodule update
+
+commit 1905c0e182500b451fe44ef877afdf0dc9db8ecf
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 11:02:09 2014 -0700
+
+    Remove phpunit install
+
+commit cf63fc1499a3c822fa8035c08b8e00acacef6f1c
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Oct 30 08:55:16 2014 -0300
+
+    *8973* remove unused handler
+
+commit dfc5db3ce25fcc0e40d168f5cc5eeac89604c307
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Oct 29 17:39:02 2014 -0700
+
+    Submodule update
+
+commit 6881e9d49437685a759337364099ce3f704f98b3
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Oct 29 17:38:50 2014 -0700
+
+    *8868* Port translator plugin to OMP 1.1; move to separate repository
+
+commit 2172dadb9bd0b580e2277755c5da33a8240cb43c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Oct 28 16:16:29 2014 -0700
+
+    *8915* Static pages working for OMP 1.1.1
+
+commit c45bc72c0f7faf2d096a57c9003f9bb3fc77c72a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Oct 28 15:54:17 2014 -0700
+
+    Version descriptors for OMP 1.1.1
+
+commit 16077b9794cf5d4bb030863d3f5e472176a40b04
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Oct 28 15:33:46 2014 -0300
+
+    *8973* add new JS handler to minified scripts
+
+commit 98a47b1e596fe894bbb1e346fc245ac3d674e5e0
+Merge: f0c873a cc456fc
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Oct 28 10:05:33 2014 -0300
+
+    Merge pull request #61 from MichaelThessel/8975_user_details_form_fixes
+    
+    *8975* Fixed reqired field handling in user profile details forms
+
+commit cc456fc5919ba2ab0c3e71adfdf58b5cdddfd675
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Mon Oct 27 10:52:50 2014 -1000
+
+    *8975* Submodule update ##MichaelThessel/8975_user_details_form_fixes##
+
+commit f0c873abe4e7f36d0cfc39871a2d32be5bedb382
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Oct 23 16:03:29 2014 -0300
+
+    *8837* create submission mail templates without user signatures included
+
+commit 7f3785c1bfb546d0baf2a997ddd5c9d4e9609ea2
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed Oct 22 10:43:11 2014 -0300
+
+    *8968* correct id assignment for series and categories
+
+commit 6331115e675f9b2ae21e443ee2a4e9df50556e58
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Oct 17 10:23:17 2014 -0300
+
+    *8627* allow class attribute on list items
+
+commit 28b94db6b87b647d8483ea16927a0e899c305109
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Sep 26 12:44:39 2014 -0700
+
+    Code doc
+
+commit 94effe5c5481bede1e4c82ce918634cbf6b06b23
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Sep 25 16:50:34 2014 -0300
+
+    *8911* improve validation for expedited submission process
+
+commit 56bc56797d20a516db71e5f0ef118b56b62ef6c7
+Merge: d40551d 8dc8e63
+Author: Michael Thessel <der.thes@gmail.com>
+Date:   Wed Sep 24 13:37:09 2014 -1000
+
+    Merge pull request #47 from bozana/displayOptions
+    
+    *8883* New optional display features for the press home page
+
+commit 8dc8e63a33ce27e8291a73a11a00b200303a4eea
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Wed Sep 24 23:17:20 2014 +0200
+
+    remove unnecessary variables
+
+commit d40551dc02b25441f22400b2373489255aabb66f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Sep 23 16:14:45 2014 -0700
+
+    *8915* Add static pages plugin as submodule
+
+commit cada6d95c7b8d4379d2127e99bb394944bf25215
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Sep 23 15:45:16 2014 -0700
+
+    *8867* Fix typo
+
+commit f0057512e369c5fd089c4d600ca6d883dcdf98b0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Sep 23 15:44:32 2014 -0700
+
+    *8867* Make footer links upgrade action idempotent
+
+commit 037675fb319f88a618e77fd9fbf5f561241d2452
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Sep 19 16:41:58 2014 -0700
+
+    *8860* Convert custom block manager plugin to submodule
+
+commit fc96ac8517b0a1d1b78efb400d535be6b8fee844
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 17 11:50:50 2014 -0700
+
+    Fix tool path in travis build
+
+commit 1e00c18176c7a1cd34287a14e4ff593fb7d5f01c
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Sep 17 15:49:54 2014 -0300
+
+    Submodule changes track
+
+commit 435e17c4b5c5a13de9cab7b8daaf7495ba609cbb
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Sep 17 15:42:51 2014 -0300
+
+    *8904* Submodule changes track
+
+commit af778d472c253e91480ed797f57dbe7e45004695
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 17 11:42:06 2014 -0700
+
+    Enable JS linting on travis build
+
+commit 9a5dd64fda059cdfb63ae3b885112ae34771c51d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 17 11:23:26 2014 -0700
+
+    Submodule update
+
+commit a89c130e3fbbbe667e7bde8047b89ac6140ec42a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 17 09:19:33 2014 -0700
+
+    Submodule update
+
+commit be95ff99b5c7be284522e54276b11bf0a303b456
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Sep 15 12:40:03 2014 -0700
+
+    Submodule update
+
+commit c70ac06ca3aac8b84225999a01c74dbc0ef25a49
+Merge: 5d35c2e f858b76
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Sep 11 15:31:20 2014 -0700
+
+    Merge pull request #34 from bozana/customBlockPlugin
+    
+    *8860* Add custom block manager plugin for OMP
+
+commit 5d35c2e79e224da253a01e000261b9d59beca6c9
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed Sep 3 09:56:19 2014 -0300
+
+    *8627* revert style change
+
+commit 2e18960cb73bd59f332058b36593d26d71fe4281
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Thu Aug 28 17:36:37 2014 +0200
+
+    home page display option for new releases, featured books and in the spotlight
+
+commit f858b76e0537da4efc7725353a5033afe4a214d8
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Wed Aug 27 16:54:46 2014 +0200
+
+    consider *8622* Add custom block ids
+
+commit c9abc2dddff10b56629065a0da3656957d6541c0
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Wed Aug 27 16:33:06 2014 +0200
+
+    custom block name validation and locales chages
+
+commit 6097d4efa16494894ee5f0b23a6e7bd46b3febec
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Fri Aug 1 23:51:12 2014 +0200
+
+    fix a bug when adding the first custom block plugin
+
+commit e89e43c983d8a8e1be12e1b75d12b76429a372ff
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Fri Aug 1 17:19:59 2014 +0200
+
+    changed locales
+
+commit 7a3d3b032e29f395d0c8dfb21961272c1ac65ca6
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Mon Jul 28 16:10:31 2014 +0200
+
+    custom block manager plugin
+
+commit c96abd549c25bb77bd188e2f06594cc92d5d904a
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed Aug 27 11:25:08 2014 -0300
+
+    *8627* ensure list item visibility inside main page area
+
+commit 6bacd5b37dfa442a62daa305342ba73882c83896
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Aug 26 10:00:19 2014 -0300
+
+    *8878* disable autocomplete sync for spotlight titles
+
+commit abb7bb153302abd0bdfe4ada3ff90bc41f288a07
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Mon Aug 25 15:42:01 2014 -0300
+
+    *8666* remove unused setting
+
+commit 32cc085097ab6c71ea3bbf5214609df2600c5242
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 12:38:57 2014 -0700
+
+    *8787* Submodule update
+
+commit 1b85444147edaf8bd432ce45a5014a80af056f2f
+Merge: 71855cd 46117a9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 12:45:43 2014 -0700
+
+    Merge pull request #45 from asmecher/8787-port
+    
+    *8787* Port travis build scripting to omp-stable-1_1
+
+commit 46117a9b1409c9ec707602e9d9b1ea9dd55f7838
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 12:23:18 2014 -0700
+
+    *8787* Submodule update ##asmecher/8787-port##
+
+commit 3e9651e999bb0b67790547b8e4b02b62d479301b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 12:23:09 2014 -0700
+
+    *8787* Revert modernization
+
+commit 2f5a0c70ceb89365ab8524b702f5af757489e4e7
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed May 28 14:45:08 2014 -0300
+
+    *8781* examine driver for correct database connection
+
+commit 09adb5c19e4c2e5a7fa0aea71fa3122658cc20c2
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 12 12:31:00 2014 -0700
+
+    *8787* Remove old test server data
+
+commit 8f1d440c910ecef381b2419fe2dcc4d703b08ddc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 12 12:00:21 2014 -0700
+
+    *8787* Introduce data build to travis testing
+
+commit 71855cd01f5d141663a390a2c4b0a47a79e64f7b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 12:00:05 2014 -0700
+
+    Submodule update
+
+commit 8177412d4b6a5af1567387045b86f7560dd88c51
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Aug 21 10:47:18 2014 -0300
+
+    *8445* remove unnecessary imports
+
+commit 9b4d38a471c660fc618a14fc49a57bcd18131cf8
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Aug 21 08:13:33 2014 -0300
+
+    *8867* migrate footerlink URLs to multilingual settings
+
+commit 54f0e740e79d936e74578013af15751bf69f41cf
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Mon Aug 18 17:05:27 2014 -0300
+
+    *8424* remove notifications after submission is expedited
+
+commit 2f5d2a4b70c70f638dcfd1148899f9a6fb232180
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Aug 18 09:24:33 2014 -0700
+
+    *8630* Submodule update
+
+commit 409b8c72b626b6d11de440f5f79c6c3b94df22ae
+Merge: 8bbb24b 64f02be
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Aug 18 09:30:54 2014 -0700
+
+    Merge pull request #40 from asmecher/8630-fix
+    
+    *8630* Warn editor when no reviewer files are selected
+
+commit 64f02be07ff98c7492a533eb3603cf04b0617c08
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 14:19:29 2014 -0700
+
+    *8630* Submodule update ##asmecher/8630-fix##
+
+commit bf99097afa1d982d813972f27a56ed20e2da159b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 17:52:28 2014 -0700
+
+    *8630* Additional minified script
+
+commit d886a3d505890029712ede5a447d0ea703b606cf
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 14:19:09 2014 -0700
+
+    *8630* Move review form footer initialization into its own handler
+
+commit 8bbb24b5f6cc435c5663764d4fa77121b8de5d9b
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Aug 12 10:29:56 2014 -0300
+
+    *8858* add missing config option for email validation
+
+commit b08d9b0675572187efddc5ad771e08572b91d7b3
+Merge: 8b31665 fb23f79
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 5 11:15:47 2014 -0700
+
+    Merge pull request #27 from asmecher/8836-fix
+    
+    *8836* Add missing styling to PDF viewer
+
+commit fb23f79ce9c48c057f20c49f43c51b9b3174b475
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 5 10:59:07 2014 -0700
+
+    *8836* getPluginUrl tweaks
+
+commit 8b31665b33242cae1819d20a455725d1fd4e2ebf
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Sat Jul 26 16:15:20 2014 -0300
+
+    *8855* Create report plugins folder
+
+commit 1831170efdaeede954e1965fcb58c6c2cb0fbc4a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Jun 17 15:43:55 2014 -0700
+
+    *8808* Fix default theme
+
+commit e34ab0c20aaa98ca1dcdf856632e7f9c3188927e
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 2 14:39:19 2014 -0700
+
+    *8836* Add missing styling to PDF viewer
+
+commit 6da38ad9df827f1f0897393bea1dbe480b9d0e31
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Jun 30 09:06:41 2014 -0700
+
+    *8833* Suppress attachment disposition in PDF embedding
+
+commit 20445848a6dc738181e22793835e6018721cd760
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jun 18 10:43:25 2014 -0700
+
+    *8810* Reverse sort direction of published monographs; newest first
+
+commit e4e7be3921f093960270705770e9fdb34fa4358c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Jun 17 15:28:23 2014 -0700
+
+    *8807* Fix missing locale key
+
+commit 5d4a435b9ff5cc0efd15cdec2e45109330f090d6
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Jun 13 14:23:04 2014 -0300
+
+    *8315* prevent stage id clobbering
+
+commit b0af2f5a127178a708c8da2e2a4fb259576c3252
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Jun 4 15:51:14 2014 -0300
+
+    *8789* Make sure we print logs in case of a build timing out
+
+commit 4028c3fea29f0ac476a1b5fe44ca364d5e4668ae
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Jun 3 16:20:31 2014 -0300
+
+    *8786* Fixed for pull requests, added documentation
+
+commit 608af8eb31e559fc3d060b4df3c370277e6aa86b
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Jun 2 23:20:24 2014 -0300
+
+    *8445* Submodule changes track
+
+commit 981a8f4dd2f3c64ef1250b50ce72a38d956c13ff
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Jun 2 23:24:12 2014 -0300
+
+    *8786* Fixed return code
+
+commit 90b6034ce64a4bfffc2fd2401b47e99b318f70c6
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Jun 2 23:12:01 2014 -0300
+
+    *8786* Introduced tool to start submodules, getting lib code from developers repository when necessary
+
+commit 905545491df7eb2ce8397df1a3eab303c0e437f4
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri May 23 14:27:53 2014 -0700
+
+    Change password hashing method for travis
+
+commit 3e56f727623552d85acb45abeafd872dd393279a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri May 23 14:02:21 2014 -0700
+
+    Submodule update (port newer WebTestCase for travis)
+
+commit 7cb0df677ffbae948bee3eca9ac65383aa4dfaec
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri May 23 13:39:36 2014 -0700
+
+    Sync stable travis config with master
+
+commit da64ba429b2053a3bb0589666e2c6341dbc17e91
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed May 21 16:48:47 2014 -0700
+
+    *8773* Fix OAI base URL with mod_rewrite
+
+commit 83d9822fce32f2af221e2f3869cbbbdfeef1866d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri May 16 15:48:02 2014 -0700
+
+    Remove doxygen from build script
+
+commit 034aa089bac49cc38b3ac4c3919a0eae61f5ea73
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed May 14 13:05:50 2014 -0700
+
+    *8752* Make upgrade file rename idempotent
+
+commit 551bc0f671b61d560c6b343861e7387d8556c149
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed May 7 10:43:37 2014 -0300
+
+    *8611* make categories accessible from press settings
+
+commit b1a7474a0babccd450d7169d926880f45d940e1a
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue May 6 13:46:53 2014 -0300
+
+    *8629* include DOI metadata tags in catalog book header
+
+commit 6fac066ac902dd179a4f4497becd8e3acee39ab3
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Mon May 5 14:38:42 2014 -0300
+
+    hide modal close button when series grid is shown in a tab
+
+commit 61b195d33fdbcdff804461ccf9b84fc3456bcf5f
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Mon May 5 10:23:09 2014 -0300
+
+    Doxygen improvements
+
+commit 7651953476d7a6bce05dcab25ac41c3159871159
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu May 1 11:26:52 2014 -0300
+
+    *8712* allow for empty series position and languages in ONIX export
+
+commit d9025b34a97fa4d4ca5a68033e548c8fa006ba7f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Apr 30 14:24:52 2014 -0700
+
+    Add XML validation to travis
+
+commit f77711630dffe2c00e3dddd2c4db8591c2b0d7df
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Apr 29 13:41:46 2014 -0700
+
+    Add openshift action hook script
+
+commit a18a425a558518e34744848549685995c52c8463
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Apr 29 07:25:50 2014 -0700
+
+    Add missing null locale for localized getter
+
+commit 31356570478e445a06b6ab9f588331abe32e085e
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 28 16:59:48 2014 -0700
+
+    *8581* Introduce payment default settings
+
+commit 5693381e7450eafa2fb75a23e35a5fb1ea34eb38
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 28 16:51:07 2014 -0700
+
+    *8581* Make manual payment instructions optional
+
+commit 86db70c17ce37880b32fb018586a1f6c4f70feda
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 28 16:37:28 2014 -0700
+
+    Correct typo
+
+commit e6f42f3502e722153fef611c08278b9719186a79
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Apr 25 14:03:42 2014 -0700
+
+    *8713* Clarify type of book vs. type of workflow
+
+commit 9be1d4f775950146aa972287dfe793f0284af038
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Apr 25 10:06:22 2014 -0700
+
+    *8672* Add missing column fetch to AuthorDAO
+
+commit d64cce58e9273b477a201930fd86481045308fb2
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed Apr 16 11:33:32 2014 -0300
+
+    *8424* populate form with submission metadata
+
+commit be6bd44e6bf0ca25f5b073ff0762b0006f3018fd
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Apr 15 19:46:27 2014 -0300
+
+    *8582* accomodate omp specific changes
+
+commit 2e25398419bab51dbf3728168536ec4eac167fae
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 14 17:56:42 2014 -0700
+
+    *8610* Fix series ordering
+
+commit c9f2a46fa38a3c2fdea4de71b65c3b3dd4865190
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 14 17:45:55 2014 -0700
+
+    *8610* Series grid impacts sidebar
+
+commit 336784839a446c1048d617c46e0fa76a7b2a3014
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 14 16:44:44 2014 -0700
+
+    *8204* Port locale file changes
+
+commit fd1763e7dc23016995d6004861a230c3e32714e5
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 14 16:42:25 2014 -0700
+
+    Merge pull request #10 from MichaelThessel/8204_peer_review
+    
+    *8204* Added peer review policy to the about - submissions page
+
+commit 50d1da918b857cd498faf0f5e2cdf4b9d51179d1
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 14 12:11:08 2014 -0700
+
+    *8694* Add restful URLs parameter to config template
+
+commit b5d7fb5dd31bb8932f427e16962cb5cc113ca415
+Merge: 8816d8d 3f895a3
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Apr 11 16:35:02 2014 -0700
+
+    Merge pull request #15 from mtub/20140411omps
+    
+    *8696* added a few keys to de_DE locale
+
+commit 8816d8df76cc950b983d550c14cb614f5f12af4a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Apr 11 15:11:30 2014 -0700
+
+    *8665* Prevent index warning
+
+commit 3f895a3ec7906ff6ba5e197e29cb63b0b033e33d
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Fri Apr 11 23:13:32 2014 +0200
+
+    *8696* added a few keys to de_DE locale
+
+commit 1a2f376d3b30080ab221ea5dc80968019a4be5af
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Apr 11 14:01:39 2014 -0700
+
+    *8665* Remove unnecessary re-de-duping; reintroduce necessary reference
+
+commit 82d7fe4bc31a01d5fb7024808029087b689a4cae
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Apr 11 13:56:24 2014 -0700
+
+    *8665* Fix searching
+
+commit 91efc7992f731f489f1b14ea7eb3b0e8944a2979
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Apr 11 10:50:37 2014 -0700
+
+    Reduce reference use
+
+commit 7d60eedd1b9b0848443400470b10e68ccb09367b
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Apr 10 10:50:11 2014 -0300
+
+    *8671* display role name for authors in catalog
+
+commit fb2aaba353d97fbb4ed556f73dee3de7a1a77792
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Apr 3 14:49:54 2014 -0300
+
+    remove scrolling from distribution settings tabs
+
+commit d057516e46dae214dd6df9da29bff6bbb7eab60e
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Apr 1 11:03:46 2014 -0300
+
+    remove scrolling from admin settings tabs
+
+commit 3b4e73582f84db3314808392a88bd6e644f927bd
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Apr 1 11:03:01 2014 -0300
+
+    fix deletion of notifications when removing a press
+
+commit b6e723656ac1f2aa188fc752890ba8785d3af799
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Apr 1 11:01:45 2014 -0300
+
+    *8659* fix locale installation in multipress installations
+
+commit f631a1d49c8fe3e56c26b13768a9d8d50236fa2f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Mar 31 16:16:09 2014 -0700
+
+    *8662* Enforce login restriction on open access content
+
+commit b1b8fa02c4ef2539739adb924b508789e8f05cd8
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Mar 31 11:57:04 2014 -0700
+
+    *8665* Fix for missing request parameter
+    (Note: This is not a complete fix for the bug)
+
+commit debf78e7db0a95fa13defd070304d7bed9b2f1ce
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Mar 31 08:57:28 2014 -0700
+
+    *8663* Fix author settings (via upgrade script)
+
+commit 6e87230b75c5608fa8bded6dc202de91e848b078
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Mar 31 01:02:13 2014 -0300
+
+    Functional testing environment config
+
+commit 1ab3606cd15c0e2c5721ff85818f2643da08d2ea
+Merge: a30c2f4 0740764
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Mar 28 10:23:02 2014 -0300
+
+    Merge pull request #13 from asmecher/omp-stable-1_1
+    
+    *6443* Use jquery validator and plupload locale files properly
+
+commit 074076408a81791bfe85457880330e69f604e420
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 27 16:36:41 2014 -0700
+
+    *6443* Use jquery validator locale files properly
+
+commit a30c2f42845454f40fc24660ed05b7790b07e709
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 27 11:12:46 2014 -0700
+
+    *8642* Change 'peer-reviewed article' DC.Type to 'book'
+
+commit 5fbab09b0f5a950e3fb817636922492a66d89c81
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 26 01:02:48 2014 -0300
+
+    *8645* Submodule changes
+
+commit df07375d95d66efb6d685b253e760db841de5d42
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Mar 25 10:11:02 2014 -0700
+
+    *8644* Fix submission deletion errors
+
+commit 20511e97f588bf871a1dc94d5e4c2deeb5ae310d
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Mar 24 16:11:37 2014 -0300
+
+    *8641* Fixed theme notification images path in css
+
+commit 66a575fdcb9d61413b87745e75651c738726c99c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Mar 21 15:31:22 2014 -0700
+
+    Merge pull request #12 from mtub/20140321-initializingOMP
+    
+    initializing de_DE locale of OMP
+
+commit b1270f19cdddc0c8fa1f54097f5c66a87efde2a0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Mar 19 17:11:32 2014 -0700
+
+    Wording tweak
+
+commit 9aa4253a7c7c6526ab51c127fda13a8d17c438c8
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 20 16:46:18 2014 -0700
+
+    *8637* Submodule changes track
+
+commit be2183d2c59404c491a580a82af0457d4860fa81
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 20 16:17:45 2014 -0700
+
+    *8637* Submodule track changes
+
+commit 9423c3d7c9095557e1aaab1ea91f68f4ba9c0746
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 20 16:02:34 2014 -0700
+
+    *8095* Moved filter to lib, deleted unnused cell template
+
+commit c58127659e20120a31bf89823cd5b64949fef0a8
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Mar 19 16:07:36 2014 -0700
+
+    Submodule commit
+
+commit b3545833badcd179f796a9818363071f4675a6f4
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 19 11:45:09 2014 -0700
+
+    *8624* Lib submodule changes track
+
+commit c21fc2136e800332cb004edc3894122b63c24ea3
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Mar 14 09:26:51 2014 -0700
+
+    Submodule update for testing
+
+commit 5b293048193015c2174d2c04c72a1c54ceb22b41
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Mar 14 09:17:21 2014 -0700
+
+    Port testing from master to omp-stable-1_1
+
+commit fcad41d46156c88d10170e77ffbc4141dab1f676
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 13 10:00:46 2014 -0700
+
+    Add travis config file and test database
+
+commit 1e49dd835e32d37d0a8e45e03989594c215322b9
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 12 15:34:47 2014 -0700
+
+    Fix submodule initialization
+
+commit cee7426e1c7e43af4f0745f31d9cc6a7344ef1aa
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Mar 10 15:48:49 2014 -0700
+
+    Adding travis config file
+
+commit be327f191e4d14b7fa8e194549f5df8f21c11c08
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 12 16:41:10 2014 -0700
+
+    Using public url for modules
+
+commit 617a395b732e8530599c0cb342c0f0063c37d038
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 12 14:56:24 2014 -0700
+
+    *8604* Move common submission header code to lib
+
+commit ef1dd3db31b8bc99260e96df4a556fe684713f43
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Mar 7 12:06:21 2014 -0800
+
+    *8596* Fix allowed_html template
+
+commit 01b1c7abc76dde2ec7dbe2aa88e246c018c26f18
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 6 10:48:17 2014 -0800
+
+    *8593* es_ES updates (apply in installation directory)
+
+commit 40e22b4e4fc16db38d5a964cbe93e0264558ac8a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 6 10:34:06 2014 -0800
+
+    *8592* Fix language pulldown in installer
+
+commit c94422e0b645593de240ff10360eda24279f0a25
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Mar 6 14:00:05 2014 -0400
+
+    *8445* implement method for getting representation filter
+commit 61e22067c1c74d0bc7354758e7a7691c05a6d8fd
+Merge: 7430014 6a5e3df
+Author: jmacgreg <jmacgreg@gmail.com>
+Date:   Thu Dec 18 15:40:56 2014 -0400
+
+    Merge pull request #257 from mtub/omp-stable-1_1-de_DE
+    
+    introducing de_DE locale to OMP
+
+commit 6a5e3dfe7befed4573a7a33ab5294ece7c7ff217
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 20:28:16 2014 +0100
+
+    typo in en_US locale
+
+commit 4afb83ccb4dc7c7dbb54d4e966c107ea2d0e4f67
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 20:26:35 2014 +0100
+
+    updated de_DE locale: submission.xml
+
+commit 6d450c972060d2b2bf708e1aea48b0c11b3bb1fc
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 20:26:23 2014 +0100
+
+    updated de_DE locale: reviewer.xml
+
+commit 27e837f8276cab56093c3f71ca75b0c6c0eb0313
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 20:26:08 2014 +0100
+
+    updated de_DE locale: manager.xml
+
+commit 02553a234aecfcbf304c1d93c1d68d60f6f37dde
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 20:25:58 2014 +0100
+
+    updated de_DE locale: editor.xml
+
+commit 7430014376eb396daeb76378d1e93545edba0777
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 08:05:11 2014 -0800
+
+    *9055* Fix more function definition consistency problems (GridRow::initialize)
+
+commit 04a520c40eee51e94de809e2e68aff6670be8c48
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Dec 18 07:40:58 2014 -0800
+
+    *9055* Fix NotificationManager exception
+
+commit 1a7300e742746e66771b7e23c187223e2a1d47b8
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 16:19:37 2014 +0100
+
+    updated de_DE locale: default.xml
+
+commit eae061f0d3320c5a4b73520fa6917a9d28b18146
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 16:05:31 2014 +0100
+
+    updated de_DE locale: cgrid.xml
+
+commit 98f07304f630cac8be27859d17dcb9e8f14380bb
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 15:53:23 2014 +0100
+
+    updated de_DE locale: common.xml
+
+commit 49a53936cbbc8a4d245df68c781e1a41a31b8823
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 15:50:02 2014 +0100
+
+    updated admin.xml, removed duplicate keys from en_US locale
+
+commit d4b6b3ee598c0f6d8432be14fb8f9ffd3e8a2690
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 15:40:07 2014 +0100
+
+    edited de_DE locale files
+
+commit 38071cdda27e9e4bc5b7385d2f7fb7e296927c73
+Author: Marco Tullney <marco.tullney@fu-berlin.de>
+Date:   Tue Sep 23 22:26:48 2014 -0400
+
+    updated de_DE files, files updated by bozana
+
+commit a7d2737fbc9a0adac2d7d37867e59a67ab970d31
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 15:34:41 2014 +0100
+
+    updated de_DE locale
+
+commit 231db07fb1b20f08cb542dbcfc254b7a08a473c1
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Sep 4 12:35:28 2014 +0200
+
+    updated files, de_DE locale
+
+commit d9f1b7cc3ea5d690adf4eb61529f2dffd62fc349
+Author: mtub <marco.tullney@fu-berlin.de>
+Date:   Thu Dec 18 15:19:05 2014 +0100
+
+    de_DE locale updates
+
+commit d980322f15ff6ac307eb88ba2478a46a01640d65
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 16 09:19:23 2014 -0800
+
+    *8663* Fix affiliation init that wasn't localized
+
+commit 216987dff04e6d086708fb9174710134abdb1bd2
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Dec 12 12:52:19 2014 -0800
+
+    Suppress warning
+
+commit e94aa7917ad6d3bc52e299cbfd3a245883ce1189
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Dec 10 22:14:39 2014 -0200
+
+    *9034* Fix broken test by 9034 fix
+
+commit 4a9235652a4a278140c91c285cddda10250f96e9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 9 14:41:54 2014 -0800
+
+    Update Selenium server version
+
+commit a3bd783bc36baad31b779dd356ecf75f3d2153df
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 9 10:40:13 2014 -0800
+
+    Disable CDN usage in Travis testing
+
+commit fd5a4af61439631a453001b81ba1e95bd2412df4
+Merge: 958713b 71397a0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Dec 9 09:14:14 2014 -0800
+
+    Merge pull request #236 from asmecher/9034-fix
+    
+    *9034* Don't email reviewers twice on assignment
+
+commit 958713bfa42ac45b5e0aaea3391d97a337d86659
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Dec 9 03:52:22 2014 -0200
+
+    *8969* Removed obsolete duplicated download method
+
+commit 7ba7ac88876ef3390b68c5521ca7634de76ca39d
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Dec 4 11:24:17 2014 -0200
+
+    *8969* Removing application specifics from library, adding generic actions methods
+
+commit 090a3732b7d4712328c14adbb45c639077219737
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Dec 9 02:58:15 2014 -0200
+
+    *9043* Wait for download request to keep testing
+
+commit b500071e575fc46a2d498a7bde2b07cbda0a112c
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 23:17:44 2014 -0200
+
+    *9043* Revert validation fix that broke the js class, add property to externs file
+
+commit 9762cd18be1cdd17277aeefc8ec98ed0df32cc7b
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 19:38:12 2014 -0200
+
+    *9043* Final validation fixes
+
+commit 5ec6d4dccee07dfea998ba2b1d169fdd2c239c7c
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 18:08:18 2014 -0200
+
+    *9043* Fixed validation
+
+commit 1de8ee550311344d1e1fdc47711760a117aae86d
+Merge: 296a37d 5a391ad
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 17:52:11 2014 -0200
+
+    Merge pull request #248 from beghelli/9043-fix
+    
+    *9043* Fix download action blocking concurrent ajax requests
+
+commit 5a391ad1d5e8669d289ee22b64d2ae49ca75cb70
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 8 15:21:25 2014 -0200
+
+    *9043* Avoid redirecting while ajax requests are still running, fix the finish callback
+
+commit 71397a0ad9ff964d43bfc356a2dc9351e0f9cee7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Dec 1 16:43:59 2014 -0800
+
+    *9034* Don't email reviewers twice on assignment
+
+commit 296a37d818b23ecfbfa20cac76fbb6dc7be76f57
+Merge: 3def7f2 edbbc9a
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Dec 1 18:37:53 2014 -0200
+
+    Merge pull request #234 from asmecher/9024-fix
+    
+    *9024* Permit sub editors to access the submission landing (access) page
+
+commit edbbc9a9dcb1064acd395210af7126ec1011fc43
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 28 12:57:28 2014 -0800
+
+    *9024* Permit sub editors to access the submission landing (access) page
+
+commit 3def7f22d7963add837e677d8f5931cdd23134d8
+Merge: 9fce58c 9a16429
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 28 11:09:11 2014 -0200
+
+    Merge pull request #227 from FourthAndVine/omp-stable-1_1-8685
+    
+    *8685* All user icons now have consistent colouring.
+
+commit 9fce58c6777e7bd78057b9c197af117754e61232
+Merge: f4e0386 5937ce7
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 28 11:05:17 2014 -0200
+
+    Merge pull request #233 from asmecher/9025-fix
+    
+    *9025* Specify user when creating notification URL
+
+commit 5937ce7050419023d4fe0fd8c32b90b59d573a3a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 27 17:18:21 2014 -0800
+
+    *9025* Specify user when creating notification URL
+
+commit f4e038671f7f3aac6f85ede73342a3940c2a3332
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 14:02:57 2014 -0200
+
+    *8969* Fixed error introduced by merge
+
+commit 6e85c2bf07fac5ec081ef1c03f2d9068e31e353b
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 11:41:59 2014 -0200
+
+    *8969* Move shared code to parent classes
+
+commit c2fca3cdefa620b9b4a358c5cc16c6337bbd902a
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 09:50:11 2014 -0200
+
+    *8969* Use method to check in place notification text
+
+commit c5416a08603e3025c3c19d577eb0ae28e0a6b73d
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 08:18:15 2014 -0200
+
+    *8969* Install php xsl
+
+commit 5ae45fb8a2a0bb55c91c0309fd32e0c19ce56bc6
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 24 15:39:39 2014 -0200
+
+    *8969* Enable functional testing
+
+commit 37c8cb2e4b1f3d11970801bd9bf341f2c8cec4d5
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 24 15:34:23 2014 -0200
+
+    *8969* Expand review test to check notifications related to review
+
+commit 413ad9b7d47785fbad8ae68da8d464258f1896da
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 24 12:07:47 2014 -0200
+
+    *8969* Fixes after code review
+
+commit c3ead8b9c74e5680538fdd46976d3c00df3fe3e9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 10 08:36:48 2014 -0700
+
+    *8888* Permit DB full restore in DatabaseTestCases
+
+commit 571feb808340316111a0045550e683a6850a7589
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Sep 8 16:22:20 2014 -0700
+
+    *8888* Disable broken plugin tests
+
+commit b148206bfbbaadf06fa4c78e6e32847ffb9e4a37
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Sep 8 12:04:55 2014 -0700
+
+    *8888* Fix/skip pkp-lib plugin tests
+
+commit 98c4211cc5a866c0c34b1e7f2a58ed33b3cb7e1d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Sep 5 08:53:19 2014 -0700
+
+    *8888* Add missing Perl packag
+
+commit daae28806a157a5a032533453d2c969fdcd5e516
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 21 11:18:55 2014 -0200
+
+    *8888* Keep scripts consistent between branches
+
+commit e327b98ddfe95b48fd5db99a9cf91293500a92b9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Sep 4 15:58:17 2014 -0700
+
+    *8888* Re-disable sessions
+
+commit b7854ab79a2a127487b89f52fb67ff7ebabe072a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Sep 2 18:21:23 2014 -0700
+
+    *8888* Add support for entire DB restore; improve test framework
+
+commit 4709c5797f5570a9709ddcf251cf708c2b4d25ec
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Sep 2 18:59:33 2014 -0700
+
+    *8888* Add database dump process
+
+commit ae20d7af4eba07893c96f3b13917e1728365837b
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 21 10:26:43 2014 -0200
+
+    *9013* Created review test in application
+
+commit 95cd174bbabe9ffb7b1e03786dcb47a2dc678dfa
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 21 00:44:25 2014 -0200
+
+    *8969* Fixed notifications with content but no url
+
+commit 0ee2559300d7c827c49dddd8987077e05b5a0fd9
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 21 00:37:41 2014 -0200
+
+    *8969* Add option for users to turn off all revisions in email notifications
+
+commit 19035bb5c9a13f6e07e294d5ca9cf78ba8317e4d
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Nov 20 23:10:47 2014 -0200
+
+    *8969* Introduced workflow testing to check notifications
+
+commit c4138139da933c117ccd2d39124ecf68ba3c4ef5
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 17 18:46:54 2014 -0200
+
+    *8969* Moving all notification information to the existing manager delegates, sharing the default notification info between notification manager and delegates
+
+commit cf9ff26d2cec788be1267a4843e6c6ea12a1add9
+Merge: a77c9e4 331df5d
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 25 08:23:43 2014 -0200
+
+    Merge pull request #229 from asmecher/9027-fix
+    
+    *9027* Add URLs for editor decision notifications
+
+commit 331df5d15cbad69969f461f9106dc55bae4a843f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 24 17:20:36 2014 -0800
+
+    *9027* Add URLs for editor decision notifications
+
+commit a77c9e4946a2f18c8401d9e7fab4ac797408cd55
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 24 16:33:02 2014 -0800
+
+    Spacing
+
+commit 1ab0139d632652e1cc6eb9e150176243f07145dd
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 24 16:31:33 2014 -0800
+
+    *9026* Add URL to notification emails
+
+commit 1d4e01aa31de614f3ae783831011b1689ac5df24
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 14 22:03:52 2014 -0200
+
+    *9013* Introduced review test
+
+commit e6e2900cdb60c13428740f22c7c9a50e830e5a88
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 14 22:05:07 2014 -0200
+
+    *9021* Make possible to check file downloads in functional tests
+
+commit 97c904e371df781f55529f0deec3a8b6c850f4f3
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Nov 19 23:45:56 2014 -0200
+
+    *9009* Changes for the email logger plugin
+
+commit d202fa41c9e7b844555ee34cf85dfe523f0e2512
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 18 10:19:09 2014 -0800
+
+    Merge pull request #226 from asmecher/plugin-tests
+    
+    *9015* Move plugin tests into plugin directory
+
+commit 9a164292b2a49df167c3976d8df40f08027b48e3
+Author: FourthAndVine <chris@fcts.ca>
+Date:   Sat Nov 15 22:10:15 2014 -0800
+
+    *8685* All user icons now have consistent colouring.
+
+commit e337219d07561d5e8a48650a7be503a1be19aaeb
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 15:53:35 2014 -0800
+
+    *8910* JS linting fix
+
+commit fcededd9321b2e0fc46ee22b47a460d32a418948
+Merge: e261e32 e6a3d88
+Author: Michael Thessel <der.thes@gmail.com>
+Date:   Fri Nov 14 13:34:20 2014 -1000
+
+    Merge pull request #223 from MichaelThessel/omp-stable-1_1
+    
+    *8910* Improved handling of review step tabs
+
+commit e6a3d88bacaba6b638c668d78b17a47ed2dd9fb2
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Wed Sep 24 16:16:52 2014 -1000
+
+    *8910* Improved handling of review step tabs
+
+commit e261e325af2a40c2febeb6bbaa8cbdce4496af4c
+Merge: 679996f 12463be
+Author: Michael Thessel <der.thes@gmail.com>
+Date:   Fri Nov 14 12:43:51 2014 -1000
+
+    Merge pull request #220 from MichaelThessel/8336_sidebar_fixes
+    
+    8336 sidebar fixes
+
+commit 12463be622ccc2b081b2074f0154daae6d884d08
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Wed Nov 12 17:43:37 2014 -1000
+
+    *8336* Fixed stage participants cutoff issue
+
+commit 1cfda22618ee949d8b7b24cc1e3adca07675f8d8
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Wed Nov 12 17:32:32 2014 -1000
+
+    *8336* Moved footer to bottom of page
+
+commit 679996f6b4986c54b90c5c73eb92bc8ed085498e
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 14 20:21:12 2014 -0200
+
+    *8996* Fix plugins grid hook call
+
+commit 7d7464fa240695adf8fbd5aaec03740295c5d90f
+Merge: 309fbb3 52bfca7
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Nov 14 15:31:36 2014 -0400
+
+    Merge pull request #221 from asmecher/8998-fix
+    
+    *8998* Fix reviewer statistics server wastage
+
+commit 309fbb3a50e8035daff8c83f53678c965afaa3a6
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 09:59:49 2014 -0700
+
+    *8868 Fix FormValidatorListbuilder
+
+commit 93a0f4f2a885716e8abf4559dc7828679d77239a
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 14 15:53:20 2014 -0200
+
+    *8996* (8917 port) Fixed executing actions return
+
+commit ad7e481f7d9cfc16b907defb8cc69e49c69b2353
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 11 09:39:33 2014 -0200
+
+    *8866* Avoid sending review comment notification to authors, avoid sending twice to same user
+
+commit 3898e187ccade3dfdbaf327cbb8428c7d33cd234
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 09:34:54 2014 -0800
+
+    Fix locale file typo
+
+commit 2341b9cc2189a5cdf9f214577803047ae6c917cd
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 08:10:18 2014 -0800
+
+    *8868* Fix editable locale file return value
+
+commit d76e980da4ca1acd85cf558d6645c0ddc395c10e
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 14 07:46:24 2014 -0800
+
+    *8987* Fix typo
+
+commit 206976e50bbf57d7c4126cd93bcd3caa9f6996d9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 22:05:48 2014 -0800
+
+    *8868* Back-port grid changes to omp-stable-1_1
+
+commit dd9fa718ea89828145aa35f4d51aa82f570ac00d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 22:03:56 2014 -0800
+
+    *8868* Back-port grid changes to omp-stable-1_1
+
+commit b3604c20b39bb4182d97c4ecefc46280f14692be
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 22:02:07 2014 -0800
+
+    *8868* Back-port grid changes to omp-stable-1_1
+
+commit ac70caa4c38acd5075c88e8f4adb67ee3e1ca270
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 21:51:54 2014 -0800
+
+    *8868* Back-port listbuilder changes to omp-stable-1_1
+
+commit 0d3132bb00f457952d03f6f653dc49b6507914d4
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 21:48:56 2014 -0800
+
+    *8868* Back-port editable file changes to omp-stable-1_1
+
+commit ed2223612d5f9162f3c5a3bae2020db03caff212
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 21:45:01 2014 -0800
+
+    *8868* Grid handler reference use to match master for bounce-backs
+
+commit 5179646accf7630da51156a0d6e01691d7c13350
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 21:28:41 2014 -0800
+
+    Use consistent function descriptors (references)
+
+commit 8eddbaaf07d4927c723bb792eae7e2f64c16a37f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 17:33:53 2014 -0800
+
+    *8987* Add warning when no author user groups exist
+
+commit 52bfca7dc77ee44159b6e4fe152ed6b0d354c796
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 15:27:47 2014 -0800
+
+    *8998* Fix reviewer statistics server wastage
+
+commit 93785acce30a67eba45d5210790a145e6bf5e234
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 15:28:06 2014 -0800
+
+    Typo
+
+commit 97d397edc3cb631f74dade7afa3cb18218485e60
+Merge: 3883dba 6cb58d7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Nov 13 07:38:04 2014 -0800
+
+    Merge pull request #216 from bozana/newHooks
+    
+    *9003* Introduce new hooks TemplateManager::fetch and FileManager::deleteFile
+
+commit 6cb58d7fef08fe156fa66c7b6ea089058486a5ed
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Tue Nov 11 22:32:15 2014 +0100
+
+    *9003* possibility to overwrite the default behavior for the new introduced hooks
+
+commit 3883dba063ff2e56ecd65ba051b2572026f3d322
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 11 18:03:36 2014 -0200
+
+    *9005* Fixed review assignment variable name
+
+commit 2f3d1db7dbe9cdf5892015840ecc747358103189
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 11 16:07:09 2014 -0200
+
+    *9005* Added review assignment id to grid requested args and avoid denied fetch grid request
+
+commit 29276850d247065241c84b0c53fc50b9124009da
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 11 09:17:56 2014 -0800
+
+    *8995* Fix apostrophe use in TinyMCE controls
+
+commit d41cb90b79ebf0c0ec8725def221ffe944fc7716
+Merge: c005ca2 91ae617
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 11 14:04:24 2014 -0200
+
+    Merge pull request #212 from beghelli/8996-fix
+    
+    *8996* Porting stats fixes
+
+commit 91ae6178e16225bd0e84690a6b407c0c08f6a531
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 14:18:22 2014 -0200
+
+    *8996* (9004 port)
+
+commit dd46f6c996fced06b3926d408526d8f1a55ea4b2
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 14:01:19 2014 -0200
+
+    *8996* Fixed storing region code
+
+commit 404abd950ed71daff59041fc14c4f7a06008d66f
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 11:37:57 2014 -0200
+
+    *8996* Fixes after review
+
+commit d67ab30921690ab94d384f856cee4ece182a4038
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 4 12:50:53 2014 -0200
+
+    *8996* (8961 port) Add notification about failing to retrieve counter bot list
+
+commit 70451c41aee197e6cc4ffec4e107d4dcb7242168
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 4 12:24:26 2014 -0200
+
+    *8996* (8958 port) Removed unused variables
+
+commit 0987b1c8de121967d93c716e494541247616b771
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue Nov 4 12:21:07 2014 -0200
+
+    *8996* (8832 port) Scheduled tasks are not running by default
+
+commit 18ed90ffacb002b98abfd7862587cc67a77b8f09
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 18:50:28 2014 -0200
+
+    *8996* (8902 port) Fixed auto staging
+
+commit 42b888a6759323a579d4831cdfedab052d3dba11
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 18:43:53 2014 -0200
+
+    *8996* Fix number of array items to return
+
+commit afd586893129326029b54b8a721a8a36830c1f5c
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 18:37:31 2014 -0200
+
+    *8996* (8785 port) Improve scheduled task notification and error reporting
+
+commit 8003a72ec3f0be2a6fed074e04507766b59f6965
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 17:03:59 2014 -0200
+
+    *8996* (8664 and 8748 port) fixed base urls edge cases
+
+commit 58b436bc5c4ad41552f3fe8bd0ac191562817c98
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 16:04:23 2014 -0200
+
+    *8996* (8649 port) Use shutdown function to execute tasks
+
+commit d73d3ee9fde8d87ed41d1919213c7ce4052d07d8
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 12:33:24 2014 -0200
+
+    *8996* (8687 port) Removed frequency from scheduled tasks
+
+commit b637334bdae2dcabd7a555a83a64ec15bd195975
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 12:27:40 2014 -0200
+
+    *8996* (8690 port) Make it possible to filter files by their names
+
+commit fe48cb606ee8d7307cbae13df7e2044a921aa3f2
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 12:13:59 2014 -0200
+
+    *8996* (8678 port) Require locale component before usage possible call
+
+commit f8de9590d52cd4311e79b31df4ff19693eb6d6f7
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 12:03:27 2014 -0200
+
+    *8996* (8698 port) Valid main context index page access are not counted
+
+commit b75a57d0d9266c8e02fef4b167e687f9d5a2f373
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 10:18:46 2014 -0200
+
+    *8996* (8735 port) Use config setting path info, drop guessing code
+
+commit 7bf605965fbe213dfbec79882552d73e5ecff882
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Nov 3 09:36:42 2014 -0200
+
+    *8996* (8737 port) Check for updated rows to better handle race condition
+
+commit 16de94cb48d6638f249562c51ada927b504774b7
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Tue May 6 19:09:14 2014 -0300
+
+    *8996* (8737 port) Return number of affected rows
+
+commit c005ca2568efdbc30d407773ba41a62376f76847
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 10 11:59:39 2014 -0800
+
+    *9002* Fixed JS lint problem
+
+commit ca3603746feb43820d340792aeb4416df1774c46
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 10 10:32:30 2014 -0800
+
+    *9002* Tweaks from review
+
+commit 33503d56cdb6fef2bbf9cb797de657cfe91baa1b
+Merge: c19f378 a1efd02
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Nov 10 10:31:01 2014 -0800
+
+    Merge pull request #217 from asmecher/9002-fix
+    
+    *9002* Fix controlled vocabulary installation in metadata plugins
+
+commit a1efd0263c1eeca4525b629399ef947944d383ce
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 7 10:24:29 2014 -0800
+
+    *9002* Fix controlled vocabulary installation
+
+commit c19f37809144a9684c087ce2d0e8202b5f438b83
+Merge: 2c8d141 74338ee
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 16:50:11 2014 -0200
+
+    Merge pull request #215 from beghelli/8891-fix
+    
+    *8891* fix
+
+commit f89b20d13de17a31bff3eda75609b7df5ca87479
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Nov 7 10:21:05 2014 -0800
+
+    *9002* Cleanup and testing for DB data parser
+
+commit 74338ee3926f5647d27349e10324fd182106e379
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 01:10:20 2014 -0200
+
+    *8891* Improved default enable disable pairs form functionality
+
+commit db8a110dda0020305393a7bbbf07e47112676e23
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Nov 5 15:37:13 2014 -0200
+
+    8891* Moved notification settings to profile page, switched emailed notifications to a blacklist
+
+commit 2c8d1412208853b1919fbffe162809188c1a08c6
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Nov 7 14:55:27 2014 -0200
+
+    Increase timeout value
+
+commit d753e7583d0cf45d93e76909641acdd1e1a74c34
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Fri Nov 7 15:13:11 2014 +0100
+
+    *9003* introduce new hooks
+
+commit 0f07d0618daa9cca82a3ba0db1b5260f860a3ad1
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Sep 5 13:40:10 2014 -0700
+
+    *8888* Excise persistent and unclosed connections
+
+commit 60cd2bec36c438589e4672653f78cdcecb81fec7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:51:56 2014 -0800
+
+    *9001* Make function descriptors consistent
+
+commit 09d0d485b938adfb0b965d81c428122413724796
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:31:32 2014 -0800
+
+    *9001* Suppress warning
+
+commit b68d7bed00445d24e2b0a6d09ba35a8c8228a749
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:14:33 2014 -0800
+
+    *9001* Suppress fatal error
+
+commit 26e502a2e1218d9936db0f36a4288708f935f7bb
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:08:25 2014 -0800
+
+    *9001* Accidental debug stuff
+
+commit 12c4d48eba633811fa856b3169681753853822b1
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 14:05:23 2014 -0800
+
+    *9001* Fix file caching problems
+
+commit 085e668d43b6bb26077aee22ea47f935cbe34b15
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 11:50:33 2014 -0800
+
+    *8995* Fix xpath for apostrophes in titles
+
+commit cd670b0c1d54828ca2a51b826f75359e48aa154f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Nov 5 09:47:41 2014 -0800
+
+    *8995* Correct warnings; facilitate OMP review model testing
+
+commit aa9b230005fef756cdefeec784690442a1fc4228
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 4 17:16:46 2014 -0800
+
+    *8630* Added missing file
+
+commit 4dda9d124108293753e6511b2f70fc175797e4cc
+Merge: f0bb5a6 5c15cf5
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Nov 4 08:20:43 2014 -0800
+
+    Merge pull request #211 from asmecher/8995-fix
+    
+    *8995* Implement test data spec in OMP for 1.1.1
+
+commit f0bb5a6924a9ef228f1198f6113787d12d46d0b3
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Fri Oct 31 14:59:32 2014 -0200
+
+    Fixed filter tests when external service is failing
+
+commit 5c15cf54afdedd5356295a737ed12c8f319255f9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 16:26:37 2014 -0700
+
+    *8995* Make submission steps more flexible
+
+commit 46032ebb7cecaa3538e8f05864918d83c49f9bb5
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 16:00:05 2014 -0700
+
+    *8995* JS linter non-interactive behavior for Travis builds
+
+commit 71d21325e5cdbedf23fd4f8d27e766d34cbcc040
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Oct 30 13:22:55 2014 -0700
+
+    *8868* JS linting fixes
+
+commit 12e89525404b76002c0b64578eb385d4d3fa2a8d
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Oct 30 14:33:47 2014 -0300
+
+    *8973* refactor reviewer form handler
+
+commit 30e3667cf424880e97037fa8b0d2f3ea601588d2
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Oct 30 08:57:10 2014 -0300
+
+    *8973* fix user form registration issues
+
+commit c90acce3b45a9115ff2e80937e651e87a6859941
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Oct 29 17:37:52 2014 -0700
+
+    *8868* Permit freshly-created tabs to be closed
+
+commit 26661c587713b1d2402e6b12639c7b5bf85c6d56
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Oct 29 16:41:05 2014 -0700
+
+    *8868* Fix old JQueryUI tab add quirk
+
+commit bdbddf1fd10c6d00944192db9cf8b6b3413840fc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Oct 21 16:27:21 2014 -0700
+
+    *8868* Add EventAction, AddTabAction link action options
+
+commit 0f0d8a66788bce01eacff46e26d51d35efbcb35d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Oct 21 16:34:37 2014 -0700
+
+    *8868* Add generally useful LiteralGridCellProvider
+
+commit a45b445201c32d14f6a0eeacc5b9fd7fffdfe4a9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Oct 29 13:23:23 2014 -0700
+
+    Ignore test result screenshots
+
+commit 756c9ac72f60c7154981bb0098f3e86db8a8b449
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Oct 28 15:35:46 2014 -0300
+
+    *8973* refactor JS handlers, move suggestUsername to ApiHandler
+
+commit 3a3cf6f73b5742a31ba7dfd23fea240c322f1076
+Merge: 3b2f9d8 42a3e9f
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Oct 28 10:05:24 2014 -0300
+
+    Merge pull request #202 from MichaelThessel/8975_user_details_form_fixes
+    
+    *8975* Fixed reqired field handling in user profile details forms
+
+commit 42a3e9fb5b4efcbccd72e05c8d86150f595883d3
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Fri Oct 24 15:33:47 2014 -1000
+
+    *8975* Fixed reqired field handling in user profile details forms
+
+commit 3b2f9d8f9687fcc8eb99db901f05861fc804d530
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Oct 23 16:02:18 2014 -0300
+
+    *8837* disable signatures for general notifications, actually use includeSignature param
+
+commit 954185abb0930751928aa87c7493b3b9548eb4d0
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Oct 17 10:24:45 2014 -0300
+
+    *8627* add explicit TinyMCE class for list items
+
+commit f5360bdf955a821bf686e14a652375550973b62e
+Merge: e1bce48 2b8cb8a
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Oct 15 16:40:34 2014 -0300
+
+    Merge pull request #183 from asmecher/8919-fix
+    
+    *8919* Add window target options to RedirectRequest
+
+commit e1bce48a12c86a5db6aeca1899c2735d12fb7c9d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Sep 26 09:52:54 2014 -0700
+
+    JS filename wrong in header
+
+commit fd9599880b983aa2d5994ff72342cf947a5eabfb
+Merge: e53cfe3 d46aeec
+Author: Michael Thessel <der.thes@gmail.com>
+Date:   Wed Sep 24 13:37:11 2014 -1000
+
+    Merge pull request #155 from bozana/displayOptions
+    
+    *8883* New optional display features for the press home page
+
+commit 2b8cb8ad0dd0246751253920ddc078bfa5509372
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 24 11:53:52 2014 -0700
+
+    *8919* Add window target options to RedirectRequest
+
+commit e53cfe3ed422dcc0d1706f5802e4637dc1b6a598
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Sep 18 15:58:43 2014 -0700
+
+    *8845* Affix IDs on export
+
+commit 332406557a8e17d350baa26ef2a96e9f159e2d00
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Sep 18 15:45:42 2014 -0700
+
+    Improve code documentation
+
+commit 566a5b38addecdaab35662d7b7bb8ab15341c6ed
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Sep 17 15:49:03 2014 -0300
+
+    Use clickAndWait so the time out is respected
+
+commit 7cda48d70483884b778e889e22c5d35ca6a491ef
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Sep 17 15:41:03 2014 -0300
+
+    *8904* Fixed time filter selection
+
+commit d1d25d6c01737994611d6e11edb445a7f41b32f2
+Merge: 82d94da 3360746
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 17 10:54:01 2014 -0700
+
+    Merge pull request #152 from asmecher/linting-fixes
+    
+    *8879* Fix linting/minify problems
+
+commit 3360746e5f517b7232e0e05c8acc668ebb025bf7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 17 10:52:14 2014 -0700
+
+    *8879* Make escaping consistent
+
+commit 45497e71e32419b75a9398490d9886e377b6e4c7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 26 13:13:02 2014 -0700
+
+    *8872* JS minify fixes
+
+commit 82d94da5380af1ef04581ff616b64c1f2fd1a6d3
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Sep 17 09:17:39 2014 -0700
+
+    Fix remove disable attribute
+
+commit b4a95c2e44df310db9c28688daa07f9aba616b2d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 14:34:47 2014 -0700
+
+    Crockfordisms
+
+commit 92b7e12d31db4ecf545aa15e146739578682f179
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Sep 11 14:16:51 2014 -0300
+
+    *8615* show assigned submissions grid to authors
+
+commit d90bce1ede57086ed25c3c065c74f0bdc0ed06af
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Sep 4 11:11:35 2014 -0300
+
+    *6531* remove unused locale key parameters
+
+commit d46aeece4756155f0b17a19dc411cf5892acef71
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Thu Aug 28 17:31:19 2014 +0200
+
+    home page display option for new releases, featured books and in the spotlight
+
+commit cedf43464bca85d7fb3bc1fd83ceed0f6242385c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 14:02:45 2014 -0700
+
+    Crockfordisms
+
+commit cd4964e7c17b6e685c6a55f43a34f864a2ed106a
+Merge: 9c39608 2236fe8
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 12:44:57 2014 -0700
+
+    Merge pull request #150 from asmecher/8787-port
+    
+    *8787* Port travis build scripting to omp-stable-1_1
+
+commit 2236fe8bfd74e2c0292a622fd14eb730b55224f6
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 22 12:31:34 2014 -0700
+
+    *8787* Revert modernization
+
+commit 9c3960869c14415cdba2068a2300941a3f9b27d8
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Aug 18 16:01:51 2014 -0700
+
+    *8628* Clean up review view
+
+commit b77fa70833c9677e661796709efef5feb72db552
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 19 12:36:27 2014 -0700
+
+    *8787* Add default comments to review test
+
+commit 713dbf8c9a66088b0f167c9e6e76e4c80336e1df
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Aug 18 11:48:21 2014 -0700
+
+    *8787* Add missing comment
+
+commit 0b2faa4730292b68dc726b30d1461650b24dab64
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Aug 13 09:23:25 2014 -0700
+
+    *8787* Expose display
+
+commit f6c68e6bada87ca1c0d2bfa3eddf1bba46e74d8e
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Aug 13 09:01:08 2014 -0700
+
+    *8787* Use proper tests instead of arbitrary delays
+
+commit f30d8e0bb95f2caa897a72d58173939fa2796c17
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 12 16:00:36 2014 -0700
+
+    *8787* Generalize checklist and submission upload
+
+commit 232e49f74b8e510d92a4a85f8ad5e4c0c9c841a5
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 12 12:18:43 2014 -0700
+
+    *8787* Fix permissions after build scripts
+
+commit 9f2541a85c6710acff0599a435b8450726072612
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 12 11:59:43 2014 -0700
+
+    *8787* Tweak login script
+
+commit 002ba046136233fdb66c54c0eaf05ef5a766cbe1
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 12 11:03:14 2014 -0700
+
+    *8787* Abstract certain tests for sharing
+
+commit 6d5b0fedda6332fd7611dcba8dcb1795e64fff25
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Aug 12 09:57:46 2014 -0700
+
+    *8787* Share content testing code basics
+
+commit 2fb27ea86b2fbce0ecec91ceadc8bbd7c2e426cb
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Jul 31 16:17:33 2014 -0700
+
+    *8787* Modernize reference use
+
+commit 54f399ee2d76c5979a2177c0f2db942f05fedd6a
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Jul 31 16:16:32 2014 -0700
+
+    *8787* Get unit testing working for psql
+
+commit 5a1b485d9b8a209b12a74ee0bee149afa7750b1f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Jul 31 13:32:48 2014 -0700
+
+    *8787* Resolve race condition on CV build
+
+commit d1dcc0b3e6dfd0656b65dd1d1417606b367705b5
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Jul 31 09:09:53 2014 -0700
+
+    *8787* Extend Selenium/xvfb delays
+
+commit fa5d8f9a34bad2b3653623c3a64d8c85b8d9de71
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Jul 31 07:40:30 2014 -0700
+
+    *8787* Fix var name
+
+commit b683ff2c4bf6f4d2dc3c5aa1e8621cbd61052fa9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 30 18:10:13 2014 -0700
+
+    *8787* Init config for xvfb
+
+commit 22cec749f0bbd0ff9bef894ca0063693e0b26cdd
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 30 18:00:33 2014 -0700
+
+    *8787* Set x option
+
+commit 8d56a4e1336abfd0a9d12736df8196e32c9efcdf
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 30 17:53:05 2014 -0700
+
+    *8787* Delay xvfb start
+
+commit a5dfbc4700bb4650f3821f6855104ea541e67acd
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 30 17:41:48 2014 -0700
+
+    *8787* Export config
+
+commit fd436be4f586819d18bd3e54f5f77d864f07def3
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 30 17:28:46 2014 -0700
+
+    *8787* Fix run test script
+
+commit a7ef595e258e95b0ecfb43a427e00b45e2a59793
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 30 17:10:52 2014 -0700
+
+    *8787* Travis testing tasks broken out into scripts
+
+commit 6b510495f2a2d2a36e120453515170411c2f054f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Jul 30 12:19:37 2014 -0700
+
+    *8787* Introduce wait
+
+commit 1ee14262981d9ae33f82bcfcc1816a521f016f64
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Jul 29 14:57:13 2014 -0700
+
+    *8787* Remove useless suppression
+
+commit 147546464f7b84021d827bacf8fe9dcfd22b13bb
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Jul 29 13:54:06 2014 -0700
+
+    *8787* Add JQuery wait
+
+commit 1ea117efcfd3adfcc4c5a01147deda40595194bc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Jul 29 12:10:30 2014 -0700
+
+    *8787* Remove debugging
+
+commit e5a3b2198dd8e73b6d9f74b23c6657e2dba9de08
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Jul 28 22:12:41 2014 -0700
+
+    *8787* Restore tables only when already installed
+
+commit 3dd3c91b4eac1ccf6e4511b959be67f9a55e2a46
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Jul 28 21:58:10 2014 -0700
+
+    *8787* Tweak uninstalled check
+
+commit 0e40eb3ee2d976a3abd2de7d9046cf09c12f1f92
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Jul 28 17:39:23 2014 -0700
+
+    *8787* Don't access DB prior to install
+
+commit a247e2d1c6664db3516c83d515c07ac6323f8bee
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Jul 28 17:35:22 2014 -0700
+
+    *8787* Don't backup tables before install
+
+commit ee8350750889db195ef66af51366deb8d0f3083c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Jul 28 17:24:13 2014 -0700
+
+    *8787* Debugging DB connection
+
+commit 2501ffb20bc91dc22fb2b462d81400fd1a6a01e9
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Jul 25 17:33:33 2014 -0700
+
+    *8787* Improve logOut
+
+commit b8a4d222c44eefafbb8b2f35d4e82c9f021e66d6
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Jul 25 17:33:22 2014 -0700
+
+    *8787* Prevent dupes from hanging up installer
+
+commit 3554fc1d147f20a7e8d9a1f6a41470503cfdb606
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Jul 25 16:22:52 2014 -0700
+
+    *8787* Fix public/private access
+
+commit f61b601eb40bd62bc9f1d81846d7df2328e33495
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Jul 25 15:25:54 2014 -0700
+
+    *8787* Overhaul test structures for data building
+
+commit d82e11aa0a239f44488e33fc9f1d32e886c5b547
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Jul 25 15:21:36 2014 -0700
+
+    Make race conditions for file unlinks silent
+
+commit d5a19951ad8c4f0f1669bc8238dc878d8856a2ae
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Aug 21 08:11:56 2014 -0300
+
+    *8867* make URLs in footer links multilingual
+
+commit 91455055da72842433901f8204a9cd05d365c390
+Merge: 6fb5a12 6c1c7a0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Aug 18 09:30:45 2014 -0700
+
+    Merge pull request #144 from asmecher/8630-fix
+    
+    *8630* Warn editor when no reviewer files are selected
+
+commit 6c1c7a07293cc4670aff184b62be51bb0f9713fd
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Aug 18 09:22:16 2014 -0700
+
+    *8630* Fixed truncated class name
+
+commit 6fb5a120669b5276f0d6b3fedf00588f3842ea24
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 17:58:00 2014 -0700
+
+    Missing var declarations for js linting
+
+commit 370d8bb55783c11f3f0efb80a67f5d7c6d5149e6
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 17:52:08 2014 -0700
+
+    *8630* Implement warning when no reviewer files selected
+
+commit c7ee0bdc2f24b9c60a1f85ca96369cfdec05d63c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 17:33:55 2014 -0700
+
+    *8630* Typo
+
+commit cee775011a2ff55a7c9a2aab40d5bc24e5584ce7
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 14:55:44 2014 -0700
+
+    *8630* Prevent doubling of requied field message
+
+commit 22a1cd20e093759296cff7105184bec1f4e638cf
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Aug 15 14:11:10 2014 -0700
+
+    *8630* Move review form footer initialization into its own handler
+
+commit b2d6adbff9b16e3832d200589b037b9f91ad39a4
+Merge: b07a967 b182bf1
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Aug 12 10:17:07 2014 -0300
+
+    Merge pull request #131 from jnugent/8850-fix
+    
+    *8850* add missing locale key, initialize method
+
+commit b07a9673e280810f73de5a2ee17e3edc32f80c5f
+Merge: 31e5ca4 4251322
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Jul 29 10:48:00 2014 -0700
+
+    Merge pull request #133 from bozana/8858_hidePlugins
+    
+    *8858* consider plugins hide management
+
+commit 31e5ca4db6900e3865df6b7d0318379bb1bf381f
+Merge: 4b639a9 c4abb56
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Jul 29 10:44:45 2014 -0700
+
+    Merge pull request #132 from bozana/8857_pluginHandlers
+    
+    *8857* consider plugin handlers
+
+commit 42513220fdcbaa64ea68d3ec7cbae471ade1873f
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Tue Jul 29 19:22:14 2014 +0200
+
+    *8858* consider plugins hide management
+
+commit c4abb56dad3a646dea41857421f7f8bd982b29e9
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Tue Jul 29 19:18:54 2014 +0200
+
+    *8857* consider plugin handlers
+
+commit b182bf171b4ed69d67034f223034a2777045f38f
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Jul 29 11:05:36 2014 -0300
+
+    *8850* add missing locale key, initialize method
+
+commit 4b639a91b8d0df01b4fe7205c76a33aefd73c409
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Jun 13 15:04:21 2014 -0300
+
+    *8445* add include in browse element to author
+
+commit 6febf57bd6e0ff027861e1befd78863a50d9044b
+Merge: 886d263 81c7d4d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri Jun 13 10:19:03 2014 -0700
+
+    Merge pull request #103 from jnugent/omp-stable-1_1
+    
+    *8315* prevent stage id clobbering
+
+commit 81c7d4db8e9232fa09cf9309c362b775fd0615d0
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Jun 13 10:30:47 2014 -0300
+
+    *8315* fix variable names, remove extra template assignment
+
+commit 344a76c8fc58c06da92598fcde7c8db35c8b39b6
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Jun 12 13:22:22 2014 -0300
+
+    *8315* prevent stage id clobbering
+
+commit 886d263d133c96126392dbb4dbdb5411557c1277
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Jun 9 14:00:48 2014 -0700
+
+    *8795* Default to include in browse for first author
+
+commit dbf5a59a2f6cc891259ded94bad99b4eb967d5e9
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu May 29 15:17:23 2014 -0300
+
+    *8445* fix XML generation for pubId ids
+
+commit b8983333e476db6afabf2c0e4bb766f96e8e68fb
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Fri May 23 14:02:02 2014 -0700
+
+    Port newer version of WebTestCase from master
+
+commit 21b9297be27460b746683353f9dbed075e74b0ff
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed May 21 15:32:42 2014 -0700
+
+    *8770* Properly UTF-8 encode GeoIP data
+
+commit f4ef3591011c1511a7dd1c8bb5b5181260f29ccc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed May 21 15:10:49 2014 -0700
+
+    *8771* Suppress out-of-bound array index warning
+
+commit 1becf52b7c162fb1736ceb10f09ab6a3b9c93f76
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue May 13 12:39:59 2014 -0300
+
+    *8715* fix reviewer registration, no role redirection
+
+commit 77c9574efbabac97061552b2a71ba155a535572b
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Mon May 12 16:08:14 2014 -0300
+
+    *8148* rename function for consistency
+
+commit 7d48846064f5e3f0640ede14238b7a834fb257fd
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed May 7 13:40:41 2014 -0300
+
+    *8705* re-enable form controls when a server-side error occurs
+
+commit 92edc5cc38c8626f8c4107b14b5d28f00250bbc2
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue May 6 15:51:56 2014 -0300
+
+    *8613* introduce link category page
+
+commit 8d4e2845f6ac53cb2e32b9237e9c010d302c9a0b
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Mon May 5 14:37:41 2014 -0300
+
+    provide template variable for hiding modal close button when shown in a tab
+
+commit a662b910f1d77920ce4af54eb6a230ea16fd5ffe
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Mon May 5 10:57:38 2014 -0300
+
+    *8613* fix HTML nesting for footer links
+
+commit 28fbb82d3a7bc8c45bb918ab4ee1da0424bdf252
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Apr 30 14:23:04 2014 -0700
+
+    Add XML validation to travis
+
+commit 8f5f86cc38a2e1d58f1321cf8677db38202dcecc
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Apr 30 11:15:43 2014 -0700
+
+    *8724* Have Users grid Email action use SPF
+
+commit 235ff6f2809555c77647f003921a3e92bcf76f34
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Apr 28 15:33:00 2014 -0700
+
+    *8720* Add xml:lang to html element for accessibility
+
+commit 62397e4d47ff35b462730ac35f8564862c16563c
+Author: bozana <bozana.bokan@fu-berlin.de>
+Date:   Mon Apr 28 22:30:42 2014 +0200
+
+    consider also string param for the web service request
+
+commit c659b303d900b0dbc2cdc11315641d2d9520f446
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Mon Apr 28 16:14:53 2014 -0300
+
+    *8717* Make submit forms id unique
+
+commit 56496560708fd6e7771f657d79348aa5bfb4ba2d
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Apr 17 16:50:19 2014 -0300
+
+    correct documentation
+
+commit 5264f9f3605a196f94f4b14e9ca99fa98b9818c9
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed Apr 16 11:39:59 2014 -0300
+
+    *8672* include template
+
+commit e84328381d95c6b6e5bd6cae4de5d018b25c16dc
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Apr 15 19:45:33 2014 -0300
+
+    *8582* parent refactor for differences in subclass published submissions
+
+commit 66a350534209c52e4cb24adeca99ad433d82f63b
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Tue Apr 15 13:53:38 2014 -0300
+
+    *8672* add parameter
+
+commit 6c1d0fefa0fb013a008c32f09ec633315adf8e29
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Apr 10 14:16:48 2014 -0300
+
+    *8672* SQL tweak
+
+commit 8d66eb2b6eac0c0a9b02c41b9a7086a4c9b9a75f
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Apr 10 11:01:57 2014 -0300
+
+    *8672* missing template
+
+commit 8db7b598d6eb70d8c84474af5f20dacb38ca7521
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Apr 10 10:48:41 2014 -0300
+
+    *8672* add 'include in browse' functionality to authors
+
+commit a6f93c4b03905fa8e0c1e4c440bbb1782ea5e2ab
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Apr 4 14:29:06 2014 -0300
+
+    *8679* submit user id instead of username in hidden field
+
+commit 9889762dfb94c10c8a618dd0507de6730098451c
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Apr 3 14:46:38 2014 -0300
+
+    *8639* provide validation for payment forms
+
+commit e47836e0dde487a29a13547cabbc97ac7a24cffe
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Mar 31 11:23:57 2014 -0700
+
+    *8432* Make uploaded stylesheets higher-priority than themes
+
+commit 03df814d3cdcb2eae37e343b04ff979f23bf13a0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Mon Mar 31 08:54:09 2014 -0700
+
+    *8663* Fix storage of author affiliation and bio
+
+commit c5af3951308620bfed11a51a033a49dede1cf12d
+Merge: 68e4efd 3dc0328
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Sat Mar 29 01:47:05 2014 -0300
+
+    Merge pull request #74 from asmecher/omp-stable-1_1
+    
+    *6443* Use jquery validator and plupload locale files properly
+
+commit 3dc0328161305d0d619f5a428db81ef7dfb9c538
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 27 16:36:01 2014 -0700
+
+    *6443* Use jquery validator locale files properly
+
+commit 70060d8cdd8c5a3a92ba6a7e44d91d4f8cffd34b
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 27 16:01:43 2014 -0700
+
+    *6443* Use plupload locale files properly
+
+commit 68e4efd076930588e3ad219bd5b5ac18a372ee94
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Wed Mar 26 09:43:22 2014 -0300
+
+    *8626* fix extraction of reviewer name
+
+commit f5bec2230ef66cdc039e59ea337b5c2551c9b773
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 26 00:58:09 2014 -0300
+
+    *8645* Fixed signoff handler authorization and some operations
+
+commit fd83cd11207ba59f952f8bd0cd5c5d3f202a3c0d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Mar 25 10:10:34 2014 -0700
+
+    *8644* Fix submission deletion errors
+
+commit b76f057fe96ea20b7a0eaa37390d640aa0755719
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Tue Mar 25 09:55:52 2014 -0700
+
+    *8643* Add missing submissionId to review reminder template
+
+commit 5e56d94a0200a172cacbbb68657db27f7907ed28
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 20 16:41:30 2014 -0700
+
+    *8637* Fix non existing class import and moved filter template file
+
+commit d6af7c19f8d5e8d68f6a7b41e7c8573350132216
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 19 21:48:22 2014 -0700
+
+    *8609* Deny stage assignments for user groups with reviewer role id other than reviewer stages
+
+commit 9495c3a785479264068b53a3876cebdda4791ff4
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 20 16:12:55 2014 -0700
+
+    *8637* Fix user groups stage assignment interface
+
+commit edc292982bc1078c96fdb6ddc2c107ebf4f2bd2e
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 20 16:06:54 2014 -0700
+
+    *8636* Get contents for warning type notifications
+
+commit e77e15ecbb9c0a0aedf8eb51b4e4b3c32f8911e0
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Mar 19 15:52:22 2014 -0700
+
+    Make test script report error code properly
+
+commit 01c92cb3c579120f2bf859b74bf540daeaf9805d
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Mar 19 16:00:21 2014 -0700
+
+    Change "revision requested" to "revision required"
+
+commit 3a935a0e9395db0bbb5610cf41cae73d25b07272
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Mar 19 15:57:34 2014 -0700
+
+    Wording tweak
+
+commit 7dd86cebc7b5938a5e4760697ff6da7a3b619f1e
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 19 11:32:52 2014 -0700
+
+    *8624* Make sure variable is initialized and array has expected number of items
+
+commit 2a074690f8aba77b892462bd34fd845791384792
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 12 16:18:15 2014 -0700
+
+    Skip broken tests
+
+commit 0ec7512c7cce32bcd9fbc9d40537f7fa26d438d8
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 12 16:18:15 2014 -0700
+
+    Skip broken tests
+
+commit 7bb96c85b4e5b495d4e38a7b6792506837166d3f
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 12 16:03:57 2014 -0700
+
+    Move run all tests tool to library
+
+commit ab258c023af0f185a45571c5eac9097556169522
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 13 11:50:35 2014 -0700
+
+    *8612* Remove inline comments
+
+commit 5c6e84efdb1ecdbc47296c360efb7be2df6566fd
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 13 11:56:37 2014 -0700
+
+    Merge pull request #67 from rootl/master
+    
+    *8612* Support for ePUB file format added
+
+commit a8e602a3db042cf282b17f9a1e1de3a9fd680c54
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Wed Mar 12 14:51:05 2014 -0700
+
+    *8604* Better separation between submission header and submission progress bar
+
+commit d70193ce123ae1f163e27a3e8927ed71e8aa0785
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Fri Mar 7 14:58:23 2014 -0400
+
+    *8582* quell warning when no localized data present for node
+
+commit 537d39f76f94bcefff92a87f0851fce51daa9add
+Author: Michael Thessel <michael.thessel@gmx.de>
+Date:   Fri Mar 7 14:32:14 2014 -1000
+
+    *8597* Move localization icon when a scrollbar is added
+
+commit b080bc8b1511a042023586e363c74a4abdda037c
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 6 10:46:15 2014 -0800
+
+    *8593* es_ES updates (apply in lib/pkp)
+
+commit 14eaffff314752c21e0e11746b4acd947c3f45e6
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Thu Mar 6 10:33:06 2014 -0800
+
+    *8592* Remove non-functional redirect case (optional)
+
+commit 46292ced38c7a44a1ac46a218519aedaa3245842
+Author: Jason Nugent <jason.nugent@gmail.com>
+Date:   Thu Mar 6 13:59:31 2014 -0400
+
+    *8445* remove OMP-specific reference to publication formats
+
+commit a0830f9a493a3a5f5e9a99eaeef7b37fd6a46bc3
+Author: Bruno Beghelli <bruno.beghelli@gmail.com>
+Date:   Thu Mar 6 14:16:34 2014 -0300
+
+    *8590* Keep array index when slicing
+
+commit e6a046587df7d628be6d9946ff8b47cff5169d8f
+Author: Alec Smecher <alec@smecher.bc.ca>
+Date:   Wed Mar 5 14:21:50 2014 -0800
+
+    *8523* Fix getQueryArray behavior with disable_path_info

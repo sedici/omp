@@ -13,7 +13,11 @@
  * @brief Data build suite: Create submission
  */
 
+<<<<<<< HEAD
 import('tests.ContentBaseTestCase');
+=======
+import('tests.data.ContentBaseTestCase');
+>>>>>>> responsive
 
 class MsmithSubmissionTest extends ContentBaseTestCase {
 	/**
@@ -120,7 +124,10 @@ class MsmithSubmissionTest extends ContentBaseTestCase {
 
 		$this->findSubmissionAsEditor('dbarnes', null, $title);
 		$this->sendToReview('Internal');
+<<<<<<< HEAD
 		$this->waitForElementPresent('//a[contains(text(), \'Internal Review\')]/div[contains(text(), \'Initiated\')]');
+=======
+>>>>>>> responsive
 		$this->assignReviewer('jjanssen', 'Julie Janssen');
 		$this->assignReviewer('phudson', 'Paul Hudson');
 		$this->logOut();

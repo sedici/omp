@@ -4,12 +4,9 @@
 [submodule "plugins/generic/customBlockManager"]
 	path = plugins/generic/customBlockManager
 	url = git://github.com/pkp/customBlockManager
-[submodule "plugins/generic/staticPages"]
-	path = plugins/generic/staticPages
-	url = git://github.com/pkp/staticPages
 [submodule "plugins/generic/translator"]
 	path = plugins/generic/translator
 	url = git://github.com/pkp/translator
-[submodule "plugins/generic/tinymce"]
-	path = plugins/generic/tinymce
-	url = git://github.com/pkp/tinymce
+[submodule "plugins/generic/emailLogger"]
+	path = plugins/generic/emailLogger
+	url = git://github.com/pkp/emailLogger

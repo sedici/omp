@@ -136,6 +136,7 @@ class Application extends PKPApplication {
 			'UserGroupAssignmentDAO' => 'lib.pkp.classes.security.UserGroupAssignmentDAO',
 			'UserDAO' => 'classes.user.UserDAO',
 			'UserSettingsDAO' => 'classes.user.UserSettingsDAO',
+                        'UnidadesAcademicasDAO' => 'plugins.generic.homeOMP.dao.UnidadesAcademicasDAO',
 		));
 	}
 

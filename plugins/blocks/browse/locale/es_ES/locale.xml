@@ -16,7 +16,12 @@
 	<message key="plugins.block.browse">Explorar</message>
 	<message key="plugins.block.browse.displayName">Bloque de exploración</message>
 	<message key="plugins.block.browse.description">Este plugin proporciona herramientas de exploración en la barra lateral.</message>
+<<<<<<< HEAD
 	<message key="plugins.block.browse.category">Categorías</message>
 	<message key="plugins.block.browse.series">Series</message>
+=======
+	<message key="plugins.block.browse.category">Áreas temáticas</message>
+	<message key="plugins.block.browse.series">Unidades Academica</message>
+>>>>>>> responsive
 	<message key="plugins.block.browse.newReleases">Novedades</message>
 </locale>

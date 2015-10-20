@@ -24,7 +24,9 @@
 	<message key="admin.languages.installNewLocalesInstructions">Seleccionar locales complementarios para los que instalar soporte en este sistema. Los locales deben instalarse antes de ser usados por las editoriales alojadas. Ver la documentación OMP para más información sobre añadir soporte para nuevos idiomas.</message>
 	<message key="admin.languages.noLocalesToDownload">No hay locales disponibles para su descarga.</message>
 	<message key="admin.languages.downloadFailed">La descarga de locales falló. El mensaje o mensajes del error que se muestra más abajo detalla este fallo.</message>
-	<message key="admin.languages.downloadUnavailable"><![CDATA[<p>Descargando paquetes de idiomas del servidor web de Public Knowledge Project no está disponible en estos momentos porque:</p>
+	
+	
+        <message key="admin.languages.downloadUnavailable"><![CDATA[<p>Descargando paquetes de idiomas del servidor web de Public Knowledge Project no está disponible en estos momentos porque:</p>
 	<ul>
 		<li>Tu servidor no tiene o permite la ejecución de la herramienta GNU "tar"</li>
 		<li>OMP no puede modificar el archivo de registro de locales "registry/locales.xml".</li>
@@ -52,5 +54,6 @@ Ten en cuenta que la interfaz OAI se puede deshabilitar para esta página editan
 	<!-- System Information -->
 	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>¡AVISO!</div>
 <p>El sistema no ha podido sobrescribir automáticamente el archivo de configuración. Para aplicar tus cambios en la configuración, tienes que abrir <tt>config.inc.php</tt> con un editor de texto apropiado y reemplazar sus contenidos por los del campo de texto de abajo.</p>]]></message>
-
+    <message key="workflow.review.internalreview">Revision Interna</message>
+        
 </locale>

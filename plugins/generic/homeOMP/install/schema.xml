@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schema SYSTEM "../../../lib/pkp/dtd/xmlSchema.dtd">
+
+<!--
+  * statsAdmin_schema.xml
+  *
+  * Copyright (c) 2014-2021 Ariel Sobrado
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * HomeOMP plugin schema in XML.
+  *
+  * $Id$
+  -->
+
+<schema version="0.2">
+	 <table name="homeOMP_unidades_academicas">
+	 <field name="unidades_academicas_id" type="I8">
+	 	<KEY/>
+	 </field>
+	 </table>
+
+	 
+</schema>
+
