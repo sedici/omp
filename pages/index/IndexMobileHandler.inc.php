@@ -39,8 +39,6 @@ class IndexMobileHandler extends Handler {
 	 */
 	function index_mobile($args, $request) {
             	
-            
-            
                 $targetPress = $this->getTargetContext($request);
 		$press = $request->getPress();
 		$templateMgr = TemplateManager::getManager($request);
@@ -60,9 +58,32 @@ class IndexMobileHandler extends Handler {
 	 */
 	function _displayPressIndexPage($press, &$templateMgr) {
 
-		// Display New Releases
+
+            
+		// Expose the featured monograph IDs and associated params
+		$featureDao = DAORegistry::getDAO('FeatureDAO');
+		$featuredMonographIds = $featureDao->getSequencesByAssoc(ASSOC_TYPE_PRESS, $press->getId());
+
+		if (empty($featuredMonographIds)) {
+			$returner = null;
+		} else {
+			$templateMgr->assign('featuredMonographIds', $featuredMonographIds);
+
+			// Fetch the monographs to display
+			$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+			$publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
+			$templateMgr->assign('publishedMonographsCarousel', $publishedMonographs->toAssociativeArray());
+
+		}
+            
+            
+            
+            
+            
+            
+            
                 if ($press->getSetting('displayNewReleases')) {
-			$newReleaseDao = DAORegistry::getDAO('NewReleaseDAO');
+		    $newReleaseDao = DAORegistry::getDAO('NewReleaseDAO');
 			$newReleases = $newReleaseDao->getMonographsByAssoc(ASSOC_TYPE_PRESS, $press->getId());
 			$templateMgr->assign('publishedMonographs', $newReleases);
 		}
