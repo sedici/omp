@@ -31,7 +31,7 @@
                     <div class="item {$estilo}"> 
                         <div class="container paneles col-xs-12">
                             <div class="col-xs-3">
-                                <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" height="100" width="135" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
+                                <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}"  width="135" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
                             </div>
                             <div class="carousel-caption col-xs-9">
                                  <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}"><h1>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></a>
