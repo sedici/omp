@@ -13,19 +13,20 @@
     </div>
     <div class="col3">
 
-        <!--    <div class="redes">
-        <!--  <div class="redes">
-              <strong style="float:left;">Redes</strong>
-              <img src="/UNLP/images/social_1.png" />
-              <img src="/UNLP/images/social_2.png"/>
-              <img src="/UNLP/images/social_3.png" />
-              <img src="/UNLP/images/social_4.png" />
-              <img src="/UNLP/images/social_5.png" />
-          </div>
-        </div>-->
-        <div class="cc"><a href='http://www.creativecommons.org.ar/' target="_blank"><img style="float:left; display:block;" src="/UNLP/images/creative_commons.png" /></a> <p>Licencia Creative Commons Atribución-NoComercial-SinDerivadas 2.5 Argentina a menos que se indique lo contrario</p></div>
+    <!--    <div class="redes">
+      <!--  <div class="redes">
+            <strong style="float:left;">Redes</strong> 
+            <img src="/UNLP/images/social_1.png" />
+            <img src="/UNLP/images/social_2.png"/>
+            <img src="/UNLP/images/social_3.png" />
+            <img src="/UNLP/images/social_4.png" />
+            <img src="/UNLP/images/social_5.png" />
+        </div> 
+      </div>-->
+
     </div>
     <div class="col4">
+
         <div class="ubicacion"></div>
         <img style="float:left; margin-left:35px;" src="/UNLP/images/ubicacion.png" />
         <div class="ubicacion"><strong>Ubicación</strong>
@@ -39,6 +40,7 @@
         </div>
 
     </div>
+
 </div>
 
 
