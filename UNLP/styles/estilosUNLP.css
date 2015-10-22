@@ -1237,12 +1237,15 @@ p {
 	text-align:left;
 	color:#63c6bf;
 	font-size:1.5em;
-	
+	}
+
+.carousel-caption {
+	position:relative !important;
 }
 
 .carousel-caption p, .carousel-caption p a {
 	margin:0;
-	float:right;
+	float:left;
 	padding:0;
 	color:black;
 	}
