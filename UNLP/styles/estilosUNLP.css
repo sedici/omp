@@ -47,7 +47,6 @@ body {
 
 .pkp_structure_foot {
     background-color: #6dc6c1;
-    height: 100px;
     font-family: arial;
     font-size: 12px;
     
@@ -114,8 +113,8 @@ body {
 	margin: 0px 0px 0px 5px;
 	width: 300px;
 	position:relative;
-	padding-top:15px;
-	top:10px;
+	/* padding-top:15px;
+	top:10px; */
 	color:white;
 }
 .pkp_structure_foot .col2y3 .col3 .redes {
@@ -140,6 +139,7 @@ list-style-type:none;
 .pkp_structure_foot .col2y3 .col4 .ubicacion {
 	float: left;
 	margin-left: 10px;
+	color:white;
 }
 .pkp_structure_foot .col2y3 .col4 .ubicacion p {
 	color: #FFFFFF;
@@ -280,6 +280,11 @@ list-style-type:none;
 	text-transform: uppercase;
 	font-family:Arial, Helvetica, sans-serif;
 }
+
+.detalle {
+	padding:5px;
+}
+
 .col_principal .destacado .detalle .detalles_del_item h1 {
 	font-size: 20px;
 	color: #12909F;
@@ -589,7 +594,7 @@ line-height:1.5;
 /* position:absolute;
 bottom:-470px; */
 right:20px;
-position:relative;
+/* position:relative; */
 bottom:70px;
 }
 
@@ -681,7 +686,7 @@ color:#12909f;
 
 	.publicationFormatDownload { width: 250px; }
     .publicationFormatDownload li { display: block; padding-left: 10px; }
-    .publicationFormatDownload li > div { float: none; width: 100%; }
+    .publicationFormatDownload li > div { float: none; width: 100%; text-align:left;}
     .publicationFormatDownload .publicationFormatLink { padding-bottom: 15px; }
     .publicationFormatDownload li:hover { background-color:rgba(109, 198, 193, 0.22); }
 

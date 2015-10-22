@@ -28,10 +28,10 @@
     <div class="col4">
 
         <div class="ubicacion"></div>
-        <img style="float:left; margin-left:35px;" src="/UNLP/images/ubicacion.png" />
-        <div class="ubicacion"><strong>Ubicación</strong>
-            <p> 49 y 115 s/n <br />
-            </p>
+        <img style="float:left; margin-left:30px;" src="/UNLP/images/ubicacion.png" />
+        <div class="ubicacion"><strong>Ubicación</strong> 49 y 115 s/n
+           <!--  <p> 49 y 115 s/n <br />
+            </p> -->
 <div class="pkp_structure_content">
 		<a href="{url page="about" op="aboutThisPublishingSystem"}"><img class="pkp_helpers_align_right" alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}"/></a>
 		<a href="{$pkpLink}"><img class="pkp_helpers_align_right pkp_helpers_clear" alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/lib/pkp/templates/images/pkp_brand.png"/></a>
