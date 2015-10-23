@@ -254,7 +254,6 @@ list-style-type:none;
 	width: 50%;
 }
 .col_principal .destacado .portada {
-	width: 220px;
 	float: left;
 }
 .col_principal .exploracion {
@@ -268,7 +267,7 @@ list-style-type:none;
 	clear: right;
 }
 .col_principal .destacado .detalle .detalles_del_item {
-	float: left;
+	/*float: left;*/
 
         width: 65%;
 }
@@ -1144,7 +1143,6 @@ color:#21919f;
 }
 
 .publicationFormatLink {
-	text-align:center;
 	color:#21919f;
 }
 
