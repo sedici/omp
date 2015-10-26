@@ -17,11 +17,9 @@ body {
 
 
 .pkp_structure_page {
-
     margin: 0;
     background-position: 0 0;
-    
-}
+    }
 
 
 .pkp_structure_sidebar_left .temario .areas li {
@@ -254,6 +252,7 @@ list-style-type:none;
 	width: 50%;
 }
 .col_principal .destacado .portada {
+	width: 220px;
 	float: left;
 }
 .col_principal .exploracion {
@@ -267,7 +266,7 @@ list-style-type:none;
 	clear: right;
 }
 .col_principal .destacado .detalle .detalles_del_item {
-	/*float: left;*/
+	float: left;
 
         width: 65%;
 }
@@ -402,7 +401,7 @@ list-style-type:none;
 .col_principal .destacado h1 {
 	color: #21919f;
 	font-size: 20px;
-}
+} 
 .col_principal .resena {
 }
 .col_principal .resena  , .col_principal .contenidos {
@@ -420,8 +419,7 @@ list-style-type:none;
 	background-color: none;
 	max-width: 300px;
 	width: 300px;
-        padding: 5px 0px;
-		
+    padding: 5px 0px;
 	}
 	
 .col_principal .resena h1 {
@@ -692,7 +690,7 @@ color:#12909f;
 
     .resumen.truncate {
         text-overflow: ellipsis;
-        width: 250px;
+        width: 435px;
         height: 110px;
         overflow: hidden;
         padding-top: 5px;
@@ -1014,6 +1012,7 @@ margin: 0 auto !important;
 
 .exploracion_mobile {
 margin-top:5px;
+list-style-type:none;
 }
 
 .exploracion_mobile:hover{
@@ -1143,6 +1142,7 @@ color:#21919f;
 }
 
 .publicationFormatLink {
+/*	text-align:center;*/
 	color:#21919f;
 }
 
@@ -1271,5 +1271,9 @@ p {
 
 .paneles  {
 	margin-bottom:20px;
+}
+
+ul, ol {
+	list-style-type:none !important;
 }
   

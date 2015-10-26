@@ -52,7 +52,7 @@
                                          <img src="/files/presses/1/categories/{$category_id}-category.png" class="center-block" />
                                         <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategoryList->getPath()}">
                                            
-                                            <span class="mobile_texto"> {$browseCategoryList->getLocalizedTitle()|escape}</span>
+                                            <span class="mobile_texto center-block"> {$browseCategoryList->getLocalizedTitle()|escape}</span>
                                             </a>
                                       </li>       
                                 {if ($categoriaByLine == 0) }
