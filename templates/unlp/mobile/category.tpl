@@ -33,3 +33,4 @@
     </div>
 </div><!-- catalogContainer -->
 
+<script type="text/javascript" src="{$baseUrl}/UNLP/styles/bootstrap/js/bootstrap.js"></script>

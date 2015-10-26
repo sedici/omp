@@ -39,10 +39,7 @@
 		</div><!-- pkp_structure_content -->
 	
         {/if}
-	<div class="pkp_structure_content">
-		<a href="{url page="about" op="aboutThisPublishingSystem"}"><img class="pkp_helpers_align_right" alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}"/></a>
-		<a href="{$pkpLink}"><img class="pkp_helpers_align_right pkp_helpers_clear" alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/lib/pkp/templates/images/pkp_brand.png"/></a>
-	</div><!-- pkp_structure_content -->
+	!-- pkp_structure_content -->
 	
 </div><!-- pkp_structure_subfoot -->
 

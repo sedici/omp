@@ -36,15 +36,15 @@ RewriteEngine on
 
 
 Options +FollowSymlinks
-RewriteCond %{HTTP_HOST} ^www\.libros-mobile\.com [NC]
+RewriteCond %{HTTP_HOST} ^m\.163\.10\.34\.211 [NC]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^index.php/unlp$ index.php/unlp/index/index_mobile [L]
 RewriteRule ^index.php/unlp/index$ index.php/unlp/index/index_mobile [L]
 RewriteRule ^index.php/unlp/index/index$ index.php/unlp/index/index_mobile [L]
 RewriteRule ^index.php/unlp/catalog/results$ index.php/unlp/catalog/results_mobile [L]
-RewriteRule ^index.php/unlp/catalog/book/(.*)$ index.php/unlp/catalog/book_mobile/$1 [L]
-RewriteRule ^index.php/unlp/catalog/unidades/(.*)$ index.php/unlp/catalog/unidades_mobile/$1 [L]
-RewriteRule ^index.php/unlp/catalog/category/(.*)$ index.php/unlp/catalog/category_mobile/$1 [L]
+#RewriteRule ^index.php/unlp/catalog/book/(.*)$ index.php/unlp/catalog/book_mobile/$1 [L]
+#RewriteRule ^index.php/unlp/catalog/unidades/(.*)$ index.php/unlp/catalog/unidades_mobile/$1 [L]
+#RewriteRule ^index.php/unlp/catalog/category/(.*)$ index.php/unlp/catalog/category_mobile/$1 [L]
 RewriteRule ^index.php/unlp/catalog$ index.php/unlp/catalog/index_mobile/$1 [L]
 
 
