@@ -328,7 +328,7 @@ list-style-type:none;
 	background-image: url(../images/fondo_busqueda.png);
 	width: 364px;
 	height: 180px;
-	position:relative;
+	//position:relative;
 	top:-58px;
 /*	top: 210px;*/
 	padding: 20px 0px 0px 0px;
@@ -1274,4 +1274,12 @@ p {
 ul, ol {
 	list-style-type:none !important;
 }
-  
+
+.notfound {
+background-color:#dedede;
+color:grey;	
+padding:50px;
+text-align:center;
+font-style:italic;
+font-size:2em;
+}
