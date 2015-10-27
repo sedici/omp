@@ -13,9 +13,14 @@
 {/strip}
 
   
-{if $series}
-   <h2 class="pkp_helpers_text_center"> <em>{$series->getLocalizedTitle()}</em></h2>
-{/if}
+<div class="row">
+    {if $series}
+        <h2 class="pkp_helpers_text_center"><span class="titulo_results">{$series->getLocalizedTitle()}</span></h2>
+        {else}
+        <h1 class="pkp_helpers_text_center"><span class="titulo_results">Todos los t&iacute;tulos </span></h1>
+    {/if}    
+
+</div>
 <div class="catalogContainer">
     <div class="temario">
         <h1>{translate key="series.series"}</h1>

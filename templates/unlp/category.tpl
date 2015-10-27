@@ -12,11 +12,19 @@
     {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
 
-{if $category}
-    {assign var="category_id" value=$category->getId()}
+
+
+<div class="row">
+    {if $category}
+        {assign var="category_id" value=$category->getId()}
    
-    <h2 class="pkp_helpers_text_center"> <center><img src="/files/presses/1/categories/{$category_id}-category.png" /></center><em>{$category->getLocalizedTitle()}</em></h2>
-{/if}
+        <h2 class="pkp_helpers_text_center"> <center><img src="/files/presses/1/categories/{$category_id}-category.png" /></center><span class="titulo_results">{$category->getLocalizedTitle()}</span></h2>
+ {else}
+        <h1 class="pkp_helpers_text_center"><span class="titulo_results">Todos los t&iacute;tulos </span></h1>
+    {/if}    
+
+</div>
+
 
 <div class="catalogContainer">
     <div class="temario">
