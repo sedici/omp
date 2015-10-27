@@ -1,0 +1,52 @@
+RewriteEngine on
+#RewriteBase /
+# Vemos si en el query string hay un noredirect (o sea, desde un dispositivo mobile quiere ver la version desktop)
+#RewriteCond %{QUERY_STRING} (^|&)m=0(&|$)
+# Seteo la cookie para que vaya a la versino desktop y pasamos a la siguiente regla
+#RewriteRule ^ - [CO=mredir:0:libros.localhost]
+
+# Vemos si es un dispositivo movil
+# Para eso, vemos los headers que mandan la mayoria de los dispositivos moviles
+# (suelen mandar al menus alguno de estos)
+
+
+#RewriteCond %{HTTP:x-wap-profile} !^$ [OR]
+#RewriteCond %{HTTP:Profile}       !^$ [OR]
+#RewriteCond %{HTTP_USER_AGENT} "acs|alav|alca|amoi|audi|aste|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} "dang|doco|eric|hipt|inno|ipaq|java|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT}  "maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|opwv" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} "palm|pana|pant|pdxg|phil|play|pluc|port|prox|qtek|qwap|sage|sams|sany" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} "sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} "teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|w3cs|wap-|wapa|wapi" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} "wapp|wapr|webc|winw|winw|xda|xda-" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} "up.browser|up.link|windowssce|iemobile|mini|mmp" [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} "symbian|midp|wap|phone|pocket|mobile|pda|psp" [NC]
+#RewriteCond %{HTTP_USER_AGENT} !macintosh [NC]
+
+# Ya estabamos en la version mobile?  m.libros.localhost
+#RewriteCond %{HTTP_HOST}          !^m\.
+# No se puede leer y escribir una cookie en el mismo request, asi que tenemos que duplicar la condicion
+#RewriteCond %{QUERY_STRING} !(^|&)m=0(&|$)
+
+# Ya seteamos la cookie antes?
+#RewriteCond %{HTTP_COOKIE}        !^.*mredir=0.*$ [NC]
+
+# Ahora vamos al sitio movil
+#RewriteRule ^ http://www.libros-mobile.com/index.php/unlp/index [R,L]
+
+
+Options +FollowSymlinks
+RewriteCond %{HTTP_HOST} ^m\.163\.10\.34\.211 [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^index.php/unlp$ index.php/unlp/index/index_mobile [L]
+RewriteRule ^index.php/unlp/index$ index.php/unlp/index/index_mobile [L]
+RewriteRule ^index.php/unlp/index/index$ index.php/unlp/index/index_mobile [L]
+RewriteRule ^index.php/unlp/catalog/results$ index.php/unlp/catalog/results_mobile [L]
+#RewriteRule ^index.php/unlp/catalog/book/(.*)$ index.php/unlp/catalog/book_mobile/$1 [L]
+#RewriteRule ^index.php/unlp/catalog/unidades/(.*)$ index.php/unlp/catalog/unidades_mobile/$1 [L]
+#RewriteRule ^index.php/unlp/catalog/category/(.*)$ index.php/unlp/catalog/category_mobile/$1 [L]
+RewriteRule ^index.php/unlp/catalog$ index.php/unlp/catalog/index_mobile/$1 [L]
+
+
+
+

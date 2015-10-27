@@ -128,4 +128,7 @@
 	<message key="submission.event.publicationMetadataUpdated">Los metadatos del formato de publicación "{$formatName}" se han actualizado.</message>
 	<message key="submission.event.publicationFormatCreated">Se ha creado el formato de publicación "{$formatName}".</message>
 	<message key="submission.event.publicationFormatRemoved">Se ha eliminado el formato de publiación "{$formatName}".</message>
+
+    <message key="submission.aboutTheAuthors">Acerca de los autores</message>
+    <message key="submission.tableOfContents">Tabla de contenidos</message>
 </locale>

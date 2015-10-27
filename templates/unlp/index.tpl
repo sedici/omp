@@ -8,9 +8,12 @@
 * Press index page.
 *}
 
+
+
 {strip}
     {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
+
 
 
 
@@ -26,15 +29,17 @@
                 {iterate from=browseSeries item=browseSeriesItem}
                 <li>
                     <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
-                        {$browseSeriesItem->getLocalizedTitle()|escape}</a></li>    
-                        {/iterate}
+                        {$browseSeriesItem->getLocalizedTitle()|escape}
+                    </a>
+                </li>    
+                {/iterate}
             </ul>
         </div>
         <div class="links_relacionados">
             <div class="rotulo">Sitios relacionados</div>
-             {include file="unlp/linkRelaciones.tpl"}
+            {include file="unlp/linkRelaciones.tpl"}
         </div>
-        </div>
+    </div> 
 </div>
 <div class="col_secundaria">
     <div class="busqueda">
@@ -48,39 +53,40 @@
     <div class="areas_tematicas">
         <div class="rotulo">Explore nuestras colecciones </div>
 
-        
+
         {assign var="categoriaByLine" value="3"}
         {assign var="categorias" value="8"}
         {assign var="div" value=true}
         {iterate from=browseCategories item=browseCategory}
-         
-        
+
+
         {if ($categorias>0) }
-        {if ($div==true)} 
-            <div class="linea">
-                 {assign var="div" value=false}
-         {/if} 
-            <div class="icon">
-                {assign var="category_id" value=$browseCategory->getId()}
-                <img src="/files/presses/1/categories/{$category_id}-category.png" />
-                <div class="texto_icon">
-                    <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
-                        {$browseCategory->getLocalizedTitle()|escape}
-                        
-                    </a>
+            {if ($div==true)} 
+                <div class="linea">
+                    {assign var="div" value=false}
+                {/if} 
+                <div class="icon">
+                    {assign var="category_id" value=$browseCategory->getId()}
+                    <img src="/files/presses/1/categories/{$category_id}-category.png" />
+                    <div class="texto_icon">
+                        <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()}">
+                            {$browseCategory->getLocalizedTitle()|escape}
+
+                        </a>
+                    </div>
                 </div>
-            </div>
-            {if ($categoriaByLine == 0) }
-               {assign var="categoriaByLine" value="4"}
-              </div> 
-              {assign var="div" value=true}
+                {if ($categoriaByLine == 0) }
+                    {assign var="categoriaByLine" value="4"}
+                </div> 
+                {assign var="div" value=true}
             {/if}
             {assign var="categoriaByLine" value=$categoriaByLine-1}
             {assign var="categorias" value=$categorias-1}
-           {/if} 
+        {/if} 
         {/iterate}
- 
+
         <a href="{url op="category" page='catalog'}" style="color:white; float: left; clear: left; background-color: #3db8c1;  padding:3px; text-decoration:none">Ver Más</a>
     </div>
 </div>
+        
 {include file="common/footer.tpl"}

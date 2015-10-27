@@ -147,11 +147,15 @@ class IndexHandler extends Handler {
 		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
 		
                 $templateMgr->assign('browseSeries', $series);
+                
 
 		$categoryDao = DAORegistry::getDAO('CategoryDAO');
 		$categories = $categoryDao->getByParentId(0,$press->getId());
+                
 		$templateMgr->assign('browseCategories', $categories);
-          	$templateMgr->display('unlp/index.tpl');
+                
+          
+                $templateMgr->display('unlp/index.tpl');
                 
                 /****************Se agrego la redireccion a unlp/inde.tpl********************/
 	}

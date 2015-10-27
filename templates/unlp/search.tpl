@@ -17,12 +17,12 @@
     <form id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post">
         <fieldset>
             <!--<select name ="radiobutton" id="radiobutton">
-                <option value="todo"		 selected="selected">Todo</option>
-                <option  value="title"		>T&iacute;tulo</option>
-                <option  value="authors"		>Autor</option>
-                <option  value="capitulo"	>Cap&iacute;tulo</option>
-                <option  value="subject"	>Palabras clave</option>
-                <option  value="abstract"	>Resumen</option>
+                <option value="todo" selected="selected">Todo</option>
+                <option  value="title" >T&iacute;tulo</option>
+                <option  value="authors" >Autor</option>
+                <option  value="capitulo">Cap&iacute;tulo</option>
+                <option  value="subject">Palabras clave</option>
+                <option  value="abstract">Resumen</option>
             </select>	
 -->
             <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" type="text" />

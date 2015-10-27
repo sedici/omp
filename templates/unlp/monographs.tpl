@@ -15,8 +15,8 @@
                     );
     {rdelim});
 </script>
-
-<h1>Todos los t&iacute;tulos </h1>
+<div class="row">
+<h1><span class="titulo_results">Todos los t&iacute;tulos </span></h1>
 <div class="orden"></div>
 <div class="listadoitems">
     {if $publishedMonographs|@count}
@@ -26,4 +26,5 @@
             {/foreach}
         </ul>
     {/if}
+</div>
 </div>

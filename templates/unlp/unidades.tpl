@@ -8,6 +8,7 @@
  * Display a public-facing series view in the catalog.
  *}
 {strip}
+{assign var="pageTitle" value="series.series"}
 {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
 

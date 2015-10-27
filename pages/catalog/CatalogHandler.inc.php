@@ -258,6 +258,215 @@ class CatalogHandler extends Handler {
 		// Display
 		$templateMgr->display('unlp/results.tpl');
 	}
+        
+        
+        
+        /**************************************************************************************************/
+        /*    Funciones mobiles
+         * 
+         * 
+         **************************************************************************************************/
+       
+        
+        
+        
+        
+        
+        //
+	// Public handler methods
+	//
+	/**
+	 * Show the catalog home.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 */
+	function index_mobile($args, $request) {
+		$templateMgr = TemplateManager::getManager($request);
+		$this->setupTemplate($request);
+		$press = $request->getPress();
+
+		// Fetch the monographs to display
+		$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+		$publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
+		$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+
+		// Display
+		//$templateMgr->display('catalog/index.tpl');
+                
+                $templateMgr->display('unlp/mobile/catalog.tpl');
+                
+	}
+        
+        
+        
+        /**
+	 * View the content of a category.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 * @return string
+	 */
+	function category_mobile($args, $request) {
+		$templateMgr = TemplateManager::getManager($request);
+		$press = $request->getPress();
+		$this->setupTemplate($request);
+
+		// Get the category
+		$categoryDao = DAORegistry::getDAO('CategoryDAO');
+		$categoryPath = array_shift($args);
+		$category =& $categoryDao->getByPath($categoryPath, $press->getId());
+		if (isset($category)) {
+			$templateMgr->assign('category', $category);
+			$additionalArgs = array('type' => 'category', 'path' => $category->getPath());
+			$templateMgr->assign('additionalArgs', $additionalArgs);
+
+			// Fetch the monographs to display
+			$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+			$publishedMonographs =& $publishedMonographDao->getByCategoryId($category->getId(), $press->getId());
+			$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+
+			// Expose the featured monograph IDs and associated params
+			$featureDao = DAORegistry::getDAO('FeatureDAO');
+			$featuredMonographIds = $featureDao->getSequencesByAssoc(ASSOC_TYPE_CATEGORY, $category->getId());
+			$templateMgr->assign('featuredMonographIds', $featuredMonographIds);
+
+			// Provide a list of new releases to browse
+			$newReleaseDao = DAORegistry::getDAO('NewReleaseDAO');
+			$newReleases = $newReleaseDao->getMonographsByAssoc(ASSOC_TYPE_CATEGORY, $category->getId());
+			$templateMgr->assign('newReleasesMonographs', $newReleases);
+			// Display
+                }else{
+                    // Fetch the monographs to display
+			$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+			$publishedMonographs =& $publishedMonographDao->getByPressId( $press->getId());
+			$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+                }
+		//$templateMgr->display('catalog/category.tpl');
+                /*
+                 * Lines nuevas
+                 * */
+                
+                $categoryDao = DAORegistry::getDAO('CategoryDAO');
+                $categories = $categoryDao->getByParentId(0,$press->getId());		
+		$templateMgr->assign('browseCategories', $categories);
+                
+                
+                $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
+		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$seriesMenu = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$seriesList = $seriesDao->getByPressIdHomeOMP($press->getId());
+                
+                
+		
+                $templateMgr->assign('browseSeries', $series);
+                $templateMgr->assign('browseSeriesMenu', $seriesMenu);
+                $templateMgr->assign('browseSeriesList', $seriesList);
+                
+                $categoryDao = DAORegistry::getDAO('CategoryDAO');
+		$categories = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesMenu = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesList = $categoryDao->getByParentId(0,$press->getId());
+                
+		$templateMgr->assign('browseCategories', $categories);
+                $templateMgr->assign('browseCategoriesMenu', $categoriesMenu);
+                $templateMgr->assign('browseCategoriesList', $categoriesList);
+                
+                
+                
+                $templateMgr->display('unlp/mobile/category.tpl');
+                
+	}
+
+        
+        
+        
+        /**
+	 * View the content of a series.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 * @return string
+	 */
+	function unidades_mobile($args, $request) {
+                $templateMgr = TemplateManager::getManager($request);
+		$press = $request->getPress();
+		$this->setupTemplate($request);
+
+		// Get the series
+		$seriesDao = DAORegistry::getDAO('SeriesDAO');
+		$seriesPath = array_shift($args);
+                if (!empty($seriesPath)){
+                    $series = $seriesDao->getByPath($seriesPath, $press->getId());
+                    $templateMgr->assign('series', $series);
+                    $additionalArgs = array('type' => 'unidades', 'path' => $series->getPath());
+                    $templateMgr->assign('additionalArgs', $additionalArgs);
+                    // Fetch the monographs to display
+                    $publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+                    $publishedMonographs = $publishedMonographDao->getBySeriesId($series->getId(), $press->getId());
+                    $templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+
+                    $newReleaseDao = DAORegistry::getDAO('NewReleaseDAO');
+                    $newReleases = $newReleaseDao->getMonographsByAssoc(ASSOC_TYPE_SERIES, $series->getId());
+                    $templateMgr->assign('newReleasesMonographs', $newReleases);
+                    
+                    
+                    // Expose the featured monograph IDs and associated params
+                    $featureDao = DAORegistry::getDAO('FeatureDAO');
+                    $featuredMonographIds = $featureDao->getSequencesByAssoc(ASSOC_TYPE_SERIES, $series->getId());
+                    $templateMgr->assign('featuredMonographIds', $featuredMonographIds);
+
+                }else{
+                    $publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
+                    $publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
+                    $templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+                }
+                
+                $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
+		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$templateMgr->assign('browseSeries', $series);
+                // Display
+		$templateMgr->display('unlp/mobile/unidades.tpl');
+	}
+
+        
+        
+        
+        
+        
+        
+        
+        /**
+	 * View the results of a search operation.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 * @return string
+	 */
+	function results_mobile($args, $request) {
+		$templateMgr = TemplateManager::getManager($request);
+		$press = $request->getPress();
+		$this->setupTemplate($request);
+
+		$query = $request->getUserVar('query');
+		$templateMgr->assign('searchQuery', $query);
+
+		// Fetch the monographs to display
+		import('classes.search.MonographSearch');
+		$monographSearch = new MonographSearch();
+		$error = null;
+                
+                //$keywords=array(null => $query);
+                $resultsIterator = $monographSearch->retrieveResults($request, $press, array(null => $query), $error);
+
+		$publishedMonographs = array();
+		while ($result = $resultsIterator->next()) {
+			$publishedMonograph = $result['publishedMonograph'];
+			if ($publishedMonograph) {
+				$publishedMonographs[$publishedMonograph->getId()] = $publishedMonograph;
+			}
+		}
+		$templateMgr->assign('publishedMonographs', $publishedMonographs);
+                
+		// Display
+		$templateMgr->display('unlp/mobile/result.tpl');
+	}
 
 	/**
 	 * Serve the image for a category or series.

@@ -8,19 +8,18 @@
 * Display a public-facing monograph in the catalog.
 *}
 
-<li>
-    <div class="portada">
+<li class="col-xs-12">
+    <div class="portada col-xs-4">
         <a href="{url page="catalog" op="book" path=$publishedMonograph->getId()}">
             {include file="controllers/monographList/coverImage.tpl" monograph=$publishedMonograph}
         </a>
     </div>
-    <div class="contenido">
-        <h1><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">{$publishedMonograph->getLocalizedFullTitle()}</a></h1>
-        <p> {$publishedMonograph->getAuthorString()|escape}
-            <br />
-             {if $series}
-                <div class="seriesLink"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></div>
-                <br/>
+    <div class="contenido col-xs-8">
+        <span class="col-xs-12"><h1><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">{$publishedMonograph->getLocalizedFullTitle()}</a></h1></span>
+      <span class="autor col-xs-12"> {$publishedMonograph->getAuthorString()|escape}</span>
+          
+		  {if $series}
+                <span class="seriesLink col-xs-12"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></span>
             {/if}
         
               {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats(true)}
@@ -42,9 +41,9 @@
                         {/foreach}    
                         {* Get the ISBN *}
                          
-            <span class="date">{$publishedMonograph->getDatePublished()|date_format:$dateFormatShort}<br /></span>
-            <br />
-        <div class="estrellas"></div>
-        <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">Ver libro </a>
+            <span class="date col-xs-12">{$publishedMonograph->getDatePublished()|date_format:$dateFormatLong}</span>
+
+        <span class="estrellas"></span>
+       
     </div>
 </li>

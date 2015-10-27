@@ -8,6 +8,7 @@
 * Display a public-facing category view in the catalog.
 *}
 {strip}
+    {assign var="pageTitle" value="catalog.manage.category"}
     {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
 
