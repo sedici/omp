@@ -29,7 +29,7 @@
             <div class="detalles_del_item">
 
                 <ul>
-                    <li><strong>Autor/es:</strong> {$publishedMonograph->getAuthorString()}</li>
+                    <li>{$publishedMonograph->getAuthorString()}</li>
 
                     <li>
                         {if $series}

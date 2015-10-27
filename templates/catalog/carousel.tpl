@@ -50,7 +50,7 @@
                                 <h1> <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}">{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</a></h1>
                                 <ul>
                                     <li>
-                                        <strong>Autor:</strong> {$publishedMonograph->getAuthorString()|escape}
+                                         {$publishedMonograph->getAuthorString()|escape}
                                     </li>
 
                                     {if $series}
