@@ -54,7 +54,7 @@
                                            
                                             <span class="mobile_texto center-block"> {$browseCategoryList->getLocalizedTitle()|escape}</span>
                                             </a>
-                                      </li>       
+                                       </li>       
                                 {if ($categoriaByLine == 0) }
                                     {assign var="categoriaByLine" value="3"}
                                  </span> 
