@@ -145,15 +145,17 @@
                                 <ul>
                                     {assign var=authors value=$publishedMonograph->getAuthors()}
                                     {foreach from=$authors item=author}
+                                         <br/>
                                         <li>
                                             {if $author->getIncludeInBrowse()}
                                                <h1>{$author->getFullName()}</h1>
                                                 {assign var=biography value=$author->getLocalizedBiography()|strip_unsafe_html}
                                             {if $biography != ''}{$biography}{/if}
                                         </li>
+                                       
                                     {/if}
                                 {/foreach}
-                                </li>
+                                
                             </ul>
                         </div>
                         {include file="catalog/book/googlescholar.tpl"}
