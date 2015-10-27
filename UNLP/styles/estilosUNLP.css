@@ -267,6 +267,7 @@ list-style-type:none;
 }
 .col_principal .destacado .detalle .detalles_del_item {
 	float: left;
+	padding:0 0 0 10px;
 
         width: 65%;
 }
@@ -1028,6 +1029,7 @@ color:#21919f !important;
 font-weight:bold;
 margin-top:10px!important;
 color:#a4a4a4;
+display:block;
 }
 
 .cuerpo {
@@ -1234,6 +1236,7 @@ p {
     width: 25%;
 }
 
+
 .carousel-caption a h1 {
 	float:right;
 	background-color:none;
@@ -1244,7 +1247,7 @@ p {
 
 .carousel-caption {
 	position:relative !important;
-}
+} 
 
 .carousel-caption p, .carousel-caption p a {
 	margin:0;
@@ -1255,7 +1258,8 @@ p {
 	
 .carousel-indicators {
 	bottom:0px;
-	}
+	display:none;
+	} 
 
 .carousel-inner img {
 	float:left;
