@@ -1274,4 +1274,12 @@ p {
 ul, ol {
 	list-style-type:none !important;
 }
-  
+
+.notfound {
+background-color:#dedede;
+color:grey;	
+padding:50px;
+text-align:center;
+font-style:italic;
+font-size:2em;
+}

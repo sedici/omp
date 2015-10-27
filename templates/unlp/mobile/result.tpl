@@ -13,6 +13,9 @@
         <div class="mobile_layout">
             <div class="col-md-12">
                 <div class="col_principal_mobile col-xs-12">
+				
+				<p class="notfound col-xs-12">Su búsqueda no produjo resultados </p>
+
                     {* Include the full monograph list *}
                     {include file="unlp/mobile/monographs.tpl" publishedMonographs=$publishedMonographs}
                 </div>
