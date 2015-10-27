@@ -283,7 +283,9 @@ list-style-type:none;
 .detalle {
 	padding:5px;
 }
-
+.detalle h1 {
+	margin-left: 5px;
+}
 .col_principal .destacado .detalle .detalles_del_item h1 {
 	font-size: 20px;
 	color: #12909F;
