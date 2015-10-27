@@ -36,9 +36,11 @@ RewriteEngine on
 
 
 Options +FollowSymlinks
-RewriteCond %{HTTP_HOST} ^m\.163\.10\.34\.211 [NC]
+
+RewriteCond %{HTTP_HOST} ^http:\\m\.libros.\testing\.sedici\.unlp\.edu\.ar [NC]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^index.php/unlp$ index.php/unlp/index/index_mobile [L]
+
 RewriteRule ^index.php/unlp/index$ index.php/unlp/index/index_mobile [L]
 RewriteRule ^index.php/unlp/index/index$ index.php/unlp/index/index_mobile [L]
 RewriteRule ^index.php/unlp/catalog/results$ index.php/unlp/catalog/results_mobile [L]
