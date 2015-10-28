@@ -13,8 +13,14 @@
 {/strip}
 
 <div class="col_principal">
-{* Include the full monograph list *}
-{include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
+    
+{if $publishedMonographs|@count > 0}
+                        {* Include the full monograph list *}
+                        {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
+                    {else}
+                         <p class="notfound col-xs-12">Su búsqueda no produjo resultados </p>
+                    {/if}{* $publishedMonographs|@count > 0 *}    
+
 </div>
 <div class="col_secundaria">
     <div class="busqueda">
