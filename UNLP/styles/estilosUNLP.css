@@ -1278,8 +1278,8 @@ ul, ol {
 .notfound {
 background-color:#dedede;
 color:grey;	
-padding:50px;
+padding:20px;
 text-align:center;
 font-style:italic;
-font-size:2em;
+font-size:1.5em;
 }
