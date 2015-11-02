@@ -130,5 +130,7 @@
 	<message key="submission.event.publicationFormatRemoved">Se ha eliminado el formato de publiación "{$formatName}".</message>
 
     <message key="submission.aboutTheAuthors">Acerca de los autores</message>
+    <message key="submission.information">Información</message>
+    
     <message key="submission.tableOfContents">Tabla de contenidos</message>
 </locale>

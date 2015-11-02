@@ -141,7 +141,7 @@
                                 </div>
                             {/if}
                             <div class="resena">
-                                <h1>{translate key="submission.aboutTheAuthors"}</h1>
+                                <h1>{translate key="submission.information"}</h1>
                                 <ul>
                                     {assign var=authors value=$publishedMonograph->getAuthors()}
                                     {foreach from=$authors item=author}

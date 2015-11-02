@@ -42,7 +42,7 @@
                         {* Get the ISBN *}
                          
             <span class="date col-xs-12">{$publishedMonograph->getDatePublished()|date_format:$dateFormatLong}</span>
-
+{$publishedMonograph->getDatePublished()|date_format:$dateFormatLong}
         <span class="estrellas"></span>
        
     </div>
