@@ -122,5 +122,6 @@
 	<message key="submission.event.publicationFormatRemoved">The publication format "{$formatName}" was removed.</message>
 	<message key="submission.submit.titleAndSummary">Title and Summary</message>
     <message key="submission.aboutTheAuthors">About the authors</message>
+    <message key="submission.information">information</message>
     <message key="submission.tableOfContents">Table of Contents</message>
 </locale>
