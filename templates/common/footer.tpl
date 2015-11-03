@@ -39,7 +39,7 @@
 		</div><!-- pkp_structure_content -->
 	
         {/if}
-	!-- pkp_structure_content -->
+	<!-- pkp_structure_content -->
 	
 </div><!-- pkp_structure_subfoot -->
 
