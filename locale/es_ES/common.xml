@@ -233,6 +233,8 @@
 	<message key="navigation.browse">Navegar</message>
 	<message key="navigation.browseByTitle">Por título</message>
 	<message key="navigation.home">Inicio</message>
+        <message key="navigation.catalog">Libros</message>
+        
 	<message key="navigation.infoForReaders">Para lectoras/es</message>
 	<message key="navigation.infoForReaders.long">Información para lectoras/es</message>
 	<message key="navigation.items">{$from} - {$to} de {$total} elementos</message>
