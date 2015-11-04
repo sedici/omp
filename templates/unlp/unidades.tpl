@@ -16,6 +16,17 @@
 <div class="row">
     {if $series}
         <h2 class="pkp_helpers_text_center"><span class="titulo_results">{$series->getLocalizedTitle()}</span></h2>
+	{assign var="image" value=$series->getImage()}
+	{if $series->getLocalizedDescription() || $image}
+		<div class="pkp_catalog_seriesDescription">
+			{if $image}
+				<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="fullSize" type="series" id=$series->getId()}">
+					<img class="pkp_helpers_align_left" height="{$image.thumbnailHeight}" width="{$image.thumbnailWidth}" src="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="thumbnail" type="series" id=$series->getId()}" alt="{$series->getLocalizedFullTitle()|escape}" />
+				</a>
+			{/if}
+			{$series->getLocalizedDescription()|strip_unsafe_html}
+		</div>
+         {/if}
         {else}
         <h1 class="pkp_helpers_text_center"><span class="titulo_results">Todos los t&iacute;tulos </span></h1>
     {/if}    
@@ -39,19 +50,6 @@
             {* Include the full monograph list *}
             {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
         </div>
-{if $series}
-	{assign var="image" value=$series->getImage()}
-	{if $series->getLocalizedDescription() || $image}
-		<div class="pkp_catalog_seriesDescription">
-			{if $image}
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="fullSize" type="series" id=$series->getId()}">
-					<img class="pkp_helpers_align_left" height="{$image.thumbnailHeight}" width="{$image.thumbnailWidth}" src="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="thumbnail" type="series" id=$series->getId()}" alt="{$series->getLocalizedFullTitle()|escape}" />
-				</a>
-			{/if}
-			{$series->getLocalizedDescription()|strip_unsafe_html}
-		</div>
-	{/if}
-{/if}
 
 </div><!-- catalogContainer -->
 
