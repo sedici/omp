@@ -17,9 +17,9 @@
 <div class="row">
     {if $category}
         {assign var="category_id" value=$category->getId()}
-        <center>
+        <!--<center>
             <img src="/files/presses/1/categories/{$category_id}-category.png" />
-        </center>
+        </center>-->
         <h2 class="pkp_helpers_text_center"> 
             <span class="titulo_results">
                 {$category->getLocalizedTitle()}
