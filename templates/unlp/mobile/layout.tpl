@@ -1,6 +1,4 @@
 <div class="container">
-
-   
     <!-- Row Header -->
     <div class="row">
         {include file="unlp/mobile/header.tpl" }
