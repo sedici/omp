@@ -59,7 +59,7 @@ class CatalogHandler extends Handler {
 		$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
 		$publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
 		$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
-
+               
 		// Display
 		//$templateMgr->display('catalog/index.tpl');
                 
@@ -289,6 +289,28 @@ class CatalogHandler extends Handler {
 		$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
 		$publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
 		$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
+                 /*
+                 * Funciones agregadas al IndeHandler
+                 * Ver si se agregan aca   
+                 **/
+                $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
+		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$seriesMenu = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$seriesList = $seriesDao->getByPressIdHomeOMP($press->getId());
+		
+                $templateMgr->assign('browseSeries', $series);
+                $templateMgr->assign('browseSeriesMenu', $seriesMenu);
+                $templateMgr->assign('browseSeriesList', $seriesList);
+
+
+		$categoryDao = DAORegistry::getDAO('CategoryDAO');
+		$categories = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesMenu = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesList = $categoryDao->getByParentId(0,$press->getId());
+                
+		$templateMgr->assign('browseCategories', $categories);
+                $templateMgr->assign('browseCategoriesMenu', $categoriesMenu);
+                $templateMgr->assign('browseCategoriesList', $categoriesList);
                 $templateMgr->display('unlp/mobile/catalog.tpl');
                 
 	}
@@ -415,10 +437,32 @@ class CatalogHandler extends Handler {
                     $templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
                 }
                 
+                
+                $categoryDao = DAORegistry::getDAO('CategoryDAO');
+                $categories = $categoryDao->getByParentId(0,$press->getId());		
+		$templateMgr->assign('browseCategories', $categories);
+                
+                
                 $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
 		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
-		$templateMgr->assign('browseSeries', $series);
-                // Display
+		$seriesMenu = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$seriesList = $seriesDao->getByPressIdHomeOMP($press->getId());
+                
+                
+		
+                $templateMgr->assign('browseSeries', $series);
+                $templateMgr->assign('browseSeriesMenu', $seriesMenu);
+                $templateMgr->assign('browseSeriesList', $seriesList);
+                
+                $categoryDao = DAORegistry::getDAO('CategoryDAO');
+		$categories = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesMenu = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesList = $categoryDao->getByParentId(0,$press->getId());
+                
+		$templateMgr->assign('browseCategories', $categories);
+                $templateMgr->assign('browseCategoriesMenu', $categoriesMenu);
+                $templateMgr->assign('browseCategoriesList', $categoriesList);
+                
 		$templateMgr->display('unlp/mobile/unidades.tpl');
 	}
 

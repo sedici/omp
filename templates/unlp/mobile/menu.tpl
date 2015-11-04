@@ -30,10 +30,10 @@
                 <li class='dropdown'>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Unidades  <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        {iterate from=browseSeriesMenu item=browseSeriesItem_menu}
+                        {iterate from=browseSeriesMenu item=browseSeriesItemMenu}
                         <li>
-                            <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem_menu->getPath()}"> 
-                                {$browseSeriesItem_menu->getLocalizedTitle()|escape}
+                            <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItemMenu->getPath()}"> 
+                                {$browseSeriesItemMenu->getLocalizedTitle()|escape}
                             </a>
                         </li>    
                         {/iterate}
@@ -58,4 +58,3 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
