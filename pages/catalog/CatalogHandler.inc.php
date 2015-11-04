@@ -289,10 +289,6 @@ class CatalogHandler extends Handler {
 		$publishedMonographDao = DAORegistry::getDAO('PublishedMonographDAO');
 		$publishedMonographs = $publishedMonographDao->getByPressId($press->getId());
 		$templateMgr->assign('publishedMonographs', $publishedMonographs->toAssociativeArray());
-
-		// Display
-		//$templateMgr->display('catalog/index.tpl');
-                
                 $templateMgr->display('unlp/mobile/catalog.tpl');
                 
 	}
