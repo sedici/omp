@@ -363,10 +363,7 @@ class CatalogHandler extends Handler {
                  * Lines nuevas
                  * */
                 
-                $categoryDao = DAORegistry::getDAO('CategoryDAO');
-                $categories = $categoryDao->getByParentId(0,$press->getId());		
-		$templateMgr->assign('browseCategories', $categories);
-                
+               
                 
                 $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
 		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
@@ -438,10 +435,6 @@ class CatalogHandler extends Handler {
                 }
                 
                 
-                $categoryDao = DAORegistry::getDAO('CategoryDAO');
-                $categories = $categoryDao->getByParentId(0,$press->getId());		
-		$templateMgr->assign('browseCategories', $categories);
-                
                 
                 $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
 		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
@@ -503,7 +496,25 @@ class CatalogHandler extends Handler {
 			}
 		}
 		$templateMgr->assign('publishedMonographs', $publishedMonographs);
+                $seriesDao = DAORegistry::getDAO('UnidadesAcademicasDAO');
+		$series = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$seriesMenu = $seriesDao->getByPressIdHomeOMP($press->getId());
+		$seriesList = $seriesDao->getByPressIdHomeOMP($press->getId());
                 
+                
+		
+                $templateMgr->assign('browseSeries', $series);
+                $templateMgr->assign('browseSeriesMenu', $seriesMenu);
+                $templateMgr->assign('browseSeriesList', $seriesList);
+                
+                $categoryDao = DAORegistry::getDAO('CategoryDAO');
+		$categories = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesMenu = $categoryDao->getByParentId(0,$press->getId());
+                $categoriesList = $categoryDao->getByParentId(0,$press->getId());
+                
+		$templateMgr->assign('browseCategories', $categories);
+                $templateMgr->assign('browseCategoriesMenu', $categoriesMenu);
+                $templateMgr->assign('browseCategoriesList', $categoriesList);
 		// Display
 		$templateMgr->display('unlp/mobile/result.tpl');
 	}
