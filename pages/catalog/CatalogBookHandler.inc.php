@@ -232,6 +232,7 @@ class CatalogBookHandler extends Handler {
 		}
 
 		// Display
+                
 		$templateMgr->display('unlp/mobile/book.tpl');
 	}
         
