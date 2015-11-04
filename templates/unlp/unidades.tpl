@@ -16,7 +16,7 @@
 <div class="row">
     {if $series}
         <h2 class="pkp_helpers_text_center"><span class="titulo_results">{$series->getLocalizedTitle()}</span></h2>
-	{assign var="image" value=$series->getImage()}
+	<!--{assign var="image" value=$series->getImage()}
 	{if $series->getLocalizedDescription() || $image}
 		<div class="pkp_catalog_seriesDescription">
 			{if $image}
@@ -26,7 +26,7 @@
 			{/if}
 			{$series->getLocalizedDescription()|strip_unsafe_html}
 		</div>
-         {/if}
+         {/if}-->
         {else}
         <h1 class="pkp_helpers_text_center"><span class="titulo_results">Todos los t&iacute;tulos </span></h1>
     {/if}    
