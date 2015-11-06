@@ -17,7 +17,7 @@
         </div>
         <form  id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post" class="navbar-form navbar-right col-xs-9" role="search">
             <span class="col-xs-10"><div class="form-group">		
-                    <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" type="text" class="form-control" placeholder="Search">
+                    <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" type="text" class="form-control" placeholder="Buscar">
                 </div></span>
             <span class="col-xs-2"><button type="submit" class="btn btn-default"><i class="icon-large icon-search"></i></button></span>
         </form>
