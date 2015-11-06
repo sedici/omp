@@ -30,7 +30,15 @@
                         {/foreach}    
                         {* Get the ISBN *}
                          
-            <span class="date col-xs-12">{$publishedMonograph->getDatePublished()|date_format:$dateFormatLong}</span>
+               <span class="date col-xs-12">
+                
+            {assign var=fecha value=$publishedMonograph->getCoverageChron()}
+            {foreach from=$fecha key=i item=row}
+                {if $i == 'es_ES'}
+                    {$row}
+                {/if}
+           {/foreach}
+            </span>
         <span class="estrellas"></span>
        
     </div>

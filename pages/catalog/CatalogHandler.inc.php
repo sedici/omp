@@ -248,7 +248,7 @@ class CatalogHandler extends Handler {
 
 		$publishedMonographs = array();
 		while ($result = $resultsIterator->next()) {
-			$publishedMonograph = $result['publishedMonograph'];
+                    	$publishedMonograph = $result['publishedMonograph'];
 			if ($publishedMonograph) {
 				$publishedMonographs[$publishedMonograph->getId()] = $publishedMonograph;
 			}
@@ -490,7 +490,8 @@ class CatalogHandler extends Handler {
 
 		$publishedMonographs = array();
 		while ($result = $resultsIterator->next()) {
-			$publishedMonograph = $result['publishedMonograph'];
+			
+                        $publishedMonograph = $result['publishedMonograph'];
 			if ($publishedMonograph) {
 				$publishedMonographs[$publishedMonograph->getId()] = $publishedMonograph;
 			}
