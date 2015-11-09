@@ -798,9 +798,9 @@ header nav ul li {
 /* Nuevo estilus */
 
 
-/*     .container{
-    display: none;
-    } */
+.container{
+      width:100% !important
+} 
    
 .navbar-default .navbar-collapse, .navbar-default  {
 background:none;
@@ -1232,7 +1232,7 @@ p {
 
 
 .carousel-caption a h1 {
-	float:right;
+	float:left;
 	background-color:none;
 	text-align:left;
 	color:#63c6bf;
@@ -1241,6 +1241,7 @@ p {
 
 .carousel-caption {
 	position:relative !important;
+	text-shadow:none !important;
 } 
 
 .carousel-caption p, .carousel-caption p a {
@@ -1250,7 +1251,7 @@ p {
 	color:black;
 	}
 	
-.carousel-indicators {
+.carousel-indicators { 
 	bottom:0px;
 	display:none;
 	} 

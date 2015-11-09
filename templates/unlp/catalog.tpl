@@ -7,12 +7,12 @@
  *
  * Entry page for the public-facing catalog
  *}
-{strip}
+{strip} 
 {assign var="pageTitle" value="navigation.catalog"}
 {include file="common/header.tpl" suppressPageTitle=true}
 {/strip}
 
-<div class="col_principal">
+<div class="col_principal"> 
 {* Include the full monograph list *}
 {include file="unlp/monographs.tpl" publishedMonographs=$publishedMonographs}
 </div>
