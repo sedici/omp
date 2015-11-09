@@ -236,6 +236,98 @@ class CatalogBookHandler extends Handler {
 		$templateMgr->display('unlp/mobile/book.tpl');
 	}
         
+        /**
+	 * Use an inline viewer to view a published monograph publication
+	 * format file.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 */
+	function view_mobile($args, $request) {
+            	$this->download_mobile($args, $request, true);
+	}
+        
+        /**
+	 * Download a published monograph publication format file.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 * @param $view boolean True iff inline viewer should be used, if available
+	 */
+	function download_mobile($args, $request, $view = false) {
+		$this->setupTemplate($request);
+		$press = $request->getPress();
+
+		$monographId = (int) array_shift($args); // Validated thru auth
+		$publicationFormatId = (int) array_shift($args);
+		$fileIdAndRevision = array_shift($args);
+
+		$publishedMonograph = $this->getAuthorizedContextObject(ASSOC_TYPE_PUBLISHED_MONOGRAPH);
+		$publicationFormatDao = DAORegistry::getDAO('PublicationFormatDAO');
+		$publicationFormat = $publicationFormatDao->getById($publicationFormatId, $publishedMonograph->getId());
+		if (!$publicationFormat || !$publicationFormat->getIsApproved() || !$publicationFormat->getIsAvailable()) fatalError('Invalid publication format specified.');
+
+		$submissionFileDao = DAORegistry::getDAO('SubmissionFileDAO');
+		list($fileId, $revision) = array_map(create_function('$a', 'return (int) $a;'), preg_split('/-/', $fileIdAndRevision));
+		import('classes.monograph.MonographFile'); // File constants
+		$submissionFile = $submissionFileDao->getRevision($fileId, $revision, SUBMISSION_FILE_PROOF, $monographId);
+		if (!$submissionFile || $submissionFile->getAssocType() != ASSOC_TYPE_PUBLICATION_FORMAT || $submissionFile->getAssocId() != $publicationFormatId || $submissionFile->getDirectSalesPrice() === null) {
+			fatalError('Invalid monograph file specified!');
+		}
+
+		$ompCompletedPaymentDao = DAORegistry::getDAO('OMPCompletedPaymentDAO');
+		$user = $request->getUser();
+		if ($submissionFile->getDirectSalesPrice() === '0' || ($user && $ompCompletedPaymentDao->hasPaidPurchaseFile($user->getId(), $fileIdAndRevision))) {
+			// Paid purchase or open access.
+			if (!$user && $press->getSetting('restrictMonographAccess')) {
+				// User needs to register first.
+				return $request->redirect(null, 'login');
+			}
+
+			// If inline viewing is requested, permit plugins to
+			// handle the document.
+			PluginRegistry::loadCategory('viewableFiles', true);
+			if ($view) {
+				if (HookRegistry::call('CatalogBookHandler::view_mobile', array(&$this, &$publishedMonograph, &$submissionFile))) {
+					// If the plugin handled the hook, prevent further default activity.
+					exit();
+				}
+			}
+
+			// Inline viewer not available, or viewing not wanted.
+			// Download the file.
+			$inline = false;
+			if (!HookRegistry::call('CatalogBookHandler::download_mobile', array(&$this, &$publishedMonograph, &$submissionFile, &$inline))) {
+				import('lib.pkp.classes.file.SubmissionFileManager');
+				$monographFileManager = new SubmissionFileManager($publishedMonograph->getContextId(), $monographId);
+				return $monographFileManager->downloadFile($fileId, $revision, $inline);
+			}
+		}
+
+		// Fall-through: user needs to pay for purchase.
+
+		// Users that are not logged in need to register/login first.
+		if (!$user) return $request->redirect(null, 'login', null, null, array('source' => $request->url(null, null, null, array($monographId, $publicationFormatId, $fileIdAndRevision))));
+
+		// They're logged in but need to pay to view.
+		import('classes.payment.omp.OMPPaymentManager');
+		$ompPaymentManager = new OMPPaymentManager($request);
+		if (!$ompPaymentManager->isConfigured()) {
+			$request->redirect(null, 'catalog');
+		}
+
+		$queuedPayment = $ompPaymentManager->createQueuedPayment(
+			$press->getId(),
+			PAYMENT_TYPE_PURCHASE_FILE,
+			$user->getId(),
+			$fileIdAndRevision,
+			$submissionFile->getDirectSalesPrice(),
+			$press->getSetting('currency')
+		);
+
+		$ompPaymentManager->displayPaymentForm(
+			$ompPaymentManager->queuePayment($queuedPayment),
+			$queuedPayment
+		);
+	}
         
         
         
@@ -246,7 +338,7 @@ class CatalogBookHandler extends Handler {
 	 * @param $request PKPRequest
 	 */
 	function view($args, $request) {
-		$this->download($args, $request, true);
+            	$this->download($args, $request, true);
 	}
 
 	/**

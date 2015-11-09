@@ -122,7 +122,7 @@
                                             <ul>
                                                 {foreach from=$publicationFormats item=publicationFormat}
                                                     {if $publicationFormat->getIsAvailable()}
-                                                        {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
+                                                        {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                                     {/if}
                                                 {/foreach}
                                             </ul>
@@ -133,7 +133,7 @@
                                                     <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
                                                         {$publicationFormat->getLocalizedName()|escape}
                                                         <ul>
-                                                            {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
+                                                            {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
                                                         </ul>
                                                     </div>
                                                 {/if}
