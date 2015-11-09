@@ -1,6 +1,6 @@
 {foreach from=$availableFiles[$publicationFormatId] item=availableFile}{* There will be at most one of these *}
 	<li>
-  <div class="publicationFormatLink">
+  <div class="publicationFormatLink  glyphicon glyphicon-download">
 			{if $availableFile->getDocumentType()==$smarty.const.DOCUMENT_TYPE_PDF}
 				{url|assign:downloadUrl op="view_mobile" path=$publishedMonograph->getId()|to_array:$publicationFormatId:$availableFile->getFileIdAndRevision()}
 			{else}
