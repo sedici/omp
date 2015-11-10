@@ -798,9 +798,9 @@ header nav ul li {
 /* Nuevo estilus */
 
 
-/*     .container{
-    display: none;
-    } */
+.container{
+      width:100% !important
+} 
    
 .navbar-default .navbar-collapse, .navbar-default  {
 background:none;
@@ -980,7 +980,7 @@ font-weight:bold !important;
 }
 
 .panel-default ul li a {
-line-height:1.5 !important;
+line-height:2.5 !important;
 }
 
 .panel-default ul {
