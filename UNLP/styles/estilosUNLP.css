@@ -1230,9 +1230,15 @@ p {
     width: 25%;
 }
 
+.titulo_slider  {
+	float:left;
+	width:100%;
+	}
+
 .titulo_slider h1 {
-		color:#63c6bf;
+	color:#63c6bf;
 	font-size:1.5em;
+	
 	
 }
 
@@ -1291,4 +1297,8 @@ padding:20px;
 text-align:center;
 font-style:italic;
 font-size:1.5em;
+}
+
+.panel-body ul li a{
+	font-size:1.5em;
 }
