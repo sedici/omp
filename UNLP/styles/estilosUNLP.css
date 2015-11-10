@@ -1230,17 +1230,24 @@ p {
     width: 25%;
 }
 
+.titulo_slider h1 {
+		color:#63c6bf;
+	font-size:1.5em;
+	
+}
 
+/* Estilo para slider que no se usa*/
 .carousel-caption a h1 {
-	float:left;
+	/*float:left;
+		text-align:left;*/
 	background-color:none;
-	text-align:left;
+
 	color:#63c6bf;
 	font-size:1.5em;
 	}
 
 .carousel-caption {
-	position:relative !important;
+	/*position:relative !important;*/
 	text-shadow:none !important;
 } 
 
@@ -1249,8 +1256,9 @@ p {
 	float:left;
 	padding:0;
 	color:black;
-	}
-	
+	} 
+/*Fin de estilo para slider que no se usa */	
+
 .carousel-indicators { 
 	bottom:0px;
 	display:none;

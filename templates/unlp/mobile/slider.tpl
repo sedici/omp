@@ -6,7 +6,9 @@
 
 <div class="col-md-12">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+	 <div id="myCarousel" class="carousel slide" > 
+	
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -30,13 +32,13 @@
                     {/if}  
                     <div class="item {$estilo}"> 
                         <div class="container paneles col-xs-12">
-                            <div class="col-xs-3">
+                            <div class="col-xs-5 ">
                                 <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}"  width="135" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
                             </div>
-                            <div class="carousel-caption col-xs-9">
+                            <div class="titulo_slider col-xs-7">
                                  <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}"><h1>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></a>
                                 <p><strong>Autor:</strong> {$publishedMonograph->getAuthorString()|escape}</p>
-                            </div>
+                            							</div>
 
                         </div>
                     </div>
