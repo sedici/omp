@@ -60,7 +60,7 @@
         <div class="detalle col-md-12">
             <div class="detalles_del_item_mobile  col-xs-9">
                 <ul>
-                    <li><strong>prueba</strong> {$publishedMonograph->getAuthorString()}</li>
+                    <li> {$publishedMonograph->getAuthorString()}</li>
                     <li>
                         {if $series}
                             <div class="seriesLink"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></div>
