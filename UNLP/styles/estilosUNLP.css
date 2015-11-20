@@ -1105,11 +1105,11 @@ font-size:2.2em;
 padding-left:40px;
 background-color:#eeeeee;
 line-height:2;
-/*font-size:1.5em;*/
+font-size:1.5em;
 }
 
 .informaciondeautores h1 {
-font-size:18px;
+/*font-size:18px;*/
 color:#21919f;
 font-weight:bold;
 }
