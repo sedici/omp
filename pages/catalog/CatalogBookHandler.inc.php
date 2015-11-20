@@ -231,8 +231,7 @@ class CatalogBookHandler extends Handler {
 			$templateMgr->assign('series', $series);
 		}
 
-		// Display
-                
+		
 		$templateMgr->display('unlp/mobile/book.tpl');
 	}
         
