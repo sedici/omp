@@ -110,7 +110,7 @@
 
                                     </ul>
                                 </div>
-                                         <div class="col-xs-3">
+                                         <div class="detalle_descarga col-xs-3">
                                      <div class="col-xs-12">
                                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                                         {assign var=currency value=$currentPress->getSetting('currency')}

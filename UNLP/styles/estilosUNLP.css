@@ -1303,3 +1303,11 @@ font-size:1.5em;
 .panel-body ul li a{
 	font-size:1.5em;
 }
+
+.detalle_descarga ul li div{
+font-size:3em;
+}
+
+.publicationFormatLink  .glyphicon {
+	font-size:9em;
+	}
