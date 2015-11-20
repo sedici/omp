@@ -32,7 +32,7 @@
                     {/if}  
                     <div class="item {$estilo}"> 
                         <div class="container paneles col-xs-12">
-                            <div class="col-xs-2">
+                            <div class="col-xs-4">
                                 <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}"  width="135" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
                             </div>
                             <div class="titulo_slider col-xs-7">
