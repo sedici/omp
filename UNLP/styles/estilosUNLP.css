@@ -1231,11 +1231,11 @@ p {
     width: 25%;
 }  
 
-.titulo_slider  {
+.titulo_slider  { 
 	float:left;
 	width:100%;
 	}
-
+ 
 .titulo_slider h1 {
 	color:#63c6bf;
 	font-size:1.5em;
@@ -1273,7 +1273,7 @@ p {
 
 .carousel-inner img {
 	float:left;
-}
+} 
 
 .carousel-control {
 	background-image:none !important;
