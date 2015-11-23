@@ -1118,7 +1118,7 @@ font-weight:bold;
 
 .informaciondeautores h1 strong{
 font-weight:regular;
-font-size:25px;
+/*font-size:16px;*/
 }
 
 .informaciondeautores  p{
@@ -1128,7 +1128,7 @@ text-align:justify;
 
 .informaciondeautores li p{
 color:#757576;
-/*font-size:15px;*/
+font-size:23px;
 line-height:2;
 padding: 0 10px 0 0;
 }
