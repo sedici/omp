@@ -1111,14 +1111,14 @@ font-size:1.5em;
 }
 
 .informaciondeautores h1 {
-font-size:25px;
+/*font-size:18px;*/
 color:#21919f;
 font-weight:bold;
 }
 
 .informaciondeautores h1 strong{
 font-weight:regular;
-/*font-size:16px;*/
+font-size:25px;
 }
 
 .informaciondeautores  p{
