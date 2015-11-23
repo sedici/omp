@@ -1270,7 +1270,7 @@ p {
 	display:none;
 	} 
 
-.carousel-inner img {
+.carousel-inner img { 
 	float:left;
 } 
 
@@ -1286,8 +1286,8 @@ p {
 	margin-bottom:20px;
 }
 
-ul, ol {
-	list-style-type:none !important;
+ul, ol { 
+	list-style-type:none !important; 
 }
 
 .notfound {
@@ -1300,11 +1300,13 @@ font-size:1.5em;
 }
 
 .panel-body ul li a{
-	font-size:6em;
+	font-size:6em; 
 }
 
 .detalle_descarga ul li div{
 font-size:9em;
 }
+
+
 
 
