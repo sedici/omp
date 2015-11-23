@@ -1239,9 +1239,7 @@ p {
 .titulo_slider h1 {
 	color:#63c6bf;
 	font-size:1.5em;
-	
-	
-}
+	}
 
 /* Estilo para slider que no se usa*/
 .carousel-caption a h1 {
@@ -1301,10 +1299,11 @@ font-size:1.5em;
 }
 
 .panel-body ul li a{
-	font-size:1.5em;
+	font-size:6em;
 }
 
 .detalle_descarga ul li div{
-font-size:6em;
+font-size:9em;
 }
+
 
