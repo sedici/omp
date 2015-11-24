@@ -6,11 +6,11 @@
                 <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Unidades Academicas
-                    </a>
+                    </a> 
                 </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
+                <div class="panel-body"> 
                     <ul>
                         {iterate from=browseSeriesList item=browseSeriesItem}
                         <li>
@@ -49,7 +49,7 @@
                                     {assign var="category_id" value=$browseCategoryList->getId()}
                                     
                                       <li class="exploracion_mobile col-xs-4">
-                                         <img src="/files/presses/1/categories/{$category_id}-category.png" class="center-block" />
+                                         <img src="/files/presses/1/categories/{$category_id}-category.png" class="center-block imagen_sites" />
                                         <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategoryList->getPath()}">
                                            
                                             <span class="mobile_texto center-block"> {$browseCategoryList->getLocalizedTitle()|escape}</span>
@@ -97,13 +97,13 @@
 <div class="col-md-12">
     <h1 class="h1sitios" >Sitios relacionados</h1>
     <div class="col-xs-4">
-        <a href="http://sedici.unlp.edu.ar/" target="_blank"><img  src="/UNLP/images/link_relacionado_01_200.png" width="150" height="70" /></a>
+        <a href="http://sedici.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/link_relacionado_01_200.png" width="500" height="175" /></a>
     </div>
     <div class="col-xs-4">
-        <a href="http://www.editorial.unlp.edu.ar/" target="_blank"><img  src="/UNLP/images/link_relacionado_05_200.png" width="150" height="76" /></a>
+        <a href="http://www.editorial.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/link_relacionado_05_200.png" width="500" height="190" /></a>
     </div>
     <div class="col-xs-4">
-        <a href="http://prebi.unlp.edu.ar/" target="_blank"><img src="/UNLP/images/link_relacionado_03_200.png" width="150" height="61" /></a>
+        <a href="http://prebi.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/link_relacionado_03_200.png" width="500" height="153" /></a>
     </div>
     <!-- No deber�a ir 
      <div class="col-xs-3">

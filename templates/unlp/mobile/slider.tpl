@@ -33,11 +33,11 @@
                     <div class="item {$estilo}"> 
                         <div class="container paneles col-xs-12">
                             <div class="col-xs-4">
-                                <img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}"  width="135" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
+                                <img class="img-responsive" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
                             </div>
-                            <div class="titulo_slider col-xs-7">
+                            <div class="titulo_slider col-xs-8">
                                  <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}"><h1>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></a>
-                                <div class="autor_mobile">{$publishedMonograph->getAuthorString()|escape}</div>
+                                <div class="autor_mobileautor_mobile">{$publishedMonograph->getAuthorString()|escape}</div>
                             							</div>
 
                         </div>

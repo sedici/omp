@@ -944,7 +944,7 @@ margin:10px 0px 0px 0px;
 border-bottom: 1px solid #63c6bf;
 color:#63c6bf;
 margin-left:20px;
-font-size:1.2em;
+font-size:3.2em;
 }
 
 .falopa {
@@ -992,7 +992,7 @@ margin-top:0px;
 margin-top:5px;
 }
 
-.titulo_results {
+.titulo_results { 
 margin-left:20px;
 font-size:24px;
 background-color:#21919f;
@@ -1002,7 +1002,7 @@ padding:0px 15px;
 
 .mobile_texto {
 text-align:center;
-font-size:0.2em;
+font-size:0.5em;
 margin: 0 auto !important;
 }
 
@@ -1301,7 +1301,7 @@ font-size:1.5em;
 } 
 
 .panel-body ul li a{
-	font-size:8em; 
+	font-size:5em; 
 }
 
 .detalle_descarga ul li div{
@@ -1315,3 +1315,8 @@ font-size:14em;
 	font-size:2em;
 }
 
+
+.imagen_sites{
+	height:110px;
+	
+}
