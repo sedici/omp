@@ -37,7 +37,7 @@
                             </div>
                             <div class="titulo_slider col-xs-8">
                                  <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}"><h1>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></a>
-                                <div class="autor_mobileautor_mobile">{$publishedMonograph->getAuthorString()|escape}</div>
+                                <div class="autor_mobile">{$publishedMonograph->getAuthorString()|escape}</div>
                             							</div>
 
                         </div>

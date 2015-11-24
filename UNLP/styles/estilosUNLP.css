@@ -1240,7 +1240,7 @@ p {
  
 .titulo_slider h1 {
 	color:#63c6bf;
-	/*font-size:1.5em;*/
+	font-size:3em;
 	}
 
 /* Estilo para slider que no se usa*/
@@ -1309,7 +1309,7 @@ font-size:14em;
 }
 
 .autor_mobile {
-	font-size:2em;
+	font-size:2.5em;
 }
 .numeroisbn {
 	font-size:2em;
