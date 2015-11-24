@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         {include file="unlp/mobile/menu.tpl"}
-    </div>
+    </div> 
     <div class="row">
         <div>
             {if $series}

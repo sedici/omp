@@ -12,7 +12,7 @@
         {include file="unlp/mobile/menu.tpl"}
     </div>
     <div class="row">
-        <div>
+        <div> 
             {if $category}
                 {assign var="category_id" value=$category->getId()}
 

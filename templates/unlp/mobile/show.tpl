@@ -4,7 +4,7 @@
 
 <div class="row">
 	<div class="col-md-3 imagendetalle">Imagen</div>
-	<div class="col-md-9 titulo"><h1>Exploracion con biomicroscopio ocular: Tecnicas y protocolo de intervencion</h1></div>
+	<div class="col-md-9 titulo"><h1>Exploracion con biomicr oscopio ocular: Tecnicas y protocolo de intervencion</h1></div>
 	</div>
 	
 	<div class="row">
@@ -13,6 +13,6 @@
 	<span>Unidades académicas:</span> Facultad de Ciencias Exactas
 	<span>Áreas Temáticas:</span> Ciencias Naturales, Biología
 	</div>
-	<div class="col-md-3 descargar"></div>
+	<div class="col-md-3 descargar"></div> 
 
 	</div>

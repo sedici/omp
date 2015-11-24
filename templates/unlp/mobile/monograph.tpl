@@ -7,7 +7,7 @@
     <div class="contenido col-xs-8">
         <span class="col-xs-12"><h1><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">{$publishedMonograph->getLocalizedFullTitle()}</a></h1></span>
       <span class="autor col-xs-12"> {$publishedMonograph->getAuthorString()|escape}</span>
-          
+           
 		<!--  {if $series}
                 <span class="seriesLink col-xs-12"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></span>
             {/if}-->

@@ -12,7 +12,7 @@
 			<a class="publicationFormatLink  glyphicon glyphicon-download" href="{$downloadUrl}"></a>
 
     </div>
-
+ 
 
 	</li>
 {/foreach}

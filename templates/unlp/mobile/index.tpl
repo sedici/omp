@@ -2,3 +2,4 @@
 {strip}
     {include file="unlp/mobile/layout.tpl" }
 {/strip}
+ 

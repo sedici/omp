@@ -5,14 +5,14 @@
     <!-- Row Header -->
     <div class="row">
         {include file="unlp/mobile/header.tpl" }
-    </div>
+    </div> 
     <div class="row">
         {include file="unlp/mobile/menu.tpl"}
     </div>
     <div class="row">
         <div class="mobile_layout">
             <div class="col-md-12">
-                <div class="col_principal_mobile col-xs-12">
+                <div class="col_principal_mobile col-xs-12"> 
                     {if $publishedMonographs|@count > 0}
                         {* Include the full monograph list *}
                         {include file="unlp/mobile/monographs.tpl" publishedMonographs=$publishedMonographs}

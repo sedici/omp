@@ -8,7 +8,7 @@
 $(document).ready(main);
  
 var contador = 1;
- 
+  
 function main(){
 	$('.menu_bar').click(function(){
 		// $('nav').toggle(); 
@@ -35,7 +35,7 @@ function main(){
 <link rel="stylesheet" href="{$baseUrl}/UNLP/styles/bootstrap/css/bootstrap.css" >
 <link rel="stylesheet" href="{$baseUrl}/UNLP/styles/bootstrap/css/bootstrap.icon-large.css" >
 
-<link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/>
+<link rel="stylesheet" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" type="text/css"/> 
 
 <!--<link rel="stylesheet" media="(max-width: 500px)" href="{$baseUrl}/UNLP/styles/estilosUNLP.css" />
 -->

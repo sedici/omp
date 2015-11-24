@@ -4,9 +4,9 @@
     <div class="row">
         {include file="unlp/mobile/header.tpl" }
     </div>
-    <div class="row">
+    <div class="row"> 
         {include file="unlp/mobile/menu.tpl"}
-    </div>
+    </div> 
     <div class="row">
         <div class="mobile_layout">
             <div class="col-md-12">

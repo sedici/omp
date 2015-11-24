@@ -26,7 +26,7 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
 
-
+ 
             $(document).ready(function () {
                 var share_fb = "#share_fb";
                 var share_tw = "#share_tw";
@@ -36,13 +36,13 @@
                 $(share_fb).append('<div class="fb-like" data-layout="button_count" data-href="' + url + '" data-width="25" data-action="like" data-show-faces="false" data-share="true"></div>');
             });
         </script>    
-    {/literal}
+    {/literal} 
 
 
     <div class="row">
         {include file="unlp/mobile/menu.tpl"}
     </div>
-
+ 
 
 
     <div class="row">
@@ -51,8 +51,9 @@
                 {url|assign:bookImageLinkUrl router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId()}
                 <a title="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" href="{$bookImageLinkUrl}"><img class="pkp_helpers_container_center" alt="{$publishedMonograph->getLocalizedFullTitle()|escape}" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog" submissionId=$publishedMonograph->getId()}"  width='100' height="132"/></a>
             </div>
-            <div class="col-xs-9 titulo"><h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></div>
-º
+            <div class="col-xs-9 titulo"><h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
+			<div class="autor_mobile">{$publishedMonograph->getAuthorString()}</div>
+			</div>
         </div>		
     </div>
 
@@ -60,7 +61,6 @@
         <div class="detalle col-md-12">
             <div class="detalles_del_item_mobile  col-xs-9">
                 <ul>
-                    <li> {$publishedMonograph->getAuthorString()}</li>
                     <li>
                         {if $series}
                             <div class="seriesLink"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></div>
@@ -101,7 +101,7 @@
                             {foreach from=$identificationCodes->toArray() item=identificationCode}
 
                                 {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
-                                        <strong>ISBN</strong>  {$identificationCode->getValue()|escape}
+                                        <strong>ISBN</strong>  <div class="numeroisbn">{$identificationCode->getValue()|escape}</div>
                                     {/if}
                                     {/foreach}
 

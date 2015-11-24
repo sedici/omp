@@ -55,7 +55,7 @@ body {
 }
 .pkp_structure_foot .col2 {
     width: 23%;
-    float: left;
+    float: left; 
     background-image: url(../images/marcador.png);
     background-repeat: no-repeat;
     background-position: 20px 0px;
@@ -1002,7 +1002,7 @@ padding:0px 15px;
 
 .mobile_texto {
 text-align:center;
-font-size:1.2em;
+font-size:0.2em;
 margin: 0 auto !important;
 }
 
@@ -1099,7 +1099,7 @@ margin-left: 25px;
 text-align:justify;
 padding:0px 25px;
 line-height:3;
-font-size:2.2em;
+font-size:3.2em;
 
 }
 
@@ -1157,12 +1157,13 @@ line-height:1.5em;
 }
 
 .detalles_del_item_mobile a{ 
-background-color:#e6e6e6;
-text-decoration:none;
-padding:5px 8px;
-margin:3px;
-color: #8a8a8a;
-font-size:1em;
+background-color: #e6e6e6;
+    color: #8a8a8a;
+    font-size: 1.5em;
+    line-height: 2;
+    margin: 16px;
+    padding: 5px 8px;
+    text-decoration: none;
 }
 
 .detalles_del_item_mobile  {
@@ -1281,32 +1282,36 @@ p {
 .imagencarru  {
 	border:1px solid red;
 }
-
+ 
 .paneles  { 
 	margin-bottom:20px;
-}
+} 
 
 ul, ol { 
 	list-style-type:none !important; 
-}
-
-.notfound {
+} 
+ 
+.notfound { 
 background-color:#dedede;
 color:grey;	
 padding:20px;
 text-align:center;
 font-style:italic;
 font-size:1.5em;
-}
+} 
 
 .panel-body ul li a{
-	font-size:6em; 
+	font-size:8em; 
 }
 
 .detalle_descarga ul li div{
-font-size:9em;
+font-size:14em;
 }
 
-
-
+.autor_mobile {
+	font-size:2em;
+}
+.numeroisbn {
+	font-size:2em;
+}
 
