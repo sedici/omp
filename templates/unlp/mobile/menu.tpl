@@ -1,29 +1,4 @@
-<nav id="navbar" class="navbar navbar-default navbar-inverse" role="navigation">
-  <!-- id= //mainmenuBrand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>  
-  </div>
 
-<div class="collapse navbar-collapse navbar-ex1-collapse">
-	<ul class="nav navbar-nav">
-		<li id="home"><a href="http://revistas.unlp.edu.ar//index">Inicio</a></li>
-		<li id="about"><a href="http://revistas.unlp.edu.ar//about">Acerca de</a></li>
-
-					<li id="login"><a href="http://revistas.unlp.edu.ar//login">Iniciar sesión</a></li>
-							<li id="register"><a href="http://revistas.unlp.edu.ar//user/register">Registrarse</a></li>
-												<li id="search"><a href="http://revistas.unlp.edu.ar//search">Buscar</a></li>
-		
-		
-				
-
-			</ul>
-</div>
-</nav>
  
 <nav class="navbar navbar-default" role="navigation" >
     <div class="container-fluid">
