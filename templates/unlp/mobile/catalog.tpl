@@ -5,7 +5,7 @@
         {include file="unlp/mobile/header.tpl" }
     </div>
     <div class="row"> 
-        {include file="unlp/mobile/menu.tpl"}
+        {include file="unlp/mobile/menu-catalog.tpl"}
     </div> 
     <div class="row">
         <div class="mobile_layout">

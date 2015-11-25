@@ -30,7 +30,7 @@
                 <li class='dropdown'>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Unidades  <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        {iterate from=browseSeriesMenu item=browseSeriesItemMenu}
+                        {iterate from=browseSeriesCatalogMenu item=browseSeriesItemMenu}
                         <li>
                             <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItemMenu->getPath()}"> 
                                 {$browseSeriesItemMenu->getLocalizedTitle()|escape}
@@ -42,7 +42,7 @@
                 <li class='dropdown'>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Areas Temáticas  <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        {iterate from=browseCategoriesMenu item=browseCategoriesItem_menu}
+                        {iterate from=browseCategoriesCatalogMenu item=browseCategoriesItem_menu}
                         <li>
                             <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategoriesItem_menu->getPath()}"> 
                                 {$browseCategoriesItem_menu->getLocalizedTitle()|escape}
@@ -58,4 +58,3 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-<script type="text/javascript" src="{$baseUrl}/UNLP/styles/bootstrap/js/bootstrap.js"></script>
