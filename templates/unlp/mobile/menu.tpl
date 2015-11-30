@@ -51,7 +51,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         
-        <div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{url router=$smarty.const.ROUTE_PAGE page="index" op="index" }">{translate key="navigation.home"} <span class="sr-only"></span></a></li>
                 <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">Libros</a></li>
