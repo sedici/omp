@@ -1,10 +1,41 @@
+<nav id="navbar" class="navbar navbar-default navbar-inverse" role="navigation">
+    <!-- id= //mainmenuBrand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>  
+    </div>
 
- 
-<nav class="navbar navbar-default" role="navigation" >
-    <div class="container-fluid">
+    <div  class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav" >
+            <li id="home"><a href="http://revistas.unlp.edu.ar//index">Inicio</a></li>
+            <li id="about"><a href="http://revistas.unlp.edu.ar//about">Acerca de</a></li>
+
+            <li id="login"><a href="http://revistas.unlp.edu.ar//login">Iniciar sesión</a></li>
+            <li id="register"><a href="http://revistas.unlp.edu.ar//user/register">Registrarse</a></li>
+            <li id="search"><a href="http://revistas.unlp.edu.ar//search">Buscar</a></li>
+
+
+
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+<nav id="navbar" class="navbar navbar-default navbar-inverse" role="navigation">
+   <!-- <div class="container-fluid">-->
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header col-xs-3">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+           <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -19,14 +50,15 @@
         </form>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{url router=$smarty.const.ROUTE_PAGE page="index" op="index" }">{translate key="navigation.home"} <span class="sr-only"></span></a></li>
                 <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">Libros</a></li>
                 <li class='dropdown'>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Unidades  <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                    
+
                         {iterate from=browseSeriesMenu item=browseSeriesItemMenu}
                         <li>
                             <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItemMenu->getPath()}"> 
@@ -49,9 +81,6 @@
                     </ul>
                 </li>
             </ul>
-
-            </li>
-            </ul>
         </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+   <!-- </div> --><!-- /.container-fluid -->
 </nav>
