@@ -1,6 +1,6 @@
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
-<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
-<!--<meta name=”viewport” content=”width=device-width, initial-scale=1″ />-->
+<!--<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">-->
+<meta name=”viewport” content=”width=device-width, initial-scale=1″ />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="{$baseUrl}/UNLP/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="{$baseUrl}/UNLP/js/menu.js"></script>
