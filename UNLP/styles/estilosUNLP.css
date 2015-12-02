@@ -227,6 +227,7 @@ list-style-type:none;
     position: absolute;
     left: 393px;
 }
+
 .pkp_helpers_flatlist {
     margin: 19px;
     padding: 0;
@@ -945,7 +946,7 @@ margin:10px 0px 0px 0px;
 border-bottom: 1px solid #63c6bf;
 color:#63c6bf;
 margin-left:20px;
-font-size:3.2em;
+font-size:2em;
 }
 
 .falopa {
@@ -1214,7 +1215,7 @@ p {
 }
 
 .panel-title {
-	font-size:40px!important;
+	font-size:2em!important;
 }
 
 .nav > li {
@@ -1241,7 +1242,7 @@ p {
  
 .titulo_slider h1 {
 	color:#63c6bf;
-	font-size:3em;
+	font-size:1.5em;
 	}
 
 /* Estilo para slider que no se usa*/
@@ -1310,14 +1311,13 @@ font-size:14em;
 }
 
 .autor_mobile {
-	font-size:2.5em;
+	font-size:1.5em;
 }
+
 .numeroisbn {
 	font-size:2em;
 }
 
-
 .imagen_sites{
 	height:110px;
-	
 }
