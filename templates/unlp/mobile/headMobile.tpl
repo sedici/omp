@@ -5,7 +5,7 @@
 <script type="text/javascript" src="{$baseUrl}/UNLP/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="{$baseUrl}/UNLP/js/menu.js"></script>
 
- 
+<script type="text/javascript" src="{$baseUrl}/UNLP/styles/bootstrap/js/bootstrap.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="{$baseUrl}/UNLP/styles/jquery.bxslider.css" />
