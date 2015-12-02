@@ -299,8 +299,8 @@ class CatalogHandler extends Handler {
 		$seriesList = $seriesDao->getByPressIdHomeOMP($press->getId());
 		
                 $templateMgr->assign('browseSeries', $series);
-                $templateMgr->assign('browseSeriesCatalogMenu', $seriesMenu);
-                $templateMgr->assign('browseSeriesCatalogList', $seriesList);
+                $templateMgr->assign('browseSeriesMenu', $seriesMenu);
+                $templateMgr->assign('browseSeriesList', $seriesList);
 
 
 		$categoryDao = DAORegistry::getDAO('CategoryDAO');
@@ -309,8 +309,8 @@ class CatalogHandler extends Handler {
                 $categoriesList = $categoryDao->getByParentId(0,$press->getId());
                 
 		$templateMgr->assign('browseCategories', $categories);
-                $templateMgr->assign('browseCategoriesCatalogMenu', $categoriesMenu);
-                $templateMgr->assign('browseCategoriesCatalogList', $categoriesList);
+                $templateMgr->assign('browseCategoriesMenu', $categoriesMenu);
+                $templateMgr->assign('browseCategoriesList', $categoriesList);
                 $templateMgr->display('unlp/mobile/catalog.tpl');
                 
 	}

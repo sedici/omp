@@ -5,7 +5,7 @@
         {include file="unlp/mobile/header.tpl" }
     </div>
     <div class="row"> 
-        {include file="unlp/mobile/menu-catalog.tpl"}
+        {include file="unlp/mobile/menu.tpl"}
     </div> 
     <div class="row">
         <div class="mobile_layout">
@@ -21,7 +21,7 @@
         {include file="unlp/mobile/footer.tpl"}
     </div>
 </div> <!-- /container -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="{$baseUrl}/UNLP/styles/bootstrap/js/bootstrap.js"></script>
 
 
