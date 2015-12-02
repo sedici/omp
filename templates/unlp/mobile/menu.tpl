@@ -1,7 +1,7 @@
 <nav id="navbar" class="navbar navbar-default navbar-inverse" role="navigation">
    <!-- <div class="container-fluid">-->
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header col-xs-2">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
                 <span class="sr-only">Toggle navigation</span>
@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <form  id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post" class="navbar-form navbar-right col-xs-9" role="search">
+        <form  id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post" class="navbar-form navbar-right col-xs-10" role="search">
             <span class="col-xs-10"><div class="form-group">		
                     <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" type="text" class="form-control" placeholder="Buscar">
                 </div></span>

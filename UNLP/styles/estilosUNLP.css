@@ -939,7 +939,7 @@ color:white !important;
 }
 
 #desplegable_unidades {
-margin:10px 0px 0px 0px;
+margin:10px 0px 0px 0px; 
 }
 
 .h1sitios {
@@ -995,11 +995,12 @@ margin-top:5px;
 }
 
 .titulo_results { 
-margin-left:20px;
+/*margin-left:20px;*/
 font-size:24px;
 background-color:#21919f;
 color:white;
 padding:0px 15px;
+text-align: center;
 }
 
 .mobile_texto {
@@ -1019,6 +1020,7 @@ list-style-type:none;
 
 .listadoitems .items .contenido h1 a {
 color:#21919f !important;
+font-size:0.5em;
 /* font-weight:bold !important;  */
 }
 
@@ -1058,7 +1060,7 @@ color:red !important;
 }
 
 .mobile_layout  .autor {
-font-size:2.2em;
+font-size:1em;
 /* color:#21919f !important; */
 font-weight:normal;
 color:#a4a4a4;
@@ -1066,7 +1068,7 @@ color:#a4a4a4;
 
 .mobile_layout  .date {
 /*color:black;*/
-font-size:2.2em;
+font-size:1em;
 font-weight:bold;
 }
 
@@ -1082,6 +1084,10 @@ font-family:arial;
 color:#6dc6c1;
 /*font-size:2em;*/
 }
+
+ .imagen_y_titulo .titulo h1 {
+	 font-size:2em;
+ }
 
 .detalles_del_item {
 color:#5e5e5e;
@@ -1154,22 +1160,22 @@ color:#21919f;
 
 .detalles_del_item_mobile{
 color:#5e5e5e;
-font-size:2em;
-line-height:1.5em;
+font-size:1em;
+line-height:2em;
 }
 
 .detalles_del_item_mobile a{ 
 background-color: #e6e6e6;
     color: #8a8a8a;
-    font-size: 1.5em;
-    line-height: 2;
-    margin: 16px;
+    font-size: 1em;
+    line-height: 2em;
+/*     margin: 16px; */
     padding: 5px 8px;
     text-decoration: none;
 }
 
 .detalles_del_item_mobile  {
-	font-size:1.5em;
+
 
 }
 
@@ -1307,7 +1313,7 @@ font-size:1.5em;
 }
 
 .detalle_descarga ul li div{
-font-size:14em;
+font-size:8em;
 }
 
 .autor_mobile {
@@ -1315,9 +1321,13 @@ font-size:14em;
 }
 
 .numeroisbn {
-	font-size:2em;
+	font-size:1em;
 }
 
 .imagen_sites{
 	height:110px;
+}
+
+.pkp_helpers_text_center {
+	text-align:center;
 }
