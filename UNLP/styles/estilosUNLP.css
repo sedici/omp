@@ -1309,7 +1309,7 @@ font-size:1.5em;
 } 
 
 .panel-body ul li a{
-	font-size:2em; 
+	font-size:1.5em; 
 }
 
 .detalle_descarga ul li div{
@@ -1325,7 +1325,7 @@ font-size:8em;
 }
 
 .imagen_sites{
-	height:110px;
+	/*height:110px;*/
 }
 
 .pkp_helpers_text_center {
