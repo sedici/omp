@@ -1112,7 +1112,7 @@ font-size:1.1em;
 }
 
 .informaciondeautores  {
-padding-left:40px;
+/*padding-left:40px;*/
 background-color:#eeeeee;
 line-height:2;
 font-size:0.5em;
@@ -1131,7 +1131,7 @@ font-size:16px;
 
 .informaciondeautores  p{
 line-height:2;
-text-align:justify;
+text-align:justify; 
 }
 
 .informaciondeautores li p{
