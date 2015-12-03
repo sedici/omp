@@ -1309,7 +1309,7 @@ font-size:1.5em;
 } 
 
 .panel-body ul li a{
-	font-size:1.5em; 
+	font-size:1em; 
 }
 
 .detalle_descarga ul li div{
@@ -1331,4 +1331,9 @@ text-align:center;
 
 .pkp_helpers_text_center {
 	text-align:center;
+}
+
+.listado{
+margin-left:-15px;
+}	
 }
