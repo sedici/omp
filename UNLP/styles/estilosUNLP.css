@@ -1313,7 +1313,8 @@ font-size:1.5em;
 }
 
 .detalle_descarga ul li div{
-font-size:8em;
+font-size:6em;
+text-align:center;
 }
 
 .autor_mobile {
