@@ -34,7 +34,7 @@
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
 
-                    <ul>      
+                    <ul class="listadofac">      
 
                         {assign var="categoriaByLine" value="2"}
                         {assign var="categorias" value="9"}
