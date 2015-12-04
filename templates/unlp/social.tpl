@@ -8,9 +8,9 @@
 *}
 
 
-{literal}
-    <script>
 
+    <script>
+{literal}
         /** twitter share **/
         !function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -43,5 +43,5 @@
             $(share_tw).append('<a href="https://twitter.com/share" class="twitter-share-button" data-via="sedici_unlp" data-lang="es"   data-count="none">Twittear</a>');
             $(share_fb).append('<div class="fb-like" data-layout="button_count" data-href="' + url + '" data-width="25" data-action="like" data-show-faces="false" data-share="true"></div>');
         });
-    </script>
 {/literal}
+</script>
