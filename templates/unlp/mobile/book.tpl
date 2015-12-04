@@ -59,7 +59,36 @@
 
     <div class="row">
         <div class="detalle col-md-12">
-            <div class="detalles_del_item_mobile  col-xs-9">
+		                       <div class="detalle_descarga">
+                                     <div class="col-xs-12">
+                                        {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
+                                        {assign var=currency value=$currentPress->getSetting('currency')}
+
+                                        {if $useCollapsedView}
+                                            <ul>
+                                                {foreach from=$publicationFormats item=publicationFormat}
+                                                    {if $publicationFormat->getIsAvailable()}
+                                                        {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
+                                                    {/if}
+                                                {/foreach}
+                                            </ul>
+                                        {else}
+                                            {foreach from=$publicationFormats item=publicationFormat}
+                                                {assign var=publicationFormatId value=$publicationFormat->getId()}
+                                                {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
+                                                    <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
+                                                        {$publicationFormat->getLocalizedName()|escape}
+                                                        <ul>
+                                                            {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
+                                                        </ul>
+                                                    </div>
+                                                {/if}
+                                            {/foreach}
+                                        {/if}{* useCollapsedView *}
+                                        </div>
+										</div>
+		
+		            <div class="detalles_del_item_mobile">
                 <ul>
                     <li>
                         {if $series}
@@ -110,33 +139,7 @@
 
                                     </ul>
                                 </div>
-                                         <div class="detalle_descarga col-xs-3">
-                                     <div class="col-xs-12">
-                                        {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
-                                        {assign var=currency value=$currentPress->getSetting('currency')}
-
-                                        {if $useCollapsedView}
-                                            <ul>
-                                                {foreach from=$publicationFormats item=publicationFormat}
-                                                    {if $publicationFormat->getIsAvailable()}
-                                                        {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
-                                                    {/if}
-                                                {/foreach}
-                                            </ul>
-                                        {else}
-                                            {foreach from=$publicationFormats item=publicationFormat}
-                                                {assign var=publicationFormatId value=$publicationFormat->getId()}
-                                                {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
-                                                    <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
-                                                        {$publicationFormat->getLocalizedName()|escape}
-                                                        <ul>
-                                                            {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
-                                                        </ul>
-                                                    </div>
-                                                {/if}
-                                            {/foreach}
-                                        {/if}{* useCollapsedView *}
-                                        </div>
+                         
                                 </div>          
                                 </div>
                                 <div class="metadata simple-item-view-other subtype">

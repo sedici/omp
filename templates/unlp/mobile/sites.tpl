@@ -11,7 +11,7 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body"> 
-                    <ul>
+                    <ul class="listado">
                         {iterate from=browseSeriesList item=browseSeriesItem}
                         <li>
                             <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="unidades" path=$browseSeriesItem->getPath()}"> 
@@ -34,7 +34,7 @@
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
 
-                    <ul>      
+                    <ul class="listadofac">      
 
                         {assign var="categoriaByLine" value="2"}
                         {assign var="categorias" value="9"}
