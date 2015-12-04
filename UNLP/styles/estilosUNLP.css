@@ -1005,9 +1005,15 @@ text-align: center;
 
 .mobile_texto {
 text-align:center;
-font-size:0.5em;
+line-height:1.2;
+font-size:1em;
 margin: 0 auto !important;
 }
+
+.mobile_texto a{
+color:red;
+}
+
 
 .exploracion_mobile {
 margin-top:5px;
@@ -1305,7 +1311,7 @@ color:grey;
 padding:20px;
 text-align:center;
 font-style:italic;
-font-size:1.5em;
+font-size:1.5em; 
 } 
 
 .panel-body ul li a{
