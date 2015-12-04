@@ -1,4 +1,4 @@
-<li class="col-xs-12">
+<li class="listati col-xs-12">
     <div class="portada col-xs-4">
         <a href="{url page="catalog" op="book" path=$publishedMonograph->getId()}">
             {include file="controllers/monographList/coverImage.tpl" monograph=$publishedMonograph}
