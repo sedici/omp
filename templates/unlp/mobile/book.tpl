@@ -88,7 +88,7 @@
                                         </div>
 										</div>
 		
-		            <div class="detalles_del_item_mobile col-xs-9">
+		            <div class="detalles_del_item_mobile">
                 <ul>
                     <li>
                         {if $series}

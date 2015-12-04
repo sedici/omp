@@ -5,8 +5,8 @@
         </a>
     </div>
     <div class="contenido col-xs-9">
-        <span class="col-xs-12"><h1><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">{$publishedMonograph->getLocalizedFullTitle()}</a></h1></span>
-      <span class="autor col-xs-12"> {$publishedMonograph->getAuthorString()|escape}</span>
+        <h1><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">{$publishedMonograph->getLocalizedFullTitle()}</a></h1>
+      <span class="autor"> {$publishedMonograph->getAuthorString()|escape}</span>
            
 		<!--  {if $series}
                 <span class="seriesLink col-xs-12"><strong>{translate key="series.series"}:</strong> <a href="{url page="catalog" op="unidades" path=$series->getPath()}">{$series->getLocalizedFullTitle()}</a></span>
@@ -30,7 +30,7 @@
                         {/foreach}    
                         {* Get the ISBN *}
                          
-               <span class="date col-xs-12">
+               <span class="date">
                 
             {assign var=fecha value=$publishedMonograph->getCoverageChron()}
             {foreach from=$fecha key=i item=row}
