@@ -5,7 +5,7 @@
             <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Unidades Academicas
+                       <i class="glyfo glyphicon glyphicon-play"></i> Unidades Academicas
                     </a> 
                 </h4>
             </div>
@@ -27,7 +27,7 @@
             <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Explore nuestras colecciones
+                        <i class="glyfo glyphicon glyphicon-play"></i> Explore nuestras colecciones
                     </a>
                 </h4>
             </div>

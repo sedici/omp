@@ -977,9 +977,10 @@ color:red;
 }
 
 .panel-default > .panel-heading {
-background-color: #63c6bf!important;
+background-color: #21919f!important;
 color:white !important;
 font-weight:bold !important;
+font-size:0.6em !important;
 }
 
 .panel-default ul li a {
@@ -1092,7 +1093,7 @@ color:#6dc6c1;
 }
 
  .imagen_y_titulo .titulo h1 {
-	 font-size:2em;
+	 font-size:1.7em;
  }
 
 .detalles_del_item {
@@ -1142,7 +1143,7 @@ text-align:justify;
 
 .informaciondeautores li p{
 color:#757576;
-font-size:2.5em;
+font-size:2em;
 line-height:2;
 padding: 0 10px 0 0;
 }
@@ -1316,7 +1317,7 @@ font-size:1.5em;
 } 
 
 .panel-body ul li a{
-	font-size:1em; 
+	font-size:1em;  
 }
 
 .detalle_descarga ul li div{
@@ -1350,4 +1351,12 @@ margin-left:-15px;
 	
 .listati {
 		margin-left:-30px;
+}
+
+.glyfo {
+	background-color:#21919f !important;
+	color:white !important;
+	float:left!important;
+	font-size:0.6em;
+	margin-right:10px;
 }
