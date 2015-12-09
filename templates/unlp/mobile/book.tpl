@@ -182,12 +182,13 @@
                             <!--autores-->  
                             <div class="row">
                                 <div class="col-xs-12 informaciondeautores">
+                                     <h1>{translate key="submission.information"}</h1>
                                     <ul>
                                         {assign var=authors value=$publishedMonograph->getAuthors()}
                                         {foreach from=$authors item=author}
                                             <li>
                                                 {if $author->getIncludeInBrowse()}
-                                                    <h1>{translate key="catalog.aboutTheAuthor" roleName=$author->getLocalizedUserGroupName()}: <strong>{$author->getFullName()}</strong></h1>
+                                                    <h1><strong>{$author->getFullName()}</strong></h1>
                                                     {assign var=biography value=$author->getLocalizedBiography()|strip_unsafe_html}
                                                 {if $biography != ''}{$biography}{/if}
                                             {/if}
