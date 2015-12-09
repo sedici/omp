@@ -187,7 +187,7 @@
                                         {foreach from=$authors item=author}
                                             <li>
                                                 {if $author->getIncludeInBrowse()}
-                                                    <h1>{translate key="catalog.aboutTheAuthor" roleName=$author->getLocalizedUserGroupName()}: <strong>{$author->getFullName()}</strong></h1>
+                                                    <h1><strong>{$author->getFullName()}</strong></h1>
                                                     {assign var=biography value=$author->getLocalizedBiography()|strip_unsafe_html}
                                                 {if $biography != ''}{$biography}{/if}
                                             {/if}
