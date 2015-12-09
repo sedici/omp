@@ -182,7 +182,7 @@
                             <!--autores-->  
                             <div class="row">
                                 <div class="col-xs-12 informaciondeautores">
-                                     <h1>{translate key="submission.information"}</h1>
+                                     <h2>{translate key="submission.information"}</h2>
                                     <ul>
                                         {assign var=authors value=$publishedMonograph->getAuthors()}
                                         {foreach from=$authors item=author}
