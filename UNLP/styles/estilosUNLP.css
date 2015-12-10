@@ -510,7 +510,7 @@ list-style-type:none;
 	list-style-type: none;
 	border-bottom: 1px solid #98d3d1;
 	/* margin: 10px 0px 0px 0px;*/
-	padding: 0px 0px 10px 0px; 
+	padding: 10px 0 0; 
 	clear:both;
 }
 
