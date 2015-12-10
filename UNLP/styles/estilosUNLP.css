@@ -1392,3 +1392,10 @@ margin-left:-15px;
 .textodescarga a  {
 	text-decoration:none;
 }
+
+.portada_web{
+	width:220px;
+}
+.contenido_web  {
+	width: 70%;
+}
