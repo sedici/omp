@@ -1394,15 +1394,15 @@ margin-left:-15px;
 }
 
 .portada_web{
-		width: 25%;
+
 	float: left;
 	text-align: center;
 	padding: 2px;
-	width:220px;
+	width:29%;
 	float:left;
 }
 .contenido_web  {
-	width: 70%;
+	width: 50%;
 	float:left;
 }
 
