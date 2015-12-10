@@ -220,7 +220,7 @@
 	<message key="grid.reviewAttachments.availableFiles">Ficheros disponibles</message>
 
 	<!-- series/categories/series -->
-	<message key="series.series">Unidades académicas</message>
+	<message key="series.series">Unidades Académicas</message>
 	<message key="series.featured">Presentados</message>
 	<message key="series.featured.description">Esta serie aparecerá en la navegación principal</message>
 	<message key="series.path">Ruta</message>
@@ -257,7 +257,7 @@
 	<message key="catalog.manage.homepage">Página de inicio</message>
 	<message key="catalog.manage.newReleases">Novedades</message>
 	<message key="catalog.manage.category">Áreas Temáticas</message>
-	<message key="catalog.manage.series">Unidades Academicas</message>
+	<message key="catalog.manage.series">Unidades Académicas</message>
 	<message key="catalog.manage.managementIntroduction">Bienvenido a la Gestión de Catálogo. Desde esta página puedes publicar nuevas entradas de catálogo; revisar y configurar el listado de Libros Destacados, el listado de Novedades y los libros por Categoría y Serie.</message>
 	<message key="catalog.selectSeries">Seleccionar Unidad Academica</message>
 	<message key="catalog.selectCategory">Seleccionar Áreas temáticas</message>

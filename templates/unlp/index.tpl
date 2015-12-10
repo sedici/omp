@@ -24,7 +24,7 @@
 
     <div class="exploracion">
         <div class="explo_unidades">
-            <div class="rotulo">Unidades </div>
+            <div class="rotulo">Unidades Académicas </div>
             <ul>
                 {iterate from=browseSeries item=browseSeriesItem}
                 <li>
