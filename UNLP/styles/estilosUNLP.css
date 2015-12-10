@@ -635,6 +635,14 @@ font-weight:bold;
 margin-top:10px;
 }
 
+.seriesLink strong {
+display:block;
+clear:right;
+font-size:1.2em;
+font-weight:bold;
+margin-top:10px;
+}
+
 .sf-menu li:hover {
     background-color:#98d3d1;
 }
