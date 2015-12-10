@@ -62,7 +62,7 @@
     <div class="row">
         <div class="detalle col-md-12">
             <div class="detalle_descarga">
-                <div class="col-xs-12 	">
+                <div>
                     {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                     {assign var=currency value=$currentPress->getSetting('currency')}
 
@@ -180,7 +180,7 @@
 
 
                         <!--autores-->  
-                        <div class="row">
+                       
                             <div class="col-xs-12 informaciondeautores">
                                 <h1>{translate key="submission.information"}</h1>
                                 <ul>
@@ -196,7 +196,7 @@
                                 {/foreach}
                             </ul>
                         </div>
-                    </div>
+                    
 
                     <div class="row">
                         {include file="unlp/mobile/footer.tpl"}
