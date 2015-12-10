@@ -685,7 +685,7 @@ color:#12909f;
    
 
 	.publicationFormatDownload { width: 250px; }
-    .publicationFormatDownload li { display: block; padding-left: 10px; }
+    .publicationFormatDownload li { display: block;}
     .publicationFormatDownload li > div { float: none; width: 100%; text-align:left;}
     .publicationFormatDownload .publicationFormatLink { padding-bottom: 15px; }
     .publicationFormatDownload li:hover { background-color:rgba(109, 198, 193, 0.22); }
@@ -1166,7 +1166,7 @@ text-align:justify;
 color:#757576;
 font-size:2em;
 line-height:2;
-padding: 0 10px 0 0;
+/* padding: 0 10px 0 0; */
 }
 
 
@@ -1342,8 +1342,8 @@ font-size:1.5em;
 }
 
 .detalle_descarga ul li div{
-font-size:6em;
-text-align:center;
+font-size:5em;
+/*text-align:center;*/
 }
 
 .autor {

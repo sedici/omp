@@ -9,7 +9,7 @@
 			{/if}
                         
 
-			<a class="publicationFormatLink glyphicon glyphicon-download" href="{$downloadUrl}"><br> <span class="textodescarga">{$availableFile->getLocalizedName()|escape} </span></a>
+			<a class="publicationFormatLink glyphicon glyphicon-download" href="{$downloadUrl}"> <span class="textodescarga">Descargar </span></a>
 
     </div>
  
