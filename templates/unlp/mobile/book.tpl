@@ -62,7 +62,7 @@
     <div class="row">
         <div class="detalle col-md-12">
 		                       <div class="detalle_descarga">
-                                     <div class="col-xs-12 center-block">
+                                     <div class="col-xs-12 	">
                                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                                         {assign var=currency value=$currentPress->getSetting('currency')}
 
