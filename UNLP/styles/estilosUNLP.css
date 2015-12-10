@@ -506,7 +506,7 @@ list-style-type:none;
 }
 .listadoitems ul.items li {
 	display: block;
-	min-height: 140px;
+	min-height: 157px;
 	list-style-type: none;
 	border-bottom: 1px solid #98d3d1;
 	/* margin: 10px 0px 0px 0px;*/
@@ -1403,5 +1403,11 @@ margin-left:-15px;
 }
 .contenido_web  {
 	width: 70%;
-	float:right;
+	float:left;
+}
+
+.contenido_web h1 a {
+color:#21919f !important;
+font-size:1.3em;
+/* font-weight:bold !important;  */
 }
