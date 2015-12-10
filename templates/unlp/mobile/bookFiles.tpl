@@ -9,7 +9,7 @@
 			{/if}
                         
 
-			<a class="publicationFormatLink  glyphicon glyphicon-download" href="{$downloadUrl}"></a>
+			<a class="publicationFormatLink glyphicon glyphicon-download" href="{$downloadUrl}"> <br/><span class="textodescarga">Descargar </span></a>
 
     </div>
  

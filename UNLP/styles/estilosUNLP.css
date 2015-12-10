@@ -963,7 +963,7 @@ display:block;
 
 .navbar-default .navbar-nav > li > a {
 line-height:1.5;
-font-size:40px!important;
+font-size:1em !important;
 }
 
 #jv {
@@ -1331,7 +1331,7 @@ text-align:center;
 
 .numeroisbn {
 	font-size:1em;
-}
+} 
 
 .imagen_sites{
 	/*height:110px;*/
@@ -1348,7 +1348,7 @@ margin-left:-15px;
 .listadofac{
 	margin-left:-35px;
 	}
-	
+	 
 .listati {
 		margin-left:-30px;
 }
@@ -1359,4 +1359,15 @@ margin-left:-15px;
 	float:left!important;
 	font-size:0.6em;
 	margin-right:10px;
+}
+
+.textodescarga {
+	font-size:0.3em;
+	text-align:center;
+	font-family:arial;
+	text-decoration:none;
+	
+}
+.textodescarga a  {
+	text-decoration:none;
 }
