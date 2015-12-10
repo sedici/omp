@@ -1033,6 +1033,7 @@ font-size:1.5em;
 .listadoitems .items .contenido_mobile h1 a {
 color:#21919f !important;
 font-size:0.5em;
+line-height:1.5;
 /* font-weight:bold !important;  */
 }
 
