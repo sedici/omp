@@ -1347,7 +1347,7 @@ font-size:5em;
 }
 
 .autor {
-	font-size:1.3em;
+	font-size:1.1em;
 }
 
 .numeroisbn {
@@ -1407,7 +1407,7 @@ margin-left:-15px;
 }
 
 .contenido_web h1 a {
-color:#21919f !important;
-font-size:1.3em;
-/* font-weight:bold !important;  */
+    color:#21919f !important;
+    font-size:0.8em;
+    /* font-weight:bold !important;  */
 }
