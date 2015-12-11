@@ -484,7 +484,7 @@ list-style-type:none;
 	color: #6dc6c1;
 	font-size: 14px;
 	margin: 0px;
-	padding: 0px;
+	padding: 10px 0px 10px 0px;
 }
 .temario {
 	font-family: arial;
@@ -504,7 +504,7 @@ list-style-type:none;
 }
 .listadoitems ul.items li {
 	display: block;
-	min-height: 157px;
+	/*min-height: 157px;*/
 	list-style-type: none;
 	border-bottom: 1px solid #98d3d1;
 	/* margin: 10px 0px 0px 0px;*/
@@ -1348,6 +1348,7 @@ font-size:5em;
 
 .autor {
 	font-size:1.1em;
+	line-height:2em;
 }
 
 .numeroisbn {
@@ -1394,10 +1395,9 @@ margin-left:-15px;
 }
 
 .portada_web{
-
 	float: left;
 	text-align: center;
-	padding: 2px;
+	padding: 10px 0px 10px 0px;
 	width:29%;
 	float:left;
 }
