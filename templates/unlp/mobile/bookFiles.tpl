@@ -8,7 +8,7 @@
 				{url|assign:downloadUrl op="download" path=$publishedMonograph->getId()|to_array:$publicationFormatId:$availableFile->getFileIdAndRevision()}
 			{/if}
                         
-
+ 
 			<a class="publicationFormatLink glyphicon glyphicon-download" href="{$downloadUrl}"> <span class="textodescarga">Descargar </span></a>
 
     </div>

@@ -1050,6 +1050,7 @@ font-weight:bold;
 margin-top:10px!important;
 color:#a4a4a4;
 display:block;
+font-size:1.3em;
 }
 
 .cuerpo {
@@ -1135,7 +1136,7 @@ margin-left: 25px;
 text-align:justify;
 padding:0px 25px;
 line-height:3;
-font-size:1.1em;
+font-size:1.1em; 
 
 }
 
@@ -1217,6 +1218,7 @@ text-decoration:none;
 
 .detalles_del_item_mobile ul li strong{
 	color:#6dc6c1;
+	font-size:1em;
 }
 
 .imagen_y_titulo {
