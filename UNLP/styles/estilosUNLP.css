@@ -470,7 +470,7 @@ list-style-type:none;
 
 .temario .areas li {
 	list-style-type:disc;
-		font-family: arial;
+	font-family: arial;
 	font-size: 12px;
 	margin: 0px;
 	padding: 0px 0px 0px 10px;
@@ -549,11 +549,9 @@ background-color:red;
 	margin-left: -30px;
 }
 
-
 .bx-wrapper .bx-viewport {
     height: 350px !important;
     //height: 80% !important;
-   
 }
 
 #inlinePdfResizer {
