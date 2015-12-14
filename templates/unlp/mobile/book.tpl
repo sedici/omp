@@ -180,7 +180,7 @@
 
 
                         <!--autores-->  
-                       
+                        <div>
                             <div class="col-xs-12 informaciondeautores">
                                 <h1>{translate key="submission.information"}</h1>
                                 <ul>
@@ -196,7 +196,7 @@
                                 {/foreach}
                             </ul>
                         </div>
-                    
+                    </div>
 
                     <div class="row">
                         {include file="unlp/mobile/footer.tpl"}
