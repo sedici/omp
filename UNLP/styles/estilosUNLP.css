@@ -701,7 +701,12 @@ color:#12909f;
      display: none;
     } 
 }
-
+@media (max-device-width: 1000px) and (orientation: landscape) {
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+}
 @media (min-width: 1000px) {
   .navbar-collapse {
     width: auto;
