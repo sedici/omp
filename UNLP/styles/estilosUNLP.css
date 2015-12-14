@@ -684,12 +684,17 @@ color:#12909f;
 
 .resumen.truncate {
     text-overflow: ellipsis;
-    width: 100%;
-    height: auto;
+    /*width: 100%;
+    height: auto;*/
     overflow: hidden;
     padding-top: 5px;
     font-size: 90%;
     text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    line-heigth: 10px;
+    max-heigth : 100px;
 } 
 @media (max-width: 600px) {
   .resumen.truncate.tablet {
