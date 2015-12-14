@@ -702,7 +702,7 @@ color:#12909f;
     } 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 300px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
