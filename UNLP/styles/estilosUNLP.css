@@ -684,7 +684,7 @@ color:#12909f;
 
 .resumen.truncate {
     text-overflow: ellipsis;
-    width: 350px;
+    width: 435px;
     overflow: hidden;
     padding-top: 5px;
     font-size: 90%;
