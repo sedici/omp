@@ -703,9 +703,11 @@ color:#12909f;
 }
 
 @media (min-width: 768px and max-width: 1024px){
-    .navbar-default .navbar-nav > li > a {
-        font-size: 10px;
-    }
+    
+    .nav > li {
+      font-size: 1.3em!important;
+      line-height: 2em !important;
+}
 }
 
 .selectBox-dropdown {
@@ -1260,11 +1262,11 @@ p {
 .panel-title {
 	font-size:2em!important;
 }
-
+/*
 .nav > li {
 	font-size:2em!important;
 	line-height:2em !important;
-}
+}*/
 
 .bs-glyphicons li {
     background-color: #f9f9f9;
