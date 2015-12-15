@@ -702,10 +702,12 @@ color:#12909f;
     } 
 }
 
-@media (min-width: 768px)
+@media (min-width: 768px){
 .navbar-nav {
     float: left;
     margin: 0;
+}
+}
 
 .selectBox-dropdown {
     min-width: 117px;
