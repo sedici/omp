@@ -13,7 +13,7 @@
     </div>
     <div class="col3">
 
-        <div class="cc"><a href='http://www.creativecommons.org.ar/' target="_blank"><img style="float:left; display:block;" src="/UNLP/images/creative_commons.png" /></a> <p>Licencia Creative Commons Atribución-NoComercial-SinDerivadas 2.5 Argentina a menos que se indique lo contrario</p></div>
+        <div class="cc"><a href='http://www.creativecommons.org.ar/licencias' target="_blank"><img style="float:left; display:block;" src="/UNLP/images/creative_commons.png" /></a> <p>Licencia Creative Commons. Se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.</p></div>
     </div>
     <div class="col4">
 
