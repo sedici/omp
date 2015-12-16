@@ -13,7 +13,13 @@
     </div>
     <div class="col3">
 
-        <div class="cc"><a href='http://www.creativecommons.org.ar/licencias' target="_blank"><img style="float:left; display:block;" src="/UNLP/images/creative_commons.png" /></a> <p>Licencia Creative Commons. Se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.</p></div>
+        <div class="cc">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><p><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</p></a>.
+            
+            
+            
+            
+            <!--<a href='http://www.creativecommons.org.ar/licencias' target="_blank"><img style="float:left; display:block;" src="/UNLP/images/creative_commons.png" /></a> <p>Licencia Creative Commons. Se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.</p>--></div>
     </div>
     <div class="col4">
 
