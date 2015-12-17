@@ -25,9 +25,9 @@
 
         </div>
         <div class="detalle">
-		<h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
-            <div class="detalles_del_item">
-
+		   <div class="detalles_del_item">
+			<h1> {$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1>
+			
                 <ul>
                     <li>{$publishedMonograph->getAuthorString()}</li>
 
@@ -145,8 +145,8 @@
                                     </ul>
                                 </div>
                             {/if}
-                            <div class="resena">
-                                <h1>{translate key="submission.information"}</h1>
+                            <div class="resena_autores">
+                                <h1><strong>{translate key="submission.information"}</strong></h1>
                                 <ul>
                                     {assign var=authors value=$publishedMonograph->getAuthors()}
                                     {foreach from=$authors item=author}
