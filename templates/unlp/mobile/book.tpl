@@ -62,7 +62,7 @@
     <div class="row">
         <div class="detalle col-md-12">
             <div class="detalle_descarga">
-                <div>
+                <div class="center-block">
                     {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                     {assign var=currency value=$currentPress->getSetting('currency')}
 
@@ -78,7 +78,7 @@
                         {foreach from=$publicationFormats item=publicationFormat}
                             {assign var=publicationFormatId value=$publicationFormat->getId()}
                             {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
-                                <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
+                                <div class="publicationFormatDownload center-block" id="publicationFormat-download-{$publicationFormatId|escape}">
                                     {$publicationFormat->getLocalizedName()|escape}
                                     <ul>
                                         {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
@@ -183,7 +183,7 @@
                         <div>
                             <div class="col-xs-12 informaciondeautores">
                                 <h1>{translate key="submission.information"}</h1>
-                                <ul>
+                                <ul class="listainfo">
                                     {assign var=authors value=$publishedMonograph->getAuthors()}
                                     {foreach from=$authors item=author}
                                         <li>

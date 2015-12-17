@@ -284,6 +284,12 @@ list-style-type:none;
 .col_principal .destacado h1 {
 	margin-left: 5px;
 }
+
+.col_principal .detalle h1 {
+	margin-left: 5px;
+}
+
+
 .col_principal .destacado .detalle .detalles_del_item h1 {
 	font-size: 20px;
 	color: #12909F;
@@ -426,6 +432,8 @@ list-style-type:none;
 .col_principal .resena h1 {
 	color:#46b5af;
 	margin:0px;
+	font-size:1.5em;
+	font-weight:bold;
 }
 }
 	
@@ -484,7 +492,8 @@ list-style-type:none;
 	color: #6dc6c1;
 	font-size: 14px;
 	margin: 0px;
-	padding: 10px 0px 10px 0px;
+	padding: 10px 0px 0px 0px;
+	width:560px;
 }
 .temario {
 	font-family: arial;
@@ -1137,21 +1146,30 @@ font-size:1.1em;
 }
 
 .informaciondeautores  {
-/*padding-left:40px;*/
+padding-left:25px;
 background-color:#eeeeee;
 line-height:2;
 font-size:0.5em;
 }
 
-.informaciondeautores h1 {
+.informaciondeautores ul li h1 {
 /*font-size:18px;*/
 color:#21919f;
 font-weight:bold;
+font-size:1em;
 }
+
+.informaciondeautores h1 {
+	color: #21919f;
+    font-weight: bold;
+    color:#21919f;
+	font-size:30px;
+	}
 
 .informaciondeautores h1 strong{
 font-weight:regular;
 font-size:16px;
+color:black;
 }
 
 .informaciondeautores  p{
@@ -1177,6 +1195,11 @@ color:#21919f;
 	color:#21919f;
 }
 
+.publicationFormatLink a:hover {
+	text-decoration:none;
+
+}
+
 .flechaback {
 	font-size:33px;
 	color:white;
@@ -1199,7 +1222,8 @@ background-color: #e6e6e6;
     text-decoration: none;
 }
 
-.detalles_del_item_mobile  {
+.detalles_del_item_mobile ul {
+	padding-left:25px;
 
 
 }
@@ -1232,17 +1256,13 @@ text-decoration:none;
 .title_left{
 	display:none;
 }
-.resena ul li h1 {
-	color:red;
-	font-size:14px;
-}
 
 .publicationFormatName1 {
 	display:none !important;
 }
 
 p {
-	line-height:1.5!important;	
+	line-height:1.5!important;	 
 	text-align:justify !important;
 }
 
@@ -1386,6 +1406,11 @@ margin-left:-15px;
 	text-align:center;
 	font-family:arial;
 	text-decoration:none;
+	 position: relative;
+    text-align: left;
+    text-decoration: none;
+	left:-50px;
+	top:-25px;
 	
 }
 .textodescarga a  {
@@ -1411,3 +1436,35 @@ margin-left:-15px;
 }
 
 .medio .contenido_web h1 a { font-size: 1.3em; }
+
+.listainfo {
+	margin-left:0px;
+	padding-left:0px;
+}
+
+.resena_autores {
+	background-color:#f1f1f1;
+	padding:10px 10px 10px 36px;
+}
+
+.resena_autores h1 strong{
+	color:#21919f !important;
+	font-size:1.2em;	
+	font-weight:bold;
+	margin-left:10px;
+
+}
+.resena_autores h1 {
+	color:#21919f !important;
+	font-size:1.2em;	
+	font-weight:bold;
+
+}
+
+.resena_autores ul li h1 {
+	color:black !important;
+	font-size:14px;
+	line-hegith:1.5;
+}
+
+
