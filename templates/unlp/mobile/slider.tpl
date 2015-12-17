@@ -6,9 +6,9 @@
 
 <div class="col-md-12">
 
-  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
-	 <div id="myCarousel" class="carousel slide" > 
-	
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+    <div id="myCarousel" class="carousel slide" > 
+
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -19,16 +19,16 @@
 
         <div class="carousel-inner">
             {assign var="active" value=true}
-                
+
             {foreach from=$publishedMonographsCarousel item=publishedMonograph}
                 {assign var="submissionId" value=$publishedMonograph->getId()}
-                
+
                 {if isset($featuredMonographIds[$submissionId])}
                     {assign var="estilo" value=''}
-                
+
                     {if ($active)}
                         {assign var="estilo" value='active'}
-                       {assign var="active" value=false} 
+                        {assign var="active" value=false} 
                     {/if}  
                     <div class="item {$estilo}"> 
                         <div class="container paneles col-xs-12">
@@ -36,10 +36,14 @@
                                 <img class="img-responsive" src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="catalog"   submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/>
                             </div>
                             <div class="titulo_slider col-xs-8">
-                                 <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}"><h1>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></a>
+                                <a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}"><h1>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h1></a>
                                 <div class="autor_mobile">{$publishedMonograph->getAuthorString()|escape}</div>
-                            							</div>
-
+                                <div class='resumen truncate tablet'>
+                                    <p>{$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}</p>
+                                </div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
 

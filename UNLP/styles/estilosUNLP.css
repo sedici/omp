@@ -678,33 +678,51 @@ div.contenido h1 a:hover {
 color:#12909f;
 }
 
-
-
-
-
-	.publicationFormatDownload { width: 450px; }
-    .publicationFormatDownload li { display: block; }
-    .publicationFormatDownload li > div { float: left; width: 50%; } */
+.publicationFormatDownload { width: 450px; }
+.publicationFormatDownload li { display: block; }
+.publicationFormatDownload li > div { float: left; width: 50%; } */
 
 
    
+.publicationFormatDownload { width: 250px; }
+.publicationFormatDownload li { display: block;}
+.publicationFormatDownload li > div { float: none; width: 100%; text-align:left;}
+.publicationFormatDownload .publicationFormatLink { padding-bottom: 15px; }
+.publicationFormatDownload li:hover { background-color:rgba(109, 198, 193, 0.22); }
 
-	.publicationFormatDownload { width: 250px; }
-    .publicationFormatDownload li { display: block;}
-    .publicationFormatDownload li > div { float: none; width: 100%; text-align:left;}
-    .publicationFormatDownload .publicationFormatLink { padding-bottom: 15px; }
-    .publicationFormatDownload li:hover { background-color:rgba(109, 198, 193, 0.22); }
 
-
-    .resumen.truncate {
-        text-overflow: ellipsis;
-        width: 435px;
-        height: 110px;
-        overflow: hidden;
-        padding-top: 5px;
-        font-size: 90%;
-        text-align: justify;
+.resumen.truncate {
+    text-overflow: ellipsis;
+    /*width: 100%;
+    height: auto;*/
+    overflow: hidden;
+    padding-top: 5px;
+    font-size: 90%;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    line-heigth: 10px;
+    max-heigth : 100px;
+} 
+@media (max-width: 600px) {
+  .resumen.truncate.tablet {
+     display: none;
     } 
+}
+
+.nav > li {
+      font-size: 1.5em!important;
+      line-height: 2em !important;
+}
+
+@media (min-width: 768px and max-width: 1024px){
+    
+    .nav > li {
+      font-size: 1.3em!important;
+      line-height: 2em !important;
+}
+}
 
 .selectBox-dropdown {
     min-width: 117px;
@@ -1269,11 +1287,11 @@ p {
 .panel-title {
 	font-size:2em!important;
 }
-
+/*
 .nav > li {
 	font-size:2em!important;
 	line-height:2em !important;
-}
+}*/
 
 .bs-glyphicons li {
     background-color: #f9f9f9;
