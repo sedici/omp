@@ -282,19 +282,19 @@ list-style-type:none;
 	padding:5px;
 }
 .col_principal .destacado h1 {
-	margin-left: 5px;
+
 }
 
 .col_principal .detalle h1 {
-	margin-left: 5px;
+
 }
 
 
 .col_principal .destacado .detalle .detalles_del_item h1 {
 	font-size: 20px;
 	color: #12909F;
-	margin-top:20px;
 }
+
 .col_principal .destacado .detalle .detalles_del_item ul {
 	color: #6D6D6D;
 	font-size: 14px;
@@ -303,6 +303,9 @@ list-style-type:none;
 	padding:0px;
 }
 
+.navbar-default .navbar-nav li a:hover {
+	background-color:#096672;
+}
 
 .rotulo {
 	background-image: url(../images/forma_h1.png);
@@ -1429,6 +1432,7 @@ margin-left:-15px;
     text-decoration: none;
 	left:-50px;
 	top:-25px;
+	display:inline;
 	
 }
 .textodescarga a  {
