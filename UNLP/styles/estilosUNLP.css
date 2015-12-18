@@ -643,6 +643,8 @@ font-weight:bold;
 margin-top:10px;
 }
 
+.resena_autores li strong { font-size: 1.1em;}
+
 .seriesLink strong {
 display:block;
 clear:right;
