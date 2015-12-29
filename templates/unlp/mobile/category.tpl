@@ -20,7 +20,7 @@
                     {/if}
         </div>
         <div class="mobile_layout col-xs-12">
-             <!--   <div class="col-xs-12">
+             <!--   <div class="col-xs-12"> 
              <div class="col_principal_mobile col-xs-12"> -->
                     {* Include the full monograph list *}
                     {include file="unlp/mobile/monographs.tpl" publishedMonographs=$publishedMonographs}
