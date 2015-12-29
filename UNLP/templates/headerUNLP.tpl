@@ -23,7 +23,7 @@
 		</li>
 	{/if}
 {/capture}
-
+ 
 
 
 <div class="pkp_structure_head" id="headerContainer">

@@ -2,7 +2,7 @@ config.inc.php
 .DS_Store/
 build
 temp
-/files
+
 .project
 .project/
 .buildpath
@@ -10,3 +10,6 @@ temp
 .htaccess
 te_ST/
 /nbproject/private/
+*.pdf
+*.odt
+*.txt

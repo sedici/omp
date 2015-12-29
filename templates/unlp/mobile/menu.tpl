@@ -25,7 +25,7 @@
                 <li><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">Libros</a></li>
                 <li class='dropdown'>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Unidades Académicas  <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu"> 
 
                         {iterate from=browseSeriesMenu item=browseSeriesItemMenu}
                         <li>

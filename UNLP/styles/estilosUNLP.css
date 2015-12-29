@@ -28,6 +28,7 @@ body {
 	padding: 0px 0px 0px 2px; 
 	line-height: 1.5;  	
 }
+
 .pkp_structure_sidebar_left .temario {
 	font-family: arial;
 	margin: 10px 5px 0px 10px;
@@ -1476,8 +1477,8 @@ margin-left:-15px;
 	font-size:1.2em;	
 	font-weight:bold;
 	margin-left:10px;
- 
-}
+ }
+
 .resena_autores p strong { font-size: 12px; }
 .resena_autores h1 {
 	color:#21919f !important;
@@ -1495,4 +1496,7 @@ h3 {
 	color:#002339;
 	font-family:arial;
 	font-weight:bold;
+	margin-left:15px;
+	font-size:18px;
 }
+
