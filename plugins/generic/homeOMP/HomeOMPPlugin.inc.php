@@ -43,7 +43,7 @@ class HomeOMPPlugin extends GenericPlugin {
                 $page =& $args[0];
 		$op =& $args[1];
 		$sourceFile =& $args[2];
-                $this->setBreadCrumbs(true);
+              //  $this->setBreadCrumbs(true);
                 // If the request is for this plugin, then it must be handled
 		if ($page === 'dashboard') {
                 	$this->import('pages/StatsAdminHandler');
