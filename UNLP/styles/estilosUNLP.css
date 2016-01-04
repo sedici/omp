@@ -831,7 +831,6 @@ header nav ul li {
 	}
 
 
-
 /* Nuevo estilus */
 
 
@@ -1428,7 +1427,7 @@ margin-left:-15px;
 .textodescarga {
 	font-size:0.3em;
 	text-align:center;
-	font-family:arial;
+	font-family:arial; 
 	text-decoration:none;
 	 position: relative;
     text-align: left;
@@ -1449,6 +1448,7 @@ margin-left:-15px;
 	width:29%;
 	float:left;
 }
+
 .contenido_web  {
 	width: 50%;
 	float:left;
