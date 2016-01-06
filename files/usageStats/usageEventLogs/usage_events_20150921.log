@@ -1,0 +1,4 @@
+163.10.34.211 administrative 1 "2015-09-21 11:08:20" http://libros.testing.sedici.unlp.edu.ar/index.php/unlp/catalog 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"
+163.10.34.211 administrative 1 "2015-09-21 11:41:35" http://libros.testing.sedici.unlp.edu.ar/index.php/unlp/catalog/book/435 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"
+107.23.45.196 - - "2015-09-21 13:05:35" http://libros.testing.sedici.unlp.edu.ar/index.php/unlp/catalog 200 "Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)"
+157.55.39.166 - - "2015-09-21 13:16:36" http://libros.testing.sedici.unlp.edu.ar/index.php/unlp/catalog/index 200 "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
