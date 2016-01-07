@@ -639,7 +639,7 @@ color:black;
 li strong {
 display:block;
 clear:right;
-font-size:1.5em;
+font-size:1.3em;
 font-weight:bold;
 margin-top:10px;
 }
@@ -1028,7 +1028,7 @@ margin-top:0px;
 
 .johnny {
 margin-top:5px;
-}
+} 
 
 .titulo_results { 
 /*margin-left:20px;*/
@@ -1499,3 +1499,19 @@ h3 {
 	margin-left:15px;
 	font-size:16px;
 }
+
+.selectBox-dropdown .selectBox-label {
+	  padding: 4px 8px !important;
+}
+
+#reviewPolicy p, #onlineSubmissions p, #submissionPreparationChecklist p, #pagina_estatica p, #privacyStatement p  {
+	margin-left:15px;
+	}
+	
+.pkp_helpers_bulletlist li, .pagina_estatica li {
+	margin-left:25px;
+}
+
+.pkp_structure_body .pkp_structure_main {
+	border:none;
+	}
