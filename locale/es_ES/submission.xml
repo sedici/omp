@@ -134,5 +134,4 @@
     
     <message key="submission.tableOfContents">Tabla de contenidos</message>
     <message key="submission.pdf.pluginMissing">Para visualizar PDFs en línea, debe instalar o habilitar el componente en su navegador</message>
-    <message key="submission.pdf.download">Descargar PDF</message>
 </locale>
