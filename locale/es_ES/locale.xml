@@ -711,6 +711,8 @@ Haga click aqui (https://pkp.sfu.ca/registration/) y acceda http://163.10.34.211
 <message key="common.searchBooks">Buscar Libros</message>
 
 <message key="submission.pdf.download">Descargar PDF</message>
+<message key="submission.pdf.pluginMissing">Para visualizar PDFs en línea, debe instalar o habilitar el componente en su navegador</message>
+
 
 
 </locale>
