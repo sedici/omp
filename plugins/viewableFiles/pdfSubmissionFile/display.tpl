@@ -37,6 +37,10 @@
 		{/literal}
 	// -->
 </script>
+<p>
+    {* The target="_parent" is for the sake of iphones, which present scroll problems otherwise. *}
+    <a class="action" target="_parent" href="{url op="download" path=$publishedMonograph->getId()|to_array:$submissionFile->getAssocId():$submissionFile->getFileIdAndRevision()}">{translate key="submission.pdf.download"}</a>
+</p>
 <div id="inlinePdfResizer">
 	<div id="inlinePdf" class="ui-widget-content">
 		{translate key="submission.pdf.pluginMissing"}
