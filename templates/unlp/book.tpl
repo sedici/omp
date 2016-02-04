@@ -48,7 +48,49 @@
 
 
                     </li>
-
+                    <li>
+                            <strong>{translate key="catalog.manage.fecha_publicacion"}:</strong>
+                            {assign var=fecha value=$publishedMonograph->getCoverageChron()}
+                            {foreach from=$fecha key=i item=row}
+                                {if $i == 'es_ES'}
+                                    {$row}
+                                {/if}
+                           {/foreach}
+                         
+                    </li>
+                     <li>
+                            <strong>{translate key="catalog.manage.licencia"}:</strong>
+                            {assign var=licencia value=$publishedMonograph->getRights()}
+                             {foreach from=$licencia key=i item=l}
+                                   {if $i == 'es_ES'}
+                                    {$l}
+                                   
+                                   {/if}
+                           {/foreach}
+                            
+                    </li>
+                    <li>
+                            <strong>{translate key="catalog.manage.seriePosition"}:</strong>
+                            {assign var=serie value=$publishedMonograph->getSeriesPosition()}
+                             {foreach from=$serie key=i item=s}
+                                   {if $i == 'es_ES'}
+                                    {$s}
+                                   
+                                   {/if}
+                           {/foreach}
+                            
+                    </li>
+                    <li>
+                            <strong>{translate key="catalog.manage.source"}:</strong>
+                            {assign var=source value=$publishedMonograph->getSource()}
+                             {foreach from=$source key=i item=so}
+                                   {if $i == 'es_ES'}
+                                    {$so}
+                                   
+                                   {/if}
+                           {/foreach}
+                            
+                    </li>
                     <li>
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats(true)}
                         {assign var=viablePdfCount value=0}

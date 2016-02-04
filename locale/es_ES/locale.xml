@@ -258,6 +258,14 @@
 	<message key="catalog.manage.newReleases">Novedades</message>
 	<message key="catalog.manage.category">Áreas Temáticas</message>
 	<message key="catalog.manage.series">Unidades Académicas</message>
+	<message key="catalog.manage.fecha_publicacion">Fecha Publicacion</message>
+	<message key="catalog.manage.licencia">Licencia</message>
+	<message key="catalog.manage.seriePosition">Colección</message>
+	<message key="catalog.manage.source">Enlace externo</message>
+
+
+
+	
 	<message key="catalog.manage.managementIntroduction">Bienvenido a la Gestión de Catálogo. Desde esta página puedes publicar nuevas entradas de catálogo; revisar y configurar el listado de Libros Destacados, el listado de Novedades y los libros por Categoría y Serie.</message>
 	<message key="catalog.selectSeries">Seleccionar Unidad Academica</message>
 	<message key="catalog.selectCategory">Seleccionar Áreas temáticas</message>

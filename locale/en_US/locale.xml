@@ -246,6 +246,13 @@
 	<message key="catalog.manage.newReleases">New Releases</message>
 	<message key="catalog.manage.category">Áreas temáticas</message>
 	<message key="catalog.manage.series">Unidades Academicas</message>
+	
+    <message key="catalog.manage.fecha_publicacion">Fecha Publicacion</message>
+	<message key="catalog.manage.licencia">Licencia</message>
+	<message key="catalog.manage.seriePosition">Colección</message>
+	<message key="catalog.manage.source">Enlace externo</message>
+
+
 	<message key="catalog.manage.managementIntroduction">Welcome to Catalog Management. From this page you can publish new catalog entries; review and configure your Featured Books listing; review and configure your New Releases listing; and review and configure your books by Category and Series.</message>
 	<message key="catalog.selectSeries">Select Series</message>
 	<message key="catalog.selectCategory">Select Category</message>
