@@ -644,6 +644,15 @@ font-weight:bold;
 margin-top:10px;
 }
 
+.detalle .detalles_del_item ul li strong {
+display:block;
+clear:right;
+font-size:1.2em;
+font-weight:bold;
+margin-top:10px;
+}
+
+
 .resena_autores li strong { font-size: 1.1em;}
 
 .seriesLink strong {
