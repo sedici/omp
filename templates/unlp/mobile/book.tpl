@@ -121,11 +121,11 @@
                          
                         </li>
                     {/if
-                    {assign var=serie value=$publishedMonograph->getSeriesPosition()}
-                    {if $serie[$currentLocale]!='' }
+                    {assign var=seriePosition value=$publishedMonograph->getSeriesPosition()}
+                    {if $seriePosition!='' }
                         <li>
                                 <strong>{translate key="catalog.manage.seriePosition"}:</strong>
-                                 {$serie[$currentLocale]}
+                                 {$seriePosition}
                         </li>
                     {/if}
                     {assign var=source value=$publishedMonograph->getSource()}
