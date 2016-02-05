@@ -11,7 +11,7 @@
 {assign var="pageTitleTranslated" value=$publishedMonograph->getLocalizedFullTitle()}
 {include file="common/header.tpl"}
 {/strip}
-<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">Volver al Libro</a>
+<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$publishedMonograph->getId()}">{translate key="navigation.goBack"}</a>
 <div class="pkp_catalog_bookFile">
 
 {$viewableFileContent}
