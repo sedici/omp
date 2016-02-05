@@ -75,6 +75,7 @@
                             <strong>{translate key="catalog.manage.source"}:</strong>
                             {$source[$currentLocale]}
                         </li>
+                     {/if}   
                     <li>
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats(true)}
                         {assign var=viablePdfCount value=0}
