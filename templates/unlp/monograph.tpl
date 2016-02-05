@@ -41,11 +41,7 @@
             <span class="date col-xs-12">
                 
             {assign var=fecha value=$publishedMonograph->getCoverageChron()}
-            {foreach from=$fecha key=i item=row}
-                {if $i == 'es_ES'}
-                    {$row}
-                {/if}
-           {/foreach}
+            {$fecha[$currentLocale]}
             </span>
             <span class="estrellas"></span>
        
