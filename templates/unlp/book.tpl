@@ -104,9 +104,13 @@
                                 {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
                                         <strong>ISBN:</strong>  {$identificationCode->getValue()|escape}
                                     {/if}
-                                    {/foreach}
+                                {/foreach}
 
-                                        {/if}           
+                                {if $identificationCode->getCode() == "38" }{* ONIX codes for Handle = 38 *}
+                                        <strong>Handle:</strong>  {$identificationCode->getValue()|escape}
+                                    {/if}
+                                {/foreach}
+                        {/if}           
                                         </li>     
                                         <li>
                                             {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
