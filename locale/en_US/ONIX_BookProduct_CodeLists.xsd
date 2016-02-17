@@ -317,6 +317,13 @@
 					<xs:documentation>International Standard Music Number (M plus nine digits). Pre-2008 - now DEPRECATED in ONIX for Books, except where providing historical information for compatibility with legacy systems. It should only be used in relation to products published before 2008 - when ISMN-13 superseded it - and should never be used as the ONLY identifier (it should always be accompanied by the correct ISMN-13).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
+			<xs:enumeration value="38">
+				<xs:annotation>
+					<xs:documentation>HANDLE</xs:documentation>
+					<xs:documentation>Digital Object Identifier</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
 			<xs:enumeration value="06">
 				<xs:annotation>
 					<xs:documentation>DOI</xs:documentation>
