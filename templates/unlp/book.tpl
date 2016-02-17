@@ -109,7 +109,7 @@
                                 {if $identificationCode->getCode() == "38" }{* ONIX codes for Handle = 38 *}
                                         <strong>Handle:</strong>  {$identificationCode->getValue()|escape}
                                     {/if}
-                                {/foreach}
+                               
                         {/if}           
                                         </li>     
                                         <li>
