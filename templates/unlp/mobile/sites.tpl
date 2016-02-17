@@ -96,18 +96,18 @@
 
 <div class="col-md-12">
     <h1 class="h1sitios" >Sitios relacionados</h1>
-    <div class="col-xs-4">
+    <div class="col-xs-3">
         <a href="http://sedici.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/link_relacionado_01_200.png" width="500" height="175" /></a>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-3">
+        <a href="http://libros.fahce.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/librosfahce.png" width="500" height="190" /></a>
+    </div>
+    <div class="col-xs-3">
         <a href="http://www.editorial.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/link_relacionado_05_200.png" width="500" height="190" /></a>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-3">
         <a href="http://prebi.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/link_relacionado_03_200.png" width="500" height="153" /></a>
     </div>
-    <!-- No deber�a ir 
-     <div class="col-xs-3">
-            <a href="http://www.unlp.edu.ar/" target="_blank"><img class="img-responsive" src="/UNLP/images/link_relacionado_04_200.png" width="200" height="74" /></a>
-        </div> -->
+
 </div>
 
