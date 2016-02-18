@@ -113,11 +113,9 @@
                         {/if}           
                                         </li>
                                 <li>
-                                
-{$representatives|@print_r} 
                                  {foreach from=$representatives item=representative}
 
-                                        <strong>Editorial:</strong> d
+                                        <strong>Editorial:</strong> {$representative['fields']}
                                 {/foreach}
                                 </li>
 
