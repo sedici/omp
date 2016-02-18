@@ -115,7 +115,7 @@
                                 <li>
                                  {foreach from=$representatives item=representative}
 
-                                        <strong>Editorial:</strong>  {$representative->getName()|escape}
+                                        <strong>Editorial:</strong> d
                                 {/foreach}
                                 </li>
 
