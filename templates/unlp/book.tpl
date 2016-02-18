@@ -114,11 +114,12 @@
                                     
                                         </li>
                                 <li>
-
+{representative->name}
 
                                  {foreach from=$representatives->records->fields item=representative}
+                                         <strong>Editorial:</strong> {representative->name}
+                                        
 
-                                        <strong>Editorial:</strong> {representative}
                                 {/foreach}
                                 </li>
 
