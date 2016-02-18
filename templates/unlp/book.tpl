@@ -116,7 +116,7 @@
                                 <li>
 
 
-                                   {$representatives->dao|print_r}
+                                   {$representatives|print_r}
                                  {foreach from=$representatives['fields'] item=representative}
 
                                         <strong>Editorial:</strong> 
