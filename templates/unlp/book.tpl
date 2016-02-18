@@ -116,7 +116,6 @@
                                 <li>
 
 
-                                   {$representatives->records->fields|print_r}
                                  {foreach from=$representatives->records->fields item=representative}
 
                                         <strong>Editorial:</strong> {representative}
