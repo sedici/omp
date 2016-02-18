@@ -111,7 +111,17 @@
                                     {/if}
                                
                         {/if}           
-                                        </li>     
+                                        </li>
+                                <li>
+                                 {foreach from=$representatives item=representative}
+
+                                        <strong>Editorial:</strong>  {$representative->getName()|escape}
+                                {/foreach}
+                                </li>
+
+
+
+
                                         <li>
                                             {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                                             {assign var=currency value=$currentPress->getSetting('currency')}
