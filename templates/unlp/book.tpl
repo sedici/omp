@@ -115,10 +115,10 @@
                                         </li>
                                 <li>
                                       {$representatives->records|print_r}
-                                   {* {foreach from=$representatives->records->fields item=representative}
+                                    {foreach from=$representatives->records item=representative}
                                      <strong>Editorial:</strong> {representative}
                                         {/foreach}
-                                   *}
+                                   
                                 </li>
 
 
