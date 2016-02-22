@@ -117,10 +117,10 @@
 
 
                                    {$representatives->records->fields}
-                                 {foreach from=$representatives->records->fields item=representative}
+                                {* {foreach from=$representatives->records->fields item=representative}
 
                                         <strong>Editorial:</strong> {representative}
-                                {/foreach}
+                                {/foreach}*}
                                 </li>
 
 
