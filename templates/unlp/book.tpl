@@ -103,92 +103,84 @@
 
                                 {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
                                         <strong>ISBN:</strong>  {$identificationCode->getValue()|escape}
+                                {/if}
+                            {/foreach}
+
+                            {if $identificationCode->getCode() == "38" }{* ONIX codes for Handle = 38 *}
+                                <strong>Identificador(URI):</strong>  {$identificationCode->getValue()|escape}
+                            {/if}
+                                       
+                        {/if}           
+                    </li>
+                    <li>
+                        {foreach from=$representatives->records item=representative}
+                            <strong>Editorial:</strong>
+                             {foreach  key=key from=$representative item=r}
+                               
+                               {if $key == 'name'}
+                                    {$r}
+                               {/if}     
+                             {/foreach}   
+                            
+                        {/foreach}
+                    </li>
+                    <li>
+                        {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
+                        {assign var=currency value=$currentPress->getSetting('currency')}
+                        {if $useCollapsedView}
+                            <ul>
+                                {foreach from=$publicationFormats item=publicationFormat}
+                                    {if $publicationFormat->getIsAvailable()}
+                                        {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
                                 {/foreach}
-
-                                {if $identificationCode->getCode() == "38" }{* ONIX codes for Handle = 38 *}
-                                        <strong>Identificador(URI):</strong>  {$identificationCode->getValue()|escape}
-                                    {/if}
-                               
-                            {/if}           
-                                    
-                                        </li>
-                                <li>
-                                      
-                                {$representatives|print_r}
-                                    {foreach from=$representatives->records item=representative}
-                                     <strong>Editorial:</strong> {representative}
-                                        {/foreach}
-                                   
-                                </li>
-
-
-
-
-                                        <li>
-                                            {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
-                                            {assign var=currency value=$currentPress->getSetting('currency')}
-
-                                            {if $useCollapsedView}
-                                                <ul>
-                                                    {foreach from=$publicationFormats item=publicationFormat}
-                                                        {if $publicationFormat->getIsAvailable()}
-                                                            {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
-                                                        {/if}
-                                                    {/foreach}
-                                                </ul>
-                                            {else}
-                                                {foreach from=$publicationFormats item=publicationFormat}
-                                                    {assign var=publicationFormatId value=$publicationFormat->getId()}
-                                                    {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
-                                                        <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
-                                                            {$publicationFormat->getLocalizedName()|escape}
-                                                            <ul>
-                                                                {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
-                                                            </ul>
-                                                        </div>
-                                                    {/if}
-                                                {/foreach}
-                                            {/if}{* useCollapsedView *}
-                                            </li>
+                            </ul>
+                        {else}
+                            {foreach from=$publicationFormats item=publicationFormat}
+                                {assign var=publicationFormatId value=$publicationFormat->getId()}
+                                {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
+                                    <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
+                                    {$publicationFormat->getLocalizedName()|escape}
+                                        <ul>
+                                            {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="metadata simple-item-view-other subtype">
-                                    <div class="share-bar" id='share-bar'>
-
-                                        <div class="external-share" style="display:inline-block;vertical-align:top">
-                                            <div id="fb-root"></div><div id="share_fb"></div>
-                                        </div>
-                                        <div class="external-share"><div id="share_tw"></div></div>
-                                   
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="resena">
-                                <h1>{translate key="submission.synopsis"}</h1>
-                                {$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}
-                            </div>
-
-                            {if (chapters|size > 0)}
-                                <div class="contenidos">
-                                    <h1>{translate key="submission.tableOfContents"}</h1>
-                                    <ul>
-                                        {foreach from=$chapters item=chapter}
-                                            <li>			
-                                                <p>
-                                                    <strong>{$chapter->getLocalizedTitle()}</strong>
-                                                    {if $chapter->getLocalizedSubtitle() != '' }<br />{$chapter->getLocalizedSubtitle()}{/if}
-                                                    {assign var=chapterAuthors value=$chapter->getAuthorNamesAsString()}
-                                                <div class="authorName">{$chapterAuthors}</div>
-                                                </p>
-                                            </li>
-                                        {/foreach}
-
-                                    </ul>
-                                </div>
+                                {/if}
+                            {/foreach}
+                        {/if}{* useCollapsedView *}
+                    </li>
+                </ul>
+            </div>
+       </div>
+        <div class="metadata simple-item-view-other subtype">
+            <div class="share-bar" id='share-bar'>
+                <div class="external-share" style="display:inline-block;vertical-align:top">
+                    <div id="fb-root"></div><div id="share_fb"></div>
+                </div>
+                <div class="external-share"><div id="share_tw"></div></div>
+            </div>
+        </div>
+        </div>
+        <div class="resena">
+            <h1>{translate key="submission.synopsis"}</h1>
+                {$publishedMonograph->getLocalizedAbstract()|strip_unsafe_html}
+        </div>
+        {if (chapters|size > 0)}
+                <div class="contenidos">
+                    <h1>{translate key="submission.tableOfContents"}</h1>
+                    <ul>
+                        {foreach from=$chapters item=chapter}
+                            <li>			
+                                <p>
+                                    <strong>{$chapter->getLocalizedTitle()}</strong>
+                                    {if $chapter->getLocalizedSubtitle() != '' }<br />{$chapter->getLocalizedSubtitle()}{/if}
+                                        {assign var=chapterAuthors value=$chapter->getAuthorNamesAsString()}
+                                        <div class="authorName">{$chapterAuthors}</div>
+                                </p>
+                            </li>
+                        {/foreach}
+                    </ul>
+                </div>
                             {/if}
                             <div class="resena_autores">
                                 <h1><strong>{translate key="submission.information"}</strong></h1>

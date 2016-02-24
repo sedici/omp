@@ -171,7 +171,18 @@
 
                                             {/if}           
                                             </li>     
-
+                                           <li>
+                        {foreach from=$representatives->records item=representative}
+                            <strong>Editorial:</strong>
+                             {foreach  key=key from=$representative item=r}
+                               
+                               {if $key == 'name'}
+                                    {$r}
+                               {/if}     
+                             {/foreach}   
+                            
+                        {/foreach}
+                    </li>
                                         </ul>
                                     </div>
 
