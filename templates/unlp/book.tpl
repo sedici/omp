@@ -128,8 +128,8 @@
                         {/foreach}
                     </li>
                     <li>
-                        <div id="accordion">
-
+                       <!-- <div id="accordion">
+-->
 
 
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
@@ -138,6 +138,11 @@
                                 <ul>
                                 {foreach from=$publicationFormats item=publicationFormat}
 
+                                    {* {assign var=format value=$publicationFormat->getLocalizedName()}
+                                    <div>
+                                        <img src="/UNLP/images/desplegable_{$format}.png"/>
+                                    </div>
+                *}
                                     {if $publicationFormat->getIsAvailable()}
                                         {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
@@ -156,7 +161,7 @@
                                 {/if}
                             {/foreach}
                         {/if}{* useCollapsedView *}
-                        </div>
+                       <!-- </div>-->
                     </li>
                 </ul>
             </div>
