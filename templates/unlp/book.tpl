@@ -7,6 +7,9 @@
 *
 * Display a public-facing book view in the catalog.
 *}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 {strip}
     {assign var="suppressPageTitle" value=true}
     {assign var="pageTitleTranslated" value=$publishedMonograph->getLocalizedFullTitle()}
@@ -125,11 +128,21 @@
                         {/foreach}
                     </li>
                     <li>
+                        <div id="accordion">
+
+
+
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                         {assign var=currency value=$currentPress->getSetting('currency')}
                         {if $useCollapsedView}
-                            <ul>
+                                <ul>
                                 {foreach from=$publicationFormats item=publicationFormat}
+
+                                    {assign var=format value=$publicationFormat->getLocalizedName()}
+                                    <div>
+                                        <img src="/UNLP/images/desplegable_{$format}.png"/>
+                                    </div>
+
                                     {if $publicationFormat->getIsAvailable()}
                                         {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
@@ -148,6 +161,7 @@
                                 {/if}
                             {/foreach}
                         {/if}{* useCollapsedView *}
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -222,5 +236,11 @@
 
                     </div>
                     <!--</div>--><!-- pkp_catalog_book -->
-
+{literal}
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion();
+        });
+    </script>
+{/literal}
                     {include file="common/footer.tpl"}
