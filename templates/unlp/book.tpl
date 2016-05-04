@@ -8,8 +8,12 @@
 * Display a public-facing book view in the catalog.
 *}
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="accordion.js"></script>
+
+
 {strip}
     {assign var="suppressPageTitle" value=true}
     {assign var="pageTitleTranslated" value=$publishedMonograph->getLocalizedFullTitle()}
@@ -132,6 +136,14 @@
 -->
 
 
+                        <div class="accordion">
+                            <div class="accordion-section">
+
+
+
+
+
+
                         {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                         {assign var=currency value=$currentPress->getSetting('currency')}
                         {if $useCollapsedView}
@@ -139,13 +151,16 @@
                                 {foreach from=$publicationFormats item=publicationFormat}
 
                                      {assign var=format value=$publicationFormat->getLocalizedName()}
-                                    <div>
-                                        <img src="/UNLP/images/desplegable_{$format}.png"/>
-                                    </div>
-                
+
+                                    <a class="accordion-section-title" href="#accordion-1"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
+
+                                    <div id="accordion-{$format}" class="accordion-section-content">
+
                                     {if $publicationFormat->getIsAvailable()}
                                         {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
+                                    </div><!--end .accordion-section-content-->
+
                                 {/foreach}
                             </ul>
                         {else}
@@ -162,6 +177,11 @@
                             {/foreach}
                         {/if}{* useCollapsedView *}
                        <!-- </div>-->
+
+                            </div><!--end .accordion-section-->
+                        </div><!--end .accordion-->
+
+
                     </li>
                 </ul>
             </div>
@@ -238,8 +258,29 @@
                     <!--</div>--><!-- pkp_catalog_book -->
 {literal}
     <script>
-        $(function() {
-            $( "#accordion" ).accordion();
+        $(document).ready(function() {
+            function close_accordion_section() {
+                $('.accordion .accordion-section-title').removeClass('active');
+                $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+            }
+
+            $('.accordion-section-title').click(function(e) {
+                // Grab current anchor value
+                var currentAttrValue = $(this).attr('href');
+
+                if($(e.target).is('.active')) {
+                    close_accordion_section();
+                }else {
+                    close_accordion_section();
+
+                    // Add active class to section title
+                    $(this).addClass('active');
+                    // Open up the hidden content panel
+                    $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+                }
+
+                e.preventDefault();
+            });
         });
     </script>
 {/literal}
