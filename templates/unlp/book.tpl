@@ -151,7 +151,7 @@
                                 {foreach from=$publicationFormats item=publicationFormat}
 
                                      {assign var=format value=$publicationFormat->getLocalizedName()}
-                                    <a class="accordion-section-title" href="#accordion-1"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
+                                    <a class="accordion-section-title" href="#accordion-{$cantidad}"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
 
                                     <div id="accordion-{$cantidad}" class="accordion-section-content">
 
