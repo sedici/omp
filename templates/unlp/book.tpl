@@ -164,6 +164,8 @@
                                 {/foreach}
                             </ul>
                         {else}
+
+                            ddddsd
                             {foreach from=$publicationFormats item=publicationFormat}
                                 {assign var=publicationFormatId value=$publicationFormat->getId()}
                                 {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
