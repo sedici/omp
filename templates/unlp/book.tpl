@@ -147,18 +147,19 @@
                         {assign var=currency value=$currentPress->getSetting('currency')}
                         {if $useCollapsedView}
                                 <ul>
+                                {assign var=cantidad value=1}
                                 {foreach from=$publicationFormats item=publicationFormat}
 
                                      {assign var=format value=$publicationFormat->getLocalizedName()}
-
                                     <a class="accordion-section-title" href="#accordion-1"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
 
-                                    <div id="accordion-{$format}" class="accordion-section-content">
+                                    <div id="accordion-{$cantidad}" class="accordion-section-content">
 
                                     {if $publicationFormat->getIsAvailable()}
                                         {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
                                     </div><!--end .accordion-section-content-->
+                                    {assign var=cantidad value=$cantidad+1}
 
                                 {/foreach}
                             </ul>
