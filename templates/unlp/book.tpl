@@ -150,22 +150,21 @@
                                 {assign var=cantidad value=1}
                                 {foreach from=$publicationFormats item=publicationFormat}
 
-                                     {assign var=format value=$publicationFormat->getLocalizedName()}
+                                  {*   {assign var=format value=$publicationFormat->getLocalizedName()}
                                     <a class="accordion-section-title" href="#accordion-{$cantidad}"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
 
                                     <div id="accordion-{$cantidad}" class="accordion-section-content">
-
+*}
                                     {if $publicationFormat->getIsAvailable()}
                                         {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
-                                    </div><!--end .accordion-section-content-->
+                                   <!-- </div> -->  <!--end .accordion-section-content-->
                                     {assign var=cantidad value=$cantidad+1}
 
                                 {/foreach}
                             </ul>
                         {else}
 
-                            ddddsd
                             {foreach from=$publicationFormats item=publicationFormat}
                                 {assign var=publicationFormatId value=$publicationFormat->getId()}
                                 {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
