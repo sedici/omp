@@ -1,5 +1,7 @@
 {include file="unlp/mobile/headMobile.tpl"}
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <div class="container">
 
     {literal}
@@ -63,22 +65,33 @@
         <div class="detalle col-md-12">
             <div class="detalle_descarga">
                 <div class="center-block">
-                    {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
+
+
+                    <div class="accordion">
+                        <div class="accordion-section">
+
+                        {assign var=publicationFormats value=$publishedMonograph->getPublicationFormats()}
                     {assign var=currency value=$currentPress->getSetting('currency')}
 
                     {if $useCollapsedView}
                         <ul>
+                            {assign var=cantidad value=1}
+
+
                             {foreach from=$publicationFormats item=publicationFormat}
+
                                 {assign var=format value=$publicationFormat->getLocalizedName()}
-                                <div>
-                                    <img src="/UNLP/images/desplegable_{$format}.png"/>
-                                </div>
+                                <a class="accordion-section-title" href="#accordion-{$cantidad}"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
+
+                                <div id="accordion-{$cantidad}" class="accordion-section-content">
 
 
 
                                 {if $publicationFormat->getIsAvailable()}
                                     {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                 {/if}
+                            </div><!--end .accordion-section-content-->
+                            {assign var=cantidad value=$cantidad+1}
                             {/foreach}
                         </ul>
                     {else}
@@ -94,7 +107,11 @@
                             {/if}
                         {/foreach}
                     {/if}{* useCollapsedView *}
-                    </div>
+                        </div><!--end .accordion-section-->
+                    </div><!--end .accordion-->
+
+
+                </div>
                 </div>
 
                 <div class="detalles_del_item_mobile">
