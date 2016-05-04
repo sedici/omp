@@ -7,10 +7,10 @@
 *
 * Display a public-facing book view in the catalog.
 *}
-
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
 {strip}
@@ -135,7 +135,8 @@
 -->
 
 
-                        <div id="accordion">
+                        <div class="accordion">
+                            <div class="accordion-section">
 
 
 
@@ -150,9 +151,10 @@
 
                                      {assign var=format value=$publicationFormat->getLocalizedName()}
 
-                                    <h3><img src="/UNLP/images/desplegable_{$format}.png"/></h3>
-                                    <div>
-                                    
+                                    <a class="accordion-section-title" href="#accordion-1"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
+
+                                    <div id="accordion-{$format}" class="accordion-section-content">
+
                                     {if $publicationFormat->getIsAvailable()}
                                         {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
@@ -175,7 +177,7 @@
                         {/if}{* useCollapsedView *}
                        <!-- </div>-->
 
-
+                            </div><!--end .accordion-section-->
                         </div><!--end .accordion-->
 
 
@@ -255,8 +257,29 @@
                     <!--</div>--><!-- pkp_catalog_book -->
 {literal}
     <script>
-        $(function() {
-            $( "#accordion" ).accordion();
+        $(document).ready(function() {
+            function close_accordion_section() {
+                $('.accordion .accordion-section-title').removeClass('active');
+                $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+            }
+
+            $('.accordion-section-title').click(function(e) {
+                // Grab current anchor value
+                var currentAttrValue = $(this).attr('href');
+
+                if($(e.target).is('.active')) {
+                    close_accordion_section();
+                }else {
+                    close_accordion_section();
+
+                    // Add active class to section title
+                    $(this).addClass('active');
+                    // Open up the hidden content panel
+                    $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+                }
+
+                e.preventDefault();
+            });
         });
     </script>
 {/literal}
