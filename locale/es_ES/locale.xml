@@ -723,4 +723,66 @@ Haga click aqui (https://pkp.sfu.ca/registration/) y acceda http://163.10.34.211
 
 
 
+<message key="submission.submit.submissionLocale">Idioma</message>
+<message key="submission.submit.uploadSubmissionFile">Carga de Archivo</message>
+<message key="SUBMISSION.SUBMIT.UPLOADSTEP">Envío de carga</message>
+<message key="submission.upload.fileContents">Contenido de Archivo</message>
+<message key="submission.submit.selectFile">Selección de Archivo</message>
+<message key="common.fileUpload.maxFileSizeStatus">Peso máximo de Archivo</message>
+<message key="submission.form.name">Nombre de Archivo</message>
+<message key="submission.upload.noteToAccompanyFile">Notas que acompañan el Archivo</message>
+<message key="submission.submit.fileInformation">Información de Archivo</message>
+<message key="SUBMISSION.SUBMIT.METADATASTEP">Cargo de Metadatos de Archivo</message>
+<message key="SUBMISSION.SUBMIT.FINISHINGUPSTEP">Paso Final de envío</message>
+<message key="submission.submit.fileAdded">Agregar envío</message>
+<message key="SUBMISSION.SUBMIT.SUBMISSIONFILES">Archivos</message>
+<message key="submission.submit.newFile">Envío de otro Archivo</message>
+<message key="submission.addFile">Envío de archivo</message>
+<message key="SUBMISSION.SUBMIT.SUBMISSIONFILES">Descargar PDF</message>
+<message key="submission.pdf.download">Carga de envío de Archivo</message>
+<message key="common.subtitle">Subtítulo</message>
+<message key="SUBMISSION.CONTRIBUTORS">Autores/Compiladores</message>
+<message key="SUBMISSION.SUBMIT.EXTENDEDMETADAT">Envío de metadatos</message>
+<message key="author.users.contributor.includeInBrowse">Rol de Autor</message>
+<message key="grid.user.userDetails">Cuadrícula del Usuario</message>
+<message key="user.suffix">Sufijo Usuario</message>
+<message key="submission.submit.selectPrincipalContact">Seleccionarlo como Contacto Principal</message>
+<message key="submission.submit.includeInBrowse">Descargar PDF</message>
+<message key="submission.pdf.download">Envío incluido en Exploración</message>
+<message key="submission.coverage">Cobertura Submission</message>
+<message key="submission.coverage.chron">Fecha</message>
+<message key="submission.coverage.geo">Área Geográfica</message>
+<message key="submission.coverage.sample">Muestra de Cobertura</message>
+
+
+<message key="submission.subjectClass">Materia</message>
+<message key="submission.source">Enlaces externos</message>
+<message key="submission.rightse">Derechos de Autor</message>
+<message key="submission.submit.metadataForm">Formas de Metadatos</message>
+<message key="common.subjects">Materias comunes</message>
+<message key="submission.submit.finishSubmission">Finalización de Submission</message>
+<message key="submission.submit.whatNext.forNow">Por ahora, tu puedes...</message>
+
+<message key="submission.submit.expediteSubmission">Acelerar el envío</message>
+<message key="submission.submit.whatNext.review">Revisar el envío</message>
+<message key="submission.submit.whatNext.create">Crear nuevo envío</message>
+<message key="submission.submit.whatNext.return">Volver al tablero</message>
+<message key="submission.submit.submissionCompleteThanks">Envío completado. Gracias</message>
+<message key="submission.submit.submissionComplete">Envío completo</message>
+<message key="submission.submit.confirmExpedite"> Confirmar envío acelerado</message>
+<message key="ORKFLOW.REVIEW.INTERNALREVIEW">Revisión Interna</message>
+<message key="SUBMISSION.EDITORIAL"> Envío a Editorial</message>
+<message key="informationCenter.editorialHistory">Información sobre Editorial</message>
+<message key="SUBMISSION.INFORMATIONCENTER.HISTORY">Envío de Información Editorial</message>
+<message key="SUBMISSION.INFORMATIONCENTER.NOTES">Notas sobre la Editorial</message>
+<message key="SUBMISSION.PAGEPROOFS">Página de Prueba</message>
+<message key="SUBMISSION.PRODUCTION">Envío de Producción</message>
+<message key="submission.addFile">Adherir archivo</message>
+<message key="grid.noFiles">Campo sin archivo</message>
+<message key="common.considered">Consideración</message>
+<message key="payment.directSales.notSet">Presentación del libro</message>
+<message key="editor.submission.stageParticipants">Estadío de Participante</message>
+
+
+
 </locale>
