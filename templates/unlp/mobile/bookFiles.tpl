@@ -7,7 +7,7 @@
 			{else}
 				{url|assign:downloadUrl op="download" path=$publishedMonograph->getId()|to_array:$publicationFormatId:$availableFile->getFileIdAndRevision()}
 			{/if}
-			<!--<a class="publicationFormatLink glyphicon" href="{$downloadUrl}"> <span class="textodescarga">{$availableFile->getLocalizedName()|escape} </span></a>-->
+			<a class="publicationFormatLink" href="{$downloadUrl}"> <span class="textodescarga">{$availableFile->getLocalizedName()|escape} </span></a>
     </div>
  
  
