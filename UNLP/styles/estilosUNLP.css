@@ -1238,10 +1238,12 @@ color:#21919f;
    /* text-align:left;*/
     color:#21919f;
     margin-left:90px;
-    width: 120px;
+    width: 220px;
 }
 
-
+.imagen-mobile{
+    width: 300px;
+}
 
 
 .publicationFormatLink a:hover {
