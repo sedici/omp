@@ -81,9 +81,9 @@
                             {foreach from=$publicationFormats item=publicationFormat}
 
                                 {assign var=format value=$publicationFormat->getLocalizedName()}
-                                <a class="accordion-section-title" href="#accordion-{$cantidad}"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
+                                <a class="accordion-section-title  imagen-mobile" href="#accordion-{$cantidad}"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
 
-                                <div id="accordion-{$cantidad}" class="accordion-section-content imagen-mobile">
+                                <div id="accordion-{$cantidad}" class="accordion-section-content">
                                     {if $publicationFormat->getIsAvailable()}
                                         <br/>
                                         {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
