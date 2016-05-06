@@ -1228,8 +1228,9 @@ color:#21919f;
 }
 
 .publicationFormatLink {
-	text-align:center;
+	text-align:left;
 	color:#21919f;
+    margin-left:35px;
 }
 
 .publicationFormatLink a:hover {
