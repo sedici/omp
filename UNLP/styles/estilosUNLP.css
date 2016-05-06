@@ -1233,6 +1233,16 @@ color:#21919f;
     margin-left:35px;
 }
 
+
+.publicationFormatLink-mobile {
+    text-align:left;
+    color:#21919f;
+    margin-left:60px;
+}
+
+
+
+
 .publicationFormatLink a:hover {
 	text-decoration:none;
 
