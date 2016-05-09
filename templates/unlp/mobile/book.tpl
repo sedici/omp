@@ -93,7 +93,7 @@
                                 </div><!--end .accordion-section-content-->
                                 {assign var=cantidad value=$cantidad+1}
                             {/foreach}
-                        
+
                     {else}
                         {foreach from=$publicationFormats item=publicationFormat}
                             {assign var=publicationFormatId value=$publicationFormat->getId()}

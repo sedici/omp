@@ -164,7 +164,19 @@
                                 {/foreach}
                             </ul>
                         {else}
-                    {foreach from=$publicationFormats item=publicationFormat}
+
+
+                            {assign var=cantidad value=1}
+
+                            {foreach from=$publicationFormats item=publicationFormat}
+
+
+
+                                {assign var=format value=$publicationFormat->getLocalizedName()}
+                                <a class="accordion-section-title" href="#accordion-{$cantidad}"><img src="/UNLP/images/desplegable_{$format}.png"/></a>
+
+                                <div id="accordion-{$cantidad}" class="accordion-section-content">
+
                                 {assign var=publicationFormatId value=$publicationFormat->getId()}
                                 {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
                                     <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
@@ -174,6 +186,8 @@
                                         </ul>
                                     </div>
                                 {/if}
+                                </div><!--end .accordion-section-content-->
+                                {assign var=cantidad value=$cantidad+1}
                             {/foreach}
                         {/if}{* useCollapsedView *}
                        <!-- </div>-->
