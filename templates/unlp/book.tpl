@@ -180,7 +180,6 @@
                                 {assign var=publicationFormatId value=$publicationFormat->getId()}
                                 {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
                                     <div class="publicationFormatDownload" id="publicationFormat-download-{$publicationFormatId|escape}">
-                                    {$publicationFormat->getLocalizedName()|escape}
                                         <ul>
                                             {include file="catalog/book/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
                                         </ul>
