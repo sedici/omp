@@ -100,11 +100,11 @@
                             <div id="accordion-{$cantidad}" class="accordion-section-content">
                             {assign var=publicationFormatId value=$publicationFormat->getId()}
                             {if $publicationFormat->getIsAvailable() && $availableFiles[$publicationFormatId]}
-                                <div class="publicationFormatDownload center-block" id="publicationFormat-download-{$publicationFormatId|escape}">
+                                <!--<div class="publicationFormatDownload center-block" id="publicationFormat-download-{$publicationFormatId|escape}">-->
                                     <ul>
                                         {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormatId publishedMonograph=$publishedMonograph currency=$currency}
                                     </ul>
-                                </div>
+                             <!--   </div>-->
                             {/if}
                             </div><!--end .accordion-section-content-->
                             {assign var=cantidad value=$cantidad+1}
