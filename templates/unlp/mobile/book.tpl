@@ -86,7 +86,6 @@
                                 <div id="accordion-{$cantidad}" class="accordion-section-content">
                                     <ul>
                                     {if $publicationFormat->getIsAvailable()}
-                                        <br/>
                                         {include file="unlp/mobile/bookFiles.tpl" availableFile=$availableFile publicationFormatId=$publicationFormat->getId() publishedMonograph=$publishedMonograph currency=$currency}
                                     {/if}
                                         </ul>
