@@ -297,6 +297,7 @@
 
                 e.preventDefault();
             });
+            close_accordion_section();
         });
     </script>
 {/literal}
