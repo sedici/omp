@@ -288,7 +288,6 @@
                     close_accordion_section();
                 }else {
                     close_accordion_section();
-
                     // Add active class to section title
                     $(this).addClass('active');
                     // Open up the hidden content panel

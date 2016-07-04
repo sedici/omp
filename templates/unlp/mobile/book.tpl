@@ -147,14 +147,18 @@
                                 {$licencia[$currentLocale]}
                          
                         </li>
-                    {/if
-                    {assign var=seriePosition value=$publishedMonograph->getSeriesPosition()}
-                    {if $seriePosition!='' }
-                        <li>
-                                <strong>{translate key="catalog.manage.seriePosition"}:</strong>
-                                 {$seriePosition}
-                        </li>
+
                     {/if}
+
+                        {assign var=seriePosition value=$publishedMonograph->getSeriesPosition()}
+                        {if $seriePosition !=''}
+                            <li>
+                                <strong>{translate key="catalog.manage.seriePosition"}:</strong>
+                                {$seriePosition}
+                            </li>
+                        {/if}
+
+
                     {assign var=source value=$publishedMonograph->getSource()}
                     {if $source[$currentLocale]!='' }
                         <li>
