@@ -105,17 +105,19 @@
                         {if ($viablePublicationFormat)}
 
                             {assign var=identificationCodes value=$viablePublicationFormat->getIdentificationCodes()}
-                            {foreach from=$identificationCodes->toArray() item=identificationCode}
 
-                                {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
-                                        <strong>ISBN:</strong>  {$identificationCode->getValue()|escape}
+                           {if $identificationCode}
+                                {foreach from=$identificationCodes->toArray() item=identificationCode}
+
+                                    {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
+                                            <strong>ISBN:</strong>  {$identificationCode->getValue()|escape}
+                                    {/if}
+                                {/foreach}
+
+                                {if $identificationCode->getCode() == "38" }{* ONIX codes for Handle = 38 *}
+                                    <strong>Identificador(URI):</strong>  {$identificationCode->getValue()|escape}
                                 {/if}
-                            {/foreach}
-
-                            {if $identificationCode->getCode() == "38" }{* ONIX codes for Handle = 38 *}
-                                <strong>Identificador(URI):</strong>  {$identificationCode->getValue()|escape}
-                            {/if}
-                                       
+                           {/if}
                         {/if}           
                     </li>
                     <li>

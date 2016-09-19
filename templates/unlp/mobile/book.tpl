@@ -188,6 +188,8 @@
                             {if ($viablePublicationFormat)}
 
                                 {assign var=identificationCodes value=$viablePublicationFormat->getIdentificationCodes()}
+                            {if $identificationCode}
+
                                 {foreach from=$identificationCodes->toArray() item=identificationCode}
 
                                     {if $identificationCode->getCode() == "02" || $identificationCode->getCode() == "24" || $identificationCode->getCode() == "15"}{* ONIX codes for ISBN-10 or ISBN-13 *}
@@ -200,8 +202,10 @@
 
                                  {/foreach}
 
-                                            {/if}           
-                                            </li>     
+                                            {/if}
+                            {/if}
+
+                        </li>
                                            <li>
                                                {foreach from=$representatives->records item=representative}
                                                    <strong>Editorial:</strong>
